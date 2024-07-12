@@ -1,119 +1,30 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Buttons</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .navbar-brand img {
+            max-height: 40px; /* Define o tamanho máximo da altura do logo */
+            width: auto; /* Garante que a largura seja ajustada automaticamente */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo da sua empresa" class="img-fluid">
+            </a>
+        </div>
+    </nav>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <div class="container mt-4">
+        <h1 class="display-4">Bem-vindo</h1>
+    </div>
 
-<h1>Gerador de Querys / Consultas para o SQLite</h1>
-
-<select id="operacao" onchange="operacao(this)" class="form-control form-group">
-	<option value="0">Tipo de operacao :</option>
-	<option value="create">Criar tabela</option>
-	<option value="0"></option>
-</select>
-<div id="campo" style="display:none">
-	<input id="nome" class="form-control form-group" placeholder="Nome do campo: id,nome,...">
-	<select id="tipo" class="form-control form-group">
-		<option value="0">Tipo de dado do campo :</option>
-		<option value="INTEGER">INTEGER</option>
-		<option value="INTEGER">TEXT</option>
-		<option value="INTEGER">INTEGER</option>
-		<option value="INTEGER">INTEGER</option>
-		<option value="INTEGER">INTEGER</option>
-		<option value="0"></option>
-	</select>
-	<div class="form-check">
-		<input type="checkbox" id="" class="form-check-input">
-		<label class="font-italic">Ter valor default / padrao</label>
-	</div>
-	<div class="form-check">
-		<input type="checkbox" id="" class="form-check-input">
-		<label class="font-italic">PRIMARY KEY</label>
-	</div>
-	<div class="form-check">
-		<input type="checkbox" id="" class="form-check-input">
-		<label class="font-italic">NOT NULL</label>
-	</div>
-	<div class="form-check">
-		<input type="checkbox" id="" class="form-check-input">
-		<label class="font-italic">IF NOT EXISTS</label>
-	</div>
-	<div class="form-check">
-		<input type="checkbox" id="" class="form-check-input">
-		<label class="font-italic">UNIQUE</label>
-	</div>
-	<div class="form-check">
-		<input type="checkbox" id="" class="form-check-input">
-		<label class="font-italic">CHECK</label>
-	</div>
-	<div class="form-check">
-		<input type="checkbox" id="" class="form-check-input">
-		<label class="font-italic">FOREIGN KEY</label>
-	</div>
-	<input id="default" class="form-control form-group" 
-		placeholder="Valor padrao / default desse campo. * precisa marcar o check box para habilitar">
-	<div class="form-group">
-		<input class="form-control" aria-describedby="checkHelp"
-			placeholder="Expressao para checar o valor antes do SQLite gravar na tabela. * precisa marcar o check box CHECK para habilitar">
-		<small id="checkHelp" class="form-text text-muted">Mais informacoes: <a href="https://www.sqlitetutorial.net/sqlite-check-constraint/">https://www.sqlitetutorial.net/sqlite-check-constraint/</a></small>
-	</div>
-	</div>
-	<button onclick="remove(this)" class="form-control">remover</button>
-</div>
-<div id="campos"></div>
-<button id="add" onclick="add()" class="form-control" style="display:none">Adicionar mais um campo</button>
-
-<br>
-<button onclick="make()" class="form-control">Criar Query</button>
-
-<script>
-var quantidade_de_campos = 0;
-//primira vez que selecionou create table no select
-var first = true;
-function make(){
-	console.log($('#operacao'));
-}
-function operacao(e){
-	console.log(e);
-	console.log($('#operacao'));
-
-	var value = $('#operacao')[0].selectedOptions[0].value;
-	console.log(value);
-
-	if (value=='create'){
-		console.log('ok');
-		$('#campos').show()
-		$('#add').show();
-		if(first){
-			add();
-			first=false;
-		}
-	} else{
-		$('#campos').hide();
-		$('#add').hide();
-	}
-}
-function remove(e){
-	console.log(e);
-	console.log(e.parentElement.outerHTML)
-	e.parentElement.outerHTML = '';
-	quantidade_de_campos--;
-}
-function add(){
-	//adicionar mais campos para criar a tabela
-	var campos = $('#campos');
-	console.log(campos);
-	//campos = campos[0].innerHTML;
-	console.log(campos[0].innerHTML);
-
-	var campo = $('#campo');
-	console.log(campo);
-	var inner = $('#campo')[0].innerHTML;
-	console.log(inner);
-	inner = '<div class="container form-group" id="'+quantidade_de_campos+'">'+inner+'</div>';
-
-	campos.append(inner);
-	quantidade_de_campos++;
-	//campos.append(inner);
-}
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
