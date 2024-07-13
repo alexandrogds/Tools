@@ -14,7 +14,7 @@ def main():
     translator = Translator()
 
     for lang in idiomas:
-        lang = 'pt'
+        # lang = 'pt'
 
         soup = BeautifulSoup(conteudo, 'html.parser')
         traduzir_textos(soup, translator, lang)
@@ -27,7 +27,7 @@ def main():
         extract_script(soup, 'change-lang-autos')
         salvar_arquivo(soup, lang)
         print(f"Tradução para {lang} salva em /{lang}/index.html.")
-        input('Prosseguir = Enter.')
+        # input('Prosseguir = Enter.')
 
 if __name__ == "__main__":
     main()
