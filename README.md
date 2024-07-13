@@ -8,6 +8,7 @@ Gerador de Querys / Consultas para o SQLite
 ```bash
 sudo apt-get install libmaxminddb-dev
 sudo apt install python3-geoip2
+sudo apt install python3-bs4
 OR
 # use venv
 ```
