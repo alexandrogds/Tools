@@ -11,6 +11,8 @@ sudo apt install python3-geoip2
 sudo apt install python3-bs4
 OR
 # use venv
+python3 -m venv venv
+source venv/bin/activate
 ```
 
 # Dev Windows

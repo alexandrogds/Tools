@@ -31,7 +31,7 @@ def traduzir_textos(soup, translator, dest_lang):
                 if option['value'].lower() == dest_lang.lower():
                     option['selected'] = 'selected'
             except:
-                print('Option', type(str(option['title']).strip()), str(option['title']).strip(), 'não traduzido.')
+                print(f'Option {str(option['title']).strip()} ({option['value']}) não traduzido para {dest_lang}. -', type(str(option['title']).strip()))
                 continue
             option['title'] = translated_title
 
