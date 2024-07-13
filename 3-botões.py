@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-from googletrans import Translator
 from lib import *
 
 def main():
@@ -19,23 +18,20 @@ def main():
     # Analisar o HTML com BeautifulSoup
     soup = BeautifulSoup(conteudo, 'html.parser')
     
-    # Instanciar o tradutor
-    translator = Translator()
-    
     for lang in idiomas:
-        # lang = 'ku'
-        traduzir_textos(soup, translator, lang)
+        lang = 'pt'
+        traduzir_textos(soup, lang)
 
         html_content = str(soup)
-        aux = traduzir_placeholder_js(html_content, translator, lang)
-        translated_content = traduzir_script_js(aux, translator, lang)
+        aux = traduzir_placeholder_js(html_content, lang)
+        translated_content = traduzir_script_js(aux, lang)
 
-        translated_dir_name = translator.translate('3-botões', src='auto', dest=lang).text
+        translated_dir_name = translate_text('3-botões', lang)
 
-        translate_seo(soup, translator, lang)
+        translate_seo(soup, lang)
         salvar_arquivo(BeautifulSoup(translated_content, 'html.parser'), lang, translated_dir_name)
         print(f"Tradução para {lang} salva em /{lang}/{translated_dir_name}/index.html.")
-        # input('Prosseguir = Enter.')
+        input('Prosseguir = Enter.')
 
 if __name__ == "__main__":
     main()
