@@ -102,12 +102,12 @@ def extract_script(soup, id):
 def translate_seo(soup, translator, dest_lang):
     meta_description = soup.find('meta', {'name': 'description'})
     original_text = meta_description['content']
-    translated_text = translator.translate(original_text, dest=dest_lang).text
+    translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
     meta_description['content'] = translated_text
 
     meta_keywords = soup.find('meta', {'name': 'keywords'})
     original_text = meta_keywords['content']
-    translated_text = translator.translate(original_text, dest=dest_lang).text
+    translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
     meta_keywords['content'] = translated_text
 
     anchors = soup.find_all('a')
@@ -115,10 +115,10 @@ def translate_seo(soup, translator, dest_lang):
 
     for anchor in anchors:
         original_text = anchor['title']
-        translated_text = translator.translate(original_text, dest=dest_lang).text
+        translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
         anchor['title'] = translated_text
 
     for img in images:
         original_text = img['alt']
-        translated_text = translator.translate(original_text, dest=dest_lang).text
+        translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
         img['alt'] = translated_text
