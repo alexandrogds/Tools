@@ -1,6 +1,6 @@
 import os
-from bs4 import NavigableString
-from google.cloud import translate_v2 as translate
+from bs4 import BeautifulSoup, NavigableString
+from googletrans import Translator
 import re
 import time
 
@@ -12,13 +12,7 @@ def ler_arquivo_local(file_path):
     except Exception as e:
         return f"Erro ao ler o arquivo: {e}"
 
-def translate_text(text, target_lang):
-    print('ok')
-    translate_client = translate.Client()
-    result = translate_client.translate(text, target_language=target_lang)
-    return result['translatedText']
-
-def traduzir_textos(soup, dest_lang):
+def traduzir_textos(soup, translator, dest_lang):
     for tag in soup.find_all(True):
         if tag.name not in ["style", "script"]:
             for content in tag.contents:
@@ -27,16 +21,15 @@ def traduzir_textos(soup, dest_lang):
                     # print(text)
                     if text and not (tag.name == 'option' and tag.parent.name == 'select'):
                         # print(type(text), text)
-                        # time.sleep(1)
-                        translated_text = translate_text(text, dest_lang)
+                        time.sleep(1)
+                        translated_text = translator.translate(text, src='auto', dest=dest_lang).text
                         content.replace_with(translated_text)
 
     for option in soup.find_all('option'):
         if option.has_attr('title'):
             try:
-                # time.sleep(1)
-                
-                translated_title = translate_text(str(option['title']).strip(), dest_lang)
+                time.sleep(1)
+                translated_title = translator.translate(str(option['title']).strip(), src='auto', dest=dest_lang).text
                 if option['value'].lower() == dest_lang.lower():
                     option['selected'] = 'selected'
             except:
@@ -46,7 +39,7 @@ def traduzir_textos(soup, dest_lang):
                 continue
             option['title'] = translated_title
 
-def traduzir_placeholder_js(html_content, dest_lang):
+def traduzir_placeholder_js(html_content, translator, dest_lang):
     # Expressão regular para encontrar o placeholder no script
     pattern = r'placeholder:\s*"[^"]*"'
 
@@ -54,7 +47,7 @@ def traduzir_placeholder_js(html_content, dest_lang):
     def replace_placeholder(match):
         placeholder = match.group(0)
         original_text = re.search(r'"([^"]*)"', placeholder).group(1)
-        translated_text = translate_text(original_text, dest_lang)
+        translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
         return f'placeholder: "{translated_text}"'
 
     # Aplicar a substituição usando a expressão regular
@@ -62,11 +55,11 @@ def traduzir_placeholder_js(html_content, dest_lang):
 
     return translated_content
 
-def traduzir_script_js(html_content, lang_dest, is_index=None):
+def traduzir_script_js(html_content, translator, lang_dest, is_index=None):
     def replace_script(match):
         script_code = match.group(0)
         directory = match.group(1)  # Captura o nome do diretório (excluindo as barras)
-        translated_directory = translate_text(directory, lang_dest)
+        translated_directory = translator.translate(directory, src='auto', dest=lang_dest).text
         if is_index:
             return script_code.replace(f'/{directory}/', f'/lang/{lang_dest}/')
         else:
@@ -80,7 +73,7 @@ def traduzir_script_js(html_content, lang_dest, is_index=None):
     if is_index:
         texto_substituto = f'"/lang/" + lang'
     else:
-        translated_directory = translate_text(directory, lang_dest)
+        translated_directory = translator.translate(directory, src='auto', dest=lang_dest).text
         texto_substituto = f'"/lang/" + lang + "/{translated_directory}/"'
     translated_content = re.sub(padrao, texto_substituto, html_content)
 
@@ -110,15 +103,15 @@ def extract_script(soup, id):
     if script_to_remove:
         script_to_remove.extract()
 
-def translate_seo(soup, dest_lang):
+def translate_seo(soup, translator, dest_lang):
     meta_description = soup.find('meta', {'name': 'description'})
     original_text = meta_description['content']
-    translated_text = translate_text(original_text, dest_lang)
+    translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
     meta_description['content'] = translated_text
 
     meta_keywords = soup.find('meta', {'name': 'keywords'})
     original_text = meta_keywords['content']
-    translated_text = translate_text(original_text, dest_lang)
+    translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
     meta_keywords['content'] = translated_text
 
     anchors = soup.find_all('a')
@@ -126,10 +119,10 @@ def translate_seo(soup, dest_lang):
 
     for anchor in anchors:
         original_text = anchor['title']
-        translated_text = translate_text(original_text, dest_lang)
+        translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
         anchor['title'] = translated_text
 
     for img in images:
         original_text = img['alt']
-        translated_text = translate_text(original_text, dest_lang)
+        translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
         img['alt'] = translated_text
