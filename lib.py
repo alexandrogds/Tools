@@ -2,7 +2,7 @@ import os
 from bs4 import BeautifulSoup, NavigableString
 from googletrans import Translator
 import re
-
+import time
 
 def ler_arquivo_local(file_path):
     try:
@@ -21,12 +21,14 @@ def traduzir_textos(soup, translator, dest_lang):
                     # print(text)
                     if text and not (tag.name == 'option' and tag.parent.name == 'select'):
                         # print(type(text), text)
+                        time.sleep(1)
                         translated_text = translator.translate(text, src='auto', dest=dest_lang).text
                         content.replace_with(translated_text)
 
     for option in soup.find_all('option'):
         if option.has_attr('title'):
             try:
+                time.sleep(1)
                 translated_title = translator.translate(str(option['title']).strip(), src='auto', dest=dest_lang).text
                 if option['value'].lower() == dest_lang.lower():
                     option['selected'] = 'selected'

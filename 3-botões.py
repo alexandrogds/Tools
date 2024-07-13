@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from googletrans import Translator
 from lib import *
+import time
 
 def main():
     # Caminho do arquivo local
