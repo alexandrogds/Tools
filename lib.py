@@ -76,6 +76,7 @@ def traduzir_script_js(html_content, translator, lang_dest, is_index=None):
         translated_directory = translator.translate(directory, src='auto', dest=lang_dest).text
         texto_substituto = f'"/lang/" + lang + "/{translated_directory}/"'
     translated_content = re.sub(padrao, texto_substituto, html_content)
+    time.sleep(1)
 
     pattern = r'link\.href\s*=\s*window.location.protocol\s*\+\s*"//"\s*\+\s*window.location.domain\s*\+\s*"/([^"]*)/"'
     translated_content = re.sub(pattern, replace_script, translated_content)
@@ -108,21 +109,25 @@ def translate_seo(soup, translator, dest_lang):
     original_text = meta_description['content']
     translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
     meta_description['content'] = translated_text
+    time.sleep(1)
 
     meta_keywords = soup.find('meta', {'name': 'keywords'})
     original_text = meta_keywords['content']
     translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
     meta_keywords['content'] = translated_text
+    time.sleep(1)
 
     anchors = soup.find_all('a')
     images = soup.find_all('img')
 
     for anchor in anchors:
+        time.sleep(1)
         original_text = anchor['title']
         translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
         anchor['title'] = translated_text
 
     for img in images:
+        time.sleep(1)
         original_text = img['alt']
         translated_text = translator.translate(original_text, src='auto', dest=dest_lang).text
         img['alt'] = translated_text
