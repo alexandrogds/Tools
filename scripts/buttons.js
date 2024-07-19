@@ -16,7 +16,6 @@ var base = window.location.protocol + "//" + domain
 if (window.location.port) {
     base += ':' + window.location.port;
 }
-base += '/backend/'
 
 function generateUserId() {
     return '_' + Math.random().toString(36).substr(2, 9);
@@ -27,15 +26,38 @@ function getQueryParam(param) {
 }
 // Função para popular os botões com cliques do banco de dados ao carregar a página
 function populateButtons() {
-    const url = base + '/' + `?user={getQueryParam(user)}`;
+    const url = base + '/buttons/get.php' + `?user=${getQueryParam('user')}`;
     fetch(url)
         .then(response => response.json())
         .then(data => {
             if (Array.isArray(data)) {
-                data.forEach(button => {
-                    const buttonElement = document.getElementById(`counter${button.button_id}`);
-                    if (buttonElement) {
-                        buttonElement.textContent = button.count;
+                data.forEach(buttons => {
+                    const container = document.getElementById('buttonsContainer');
+                    for (let i=1; i < buttons.length; i++) {
+                        // func x1(clicks) derivada de createButtons()
+                        const { color, icon } = `{${buttons[-1].color}, ${colorsAndIcons[buttons[-1].color]}}`;
+                        const button = document.createElement('button');
+                        button.type = 'button';
+                        button.className = `btn ${color} me-2`;
+                        button.innerHTML = `<i class="fas ${icon}"></i> Botão ${i} <span id="counter${buttons[i-1].button}" class="badge bg-secondary">${buttons[i-1].clicks}</span>`;
+                        button.onclick = function() {
+                            incrementCounter(i);
+                            sendPostRequest(`${buttons[i-1].id}`, `${buttons[i-1].clicks}`);
+                        };
+                        const colorSelect = document.createElement('select');
+                        colorSelect.className = 'form-select d-inline-block w-auto me-2';
+                        colorSelect.onchange = function() {
+                            button.className = `btn ${this.value} me-2`;
+                        };
+                        const colors = ['btn-danger', 'btn-primary', 'btn-success', 'btn-warning', 'btn-info', 'btn-dark'];
+                        colors.forEach(color => {
+                            const option = document.createElement('option');
+                            option.value = color;
+                            option.text = color.replace('btn-', '').toUpperCase();
+                            colorSelect.appendChild(option);
+                        });
+                        container.appendChild(colorSelect);
+                        container.appendChild(button);
                     }
                 });
             } else {
@@ -44,7 +66,6 @@ function populateButtons() {
         })
         .catch(error => console.error('Error fetching buttons data:', error));
 }
-
 // Função para obter uma cor e ícone únicos que não tenham sido usados anteriormente
 function getUniqueColorAndIcon(usedColors) {
     let index = 0;
@@ -130,6 +151,6 @@ function sendPostRequest(buttonId, buttonIndex) {
 
 // Ao carregar a página, popular os botões com os cliques do banco de dados
 document.addEventListener('DOMContentLoaded', function() {
-    populateButtons();
     createButtons(); // Chamada inicial para criar os botões com o valor padrão
+    populateButtons();
 });
