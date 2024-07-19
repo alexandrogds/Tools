@@ -22,3 +22,6 @@ pip install -r requirements.txt
 cd backend_flask\buttons\
 set FLASK_APP=app.py; set FLASK_ENV=development; flask run
 ```
+
+# Database
+Use os arquivos que criam a base de dados com o console na pasta raiz de Tools para que a base de dados SQLite fique na raiz.

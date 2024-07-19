@@ -1,20 +1,18 @@
 <?php
 
 // Conexão com o banco de dados SQLite
-$db = new SQLite3('database.db');
+$db = new PDO('sqlite:' . __DIR__ . '\..\database.db');
 
 // Criar tabela 'buttons' se não existir
-$db->exec('CREATE TABLE IF NOT EXISTS buttons (
+$db->exec("CREATE TABLE IF NOT EXISTS buttons (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    iuser TEXT NOT NULL,
-    button TEXT NOT NULL,
+    user TEXT NOT NULL,
+    button INTEGER DEFAULT 0,
     color TEXT NOT NULL,
-    count INTEGER DEFAULT 0,
-    UNIQUE(id_user, button_id)
-)');
-
-// Fechar a conexão
-$db->close();
+    clicks INTEGER DEFAULT 0,
+    UNIQUE(user, button),
+    CHECK(color IN ('btn-danger', 'btn-primary', 'btn-success', 'btn-warning', 'btn-info', 'btn-dark'))
+);");
 
 echo "Tabela 'buttons' criada com sucesso!";
 ?>

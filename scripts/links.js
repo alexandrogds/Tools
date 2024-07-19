@@ -63,4 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var link = document.getElementById("logo");
     link.href = aux;
+
+    var link = document.getElementById("button-3-buttons");
+    link.href = aux + 'buttons';
 })
