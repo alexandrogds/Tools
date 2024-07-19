@@ -26,39 +26,51 @@ function getQueryParam(param) {
 }
 // Função para popular os botões com cliques do banco de dados ao carregar a página
 function populateButtons() {
-    const url = base + '/buttons/get.php' + `?user=${getQueryParam('user')}`;
+    const url = `${base}/buttons/get.php?user=${getQueryParam('user')}`;
     fetch(url)
         .then(response => response.json())
         .then(data => {
             if (Array.isArray(data)) {
-                data.forEach(buttons => {
-                    const container = document.getElementById('buttonsContainer');
-                    for (let i=1; i < buttons.length; i++) {
-                        // func x1(clicks) derivada de createButtons()
-                        const { color, icon } = `{${buttons[-1].color}, ${colorsAndIcons[buttons[-1].color]}}`;
-                        const button = document.createElement('button');
-                        button.type = 'button';
-                        button.className = `btn ${color} me-2`;
-                        button.innerHTML = `<i class="fas ${icon}"></i> Botão ${i} <span id="counter${buttons[i-1].button}" class="badge bg-secondary">${buttons[i-1].clicks}</span>`;
-                        button.onclick = function() {
-                            incrementCounter(i);
-                            sendPostRequest(`${buttons[i-1].id}`, `${buttons[i-1].clicks}`);
-                        };
-                        const colorSelect = document.createElement('select');
-                        colorSelect.className = 'form-select d-inline-block w-auto me-2';
-                        colorSelect.onchange = function() {
-                            button.className = `btn ${this.value} me-2`;
-                        };
-                        const colors = ['btn-danger', 'btn-primary', 'btn-success', 'btn-warning', 'btn-info', 'btn-dark'];
-                        colors.forEach(color => {
-                            const option = document.createElement('option');
-                            option.value = color;
-                            option.text = color.replace('btn-', '').toUpperCase();
-                            colorSelect.appendChild(option);
-                        });
-                        container.appendChild(colorSelect);
-                        container.appendChild(button);
-                    }
+                const container = document.getElementById('buttonsContainer');
+                if (!container) {
+                    console.error('Container not found');
+                    return;
+                }
+                
+                // Estilo para garantir que os botões fiquem em linha e centralizados
+                container.style.display = 'flex';
+                container.style.flexWrap = 'wrap';
+                container.style.justifyContent = 'center';
+                container.style.gap = '10px'; // Espaçamento entre os botões
+                
+                data.forEach(buttonData => {
+                    const { id, color, clicks } = buttonData;
+
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.className = `btn ${color} me-2`;
+                    button.innerHTML = `<i class="fas ${icon}"></i> Botão <span id="counter${id}" class="badge bg-secondary">${clicks}</span>`;
+                    button.onclick = function() {
+                        incrementCounter(id);
+                        sendPostRequest(id, clicks);
+                    };
+
+                    const colorSelect = document.createElement('select');
+                    colorSelect.className = 'form-select d-inline-block w-auto me-2';
+                    colorSelect.onchange = function() {
+                        button.className = `btn ${this.value} me-2`;
+                    };
+
+                    const colors = ['btn-danger', 'btn-primary', 'btn-success', 'btn-warning', 'btn-info', 'btn-dark'];
+                    colors.forEach(colorClass => {
+                        const option = document.createElement('option');
+                        option.value = colorClass;
+                        option.text = colorClass.replace('btn-', '').toUpperCase();
+                        colorSelect.appendChild(option);
+                    });
+
+                    container.appendChild(colorSelect);
+                    container.appendChild(button);
                 });
             } else {
                 console.error('Unexpected response format:', data);
