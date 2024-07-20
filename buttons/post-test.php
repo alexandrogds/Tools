@@ -1,21 +1,29 @@
 <?php
-$dbPath = __DIR__ . '/../database.db';
-$db = new PDO('sqlite:' . $dbPath);
+
+// Conexão com o banco de dados SQLite
+$db = new PDO('sqlite:' . __DIR__ . '\..\database.db');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$input = json_decode(file_get_contents('php://input'), true);
-$user = $input['user'];
-$button = $input['button'];
-$color = $input['color'];
-$clicks = $input['clicks'];
+
+// Receber os parâmetros do POST
+$user = $_POST['user'];
+$button = $_POST['button'];
+$color = $_POST['color'];
+$clicks = $_POST['clicks'];
+
+// Consulta SQL para inserir ou atualizar os dados do botão
 $query = "INSERT INTO buttons (user, button, color, clicks) 
             VALUES (:user, :button, :color, :clicks)
             ON CONFLICT(user, button) DO UPDATE SET color = :color, clicks = :clicks";
+
 $stmt = $db->prepare($query);
 $stmt->bindValue(':user', $user, PDO::PARAM_STR);
 $stmt->bindValue(':button', $button, PDO::PARAM_INT);
 $stmt->bindValue(':color', $color, PDO::PARAM_STR);
 $stmt->bindValue(':clicks', $clicks, PDO::PARAM_INT);
-$stmt->execute();
+
+$result = $stmt->execute();
+
 header('Content-Type: application/json');
-echo json_encode(['success' => true]);
+echo json_encode(array('success' => true));
+
 ?>
