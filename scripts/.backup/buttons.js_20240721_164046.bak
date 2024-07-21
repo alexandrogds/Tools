@@ -2,7 +2,7 @@ domain = window.location.domain
 if (!domain) {
     domain = 'localhost'
 }
-let base = window.location.protocol + "//" + domain
+var base = window.location.protocol + "//" + domain
 if (window.location.port) {
     base += ':' + window.location.port;
 }
