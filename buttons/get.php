@@ -1,41 +1,41 @@
 <?php
 
 // Conexão com o banco de dados SQLite
-$db = new SQLite3('database.db');
+$db = new PDO('sqlite:' . __DIR__ . '\..\database.db');
 
 // Verificar se foi passado o parâmetro id_user
-if (isset($_GET['id_user'])) {
-    $id_user = $_GET['id_user'];
+// Consulta para obter os dados dos botões do usuário
+$query = "SELECT button, color, clicks FROM buttons WHERE user = :user";
+$stmt = $db->prepare($query);
+// $stmt->bindValue(':user', $_GET['user'], SQLITE3_TEXT);
+$stmt->execute([':user' => $_GET['user']]);
 
-    // Consulta para obter os dados dos botões do usuário
-    $query = "SELECT button_id, color, count FROM buttons WHERE id_user = :id_user";
-    $stmt = $db->prepare($query);
-    $stmt->bindValue(':id_user', $id_user, SQLITE3_TEXT);
-    
-    $result = $stmt->execute();
+// $result = $stmt->execute();
 
-    // Array para armazenar os dados dos botões
-    $buttons_data = array();
+// Array para armazenar os dados dos botões
+$buttons_data = array();
 
-    // Iterar pelos resultados e adicionar ao array
-    while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
-        $buttons_data[] = array(
-            'button_id' => $row['button_id'],
-            'color' => $row['color'],
-            'count' => $row['count']
-        );
-    }
+// Iterar pelos resultados e adicionar ao array
+// while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
+//     $buttons_data[] = array(
+//         'button' => $row['button'],
+//         'color' => $row['color'],
+//         'clicks' => $row['clicks']
+//     );
+// }
 
-    // Fechar a conexão
-    $db->close();
-
-    // Retornar os dados em formato JSON
-    header('Content-Type: application/json');
-    echo json_encode($buttons_data);
-} else {
-    // Caso não seja passado o parâmetro id_user, retornar erro
-    header('HTTP/1.1 400 Bad Request');
-    echo "ID do usuário não fornecido.";
+// Buscar e exibir os resultados
+$buttons_data = [];
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    $buttons_data[] = array(
+        'button' => $row['button'],
+        'color' => $row['color'],
+        'clicks' => $row['clicks']
+    );
 }
+
+// Retornar os dados em formato JSON
+header('Content-Type: application/json');
+echo json_encode($buttons_data);
 
 ?>
