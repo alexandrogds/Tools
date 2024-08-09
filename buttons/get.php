@@ -5,10 +5,10 @@ $db = new PDO('sqlite:' . __DIR__ . '\..\database.db');
 
 // Verificar se foi passado o parâmetro id_user
 // Consulta para obter os dados dos botões do usuário
-$query = "SELECT button, color, clicks FROM buttons WHERE user = :user";
+$query = "SELECT voting, button, color, clicks FROM buttons WHERE user = :user AND voting = :voting";
 $stmt = $db->prepare($query);
 // $stmt->bindValue(':user', $_GET['user'], SQLITE3_TEXT);
-$stmt->execute([':user' => $_GET['user']]);
+$stmt->execute([':user' => $_GET['user'], ':voting' => $_GET['voting']]);
 
 // $result = $stmt->execute();
 
@@ -28,6 +28,7 @@ $buttons_data = array();
 $buttons_data = [];
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $buttons_data[] = array(
+        'voting' => $row['voting'],
         'button' => $row['button'],
         'color' => $row['color'],
         'clicks' => $row['clicks']
