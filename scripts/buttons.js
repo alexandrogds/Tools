@@ -3,6 +3,7 @@ const Config = {
     base: `${window.location.protocol}//${window.location.hostname}${window.location.port ? ':' + window.location.port : ''}`,
     colors: ['btn-danger', 'btn-primary', 'btn-success', 'btn-warning', 'btn-info', 'btn-dark'],
     voting: localStorage.getItem('voting') || generateId(),
+    user: localStorage.getItem('user') || generateId(),
 };
 
 function initialize() {
@@ -11,6 +12,7 @@ function initialize() {
         localStorage.setItem('votings', JSON.stringify([Config.voting]));
     }
     populateVotings();
+    localStorage.setItem('user', Config.user)
 }
 
 document.addEventListener('DOMContentLoaded', initialize);
@@ -120,7 +122,6 @@ function createButtonElement(button, button_color, clicks) {
 }
 
 function sendPostRequest(button, clicks, color = null) {
-    let user = localStorage.getItem('user') || generateId();
     let data = { user: user, voting: voting, button: button, clicks: clicks, color: color };
 
     let buttons = JSON.parse(localStorage.getItem(voting + '_buttons')) || [];
@@ -149,7 +150,7 @@ function createColorSelect(button_color) {
     const colorSelect = document.createElement('select');
     colorSelect.className = 'form-select d-inline-block w-auto me-2';
     colorSelect.onchange = function() {
-        this.previousSibling.className = `btn ${this.value} me-2`;
+        this.nextElementSibling.className = `btn ${this.value} me-2`;
     };
 
     Config.colors.forEach(color => {
@@ -169,14 +170,14 @@ function incrementCounter(buttonIndex) {
     counter.textContent = newCount;
 
     // Salvar no localStorage
-    let buttons = JSON.parse(localStorage.getItem(voting + '_buttons')) || [];
-    buttons = buttons.map(button => {
-        if (button.button === buttonIndex) {
-            button.clicks = newCount;
-        }
-        return button;
-    });
-    localStorage.setItem(voting + '_buttons', JSON.stringify(buttons));
+    // let buttons = JSON.parse(localStorage.getItem(voting + '_buttons')) || [];
+    // buttons = buttons.map(button => {
+    //     if (button.button === buttonIndex) {
+    //         button.clicks = newCount;
+    //     }
+    //     return button;
+    // });
+    // localStorage.setItem(voting + '_buttons', JSON.stringify(buttons));
 
     return newCount;
 }
