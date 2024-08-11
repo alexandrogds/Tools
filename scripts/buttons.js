@@ -2,17 +2,18 @@ const Config = {
     domain: window.location.hostname || 'localhost',
     base: `${window.location.protocol}//${window.location.hostname}${window.location.port ? ':' + window.location.port : ''}`,
     colors: ['btn-danger', 'btn-primary', 'btn-success', 'btn-warning', 'btn-info', 'btn-dark'],
-    voting: localStorage.getItem('voting') || generateId(),
     user: localStorage.getItem('user') || generateId(),
+    voting: localStorage.getItem('voting') || generateId(),
 };
 
 function initialize() {
+    localStorage.setItem('user', Config.user)
     localStorage.setItem('voting', Config.voting);
     if (localStorage.getItem('votings') === null) {
         localStorage.setItem('votings', JSON.stringify([Config.voting]));
     }
     populateVotings();
-    localStorage.setItem('user', Config.user)
+    populateButtons(Config.voting)
 }
 
 document.addEventListener('DOMContentLoaded', initialize);
@@ -64,14 +65,27 @@ function updateSaveButton(voting_local) {
 function populateButtons(voting) {
     let buttons = JSON.parse(localStorage.getItem(voting + '_buttons')) || [];
 
+    if (localStorage.getItem(Config.voting + '_buttons') === null) {
+        addNewButton(0, 'btn-danger', 0);
+        addNewButton(1, 'btn-primary', 0);
+    }
+
     buttons.forEach((buttonData) => {
-        addNewButtons(buttonData.button, buttonData.color, buttonData.clicks);
+        addNewButton2(buttonData.button, buttonData.color, buttonData.clicks);
     });
+
+    document.getElementById('buttonCount').value = buttons.length
 }
 
 function addNewButton(button, button_color, clicks = 0) {
     const container = document.getElementById('buttonsContainer');
     const buttonDiv = createButtonElement(button, button_color, clicks);
+    container.appendChild(buttonDiv);
+}
+
+function addNewButton2(button, button_color, clicks = 0) {
+    const container = document.getElementById('buttonsContainer');
+    const buttonDiv = createButtonElement2(button, button_color, clicks);
     container.appendChild(buttonDiv);
 }
 
@@ -102,7 +116,7 @@ function createSaveButton(voting_local, index) {
     return saveButton;
 }
 
-function createButtonElement(button, button_color, clicks) {
+function createButtonElement2(button, button_color, clicks) {
     const buttonDiv = document.createElement('div');
     buttonDiv.className = 'button-container mb-2';
     buttonDiv.style.display = 'inline-block';
@@ -111,20 +125,41 @@ function createButtonElement(button, button_color, clicks) {
     const anchor = document.createElement('a');
     anchor.className = `btn ${button_color} me-2`;
     anchor.innerHTML = `Botão ${button + 1} <span id="counter${button}" class="badge bg-secondary">${clicks}</span>`;
-    anchor.onclick = () => sendPostRequest(button, incrementCounter(button));
+    anchor.onclick = () => sendPostRequest(button, incrementCounter(button), button_color);
 
     const colorSelect = createColorSelect(button_color);
 
     buttonDiv.appendChild(colorSelect);
     buttonDiv.appendChild(anchor);
-
-    return buttonDiv;
+    return buttonDiv
 }
 
-function sendPostRequest(button, clicks, color = null) {
-    let data = { user: user, voting: voting, button: button, clicks: clicks, color: color };
+function createButtonElement(button, button_color, clicks) {
+    saveButtonToLocalStorage(button, button_color, clicks)
+    return createButtonElement2(button, button_color, clicks)
+}
 
-    let buttons = JSON.parse(localStorage.getItem(voting + '_buttons')) || [];
+function saveButtonToLocalStorage(button, color, clicks) {
+    let data = { user: Config.user, voting: Config.voting, button: button, clicks: clicks, color: color };
+    let buttons = JSON.parse(localStorage.getItem(Config.voting + '_buttons')) || [];
+    buttons.push(data);
+    localStorage.setItem(Config.voting + '_buttons', JSON.stringify(buttons));
+}
+
+function save_color_of_button(color, button) {
+    console.log(button)
+    let buttons = JSON.parse(localStorage.getItem(Config.voting + '_buttons')) || [];
+    let buttonIndex = buttons.findIndex(b => b.button === button);
+    console.log(buttons[buttonIndex]['color'])
+    buttons[buttonIndex]['color'] = color;
+    console.log(buttons[buttonIndex]['color'])
+    localStorage.setItem(Config.voting + '_buttons', JSON.stringify(buttons));
+}
+
+function sendPostRequest(button, clicks, color) {
+    let data = { user: Config.user, voting: Config.voting, button: button, clicks: clicks, color: color };
+
+    let buttons = JSON.parse(localStorage.getItem(Config.voting + '_buttons')) || [];
     let buttonIndex = buttons.findIndex(b => b.button === button);
 
     if (buttonIndex >= 0) {
@@ -133,7 +168,7 @@ function sendPostRequest(button, clicks, color = null) {
         buttons.push(data);
     }
 
-    localStorage.setItem(voting + '_buttons', JSON.stringify(buttons));
+    localStorage.setItem(Config.voting + '_buttons', JSON.stringify(buttons));
 
     fetch('/buttons/post.php', {
         method: 'POST',
@@ -149,8 +184,11 @@ function sendPostRequest(button, clicks, color = null) {
 function createColorSelect(button_color) {
     const colorSelect = document.createElement('select');
     colorSelect.className = 'form-select d-inline-block w-auto me-2';
+    // colorSelect.id = generateId()
     colorSelect.onchange = function() {
         this.nextElementSibling.className = `btn ${this.value} me-2`;
+        let index = Array.prototype.indexOf.call(this.parentNode.parentNode.children, this.parentNode)
+        save_color_of_button(this.value, index)
     };
 
     Config.colors.forEach(color => {
@@ -168,17 +206,6 @@ function incrementCounter(buttonIndex) {
     let counter = document.getElementById(`counter${buttonIndex}`);
     let newCount = parseInt(counter.textContent) + 1;
     counter.textContent = newCount;
-
-    // Salvar no localStorage
-    // let buttons = JSON.parse(localStorage.getItem(voting + '_buttons')) || [];
-    // buttons = buttons.map(button => {
-    //     if (button.button === buttonIndex) {
-    //         button.clicks = newCount;
-    //     }
-    //     return button;
-    // });
-    // localStorage.setItem(voting + '_buttons', JSON.stringify(buttons));
-
     return newCount;
 }
 
