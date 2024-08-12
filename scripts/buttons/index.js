@@ -287,3 +287,4 @@ function alert(message, type = 'success') {
         </div>`;
     alertPlaceholder.append(wrapper);
 }
+

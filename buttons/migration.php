@@ -15,5 +15,7 @@ $db->exec("CREATE TABLE IF NOT EXISTS buttons (
     CHECK(color IN ('btn-danger', 'btn-primary', 'btn-success', 'btn-warning', 'btn-info', 'btn-dark'))
 );");
 
+$db->exec('PRAGMA journal_mode = WAL;');
+
 echo "Tabela 'buttons' criada com sucesso!";
 ?>
