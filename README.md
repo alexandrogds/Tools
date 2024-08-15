@@ -18,7 +18,7 @@ source venv/bin/activate
 # Dev Windows
 ```bash
 # crie um env too
-pip install -r requirements.txt
+pip install -r requeriments.txt
 cd backend_flask\buttons\
 set FLASK_APP=app.py; set FLASK_ENV=development; flask run
 ```

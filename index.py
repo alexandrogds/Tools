@@ -63,7 +63,7 @@ def main():
             else:
                 file = file_path
             salvar_arquivo(soup, texts[i], lang_code, file)
-            print(f"Tradução para {lang_name} ({lang_code}) salva em /#/{lang_code}/{texts[i]}/{file}.")
+            print(f"Tradução para {lang_name} ({lang_code}) salva em /!/{lang_code}/{texts[i]}/{file}.")
             with open('sitemap', 'a') as f: f.write(f'https://tests.dev.br/!/{lang_code}/{texts[i]}/{file}')
             # input('Enter = Continuar')
         for file_path in file_paths:
