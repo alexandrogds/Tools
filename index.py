@@ -4,6 +4,7 @@
 Ediçoes finais de arquivos e geração das
 páginas para cada idioma.
 """
+import threading
 
 from bs4 import BeautifulSoup
 from lib import *
@@ -31,7 +32,7 @@ def main():
     #     for lang in languages:
     #         if lang.language_code == code:
     #             texts += [lang.display_name]
-    
+
     with open('supported_languages.json', 'r', encoding='utf-8') as f: texts = json.loads(f.read())
     # with open('supported_languages.json', 'w', encoding='utf-8') as f: f.write(json.dumps(texts, ensure_ascii=False))
     # input('texts serializados, enter para continuar, comente a geração da variável texts e carregue ela do arquivo')
@@ -41,7 +42,7 @@ def main():
         lang_code = languages[i].language_code
         lang_name = languages[i].display_name
 
-        for file_path in file_paths:
+        def x1(file_path, lang_code, lang_name):
             conteudo = ler_arquivo_local(file_path)
             if conteudo.startswith("Erro ao ler o arquivo:"):
                 print(conteudo)
@@ -65,6 +66,19 @@ def main():
             print(f"Tradução para {lang_name} ({lang_code}) salva em /#/{lang_code}/{texts[i]}/{file}.")
             with open('sitemap', 'a') as f: f.write(f'https://tests.dev.br/!/{lang_code}/{texts[i]}/{file}')
             # input('Enter = Continuar')
+        for file_path in file_paths:
+            threads = threading.Thread(target=x1, args=(file_path, lang_code, lang_name,))
+            threads.append(thread)
+            thread.start()
+
+            # Aguardando todas as threads terminarem
+            for thread in threads:
+                thread.join()
+
+
+            # Iniciando a thread
+
+            print("Threads finalizada!")
 
 if __name__ == "__main__":
     main()
