@@ -1,16 +1,32 @@
 import os
 import re
 from bs4 import NavigableString
-from google.cloud import translate_v2 as translate
+from google.cloud import translate
 import json
 from datetime import datetime
+from dotenv import load_dotenv
 
-def list_languages() -> dict:
-    """Lists all available languages."""
-    translate_client = translate.Client()
-    results = translate_client.get_languages()
-    
-    return results
+load_dotenv()
+
+def get_supported_languages(project_id: str = os.getenv("GOOGLE_CLOUD_PROJECT_ID"), 
+                            display_language_code: str = "pt"):
+    """Obtém uma lista de códigos de idiomas suportados e seus nomes no idioma especificado.
+
+    Args:
+        project_id: O ID do projeto do GCP.
+        display_language_code: O código do idioma no qual os nomes dos idiomas serão exibidos.
+
+    Returns:
+        Uma lista de idiomas suportados com seus códigos e nomes.
+    """
+    client = translate.TranslationServiceClient()
+    parent = f"projects/{project_id}/locations/global"
+    response = client.get_supported_languages(parent=parent, display_language_code=display_language_code)
+
+    # for language in response.languages:
+    #     print(f"Código da Língua: {language.language_code}, Nome da Língua: {language.display_name}")
+
+    return response.languages
 
 def price(text):
     with open('price.json', 'r') as arquivo: dados = json.load(arquivo)
@@ -20,12 +36,24 @@ def price(text):
     else:
         dados[now.strftime('%d/%m/%Y')] = len(text)
 
-def translate_text(target: str, text: str) -> str:
-    """Translates text into the target language."""
-    translate_client = translate.Client()
-    result = translate_client.translate(text, target_language=target)
-    price(text)
-    return result["translatedText"]
+def translate_text(
+    text: str = "YOUR_TEXT_TO_TRANSLATE", project_id: str = "YOUR_PROJECT_ID", target: str = ''
+):
+    """Translating Text."""
+
+    client = translate.TranslationServiceClient()
+
+    location = "global"
+
+    parent = f"projects/{project_id}/locations/{location}"
+
+    response = client.translate_text(
+        parent=parent,
+        contents=[text],
+        mime_type="text/plain",  # mime types: text/plain, text/html
+        target_language_code=target,
+    )
+    return response.translations[0].translated_text
 
 def ler_arquivo_local(file_path):
     try:
@@ -92,11 +120,11 @@ def traduzir_script_js(html_content, dest_lang, is_index=None):
 
     return translated_content
 
-def salvar_arquivo(soup, dest_lang, dir_name=None):
+def salvar_arquivo(soup, lang_text, dest_lang, file, dir_name=None):
     if dir_name:
-        dir_path = f"./lang/{dest_lang}/{dir_name}"
+        dir_path = f"./#/{dest_lang}/{lang_text}/{dir_name}"
     else:
-        dir_path = f"./lang/{dest_lang}"
+        dir_path = f"./#/{dest_lang/{lang_text}}"
 
     os.makedirs(dir_path, exist_ok=True)
     file_path = os.path.join(dir_path, "index.html")

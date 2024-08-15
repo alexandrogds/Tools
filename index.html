@@ -1,30 +1,448 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Tools.</title>
-	<meta name="description" content="Ferramentas online para uso.">
-    <meta name="keywords" content="ferramentas, online, web">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<script src="/scripts/lib.js"></script>
-    <link rel="stylesheet" href="/styles/lib.css">
-	<!-- <script src="/scripts/redirect-to-lang.js" id="change-lang-autos"></script> -->
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid" id="menu">
-        </div>
-    </nav>
-
-    <div class="container mt-4" id="container">
-        <h1 class="display-4">Welcome</h1>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="/scripts/url.js"></script>
-    <script src="/scripts/begin/logo.js"></script>
-    <script src="/scripts/menu.js"></script>
-    <script src="/scripts/begin/links.js"></script>
-</body>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Web Tools.
+  </title>
+  <meta content="Ferramentas online para uso." name="description"/>
+  <meta content="ferramentas, online, web" name="keywords"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+  <script async="" src="/scripts/lib.js">
+  </script>
+  <link href="/styles/lib.css" rel="stylesheet"/>
+  <!-- <script src="/scripts/redirect-to-lang.js" id="change-lang-autos"></script> -->
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select">
+    <option></option>
+     <option title="IsiGalicia" value="'ōlelo_hawaiʻi">
+      'Ōlelo Hawaiʻi
+     </option>
+     <option title="ދިވެހި..." value="afrikaans">
+      Afrikaans
+     </option>
+     <option title="ইছি-অসমীয়া" value="assamese">
+      Assamese
+     </option>
+     <option title="עִברִית" value="asụsụ_igbo">
+      Asụsụ Igbo
+     </option>
+     <option title="Isi-aymara" value="aymara">
+      Aymara
+     </option>
+     <option title="Isi-azərbaycanlı" value="azərbaycan_dili">
+      Azərbaycan dili
+     </option>
+     <option title="इसिमैथिली" value="bahasa_melayu">
+      Bahasa Melayu
+     </option>
+     <option title="Isi-Nederlands" value="bambara">
+      Bambara
+     </option>
+     <option title="日本語" value="basa_jawa">
+      Basa Jawa
+     </option>
+     <option title="Isi Basa Jawa" value="basa_jawa">
+      Basa Jawa
+     </option>
+     <option title="Sotho" value="basa_sunda">
+      Basa Sunda
+     </option>
+     <option title="Isi-íslenskt" value="bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Isi-Gaeilge" value="cebuano">
+      Cebuano
+     </option>
+     <option title="Shona" value="chishona">
+      ChiShona
+     </option>
+     <option title="ଇଶି-ଓଡିଆ (ଓଡିଆ)" value="chichewa">
+      Chichewa
+     </option>
+     <option title="Isi-Uyghur" value="corsu">
+      Corsu
+     </option>
+     <option title="IsiZulu" value="cymraeg">
+      Cymraeg
+     </option>
+     <option title="IsiBasque" value="dansk">
+      Dansk
+     </option>
+     <option title="डोगरी" value="deutsch">
+      Deutsch
+     </option>
+     <option title="беларускі" value="divehi">
+      Divehi
+     </option>
+     <option title="বাংলা" value="dogri">
+      Dogri
+     </option>
+     <option title="Afrikaans" value="english">
+      English
+     </option>
+     <option title="bosanski" value="esperanto">
+      Esperanto
+     </option>
+     <option title="català" value="ewe">
+      Ewe
+     </option>
+     <option title="română" value="faʻa-samoa">
+      Faʻa-Samoa
+     </option>
+     <option title="Cebuano" value="filipino">
+      Filipino
+     </option>
+     <option title="Chehua" value="filipino">
+      Filipino
+     </option>
+     <option title="IsiCorsica" value="français">
+      Français
+     </option>
+     <option title="Sis kreyòl ayisyen" value="frysk">
+      Frysk
+     </option>
+     <option title="IsiHmong" value="gaeilge">
+      Gaeilge
+     </option>
+     <option title="IsiCzech" value="ganda">
+      Ganda
+     </option>
+     <option title="Filipino" value="guarani">
+      Guarani
+     </option>
+     <option title="इसिसंस्कृतम्" value="gàidhlig">
+      Gàidhlig
+     </option>
+     <option title="Français" value="harshen_hausa">
+      Harshen Hausa
+     </option>
+     <option title="Isiગુજરાતી" value="hmong">
+      Hmong
+     </option>
+     <option title="ខ្មែរ" value="ikinyarwanda">
+      Ikinyarwanda
+     </option>
+     <option title="עִברִית" value="iloko">
+      Iloko
+     </option>
+     <option title="हिंदी" value="indonesia">
+      Indonesia
+     </option>
+     <option title="Español" value="isixhosa">
+      IsiXhosa
+     </option>
+     <option title="magyar" value="italiano">
+      Italiano
+     </option>
+     <option title="kiswahili" value="kiswahili">
+      Kiswahili
+     </option>
+     <option title="IsiKinyarwanda" value="konkani">
+      Konkani
+     </option>
+     <option title="IsiFrasian" value="kreyòl_ayisyen">
+      Kreyòl Ayisyen
+     </option>
+     <option title="한국인" value="krio">
+      Krio
+     </option>
+     <option title="Kurdî (ji Kurmancî)" value="kurdish_(sorani)">
+      Kurdish (Sorani)
+     </option>
+     <option title="Krio" value="kurdî_(kurmancî)">
+      Kurdî (Kurmancî)
+     </option>
+     <option title="ພາສາລາວ" value="latin">
+      Latin
+     </option>
+     <option title="latviski" value="lingala">
+      Lingala
+     </option>
+     <option title="IsiLietuva" value="lëtzebuergesch">
+      Lëtzebuergesch
+     </option>
+     <option title="Isi Lëtzebuergesch" value="maithili">
+      Maithili
+     </option>
+     <option title="IsiMalay" value="malti">
+      Malti
+     </option>
+     <option title="IsiMaori" value="meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="मराठी" value="mizo">
+      Mizo
+     </option>
+     <option title="ഇസിമലയാളം" value="māori">
+      Māori
+     </option>
+     <option title="भोजपुरी" value="nederlands">
+      Nederlands
+     </option>
+     <option title="မြန်မာ (ဗမာ)၊" value="northern_sotho">
+      Northern Sotho
+     </option>
+     <option title="English" value="odia_(oriya)">
+      Odia (Oriya)
+     </option>
+     <option title="IsiNorwegia" value="oromo">
+      Oromo
+     </option>
+     <option title="אידיש" value="o‘zbek">
+      O‘zbek
+     </option>
+     <option title="آیسی فارسی" value="português">
+      Português
+     </option>
+     <option title="Português" value="quechua">
+      Quechua
+     </option>
+     <option title="IsiQuechua" value="română">
+      Română
+     </option>
+     <option title="Isi i Samoa" value="sanskrit">
+      Sanskrit
+     </option>
+     <option title="ИсиСербиан" value="sesotho">
+      Sesotho
+     </option>
+     <option title="Isi-Shqipëri" value="shqip">
+      Shqip
+     </option>
+     <option title="Soomaali" value="soomaali">
+      Soomaali
+     </option>
+     <option title="Татар" value="tatar">
+      Tatar
+     </option>
+     <option title="ትግርኛ ምልኣዮ" value="tigrinya">
+      Tigrinya
+     </option>
+     <option title="IsiTsonga" value="tsonga">
+      Tsonga
+     </option>
+     <option title="IsiTwi" value="twi">
+      Twi
+     </option>
+     <option title="IsiTurkmen" value="türkmençe">
+      Türkmençe
+     </option>
+     <option title="IsiTürkçe" value="türkçe">
+      Türkçe
+     </option>
+     <option title="IsiXhosa" value="uyghur">
+      Uyghur
+     </option>
+     <option title="Ko yoruba" value="việt">
+      Việt
+     </option>
+     <option title="Isi-Igbo" value="bosanski">
+      bosanski
+     </option>
+     <option title="Isi-Indonesia" value="català">
+      català
+     </option>
+     <option title="български" value="eesti">
+      eesti
+     </option>
+     <option title="basa Sunda" value="español">
+      español
+     </option>
+     <option title="Isi-Esperanto" value="euskara">
+      euskara
+     </option>
+     <option title="Druga Hrvatska" value="galego">
+      galego
+     </option>
+     <option title="Isi-Uzbek" value="hrvatski">
+      hrvatski
+     </option>
+     <option title="Latinus" value="latviešu">
+      latviešu
+     </option>
+     <option title="Lingala" value="lietuvių">
+      lietuvių
+     </option>
+     <option title="Hausa" value="magyar">
+      magyar
+     </option>
+     <option title="Исимакедонски" value="malagasy">
+      malagasy
+     </option>
+     <option title="नेपाली" value="norsk">
+      norsk
+     </option>
+     <option title="Padi" value="polski">
+      polski
+     </option>
+     <option title="IsiSlovak" value="slovenčina">
+      slovenčina
+     </option>
+     <option title="IsiSlovenija" value="slovenščina">
+      slovenščina
+     </option>
+     <option title="中文（簡體）" value="suomi">
+      suomi
+     </option>
+     <option title="svenska" value="svenska">
+      svenska
+     </option>
+     <option title="ʻŌlelo Hawaiʻi" value="íslenska">
+      íslenska
+     </option>
+     <option title="Bamanankan kan" value="čeština">
+      čeština
+     </option>
+     <option title="Filipino" value="ελληνικά">
+      Ελληνικά
+     </option>
+     <option title="Isi-Eesti" value="беларуская">
+      Беларуская
+     </option>
+     <option title="ꯏꯁꯤꯃꯦꯏꯇꯦꯏꯂꯣꯟ (saseManipuri)" value="монгол">
+      Монгол
+     </option>
+     <option title="Тоҷик не" value="тоҷикӣ">
+      Тоҷикӣ
+     </option>
+     <option title="Iloko-Iloko" value="български">
+      български
+     </option>
+     <option title="ئیسیکوردی (saseSorani)" value="кыргызча">
+      кыргызча
+     </option>
+     <option title="Oluganda" value="македонски">
+      македонски
+     </option>
+     <option title="Русский" value="русский">
+      русский
+     </option>
+     <option title="Gàidhlig na h-Alba" value="српски">
+      српски
+     </option>
+     <option title="Tiếng Việt" value="українська">
+      українська
+     </option>
+     <option title="ಐಸಿಕನ್ನಡ" value="қазақ">
+      қазақ
+     </option>
+     <option title="Իսի-հայկական" value="հայերեն">
+      հայերեն
+     </option>
+     <option title="ਪੰਜਾਬੀ" value="יידיש">
+      יידיש
+     </option>
+     <option title="ისი საქართველო" value="עברית">
+      עברית
+     </option>
+     <option title="ελληνικά" value="עברית">
+      עברית
+     </option>
+     <option title="IsiCymraeg" value="اردو">
+      اردو
+     </option>
+     <option title="إسي-عربي" value="العربية">
+      العربية
+     </option>
+     <option title="سنڌي" value="سنڌي">
+      سنڌي
+     </option>
+     <option title="پښتو" value="فارسی">
+      فارسی
+     </option>
+     <option title="Italiano" value="پښتو">
+      پښتو
+     </option>
+     <option title="Монгол" value="नेपाली">
+      नेपाली
+     </option>
+     <option title="IsiMaltese" value="मराठी">
+      मराठी
+     </option>
+     <option title="IsiGuarani" value="हिन्दी">
+      हिन्दी
+     </option>
+     <option title="Ɛ̃" value="বাংলা">
+      বাংলা
+     </option>
+     <option title="Polski" value="ਪੰਜਾਬੀ">
+      ਪੰਜਾਬੀ
+     </option>
+     <option title="suomalainen" value="ગુજરાતી">
+      ગુજરાતી
+     </option>
+     <option title="தமிழில் இல்லை" value="தமிழ்">
+      தமிழ்
+     </option>
+     <option title="తెలుగు" value="తెలుగు">
+      తెలుగు
+     </option>
+     <option title="Isi Basa Jawa" value="ಕನ್ನಡ">
+      ಕನ್ನಡ
+     </option>
+     <option title="IsiMalagasy" value="മലയാളം">
+      മലയാളം
+     </option>
+     <option title="සිංහල" value="සිංහල">
+      සිංහල
+     </option>
+     <option title="แบบไทย" value="ไทย">
+      ไทย
+     </option>
+     <option title="IsiKyrgyz" value="ລາວ">
+      ລາວ
+     </option>
+     <option title="Mizo tawng" value="မြန်မာ">
+      မြန်မာ
+     </option>
+     <option title="dansk" value="ქართული">
+      ქართული
+     </option>
+     <option title="ኢሲ-አማርኛ" value="አማርኛ">
+      አማርኛ
+     </option>
+     <option title="қазақ" value="ខ្មែរ">
+      ខ្មែរ
+     </option>
+     <option title="آئی ایس آئی اردو" value="中文_(繁體)">
+      中文 (繁體)
+     </option>
+     <option title="Isi-Oromo" value="中文（简体）">
+      中文（简体）
+     </option>
+     <option title="Ісі-Україна" value="中文（简体）">
+      中文（简体）
+     </option>
+     <option title="Deutsch" value="日本語">
+      日本語
+     </option>
+     <option title="कोंकणी" value="한국어">
+      한국어
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    Welcome
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
 </html>

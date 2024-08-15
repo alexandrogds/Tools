@@ -27,5 +27,9 @@ set FLASK_APP=app.py; set FLASK_ENV=development; flask run
 Use os arquivos que criam a base de dados com o console na pasta raiz de Tools para que a base de dados SQLite fique na raiz.
 
 # Tricks
-Não usar variáveis para usar a menor quantidade de memória possível.
-Chamar direto.
+Não usar variáveis para usar a menor quantidade de memória possível. Chamar direto.
+
+# Docs
+As edições ocorrem em buttons.
+Os arquivos gerados são servidos por #.
+Rodar os migrations em buttons.

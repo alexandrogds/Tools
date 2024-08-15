@@ -1,34 +1,37 @@
+
+"""Gerar o site
+
+Ediçoes finais de arquivos e geração das
+páginas para cada idioma.
+"""
+
 from bs4 import BeautifulSoup
 from lib import *
+from dotenv import load_dotenv
 
 def main():
+    load_dotenv()
     file_paths = ["index.html", 'buttons/index.html']
-    languages = list_languages()
-
-    for file_path in file_paths:
-        conteudo = ler_arquivo_local(file_path)
-        if conteudo.startswith("Erro ao ler o arquivo:"):
-            print(conteudo)
-            return
-        soup = BeautifulSoup(conteudo, 'lxml')
-        options = []
-        for lang in languages:
-            options += [{'text': lang['name'], 'title': translate_text(lang['language'], lang['name']), 'value': lang['language']}]
-        options_sorted = sorted(options, key=lambda x: x['text'])
-        select = soup.new_tag('select', **{'class': 'form-select'})
-        for option in options_sorted:
-            opt = soup.new_tag('option', value=option['text'].lower().replace(' ', '_'), title=option['title'])
-            opt.string = option['text']
-            select.append(opt)
-        navbar = soup.find(id='navbarNav')
-        if navbar:
-            navbar.append(select)
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.write(str(soup.prettify()))
-
+    project = os.getenv("GOOGLE_CLOUD_PROJECT_ID")
+    languages = get_supported_languages(project, 'en')
+    codes = []
     for lang in languages:
-        lang_code = lang['language']
-        lang_name = lang['name']
+        codes += [lang.language_code]
+    texts = []
+    for code in codes:
+        try:
+            languages = get_supported_languages(project, code)
+        except:
+            print(code, 'não aceito no target em get_supported_languages colocando en')
+            languages = get_supported_languages(project, 'en')
+
+        for lang in languages:
+            if lang.language_code == code:
+                texts += [lang.display_name]
+
+    for i in range(len(languages)):
+        lang_code = languages[i].language_code
+        lang_name = languages[i].display_name
 
         for file_path in file_paths:
             conteudo = ler_arquivo_local(file_path)
@@ -45,8 +48,14 @@ def main():
             soup = BeautifulSoup(translated_content, 'html.parser')
             translate_seo(soup, lang_code)
             extract_script(soup, 'change-lang-autos')
-            salvar_arquivo(soup, lang_code)
-            print(f"Tradução para {lang_name} ({lang_code}) salva em /lang/{lang_code}/index.html.")
+
+            if len(file_path.split('/')) > 1:
+                file = translate_text(file_path.split('/')[0], os.getenv("GOOGLE_CLOUD_PROJECT_ID"), lang_code) + '.html'
+            else:
+                file = file_path
+            salvar_arquivo(soup, texts[i], lang_code, file)
+            print(f"Tradução para {lang_name} ({lang_code}) salva em /#/{lang_code}/{texts[i]}/{file}.")
+            input('Enter = Continuar')
 
 if __name__ == "__main__":
     main()

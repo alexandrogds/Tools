@@ -18,3 +18,8 @@ if (!segments[1]) {
 } else {
     aux = base + '/' + segments[1] + '/'
 }
+
+folderPath = null
+segments = null
+domain = null
+base = null
