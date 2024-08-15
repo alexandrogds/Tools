@@ -30,7 +30,7 @@ function changeLanguage(lang) {
     // .catch(error => {
     //     console.error('Erro ao buscar os dados:', error);
     // });
-        destiny += "/" + lang.replace(/_/g, '/');
+        destiny += "/!/" + lang.replace(/_/g, '/');
         window.location.href = destiny;
 
 }
