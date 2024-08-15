@@ -7,6 +7,7 @@ function changeLanguage(lang) {
 	if (window.location.port) {
 		destiny += ':' + window.location.port;
 	}
+    // agora deve ser #/(iso idioma duas letras)/(nome do idioma em language nativa)
 	destiny += "/lang/" + lang;
     window.location.href = destiny;
 }

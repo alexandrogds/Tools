@@ -36,15 +36,15 @@ def price(text):
     else:
         dados[now.strftime('%d/%m/%Y')] = len(text)
 
-def translate_text(
-    text: str = "YOUR_TEXT_TO_TRANSLATE", project_id: str = "YOUR_PROJECT_ID", target: str = ''
-):
+def translate_text(target: str = '',
+    text: str = "YOUR_TEXT_TO_TRANSLATE"):
     """Translating Text."""
 
     client = translate.TranslationServiceClient()
 
     location = "global"
 
+    project_id = os.getenv("GOOGLE_CLOUD_PROJECT_ID")
     parent = f"projects/{project_id}/locations/{location}"
 
     response = client.translate_text(
@@ -64,9 +64,13 @@ def ler_arquivo_local(file_path):
         return f"Erro ao ler o arquivo: {e}"
 
 def traduzir_textos(soup, dest_lang):
-    for tag in soup.find_all(True):
+    a = soup.find_all(True)
+    for i in range(len(a)):
+        tag = a[i]
         if tag.name not in ["style", "script"]:
-            for content in tag.contents:
+            b = tag.contents
+            for j in range(len(b)):
+                content = b[j]
                 if isinstance(content, NavigableString):
                     text = str(content).strip()
                     # if text and not (tag.name == 'option' and tag.parent.name == 'select'):
@@ -74,7 +78,9 @@ def traduzir_textos(soup, dest_lang):
                         translated_text = translate_text(dest_lang, text)
                         content.replace_with(translated_text)
 
-    for option in soup.find_all('option'):
+    a = soup.find_all('option')
+    for i in range(len(a)):
+        option = a[i]
         if option.has_attr('title'):
             try:
                 translated_title = translate_text(dest_lang, option['title'])
@@ -124,7 +130,7 @@ def salvar_arquivo(soup, lang_text, dest_lang, file, dir_name=None):
     if dir_name:
         dir_path = f"./#/{dest_lang}/{lang_text}/{dir_name}"
     else:
-        dir_path = f"./#/{dest_lang/{lang_text}}"
+        dir_path = f"./#/{dest_lang}/{lang_text}"
 
     os.makedirs(dir_path, exist_ok=True)
     file_path = os.path.join(dir_path, "index.html")
@@ -155,11 +161,23 @@ def translate_seo(soup, dest_lang):
     images = soup.find_all('img')
 
     for anchor in anchors:
-        original_text = anchor['title']
+        try:
+            original_text = anchor['title']
+        except:
+            original_text = 'hello'
         translated_text = translate_text(dest_lang, original_text)
-        anchor['title'] = translated_text
+        try:
+            anchor['title'] = translated_text
+        except:
+            pass
 
     for img in images:
-        original_text = img['alt']
+        try:
+            original_text = img['alt']
+        except:
+            original_text = 'hello'
         translated_text = translate_text(dest_lang, original_text)
-        img['alt'] = translated_text
+        try:
+            img['alt'] = translated_text
+        except:
+            pass
