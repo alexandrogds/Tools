@@ -8,8 +8,31 @@ function changeLanguage(lang) {
 		destiny += ':' + window.location.port;
 	}
     // agora deve ser #/(iso idioma duas letras)/(nome do idioma em language nativa)
-	destiny += "/lang/" + lang;
-    window.location.href = destiny;
+
+    // const baseURL = '/get.php';
+    // let params = {'idioma': lang}
+    // const queryString = new URLSearchParams(params).toString();
+
+    // // Combine a URL base com a string de query
+    // const urlComParams = `${baseURL}?${queryString}`;
+    // fetch(urlComParams)
+    // .then(response => {
+    //     if (!response.ok) {
+    //     throw new Error('Erro na requisição: ' + response.status);
+    //     }
+    //     return response.text(); // converte a resposta em JSON
+    // })
+    // .then(data => {
+    //     let lang_in_native = data
+    //     destiny += "/#/" + lang + '/' + lang_in_native;
+    //     window.location.href = destiny;
+    // })
+    // .catch(error => {
+    //     console.error('Erro ao buscar os dados:', error);
+    // });
+        destiny += "/" + lang.replace(/_/g, '/');
+        window.location.href = destiny;
+
 }
 
 function getOptionTextByValue(selectId, value) {
