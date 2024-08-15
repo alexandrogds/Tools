@@ -128,9 +128,9 @@ def traduzir_script_js(html_content, dest_lang, is_index=None):
 
 def salvar_arquivo(soup, lang_text, dest_lang, file, dir_name=None):
     if dir_name:
-        dir_path = f"./#/{dest_lang}/{lang_text}/{dir_name}"
+        dir_path = f"./!/{dest_lang}/{lang_text}/{dir_name}"
     else:
-        dir_path = f"./#/{dest_lang}/{lang_text}"
+        dir_path = f"./!/{dest_lang}/{lang_text}"
 
     os.makedirs(dir_path, exist_ok=True)
     file_path = os.path.join(dir_path, "index.html")
