@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ti">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   መሳርሒታት መርበብ ሓበሬታ።
+  </title>
+  <meta content="ንኣጠቓቕማ ዝኸውን ናይ ኦንላይን መሳርሒታት።" name="description"/>
+  <meta content="መሳርሒታት፣ ብኢንተርነት፣ መርበብ ሓበሬታ" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/ስክሪፕትታት/ናብ-lang.js-ምቕናዕ" id="ቀይር-ቋንቋ-ኣውቶስ"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="ሃዋይኛ" value="haw_'ōlelo_hawaiʻi">
+      'ሃዋይ
+     </option>
+     <option title="ኣፍሪቃዊ" value="af_afrikaans">
+      ኣፍሪቃዊ
+     </option>
+     <option title="ኣስመራ" value="as_assamese">
+      ኣሰማሰ
+     </option>
+     <option title="ኢግቦ" value="ig_asụsụ_igbo">
+      ቋንቋ ኢግቦ
+     </option>
+     <option title="ኣይማራ" value="ay_aymara">
+      ኣይማራ
+     </option>
+     <option title="ኣዘርባጃኖ" value="az_azərbaycan_dili">
+      ቋንቋ ኣዘርባጃን።
+     </option>
+     <option title="ግዝኣት" value="ms_bahasa_melayu">
+      ቋንቋ ማሌዥያ
+     </option>
+     <option title="ይጥቀሙሉ።" value="bm_bambara">
+      ይለብስዎ እዮም።
+     </option>
+     <option title="ጃቫናዊ" value="jw_basa_jawa">
+      ቋንቋ ጃቫ
+     </option>
+     <option title="ጃቫናዊ" value="jv_basa_jawa">
+      ቋንቋ ጃቫ
+     </option>
+     <option title="ሱዳናዊ" value="su_basa_sunda">
+      ቋንቋ ሱንዳናዊ
+     </option>
+     <option title="ብሆጅፑሪ" value="bho_bhojpuri">
+      ብሆጅፑሪ
+     </option>
+     <option title="ሴቡኣኖ" value="ceb_cebuano">
+      ሴቡኣኖ
+     </option>
+     <option title="ሾና" value="sn_chishona">
+      ኢንግሊሽ
+     </option>
+     <option title="ቻይናውያን" value="ny_chichewa">
+      ቻይናዊ
+     </option>
+     <option title="ዓይነት ትምህርቲ" value="co_corsu">
+      ኮርሲካዊ
+     </option>
+     <option title="ዌልሳዊ" value="cy_cymraeg">
+      ዌልሳዊ
+     </option>
+     <option title="ደንማርካዊ" value="da_dansk">
+      ደንማርካዊ
+     </option>
+     <option title="ጀርመንኛ" value="de_deutsch">
+      ጀርመንኛ
+     </option>
+     <option title="ዲቨሂ" value="dv_divehi">
+      ዲቨሂ
+     </option>
+     <option title="ዶግሪ" value="doi_dogri">
+      ዶግሪ
+     </option>
+     <option title="ኢንግሊሽ" value="en_english">
+      ኢንግሊሽ
+     </option>
+     <option title="ኤስፐራንቶ" value="eo_esperanto">
+      ኤስፐራንቶ
+     </option>
+     <option title="ወረቐት" value="ee_ewe">
+      ቆጽሊ
+     </option>
+     <option title="ዮሩባ" value="yo_èdè_yorùbá">
+      ቋንቋ ዮሩባ
+     </option>
+     <option title="ሳሞኣኖ" value="sm_faʻa-samoa">
+      ሳሞኣዊ
+     </option>
+     <option title="ፊሊፒናዊ" value="tl_filipino">
+      ፊሊፒናዊ
+     </option>
+     <option title="ፊሊፒናዊ" value="fil_filipino">
+      ፊሊፒናዊ
+     </option>
+     <option title="ፈረንሳዊ" value="fr_français">
+      ፈረንሳዊ
+     </option>
+     <option title="ፍሪዝያዊ" value="fy_frysk">
+      ፍሪዝያዊ
+     </option>
+     <option title="ኣየርላንዳዊ ጋሊክ" value="ga_gaeilge">
+      ኣየርላንዳዊ
+     </option>
+     <option title="መልክዕ" value="lg_ganda">
+      መልክዕ
+     </option>
+     <option title="ጉራኒ" value="gn_guarani">
+      ጉራኒ
+     </option>
+     <option title="ስኮትላንዳዊ ጋሊክ" value="gd_gàidhlig">
+      ጋሊክኛ
+     </option>
+     <option title="ሃውሳ" value="ha_harshen_hausa">
+      ቋንቋ ሃውሳ
+     </option>
+     <option title="ህሞንግ" value="hmn_hmong">
+      ህሞንግ
+     </option>
+     <option title="ኪንያርዋንዳ" value="rw_ikinyarwanda">
+      ሩዋንዳዊ
+     </option>
+     <option title="ኣብ ውሽጢ" value="ilo_iloko">
+      ኣብ ውሽጢ
+     </option>
+     <option title="ኢንዶነዥያዊ" value="id_indonesia">
+      ኢንዶነዥያ
+     </option>
+     <option title="ዞሳ" value="xh_isixhosa">
+      ዞሳ
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      ዙሉ ዝበሃል
+     </option>
+     <option title="ጣልያናዊ" value="it_italiano">
+      ጣልያናዊ
+     </option>
+     <option title="ስዋሂሊ" value="sw_kiswahili">
+      ስዋሂሊ
+     </option>
+     <option title="ኮንካኒ" value="gom_konkani">
+      ኮንካኒ
+     </option>
+     <option title="ናይ ሃይቲ ክሪዮል" value="ht_kreyòl_ayisyen">
+      ናይ ሃይቲ ክሪዮል
+     </option>
+     <option title="ክሪዮ" value="kri_krio">
+      ክሪዮ
+     </option>
+     <option title="ኩርዲ (ሶራኒ)" value="ckb_kurdish_(sorani)">
+      ኩርዲ (ሶራኒ)
+     </option>
+     <option title="ቅጫ (ኩርማንጂ)" value="ku_kurdî_(kurmancî)">
+      ኩርዳስ (ኩርማንቺ)
+     </option>
+     <option title="ላቲን እዩ።" value="la_latin">
+      ላቲን እዩ።
+     </option>
+     <option title="ሊንጋላ" value="ln_lingala">
+      ሊንጋላ
+     </option>
+     <option title="ሉክሰምበርግ" value="lb_lëtzebuergesch">
+      ሉክሰምበርግ
+     </option>
+     <option title="ማይቲቲ" value="mai_maithili">
+      ማይቲቲ
+     </option>
+     <option title="ማልታኛ" value="mt_malti">
+      ማልታኛ
+     </option>
+     <option title="መይተይሎን (ማኒፑሪ)" value="mni-mtei_meiteilon_(manipuri)">
+      መይተይሎን (ማኒፑሪ)
+     </option>
+     <option title="ኢንግሊሽ" value="lus_mizo">
+      ኢንግሊሽ
+     </option>
+     <option title="ተፈጥራዊ" value="mi_māori">
+      ማኦሪ
+     </option>
+     <option title="ሆላንዳዊ" value="nl_nederlands">
+      ሆላንዳዊ
+     </option>
+     <option title="ሰሜናዊ ሶቶ" value="nso_northern_sotho">
+      ሰሜናዊ ሶቶ
+     </option>
+     <option title="ኦድያ (ኦርያ)" value="or_odia_(oriya)">
+      ኦድያ (ኦርያ)
+     </option>
+     <option title="ኦሮሞ" value="om_oromo">
+      ኦሮሞ
+     </option>
+     <option title="ኡዝቤክ" value="uz_o‘zbek">
+      ኡዝቤክ
+     </option>
+     <option title="Português" value="pt_português">
+      ፖርቱጋልኛ
+     </option>
+     <option title="ኲቹዋ" value="qu_quechua">
+      ቄቹዋ
+     </option>
+     <option title="ሮማናዊ" value="ro_română">
+      ኢንግሊሽ
+     </option>
+     <option title="ሳንስክሪት" value="sa_sanskrit">
+      ሳንስክሪት
+     </option>
+     <option title="ኢንግሊሽ" value="st_sesotho">
+      ኢንግሊሽ
+     </option>
+     <option title="ኣልባንያዊ" value="sq_shqip">
+      ኣልባንያዊ
+     </option>
+     <option title="ሶማላዊ" value="so_soomaali">
+      ሶማላዊ
+     </option>
+     <option title="ታርታሮስ ዝበሃል ምዃኑ ይፍለጥ" value="tt_tatar">
+      ታታር
+     </option>
+     <option title="ትግርኛ" value="ti_tigrinya">
+      ትግሪኛ
+     </option>
+     <option title="ፆንጋ" value="ts_tsonga">
+      ፆንጋ
+     </option>
+     <option title="ትዊ" value="ak_twi">
+      ትዊ
+     </option>
+     <option title="ቱርክመንት።" value="tk_türkmençe">
+      ቱርኪ
+     </option>
+     <option title="ቱርካዊ" value="tr_türkçe">
+      ቱርካዊ
+     </option>
+     <option title="ኡይጉር" value="ug_uyghur">
+      ኡይጉር
+     </option>
+     <option title="ቬትናማዊ" value="vi_việt">
+      ቬትናማዊ
+     </option>
+     <option title="ቦዝንያዊ" value="bs_bosanski">
+      ቦዝንያዊ
+     </option>
+     <option title="ካታሎንያዊ" value="ca_català">
+      ካታሎንያዊ
+     </option>
+     <option title="ኢስቶንያዊ" value="et_eesti">
+      ኢስቶንያዊ
+     </option>
+     <option title="ስጳኛ" value="es_español">
+      ስጳኛ
+     </option>
+     <option title="ባስክ" value="eu_euskara">
+      ባስክ
+     </option>
+     <option title="ጋሊሽያዊ" value="gl_galego">
+      ጋሊሽያዊ
+     </option>
+     <option title="ክሮኤሽያዊ" value="hr_hrvatski">
+      ክሮኤሽያዊ
+     </option>
+     <option title="ላቲቭያዊ" value="lv_latviešu">
+      ላቲቭያዊ
+     </option>
+     <option title="ሊትዋንያዊ" value="lt_lietuvių">
+      ሊትዋንያዊ
+     </option>
+     <option title="ሃንጋሪኛ" value="hu_magyar">
+      ሃንጋሪኛ
+     </option>
+     <option title="ማላጋሲ" value="mg_malagasy">
+      ማላጋሲ
+     </option>
+     <option title="ኖርወጃዊ" value="no_norsk">
+      ኖርወጃዊ
+     </option>
+     <option title="ፖላንዳዊ" value="pl_polski">
+      ፖላንዳዊ
+     </option>
+     <option title="ስሎቫክያ" value="sk_slovenčina">
+      ስሎቫክያ
+     </option>
+     <option title="ስሎቨንያዊ" value="sl_slovenščina">
+      ስሎቨንያዊ
+     </option>
+     <option title="finlandês" value="fi_suomi">
+      ፊንላንድኛ
+     </option>
+     <option title="ሽወደናዊ" value="sv_svenska">
+      ሽወደናዊ
+     </option>
+     <option title="ኣይስላንድኛ" value="is_íslenska">
+      ኣይስላንድኛ
+     </option>
+     <option title="ቸክ" value="cs_čeština">
+      ቸክ
+     </option>
+     <option title="ግሪኽኛ" value="el_ελληνικά">
+      ግሪኽኛ
+     </option>
+     <option title="ቤላሩሳዊ" value="be_беларуская">
+      ቤላሩሳዊ
+     </option>
+     <option title="ሞንጎል ዝበሃሉ ምዃኖም ይፍለጥ" value="mn_монгол">
+      ሞንጎልያ
+     </option>
+     <option title="ታጂክ" value="tg_тоҷикӣ">
+      ታጂክ
+     </option>
+     <option title="ቡልጋርያዊ" value="bg_български">
+      ቡልጋርያዊ
+     </option>
+     <option title="ኪርጊስታን።" value="ky_кыргызча">
+      ኪርጊዝኛ
+     </option>
+     <option title="መቄዶንያዊ" value="mk_македонски">
+      መቄዶንያዊ
+     </option>
+     <option title="russo ዝብል ጽሑፍ ኣሎ።" value="ru_русский">
+      ሩስያዊ
+     </option>
+     <option title="ሰርብያዊ" value="sr_српски">
+      ሰርብያዊ
+     </option>
+     <option title="ዩክሬናዊ" value="uk_українська">
+      ዩክሬናዊ
+     </option>
+     <option title="ካዛክ" value="kk_қазақ">
+      ካዛክ
+     </option>
+     <option title="ኣርመንያዊ" value="hy_հայերեն">
+      ኣርመንያዊ፤
+     </option>
+     <option title="ኢዲቸ" value="yi_יידיש">
+      ይዲሽኛ
+     </option>
+     <option title="እብራይስጢ" value="iw_עברית">
+      እብራይስጢ
+     </option>
+     <option title="እብራይስጢ" value="he_עברית">
+      እብራይስጢ
+     </option>
+     <option title="urdu" value="ur_اردو">
+      ኡርዱ
+     </option>
+     <option title="ዓረብኛ" value="ar_العربية">
+      ዓረብኛ
+     </option>
+     <option title="ሲንዲ" value="sd_سنڌي">
+      ሲንዲ
+     </option>
+     <option title="ዝጠፈአ" value="fa_فارسی">
+      ፋርሲ
+     </option>
+     <option title="pashto ዝብል ቃል ንረክብ" value="ps_پښتو">
+      ፓሽቶ
+     </option>
+     <option title="ኔፓላዊ" value="ne_नेपाली">
+      ኔፓላዊ
+     </option>
+     <option title="ማራቲ" value="mr_मराठी">
+      ማራቲ
+     </option>
+     <option title="አይኮንን" value="hi_हिन्दी">
+      ህንዲ
+     </option>
+     <option title="ቤንጋሊኛ ቋንቋ" value="bn_বাংলা">
+      ባንግላ
+     </option>
+     <option title="ፖርቱጋልኛ" value="pa_ਪੰਜਾਬੀ">
+      ፑንጃቢ
+     </option>
+     <option title="ፖርቱጋልኛ" value="gu_ગુજરાતી">
+      ጉጃራቲ
+     </option>
+     <option title="ታሚል" value="ta_தமிழ்">
+      ታሚል
+     </option>
+     <option title="ሓጋይ" value="te_తెలుగు">
+      ተለጉ
+     </option>
+     <option title="ካናረስ" value="kn_ಕನ್ನಡ">
+      ካናዳ
+     </option>
+     <option title="ሜላ" value="ml_മലയാളം">
+      ማላያላም
+     </option>
+     <option title="ሲንሃልኛ" value="si_සිංහල">
+      ሲንሃላ
+     </option>
+     <option title="ታይላንድኛ" value="th_ไทย">
+      ታይላንድኛ
+     </option>
+     <option title="ቲቢ" value="lo_ລາວ">
+      ንሱ
+     </option>
+     <option title="ሚያንማር (በርማኛ)" value="my_မြန်မာ">
+      ሚያንማር
+     </option>
+     <option title="ጆርጅያዊ" value="ka_ქართული">
+      ጆርጅያዊ
+     </option>
+     <option title="ኣምሓርኛ" value="am_አማርኛ">
+      ኣምሓርኛ
+     </option>
+     <option title="ክመር" value="km_ខ្មែរ">
+      ክመር
+     </option>
+     <option title="ቻይናዊ (ባህላዊ)" value="zh-tw_中文_(繁體)">
+      ቻይናዊ (ባህላዊ)
+     </option>
+     <option title="ቻይናዊ (ዝተቐለለ)" value="zh_中文（简体）">
+      ቻይናዊ (ዝተቐለለ)
+     </option>
+     <option title="ቻይናዊ (ዝተቐለለ)" value="zh-cn_中文（简体）">
+      ቻይናዊ (ዝተቐለለ)
+     </option>
+     <option title="ጃፓናዊ" value="ja_日本語">
+      ጃፓናዊ
+     </option>
+     <option title="ኮርያዊ" value="ko_한국어">
+      ኮርያዊ እዩ።
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    እንኳዕ ደሓን መፁ
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>

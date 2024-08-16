@@ -66,6 +66,6 @@ def main():
             print(f"Tradução {i/len(languages)} para {lang_name} ({lang_code}) salva em /!/{lang_code}/{texts[i]}/{file}.")
             with open('sitemap', 'a', encoding="utf-8") as f: f.write(f'https://tests.dev.br/!/{lang_code}/{texts[i]}/{file}\n')
             # input('Enter = Continuar')
-
+    print('fim')
 if __name__ == "__main__":
     main()

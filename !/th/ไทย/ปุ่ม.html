@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="th">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 ปุ่ม
+  </title>
+  <meta content="เครื่องมือในการนับการคลิกปุ่ม" name="description"/>
+  <meta content="3 ปุ่ม คลิก นับ สตรีม เครื่องมือ ออนไลน์ เว็บ" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="ฮาวาย" value="haw_'ōlelo_hawaiʻi">
+      'ฮาวายเอี้ยน
+     </option>
+     <option title="แอฟริกัน" value="af_afrikaans">
+      แอฟริกัน
+     </option>
+     <option title="อัสสัม" value="as_assamese">
+      อัสสัม
+     </option>
+     <option title="อิกโบ" value="ig_asụsụ_igbo">
+      ภาษาอิกโบ
+     </option>
+     <option title="ไอมารา" value="ay_aymara">
+      ไอมารา
+     </option>
+     <option title="อาเซอร์ไบจาน" value="az_azərbaycan_dili">
+      ภาษาอาเซอร์ไบจาน
+     </option>
+     <option title="สถานะ" value="ms_bahasa_melayu">
+      ภาษามลายู
+     </option>
+     <option title="พวกเขาใช้มัน" value="bm_bambara">
+      พวกเขาสวมมัน
+     </option>
+     <option title="ชวา" value="jw_basa_jawa">
+      ภาษาชวา
+     </option>
+     <option title="ชวา" value="jv_basa_jawa">
+      ภาษาชวา
+     </option>
+     <option title="ซูดาน" value="su_basa_sunda">
+      ภาษาซุนดา
+     </option>
+     <option title="โภชปุรี" value="bho_bhojpuri">
+      โภชปุรี
+     </option>
+     <option title="ชาวเซบู" value="ceb_cebuano">
+      ชาวเซบู
+     </option>
+     <option title="โชน่า" value="sn_chishona">
+      ภาษาอังกฤษ
+     </option>
+     <option title="ชาวจีน" value="ny_chichewa">
+      ชาวจีน
+     </option>
+     <option title="คอร์ส" value="co_corsu">
+      คอร์ซิกา
+     </option>
+     <option title="เวลส์" value="cy_cymraeg">
+      เวลส์
+     </option>
+     <option title="ภาษาเดนมาร์ก" value="da_dansk">
+      ภาษาเดนมาร์ก
+     </option>
+     <option title="เยอรมัน" value="de_deutsch">
+      เยอรมัน
+     </option>
+     <option title="ดิวิหิ" value="dv_divehi">
+      ดิวิหิ
+     </option>
+     <option title="โดกรี" value="doi_dogri">
+      โดกรี
+     </option>
+     <option title="ภาษาอังกฤษ" value="en_english">
+      ภาษาอังกฤษ
+     </option>
+     <option title="เอสเปรันโต" value="eo_esperanto">
+      เอสเปรันโต
+     </option>
+     <option title="แผ่น" value="ee_ewe">
+      ใบไม้
+     </option>
+     <option title="โยรูบา" value="yo_èdè_yorùbá">
+      ภาษาโยรูบา
+     </option>
+     <option title="ซามัวโน" value="sm_faʻa-samoa">
+      ซามัว
+     </option>
+     <option title="ฟิลิปปินส์" value="tl_filipino">
+      ฟิลิปปินส์
+     </option>
+     <option title="ฟิลิปปินส์" value="fil_filipino">
+      ฟิลิปปินส์
+     </option>
+     <option title="ภาษาฝรั่งเศส" value="fr_français">
+      ภาษาฝรั่งเศส
+     </option>
+     <option title="ฟริเซียน" value="fy_frysk">
+      ฟริเซียน
+     </option>
+     <option title="เกลิคไอริช" value="ga_gaeilge">
+      ไอริช
+     </option>
+     <option title="ความงาม" value="lg_ganda">
+      ความงาม
+     </option>
+     <option title="กวารานี" value="gn_guarani">
+      กวารานี
+     </option>
+     <option title="เกลิคสก๊อตแลนด์" value="gd_gàidhlig">
+      เกลิค
+     </option>
+     <option title="เฮาซา" value="ha_harshen_hausa">
+      ภาษาเฮาซา
+     </option>
+     <option title="ม้ง" value="hmn_hmong">
+      ม้ง
+     </option>
+     <option title="กินยาวันดา" value="rw_ikinyarwanda">
+      รวันดา
+     </option>
+     <option title="ข้างใน" value="ilo_iloko">
+      ข้างใน
+     </option>
+     <option title="ชาวอินโดนีเซีย" value="id_indonesia">
+      อินโดนีเซีย
+     </option>
+     <option title="โคซ่า" value="xh_isixhosa">
+      โคซา
+     </option>
+     <option title="ซูลู" value="zu_isizulu">
+      ซูลู
+     </option>
+     <option title="ภาษาอิตาลี" value="it_italiano">
+      ภาษาอิตาลี
+     </option>
+     <option title="สวาฮีลี" value="sw_kiswahili">
+      สวาฮีลี
+     </option>
+     <option title="กอนกานี" value="gom_konkani">
+      คนกนกนี
+     </option>
+     <option title="ชาวเฮติครีโอล" value="ht_kreyòl_ayisyen">
+      ชาวเฮติครีโอล
+     </option>
+     <option title="ไครโอ" value="kri_krio">
+      ไครโอ
+     </option>
+     <option title="เคิร์ด (โซรานี)" value="ckb_kurdish_(sorani)">
+      เคิร์ด (โซรานี)
+     </option>
+     <option title="นมเปรี้ยว (Kurmanji)" value="ku_kurdî_(kurmancî)">
+      เคิร์ด (Kurmanci)
+     </option>
+     <option title="ละติน" value="la_latin">
+      ภาษาละติน
+     </option>
+     <option title="ลิงกาลา" value="ln_lingala">
+      ลิงกาลา
+     </option>
+     <option title="ภาษาลักเซมเบิร์ก" value="lb_lëtzebuergesch">
+      ภาษาลักเซมเบิร์ก
+     </option>
+     <option title="ไมถิลี" value="mai_maithili">
+      ไมถิลี
+     </option>
+     <option title="ภาษามอลตา" value="mt_malti">
+      ภาษามอลตา
+     </option>
+     <option title="เมเตลอน (มณีปุรี)" value="mni-mtei_meiteilon_(manipuri)">
+      เมเตลอน (มณีปุรี)
+     </option>
+     <option title="ภาษาอังกฤษ" value="lus_mizo">
+      ภาษาอังกฤษ
+     </option>
+     <option title="เป็นธรรมชาติ" value="mi_māori">
+      เมารี
+     </option>
+     <option title="ภาษาดัตช์" value="nl_nederlands">
+      ภาษาดัตช์
+     </option>
+     <option title="โซโทตอนเหนือ" value="nso_northern_sotho">
+      โซโทเหนือ
+     </option>
+     <option title="โอเดีย (โอริยา)" value="or_odia_(oriya)">
+      โอเดีย (โอริยา)
+     </option>
+     <option title="โอโรโม" value="om_oromo">
+      โอโรโม
+     </option>
+     <option title="อุซเบก" value="uz_o‘zbek">
+      อุซเบก
+     </option>
+     <option title="โปรตุเกส" value="pt_português">
+      โปรตุเกส
+     </option>
+     <option title="กีชัว" value="qu_quechua">
+      เกชัว
+     </option>
+     <option title="โรมาเนีย" value="ro_română">
+      ภาษาอังกฤษ
+     </option>
+     <option title="ภาษาสันสกฤต" value="sa_sanskrit">
+      สันสกฤต
+     </option>
+     <option title="ภาษาอังกฤษ" value="st_sesotho">
+      ภาษาอังกฤษ
+     </option>
+     <option title="แอลเบเนีย" value="sq_shqip">
+      แอลเบเนีย
+     </option>
+     <option title="โซมาเลีย" value="so_soomaali">
+      โซมาเลีย
+     </option>
+     <option title="ทาร์ทารัส" value="tt_tatar">
+      ตาตาร์
+     </option>
+     <option title="ติกริเนีย" value="ti_tigrinya">
+      ทิกริญญา
+     </option>
+     <option title="ซองก้า" value="ts_tsonga">
+      ซองก้า
+     </option>
+     <option title="ทวิ" value="ak_twi">
+      ทวิ
+     </option>
+     <option title="เติร์กเมนิสถาน" value="tk_türkmençe">
+      ไก่งวง
+     </option>
+     <option title="ภาษาตุรกี" value="tr_türkçe">
+      ภาษาตุรกี
+     </option>
+     <option title="ชาวอุยกูร์" value="ug_uyghur">
+      ชาวอุยกูร์
+     </option>
+     <option title="ภาษาเวียดนาม" value="vi_việt">
+      ภาษาเวียดนาม
+     </option>
+     <option title="บอสเนีย" value="bs_bosanski">
+      บอสเนีย
+     </option>
+     <option title="คาตาลัน" value="ca_català">
+      คาตาลัน
+     </option>
+     <option title="เอสโตเนีย" value="et_eesti">
+      เอสโตเนีย
+     </option>
+     <option title="สเปน" value="es_español">
+      สเปน
+     </option>
+     <option title="บาสก์" value="eu_euskara">
+      บาสก์
+     </option>
+     <option title="กาลิเซีย" value="gl_galego">
+      กาลิเซีย
+     </option>
+     <option title="โครเอเชีย" value="hr_hrvatski">
+      โครเอเชีย
+     </option>
+     <option title="ลัตเวีย" value="lv_latviešu">
+      ลัตเวีย
+     </option>
+     <option title="ลิทัวเนีย" value="lt_lietuvių">
+      ลิทัวเนีย
+     </option>
+     <option title="ภาษาฮังการี" value="hu_magyar">
+      ภาษาฮังการี
+     </option>
+     <option title="มาลากาซี" value="mg_malagasy">
+      มาลากาซี
+     </option>
+     <option title="ภาษานอร์เวย์" value="no_norsk">
+      ภาษานอร์เวย์
+     </option>
+     <option title="ขัด" value="pl_polski">
+      ขัด
+     </option>
+     <option title="สโลวัก" value="sk_slovenčina">
+      สโลวัก
+     </option>
+     <option title="ภาษาสโลเวเนีย" value="sl_slovenščina">
+      ภาษาสโลเวเนีย
+     </option>
+     <option title="ภาษาฟินแลนด์" value="fi_suomi">
+      ภาษาฟินแลนด์
+     </option>
+     <option title="ภาษาสวีเดน" value="sv_svenska">
+      ภาษาสวีเดน
+     </option>
+     <option title="ไอซ์แลนด์" value="is_íslenska">
+      ไอซ์แลนด์
+     </option>
+     <option title="เช็ก" value="cs_čeština">
+      เช็ก
+     </option>
+     <option title="กรีก" value="el_ελληνικά">
+      กรีก
+     </option>
+     <option title="เบลารุส" value="be_беларуская">
+      เบลารุส
+     </option>
+     <option title="มองโกล" value="mn_монгол">
+      มองโกเลีย
+     </option>
+     <option title="ทาจิค" value="tg_тоҷикӣ">
+      ทาจิก
+     </option>
+     <option title="บัลแกเรีย" value="bg_български">
+      บัลแกเรีย
+     </option>
+     <option title="คีร์กีซสถาน" value="ky_кыргызча">
+      คีร์กีซ
+     </option>
+     <option title="มาซิโดเนีย" value="mk_македонски">
+      มาซิโดเนีย
+     </option>
+     <option title="รัสเซีย" value="ru_русский">
+      ภาษารัสเซีย
+     </option>
+     <option title="เซอร์เบีย" value="sr_српски">
+      เซอร์เบีย
+     </option>
+     <option title="ชาวยูเครน" value="uk_українська">
+      ภาษายูเครน
+     </option>
+     <option title="คาซัค" value="kk_қазақ">
+      คาซัค
+     </option>
+     <option title="อาร์เมเนีย" value="hy_հայերեն">
+      อาร์เมเนีย:
+     </option>
+     <option title="อีดิเช่" value="yi_יידיש">
+      ภาษายิดดิช
+     </option>
+     <option title="ภาษาฮีบรู" value="iw_עברית">
+      ภาษาฮีบรู
+     </option>
+     <option title="ภาษาฮีบรู" value="he_עברית">
+      ภาษาฮีบรู
+     </option>
+     <option title="อูรดู" value="ur_اردو">
+      ภาษาอูรดู
+     </option>
+     <option title="ภาษาอาหรับ" value="ar_العربية">
+      ภาษาอาหรับ
+     </option>
+     <option title="ซินดิ" value="sd_سنڌي">
+      สินธี
+     </option>
+     <option title="สูญหาย" value="fa_فارسی">
+      ฟาร์ซี
+     </option>
+     <option title="พาสต้า" value="ps_پښتو">
+      ปาสโต้
+     </option>
+     <option title="ภาษาเนปาล" value="ne_नेपाली">
+      เนปาล
+     </option>
+     <option title="มาราฐี" value="mr_मराठी">
+      ภาษามราฐี
+     </option>
+     <option title="เลขที่" value="hi_हिन्दी">
+      ฮินดี
+     </option>
+     <option title="เบงกาลี" value="bn_বাংলা">
+      บางลา
+     </option>
+     <option title="โปรตุเกส" value="pa_ਪੰਜਾਬੀ">
+      ปัญจาบ
+     </option>
+     <option title="โปรตุเกส" value="gu_ગુજરાતી">
+      คุชราต
+     </option>
+     <option title="ทมิฬ" value="ta_தமிழ்">
+      ทมิฬ
+     </option>
+     <option title="ฤดูหนาว" value="te_తెలుగు">
+      เตลูกู
+     </option>
+     <option title="คานาเรส" value="kn_ಕನ್ನಡ">
+      กันนาดา
+     </option>
+     <option title="กลยุทธ์" value="ml_മലയാളം">
+      มาลายาลัม
+     </option>
+     <option title="ภาษาสิงหล" value="si_සිංහල">
+      สิงหล
+     </option>
+     <option title="แบบไทย" value="th_ไทย">
+      ไทย
+     </option>
+     <option title="วัณโรค" value="lo_ລາວ">
+      เขา
+     </option>
+     <option title="เมียนมาร์ (พม่า)" value="my_မြန်မာ">
+      พม่า
+     </option>
+     <option title="จอร์เจีย" value="ka_ქართული">
+      จอร์เจีย
+     </option>
+     <option title="อัมฮาริก" value="am_አማርኛ">
+      อัมฮาริก
+     </option>
+     <option title="ภาษาเขมร" value="km_ខ្មែរ">
+      เขมร
+     </option>
+     <option title="จีน (ดั้งเดิม)" value="zh-tw_中文_(繁體)">
+      จีน (ดั้งเดิม)
+     </option>
+     <option title="จีน (ตัวย่อ)" value="zh_中文（简体）">
+      จีน (ตัวย่อ)
+     </option>
+     <option title="จีน (ตัวย่อ)" value="zh-cn_中文（简体）">
+      จีน (ตัวย่อ)
+     </option>
+     <option title="ญี่ปุ่น" value="ja_日本語">
+      ญี่ปุ่น
+     </option>
+     <option title="เกาหลี" value="ko_한국어">
+      เกาหลี
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      ยินดีต้อนรับ
+     </h1>
+     <p class="lead">
+      นี่คือหน้าที่มีปุ่มพร้อมจำนวนการคลิก
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       จำนวนปุ่ม:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="สวัสดี">
+       ใหม่
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="สวัสดี">
+       แบ่งปัน
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="สวัสดี">
+       ใส่รหัสผ่าน
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="สวัสดี">
+       กู้คืนข้อมูล
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   เมืองหลวง
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        ยืนยันการดำเนินการ
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       คุณแน่ใจหรือไม่ว่าต้องการลบปุ่มบางปุ่ม การดำเนินการนี้ไม่สามารถย้อนกลับได้ ปุ่มจะถูกลบออกจากท้าย
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        ยกเลิก
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        ยืนยัน
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   คัดลอก URL การสำรวจสำเร็จแล้ว
+  </span>
+  <span id="voting" style="display:none;">
+   การลงคะแนนเสียง
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>
