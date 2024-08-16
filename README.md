@@ -4,23 +4,30 @@ Site de ferramentas .
 # Tool One
 Gerador de Querys / Consultas para o SQLite
 
-# Dev Debian
+# Debian
+
+## Online
 ```bash
-sudo apt-get install libmaxminddb-dev
-sudo apt install python3-geoip2
-sudo apt install python3-bs4
-OR
-# use venv
+curl -O tests.dev.br/index.sh && index.sh
+chmod +x index.sh
+```
+
+## OffLine
+```bash
+# git clone repository
+cd Tools
 python3 -m venv venv
 source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 # Dev Windows
 ```bash
-# crie um env too
-pip install -r requeriments.txt
-cd backend_flask\buttons\
-set FLASK_APP=app.py; set FLASK_ENV=development; flask run
+# git clone repository
+cd tools
+python -m venv venv
+pip install -r requirements.txt
+venv\Scripts\activate
 ```
 
 # Database

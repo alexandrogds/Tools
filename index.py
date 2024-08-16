@@ -42,7 +42,7 @@ def main():
         lang_code = languages[i].language_code
         lang_name = languages[i].display_name
 
-        def x1(file_path, lang_code, lang_name):
+        for file_path in file_paths:
             conteudo = ler_arquivo_local(file_path)
             if conteudo.startswith("Erro ao ler o arquivo:"):
                 print(conteudo)
@@ -66,21 +66,6 @@ def main():
             print(f"Tradução para {lang_name} ({lang_code}) salva em /!/{lang_code}/{texts[i]}/{file}.")
             with open('sitemap', 'a', encoding="utf-8") as f: f.write(f'https://tests.dev.br/!/{lang_code}/{texts[i]}/{file}')
             # input('Enter = Continuar')
-        for file_path in file_paths:
-            b = threading.Thread(target=x1, args=(file_path, lang_code, lang_name,))
-            a.append(b)
-            b.start()
-            print('start')
-
-    # Aguardando todas as threads terminarem
-    for thread in a:
-        print('join *')
-        thread.join()
-
-
-        # Iniciando a thread
-
-        print("Threads finalizada!")
 
 if __name__ == "__main__":
     main()

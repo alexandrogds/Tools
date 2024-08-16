@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="cs">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 Tlačítka
+  </title>
+  <meta content="Nástroj pro počítání kliknutí na tlačítka." name="description"/>
+  <meta content="3 tlačítka, kliknutí, počet, stream, nástroje, online, web" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="havajský" value="haw_'ōlelo_hawaiʻi">
+      'Havajský
+     </option>
+     <option title="Afričan" value="af_afrikaans">
+      Afričan
+     </option>
+     <option title="Assamesové" value="as_assamese">
+      ásámština
+     </option>
+     <option title="Igbo" value="ig_asụsụ_igbo">
+      Igbo jazyk
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Ázerbájdžán" value="az_azərbaycan_dili">
+      Ázerbájdžánský jazyk
+     </option>
+     <option title="stát" value="ms_bahasa_melayu">
+      Malajština
+     </option>
+     <option title="Používají to" value="bm_bambara">
+      Nosí to
+     </option>
+     <option title="jávský" value="jw_basa_jawa">
+      jávský jazyk
+     </option>
+     <option title="jávský" value="jv_basa_jawa">
+      jávský jazyk
+     </option>
+     <option title="súdánský" value="su_basa_sunda">
+      sundánský jazyk
+     </option>
+     <option title="bhojpuri" value="bho_bhojpuri">
+      bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      angličtina
+     </option>
+     <option title="čínština" value="ny_chichewa">
+      čínština
+     </option>
+     <option title="Kurs" value="co_corsu">
+      Korsičan
+     </option>
+     <option title="velština" value="cy_cymraeg">
+      velština
+     </option>
+     <option title="dánština" value="da_dansk">
+      dánština
+     </option>
+     <option title="Němec" value="de_deutsch">
+      Němec
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="angličtina" value="en_english">
+      angličtina
+     </option>
+     <option title="esperanto" value="eo_esperanto">
+      esperanto
+     </option>
+     <option title="List" value="ee_ewe">
+      List
+     </option>
+     <option title="jorubština" value="yo_èdè_yorùbá">
+      jazyk jorubština
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Samoan
+     </option>
+     <option title="filipínský" value="tl_filipino">
+      filipínský
+     </option>
+     <option title="filipínský" value="fil_filipino">
+      filipínský
+     </option>
+     <option title="francouzština" value="fr_français">
+      francouzština
+     </option>
+     <option title="fríský" value="fy_frysk">
+      fríský
+     </option>
+     <option title="irská gaelština" value="ga_gaeilge">
+      irština
+     </option>
+     <option title="Krása" value="lg_ganda">
+      Krása
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="skotská gaelština" value="gd_gàidhlig">
+      gaelština
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Hausa jazyk
+     </option>
+     <option title="Hmongové" value="hmn_hmong">
+      Hmongové
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      Rwandské
+     </option>
+     <option title="Uvnitř" value="ilo_iloko">
+      Uvnitř
+     </option>
+     <option title="indonéština" value="id_indonesia">
+      Indonésie
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Zulu
+     </option>
+     <option title="italština" value="it_italiano">
+      italština
+     </option>
+     <option title="svahilština" value="sw_kiswahili">
+      svahilština
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="haitská kreolština" value="ht_kreyòl_ayisyen">
+      haitská kreolština
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="kurdština (soranština)" value="ckb_kurdish_(sorani)">
+      kurdština (soranština)
+     </option>
+     <option title="Tvaroh (Kurmanji)" value="ku_kurdî_(kurmancî)">
+      kurdština (kurmanci)
+     </option>
+     <option title="latinský" value="la_latin">
+      latinský
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="lucemburský" value="lb_lëtzebuergesch">
+      lucemburský
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="maltština" value="mt_malti">
+      maltština
+     </option>
+     <option title="Meiteilon (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="angličtina" value="lus_mizo">
+      angličtina
+     </option>
+     <option title="přirozeně" value="mi_māori">
+      maorští
+     </option>
+     <option title="holandský" value="nl_nederlands">
+      holandský
+     </option>
+     <option title="Severní Sotho" value="nso_northern_sotho">
+      Severní Sotho
+     </option>
+     <option title="odia (orija)" value="or_odia_(oriya)">
+      odia (orija)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="uzbecký" value="uz_o‘zbek">
+      uzbecký
+     </option>
+     <option title="portugalština" value="pt_português">
+      portugalština
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      kečuánština
+     </option>
+     <option title="rumunština" value="ro_română">
+      ANGLIČTINA
+     </option>
+     <option title="sanskrt" value="sa_sanskrit">
+      sanskrt
+     </option>
+     <option title="angličtina" value="st_sesotho">
+      angličtina
+     </option>
+     <option title="albánský" value="sq_shqip">
+      albánský
+     </option>
+     <option title="somálský" value="so_soomaali">
+      somálský
+     </option>
+     <option title="Tartarus" value="tt_tatar">
+      Tatar
+     </option>
+     <option title="Tigrínia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="turkmenský" value="tk_türkmençe">
+      Turecko
+     </option>
+     <option title="turečtina" value="tr_türkçe">
+      turečtina
+     </option>
+     <option title="ujgurské" value="ug_uyghur">
+      ujgurské
+     </option>
+     <option title="vietnamština" value="vi_việt">
+      vietnamština
+     </option>
+     <option title="bosenský" value="bs_bosanski">
+      bosenský
+     </option>
+     <option title="katalánština" value="ca_català">
+      katalánština
+     </option>
+     <option title="estonština" value="et_eesti">
+      estonština
+     </option>
+     <option title="španělština" value="es_español">
+      španělština
+     </option>
+     <option title="baskický" value="eu_euskara">
+      baskický
+     </option>
+     <option title="galicijský" value="gl_galego">
+      galicijský
+     </option>
+     <option title="chorvatský" value="hr_hrvatski">
+      chorvatský
+     </option>
+     <option title="lotyšský" value="lv_latviešu">
+      lotyšský
+     </option>
+     <option title="litevský" value="lt_lietuvių">
+      litevský
+     </option>
+     <option title="maďarský" value="hu_magyar">
+      maďarský
+     </option>
+     <option title="malgašský" value="mg_malagasy">
+      malgašský
+     </option>
+     <option title="norský" value="no_norsk">
+      norský
+     </option>
+     <option title="polština" value="pl_polski">
+      polština
+     </option>
+     <option title="Slovák" value="sk_slovenčina">
+      čeština
+     </option>
+     <option title="slovinský" value="sl_slovenščina">
+      slovinský
+     </option>
+     <option title="finština" value="fi_suomi">
+      finština
+     </option>
+     <option title="švédský" value="sv_svenska">
+      švédský
+     </option>
+     <option title="islandský" value="is_íslenska">
+      islandský
+     </option>
+     <option title="čeština" value="cs_čeština">
+      čeština
+     </option>
+     <option title="řecký" value="el_ελληνικά">
+      řecký
+     </option>
+     <option title="běloruský" value="be_беларуская">
+      běloruský
+     </option>
+     <option title="Mongol" value="mn_монгол">
+      Mongolsko
+     </option>
+     <option title="Tajic" value="tg_тоҷикӣ">
+      tádžický
+     </option>
+     <option title="bulharský" value="bg_български">
+      bulharský
+     </option>
+     <option title="Kyrgyzstánu" value="ky_кыргызча">
+      kyrgyzština
+     </option>
+     <option title="makedonský" value="mk_македонски">
+      makedonský
+     </option>
+     <option title="rusko" value="ru_русский">
+      ruština
+     </option>
+     <option title="srbština" value="sr_српски">
+      srbština
+     </option>
+     <option title="ukrajinština" value="uk_українська">
+      ukrajinština
+     </option>
+     <option title="kazašský" value="kk_қазақ">
+      kazašský
+     </option>
+     <option title="arménský" value="hy_հայերեն">
+      arménština:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      jidiš
+     </option>
+     <option title="hebrejština" value="iw_עברית">
+      hebrejština
+     </option>
+     <option title="hebrejština" value="he_עברית">
+      hebrejština
+     </option>
+     <option title="Urdu" value="ur_اردو">
+      Urdu
+     </option>
+     <option title="arabština" value="ar_العربية">
+      arabština
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindhi
+     </option>
+     <option title="ztracený" value="fa_فارسی">
+      perština
+     </option>
+     <option title="paštština" value="ps_پښتو">
+      paštština
+     </option>
+     <option title="nepálské" value="ne_नेपाली">
+      nepálský
+     </option>
+     <option title="maráthština" value="mr_मराठी">
+      maráthština
+     </option>
+     <option title="Žádný" value="hi_हिन्दी">
+      hindština
+     </option>
+     <option title="bengálský" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="portugalština" value="pa_ਪੰਜਾਬੀ">
+      pandžábština
+     </option>
+     <option title="portugalština" value="gu_ગુજરાતી">
+      Gudžarátština
+     </option>
+     <option title="tamilština" value="ta_தமிழ்">
+      tamilština
+     </option>
+     <option title="Zima" value="te_తెలుగు">
+      telugština
+     </option>
+     <option title="Canares" value="kn_ಕನ್ನಡ">
+      Kannada
+     </option>
+     <option title="Strategie" value="ml_മലയാളം">
+      malajálamština
+     </option>
+     <option title="Sinhálština" value="si_සිංහල">
+      sinhálština
+     </option>
+     <option title="thajština" value="th_ไทย">
+      thajština
+     </option>
+     <option title="TBC" value="lo_ລາວ">
+      on
+     </option>
+     <option title="Myanmar (barmština)" value="my_မြန်မာ">
+      Myanmar
+     </option>
+     <option title="gruzínský" value="ka_ქართული">
+      gruzínský
+     </option>
+     <option title="amharština" value="am_አማርኛ">
+      amharština
+     </option>
+     <option title="khmerské" value="km_ខ្មែរ">
+      khmerské
+     </option>
+     <option title="čínština (tradiční)" value="zh-tw_中文_(繁體)">
+      čínština (tradiční)
+     </option>
+     <option title="čínština (zjednodušená)" value="zh_中文（简体）">
+      čínština (zjednodušená)
+     </option>
+     <option title="čínština (zjednodušená)" value="zh-cn_中文（简体）">
+      čínština (zjednodušená)
+     </option>
+     <option title="japonský" value="ja_日本語">
+      japonský
+     </option>
+     <option title="korejština" value="ko_한국어">
+      korejština
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Vítejte
+     </h1>
+     <p class="lead">
+      Toto je stránka s tlačítky s počtem kliknutí.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Počet tlačítek:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Ahoj">
+       Nový
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Ahoj">
+       Podíl
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Ahoj">
+       Zadejte heslo
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Ahoj">
+       Obnovit data
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Kapitál
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Potvrďte akci
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Opravdu chcete některá tlačítka odstranit? Tuto akci nelze vrátit zpět. Tlačítka budou odstraněna z konce.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Zrušit
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Potvrdit
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   Adresa URL průzkumu byla úspěšně zkopírována.
+  </span>
+  <span id="voting" style="display:none;">
+   Hlasování
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

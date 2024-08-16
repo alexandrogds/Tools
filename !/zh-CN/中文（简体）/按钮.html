@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 个按钮
+  </title>
+  <meta content="用于计算按钮点击次数的工具。" name="description"/>
+  <meta content="3 个按钮、点击、计数、流、工具、在线、网络" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="夏威夷语" value="haw_'ōlelo_hawaiʻi">
+      '夏威夷人
+     </option>
+     <option title="非洲人" value="af_afrikaans">
+      非洲人
+     </option>
+     <option title="阿萨姆人" value="as_assamese">
+      阿萨姆语
+     </option>
+     <option title="伊博语" value="ig_asụsụ_igbo">
+      伊博语
+     </option>
+     <option title="艾马拉" value="ay_aymara">
+      艾马拉
+     </option>
+     <option title="阿塞拜疆人" value="az_azərbaycan_dili">
+      阿塞拜疆语
+     </option>
+     <option title="状态" value="ms_bahasa_melayu">
+      马来语
+     </option>
+     <option title="他们用它" value="bm_bambara">
+      他们穿着它
+     </option>
+     <option title="爪哇语" value="jw_basa_jawa">
+      爪哇语
+     </option>
+     <option title="爪哇语" value="jv_basa_jawa">
+      爪哇语
+     </option>
+     <option title="苏丹人" value="su_basa_sunda">
+      巽他语
+     </option>
+     <option title="博杰普尔语" value="bho_bhojpuri">
+      博杰普尔语
+     </option>
+     <option title="宿务语" value="ceb_cebuano">
+      宿务语
+     </option>
+     <option title="绍纳语" value="sn_chishona">
+      英语
+     </option>
+     <option title="中国人" value="ny_chichewa">
+      中国人
+     </option>
+     <option title="课程" value="co_corsu">
+      科西嘉岛
+     </option>
+     <option title="威尔士语" value="cy_cymraeg">
+      威尔士语
+     </option>
+     <option title="丹麦语" value="da_dansk">
+      丹麦语
+     </option>
+     <option title="德语" value="de_deutsch">
+      德语
+     </option>
+     <option title="迪维希语" value="dv_divehi">
+      迪维希语
+     </option>
+     <option title="多格里" value="doi_dogri">
+      多格里
+     </option>
+     <option title="英语" value="en_english">
+      英语
+     </option>
+     <option title="世界语" value="eo_esperanto">
+      世界语
+     </option>
+     <option title="床单" value="ee_ewe">
+      叶子
+     </option>
+     <option title="约鲁巴语" value="yo_èdè_yorùbá">
+      约鲁巴语
+     </option>
+     <option title="萨摩亚诺" value="sm_faʻa-samoa">
+      萨摩亚人
+     </option>
+     <option title="菲律宾语" value="tl_filipino">
+      菲律宾语
+     </option>
+     <option title="菲律宾语" value="fil_filipino">
+      菲律宾语
+     </option>
+     <option title="法语" value="fr_français">
+      法语
+     </option>
+     <option title="弗里斯兰语" value="fy_frysk">
+      弗里斯兰语
+     </option>
+     <option title="爱尔兰盖尔语" value="ga_gaeilge">
+      爱尔兰语
+     </option>
+     <option title="美丽" value="lg_ganda">
+      美丽
+     </option>
+     <option title="瓜拉尼语" value="gn_guarani">
+      瓜拉尼语
+     </option>
+     <option title="苏格兰盖尔语" value="gd_gàidhlig">
+      盖尔语
+     </option>
+     <option title="豪萨语" value="ha_harshen_hausa">
+      豪萨语
+     </option>
+     <option title="苗族" value="hmn_hmong">
+      苗族
+     </option>
+     <option title="基尼亚卢旺达语" value="rw_ikinyarwanda">
+      卢旺达
+     </option>
+     <option title="里面" value="ilo_iloko">
+      里面
+     </option>
+     <option title="印度尼西亚" value="id_indonesia">
+      印度尼西亚
+     </option>
+     <option title="科萨语" value="xh_isixhosa">
+      科萨语
+     </option>
+     <option title="祖鲁" value="zu_isizulu">
+      祖鲁语
+     </option>
+     <option title="意大利语" value="it_italiano">
+      意大利语
+     </option>
+     <option title="斯瓦希里语" value="sw_kiswahili">
+      斯瓦希里语
+     </option>
+     <option title="孔卡尼" value="gom_konkani">
+      孔卡尼语
+     </option>
+     <option title="海地克里奥尔语" value="ht_kreyòl_ayisyen">
+      海地克里奥尔语
+     </option>
+     <option title="克里奥" value="kri_krio">
+      克里奥
+     </option>
+     <option title="库尔德语（索拉尼语）" value="ckb_kurdish_(sorani)">
+      库尔德语（索拉尼语）
+     </option>
+     <option title="凝乳（库尔曼吉）" value="ku_kurdî_(kurmancî)">
+      库尔德语（库尔曼奇语）
+     </option>
+     <option title="拉丁" value="la_latin">
+      拉丁
+     </option>
+     <option title="林加拉语" value="ln_lingala">
+      林加拉语
+     </option>
+     <option title="卢森堡语" value="lb_lëtzebuergesch">
+      卢森堡语
+     </option>
+     <option title="迈蒂利" value="mai_maithili">
+      迈蒂利
+     </option>
+     <option title="马耳他语" value="mt_malti">
+      马耳他语
+     </option>
+     <option title="梅泰隆（曼尼普里）" value="mni-mtei_meiteilon_(manipuri)">
+      梅泰隆（曼尼普里）
+     </option>
+     <option title="英语" value="lus_mizo">
+      英语
+     </option>
+     <option title="自然" value="mi_māori">
+      毛利人
+     </option>
+     <option title="荷兰语" value="nl_nederlands">
+      荷兰语
+     </option>
+     <option title="北索托" value="nso_northern_sotho">
+      北索托语
+     </option>
+     <option title="奥里亚语（奥里亚语）" value="or_odia_(oriya)">
+      奥里亚语（奥里亚语）
+     </option>
+     <option title="奥罗莫" value="om_oromo">
+      奥罗莫
+     </option>
+     <option title="乌兹别克语" value="uz_o‘zbek">
+      乌兹别克语
+     </option>
+     <option title="葡萄牙语" value="pt_português">
+      葡萄牙语
+     </option>
+     <option title="盖丘亚语" value="qu_quechua">
+      克丘亚语
+     </option>
+     <option title="罗马尼亚语" value="ro_română">
+      英语
+     </option>
+     <option title="梵文" value="sa_sanskrit">
+      梵文
+     </option>
+     <option title="英语" value="st_sesotho">
+      英语
+     </option>
+     <option title="阿尔巴尼亚语" value="sq_shqip">
+      阿尔巴尼亚语
+     </option>
+     <option title="索马里" value="so_soomaali">
+      索马里
+     </option>
+     <option title="塔尔塔罗斯" value="tt_tatar">
+      鞑靼语
+     </option>
+     <option title="提格里尼亚" value="ti_tigrinya">
+      提格里尼亚
+     </option>
+     <option title="聪加" value="ts_tsonga">
+      聪加
+     </option>
+     <option title="特维语" value="ak_twi">
+      特维语
+     </option>
+     <option title="土库曼语" value="tk_türkmençe">
+      火鸡
+     </option>
+     <option title="土耳其" value="tr_türkçe">
+      土耳其
+     </option>
+     <option title="维吾尔" value="ug_uyghur">
+      维吾尔语
+     </option>
+     <option title="越南语" value="vi_việt">
+      越南语
+     </option>
+     <option title="波斯尼亚语" value="bs_bosanski">
+      波斯尼亚语
+     </option>
+     <option title="加泰罗尼亚语" value="ca_català">
+      加泰罗尼亚语
+     </option>
+     <option title="爱沙尼亚语" value="et_eesti">
+      爱沙尼亚语
+     </option>
+     <option title="西班牙语" value="es_español">
+      西班牙语
+     </option>
+     <option title="巴斯克" value="eu_euskara">
+      巴斯克
+     </option>
+     <option title="加利西亚语" value="gl_galego">
+      加利西亚语
+     </option>
+     <option title="克罗地亚语" value="hr_hrvatski">
+      克罗地亚语
+     </option>
+     <option title="拉脱维亚语" value="lv_latviešu">
+      拉脱维亚语
+     </option>
+     <option title="立陶宛语" value="lt_lietuvių">
+      立陶宛语
+     </option>
+     <option title="匈牙利" value="hu_magyar">
+      匈牙利
+     </option>
+     <option title="马尔加什" value="mg_malagasy">
+      马尔加什
+     </option>
+     <option title="挪威" value="no_norsk">
+      挪威
+     </option>
+     <option title="抛光" value="pl_polski">
+      抛光
+     </option>
+     <option title="斯洛伐克语" value="sk_slovenčina">
+      斯洛伐克语
+     </option>
+     <option title="斯洛文尼亚语" value="sl_slovenščina">
+      斯洛文尼亚语
+     </option>
+     <option title="芬兰" value="fi_suomi">
+      芬兰
+     </option>
+     <option title="瑞典" value="sv_svenska">
+      瑞典
+     </option>
+     <option title="冰岛语" value="is_íslenska">
+      冰岛语
+     </option>
+     <option title="捷克语" value="cs_čeština">
+      捷克语
+     </option>
+     <option title="希腊语" value="el_ελληνικά">
+      希腊语
+     </option>
+     <option title="白俄罗斯语" value="be_беларуская">
+      白俄罗斯语
+     </option>
+     <option title="蒙古人" value="mn_монгол">
+      蒙古
+     </option>
+     <option title="塔伊奇" value="tg_тоҷикӣ">
+      塔吉克
+     </option>
+     <option title="保加利亚语" value="bg_български">
+      保加利亚语
+     </option>
+     <option title="吉尔吉斯斯坦" value="ky_кыргызча">
+      吉尔吉斯斯坦
+     </option>
+     <option title="马其顿语" value="mk_македонски">
+      马其顿语
+     </option>
+     <option title="鲁索" value="ru_русский">
+      俄语
+     </option>
+     <option title="塞尔维亚" value="sr_српски">
+      塞尔维亚
+     </option>
+     <option title="乌克兰" value="uk_українська">
+      乌克兰
+     </option>
+     <option title="哈萨克语" value="kk_қазақ">
+      哈萨克语
+     </option>
+     <option title="亚美尼亚语" value="hy_հայերեն">
+      亚美尼亚语：
+     </option>
+     <option title="伊迪什" value="yi_יידיש">
+      意第绪语
+     </option>
+     <option title="希伯来语" value="iw_עברית">
+      希伯来语
+     </option>
+     <option title="希伯来语" value="he_עברית">
+      希伯来语
+     </option>
+     <option title="乌尔都语" value="ur_اردو">
+      乌尔都语
+     </option>
+     <option title="阿拉伯" value="ar_العربية">
+      阿拉伯
+     </option>
+     <option title="辛迪" value="sd_سنڌي">
+      信德语
+     </option>
+     <option title="丢失的" value="fa_فارسی">
+      波斯语
+     </option>
+     <option title="普什图语" value="ps_پښتو">
+      普什图语
+     </option>
+     <option title="尼泊尔语" value="ne_नेपाली">
+      尼泊尔语
+     </option>
+     <option title="马拉地语" value="mr_मराठी">
+      马拉地语
+     </option>
+     <option title="不" value="hi_हिन्दी">
+      印地语
+     </option>
+     <option title="孟加拉" value="bn_বাংলা">
+      孟加拉语
+     </option>
+     <option title="葡萄牙语" value="pa_ਪੰਜਾਬੀ">
+      旁遮普语
+     </option>
+     <option title="葡萄牙语" value="gu_ગુજરાતી">
+      古吉拉特语
+     </option>
+     <option title="泰米尔语" value="ta_தமிழ்">
+      泰米尔语
+     </option>
+     <option title="冬天" value="te_తెలుగు">
+      泰卢固语
+     </option>
+     <option title="卡纳雷斯" value="kn_ಕನ್ನಡ">
+      卡纳达语
+     </option>
+     <option title="战略" value="ml_മലയാളം">
+      马拉雅拉姆语
+     </option>
+     <option title="僧伽罗语" value="si_සිංහල">
+      僧伽罗语
+     </option>
+     <option title="泰国" value="th_ไทย">
+      泰国
+     </option>
+     <option title="结核病" value="lo_ລາວ">
+      他
+     </option>
+     <option title="缅甸（缅语）" value="my_မြန်မာ">
+      缅甸
+     </option>
+     <option title="格鲁吉亚语" value="ka_ქართული">
+      格鲁吉亚语
+     </option>
+     <option title="阿姆哈拉语" value="am_አማርኛ">
+      阿姆哈拉语
+     </option>
+     <option title="高棉语" value="km_ខ្មែរ">
+      高棉语
+     </option>
+     <option title="中文（繁体）" value="zh-tw_中文_(繁體)">
+      中文 (繁体)
+     </option>
+     <option title="中文（简体）" value="zh_中文（简体）">
+      中文（简体）
+     </option>
+     <option title="中文（简体）" value="zh-cn_中文（简体）">
+      中文（简体）
+     </option>
+     <option title="日本人" value="ja_日本語">
+      日本人
+     </option>
+     <option title="韩国人" value="ko_한국어">
+      韩国人
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      欢迎
+     </h1>
+     <p class="lead">
+      这是一个带有点击计数按钮的页面。
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       按钮数量:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="你好">
+       新的
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="你好">
+       分享
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="你好">
+       输入密码
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="你好">
+       恢复数据
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   首都
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        确认操作
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       您确定要删除一些按钮吗？此操作无法撤消。按钮将从末尾开始删除。
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        取消
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        确认
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   投票网址复制成功。
+  </span>
+  <span id="voting" style="display:none;">
+   表决
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>
