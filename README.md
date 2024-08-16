@@ -31,5 +31,11 @@ Não usar variáveis para usar a menor quantidade de memória possível. Chamar 
 
 # Docs
 As edições ocorrem em buttons.
+
 Os arquivos gerados são servidos por #.
+
 Rodar os migrations em buttons.
+
+Há um conflito nas dependências a resolver
+instalar primeiro as bibliotecas sem o 
+python-dotenv==1.0.1 e depois instalar ele.
