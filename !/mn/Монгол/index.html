@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="mn">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   Вэб хэрэгслүүд.
+  </title>
+  <meta content="Ашиглах онлайн хэрэгсэл." name="description"/>
+  <meta content="хэрэгсэл, онлайн, вэб" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/scripts/redirect-to-lang.js" id="change-lang-autos"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Хавай" value="haw_'ōlelo_hawaiʻi">
+      Хавай
+     </option>
+     <option title="Африк" value="af_afrikaans">
+      Африк
+     </option>
+     <option title="Ассамчууд" value="as_assamese">
+      Ассам
+     </option>
+     <option title="Игбо" value="ig_asụsụ_igbo">
+      Игбо хэл
+     </option>
+     <option title="Аймара" value="ay_aymara">
+      Аймара
+     </option>
+     <option title="Азербайжано" value="az_azərbaycan_dili">
+      Азербайжан хэл
+     </option>
+     <option title="муж" value="ms_bahasa_melayu">
+      Малай хэл
+     </option>
+     <option title="Тэд үүнийг ашигладаг" value="bm_bambara">
+      Тэд өмсдөг
+     </option>
+     <option title="Ява" value="jw_basa_jawa">
+      Ява хэл
+     </option>
+     <option title="Ява" value="jv_basa_jawa">
+      Ява хэл
+     </option>
+     <option title="судан" value="su_basa_sunda">
+      Сундан хэл
+     </option>
+     <option title="Бхожпури" value="bho_bhojpuri">
+      Бхожпури
+     </option>
+     <option title="Себуано" value="ceb_cebuano">
+      Себуано
+     </option>
+     <option title="Шона" value="sn_chishona">
+      Англи
+     </option>
+     <option title="Хятад" value="ny_chichewa">
+      Хятад
+     </option>
+     <option title="Мэдээж" value="co_corsu">
+      Корсик
+     </option>
+     <option title="Уэльс" value="cy_cymraeg">
+      Уэльс
+     </option>
+     <option title="Дани" value="da_dansk">
+      Дани
+     </option>
+     <option title="Герман" value="de_deutsch">
+      Герман
+     </option>
+     <option title="Дивехи" value="dv_divehi">
+      Дивехи
+     </option>
+     <option title="Догри" value="doi_dogri">
+      Догри
+     </option>
+     <option title="Англи" value="en_english">
+      Англи
+     </option>
+     <option title="эсперанто" value="eo_esperanto">
+      Эсперанто
+     </option>
+     <option title="Хуудас" value="ee_ewe">
+      Навч
+     </option>
+     <option title="Йоруба" value="yo_èdè_yorùbá">
+      Йоруба хэл
+     </option>
+     <option title="самоано" value="sm_faʻa-samoa">
+      Самоа
+     </option>
+     <option title="Филиппин" value="tl_filipino">
+      Филиппин
+     </option>
+     <option title="Филиппин" value="fil_filipino">
+      Филиппин
+     </option>
+     <option title="Франц" value="fr_français">
+      Франц
+     </option>
+     <option title="Фриз" value="fy_frysk">
+      Фриз
+     </option>
+     <option title="Ирландын Гаел хэл" value="ga_gaeilge">
+      Ирланд
+     </option>
+     <option title="Гоо сайхан" value="lg_ganda">
+      Гоо сайхан
+     </option>
+     <option title="Гуарани" value="gn_guarani">
+      Гуарани
+     </option>
+     <option title="Шотландын Гел хэл" value="gd_gàidhlig">
+      Гаэл
+     </option>
+     <option title="Хауса" value="ha_harshen_hausa">
+      Хауса хэл
+     </option>
+     <option title="Хмонг" value="hmn_hmong">
+      Хмонг
+     </option>
+     <option title="Кинярванд" value="rw_ikinyarwanda">
+      Руанда
+     </option>
+     <option title="Дотор" value="ilo_iloko">
+      Дотор
+     </option>
+     <option title="Индонез" value="id_indonesia">
+      Индонез
+     </option>
+     <option title="Хоса" value="xh_isixhosa">
+      Хоса
+     </option>
+     <option title="зулу" value="zu_isizulu">
+      Зулу
+     </option>
+     <option title="итали" value="it_italiano">
+      итали
+     </option>
+     <option title="Суахили" value="sw_kiswahili">
+      Суахили
+     </option>
+     <option title="Конкани" value="gom_konkani">
+      Конкани
+     </option>
+     <option title="Гаити Креол" value="ht_kreyòl_ayisyen">
+      Гаити Креол
+     </option>
+     <option title="Крёо" value="kri_krio">
+      Крёо
+     </option>
+     <option title="Курд (Сорани)" value="ckb_kurdish_(sorani)">
+      Курд (Сорани)
+     </option>
+     <option title="Ааруул (Курманжи)" value="ku_kurdî_(kurmancî)">
+      Курд (Курманчи)
+     </option>
+     <option title="Латин" value="la_latin">
+      Латин
+     </option>
+     <option title="Лингала" value="ln_lingala">
+      Лингала
+     </option>
+     <option title="Люксембург" value="lb_lëtzebuergesch">
+      Люксембург
+     </option>
+     <option title="Майтили" value="mai_maithili">
+      Майтили
+     </option>
+     <option title="Мальта" value="mt_malti">
+      Мальта
+     </option>
+     <option title="Мейтейлон (Манипури)" value="mni-mtei_meiteilon_(manipuri)">
+      Мейтейлон (Манипури)
+     </option>
+     <option title="Англи" value="lus_mizo">
+      Англи
+     </option>
+     <option title="байгалийн" value="mi_māori">
+      маори
+     </option>
+     <option title="Голланд" value="nl_nederlands">
+      Голланд
+     </option>
+     <option title="Хойд Сото" value="nso_northern_sotho">
+      Хойд Сото
+     </option>
+     <option title="Одиа (Ория)" value="or_odia_(oriya)">
+      Одиа (Ория)
+     </option>
+     <option title="Оромо" value="om_oromo">
+      Оромо
+     </option>
+     <option title="узбек" value="uz_o‘zbek">
+      узбек
+     </option>
+     <option title="португал" value="pt_português">
+      португал
+     </option>
+     <option title="Кичуа" value="qu_quechua">
+      Кечуа
+     </option>
+     <option title="румын" value="ro_română">
+      АНГЛИ ХЭЛ
+     </option>
+     <option title="санскрит" value="sa_sanskrit">
+      санскрит
+     </option>
+     <option title="Англи" value="st_sesotho">
+      Англи
+     </option>
+     <option title="Албани" value="sq_shqip">
+      Албани
+     </option>
+     <option title="Сомали" value="so_soomaali">
+      Сомали
+     </option>
+     <option title="Тартарус" value="tt_tatar">
+      Татар
+     </option>
+     <option title="Тигриниа" value="ti_tigrinya">
+      Тигринья
+     </option>
+     <option title="Цонга" value="ts_tsonga">
+      Цонга
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="туркмен" value="tk_türkmençe">
+      Турк
+     </option>
+     <option title="турк" value="tr_türkçe">
+      турк
+     </option>
+     <option title="уйгур" value="ug_uyghur">
+      уйгур
+     </option>
+     <option title="вьетнам" value="vi_việt">
+      вьетнам
+     </option>
+     <option title="Босни" value="bs_bosanski">
+      Босни
+     </option>
+     <option title="каталон" value="ca_català">
+      каталон
+     </option>
+     <option title="Эстони" value="et_eesti">
+      Эстони
+     </option>
+     <option title="Испани" value="es_español">
+      Испани
+     </option>
+     <option title="Баск" value="eu_euskara">
+      Баск
+     </option>
+     <option title="Галис" value="gl_galego">
+      Галис
+     </option>
+     <option title="Хорват" value="hr_hrvatski">
+      Хорват
+     </option>
+     <option title="Латви" value="lv_latviešu">
+      Латви
+     </option>
+     <option title="Литва" value="lt_lietuvių">
+      Литва
+     </option>
+     <option title="Унгар" value="hu_magyar">
+      Унгар
+     </option>
+     <option title="Малагаси" value="mg_malagasy">
+      Малагаси
+     </option>
+     <option title="Норвеги" value="no_norsk">
+      Норвеги
+     </option>
+     <option title="Польш" value="pl_polski">
+      Польш
+     </option>
+     <option title="словак" value="sk_slovenčina">
+      словак
+     </option>
+     <option title="Словен" value="sl_slovenščina">
+      Словен
+     </option>
+     <option title="Финланд" value="fi_suomi">
+      Финланд
+     </option>
+     <option title="швед" value="sv_svenska">
+      швед
+     </option>
+     <option title="Исланд" value="is_íslenska">
+      Исланд
+     </option>
+     <option title="чех" value="cs_čeština">
+      чех
+     </option>
+     <option title="Грек" value="el_ελληνικά">
+      Грек
+     </option>
+     <option title="Беларусь" value="be_беларуская">
+      Беларусь
+     </option>
+     <option title="монгол" value="mn_монгол">
+      Монгол
+     </option>
+     <option title="Тажик" value="tg_тоҷикӣ">
+      Тажик
+     </option>
+     <option title="Болгар" value="bg_български">
+      Болгар
+     </option>
+     <option title="Киргиз" value="ky_кыргызча">
+      Киргиз
+     </option>
+     <option title="македон" value="mk_македонски">
+      македон
+     </option>
+     <option title="орос" value="ru_русский">
+      орос
+     </option>
+     <option title="Серб" value="sr_српски">
+      Серб
+     </option>
+     <option title="украин" value="uk_українська">
+      украин
+     </option>
+     <option title="Казак" value="kk_қазақ">
+      Казак
+     </option>
+     <option title="армян" value="hy_հայերեն">
+      Армен:
+     </option>
+     <option title="Идиче" value="yi_יידיש">
+      Идиш
+     </option>
+     <option title="Еврей" value="iw_עברית">
+      Еврей
+     </option>
+     <option title="Еврей" value="he_עברית">
+      Еврей
+     </option>
+     <option title="урду" value="ur_اردو">
+      Урду
+     </option>
+     <option title="Араб" value="ar_العربية">
+      Араб
+     </option>
+     <option title="Синди" value="sd_سنڌي">
+      Синди
+     </option>
+     <option title="алдсан" value="fa_فارسی">
+      Фарси
+     </option>
+     <option title="пушту" value="ps_پښتو">
+      Пашто
+     </option>
+     <option title="Непал" value="ne_नेपाली">
+      Непал
+     </option>
+     <option title="Марати" value="mr_मराठी">
+      Марати
+     </option>
+     <option title="Үгүй" value="hi_हिन्दी">
+      Хинди
+     </option>
+     <option title="бенгали" value="bn_বাংলা">
+      Бангла
+     </option>
+     <option title="португал" value="pa_ਪੰਜਾਬੀ">
+      Пунжаби
+     </option>
+     <option title="португал" value="gu_ગુજરાતી">
+      Гужарати
+     </option>
+     <option title="Тамил" value="ta_தமிழ்">
+      Тамил
+     </option>
+     <option title="Өвөл" value="te_తెలుగు">
+      Тэлугу
+     </option>
+     <option title="Канарес" value="kn_ಕನ್ನಡ">
+      Каннада
+     </option>
+     <option title="Стратеги" value="ml_മലയാളം">
+      Малайлам
+     </option>
+     <option title="Сингал хэл" value="si_සිංහල">
+      Синхала
+     </option>
+     <option title="Тайланд" value="th_ไทย">
+      Тайланд
+     </option>
+     <option title="сүрьеэ" value="lo_ລາວ">
+      тэр
+     </option>
+     <option title="Мьянмар (Бирм)" value="my_မြန်မာ">
+      Мьянмар
+     </option>
+     <option title="Гүрж" value="ka_ქართული">
+      Гүрж
+     </option>
+     <option title="Амхар" value="am_አማርኛ">
+      Амхар
+     </option>
+     <option title="кхмер" value="km_ខ្មែរ">
+      кхмер
+     </option>
+     <option title="Хятад (Уламжлалт)" value="zh-tw_中文_(繁體)">
+      Хятад (Уламжлалт)
+     </option>
+     <option title="Хятад (Хялбаршуулсан)" value="zh_中文（简体）">
+      Хятад (Хялбаршуулсан)
+     </option>
+     <option title="Хятад (Хялбаршуулсан)" value="zh-cn_中文（简体）">
+      Хятад (Хялбаршуулсан)
+     </option>
+     <option title="Япон" value="ja_日本語">
+      Япон
+     </option>
+     <option title="Солонгос" value="ko_한국어">
+      солонгос
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    Тавтай морил
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>

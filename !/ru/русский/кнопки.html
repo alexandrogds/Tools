@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 кнопки
+  </title>
+  <meta content="Инструмент для подсчета нажатий кнопок." name="description"/>
+  <meta content="3 кнопки, клики, подсчет, поток, инструменты, онлайн, Интернет" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="гавайский" value="haw_'ōlelo_hawaiʻi">
+      'Гавайский
+     </option>
+     <option title="Африканский" value="af_afrikaans">
+      Африканский
+     </option>
+     <option title="Ассамцы" value="as_assamese">
+      ассамский
+     </option>
+     <option title="Игбо" value="ig_asụsụ_igbo">
+      язык игбо
+     </option>
+     <option title="аймара" value="ay_aymara">
+      аймара
+     </option>
+     <option title="Азербайджанский" value="az_azərbaycan_dili">
+      азербайджанский язык
+     </option>
+     <option title="состояние" value="ms_bahasa_melayu">
+      малайский язык
+     </option>
+     <option title="Они используют это" value="bm_bambara">
+      Они носят это
+     </option>
+     <option title="яванский" value="jw_basa_jawa">
+      яванский язык
+     </option>
+     <option title="яванский" value="jv_basa_jawa">
+      яванский язык
+     </option>
+     <option title="Суданский" value="su_basa_sunda">
+      суданский язык
+     </option>
+     <option title="бходжпури" value="bho_bhojpuri">
+      бходжпури
+     </option>
+     <option title="себуанский" value="ceb_cebuano">
+      себуанский
+     </option>
+     <option title="Шона" value="sn_chishona">
+      Английский
+     </option>
+     <option title="китайский" value="ny_chichewa">
+      китайский
+     </option>
+     <option title="Курс" value="co_corsu">
+      корсиканец
+     </option>
+     <option title="валлийский" value="cy_cymraeg">
+      валлийский
+     </option>
+     <option title="датский" value="da_dansk">
+      датский
+     </option>
+     <option title="немецкий" value="de_deutsch">
+      немецкий
+     </option>
+     <option title="Дивехи" value="dv_divehi">
+      Дивехи
+     </option>
+     <option title="Догри" value="doi_dogri">
+      Догри
+     </option>
+     <option title="Английский" value="en_english">
+      Английский
+     </option>
+     <option title="эсперанто" value="eo_esperanto">
+      эсперанто
+     </option>
+     <option title="Лист" value="ee_ewe">
+      Лист
+     </option>
+     <option title="Йоруба" value="yo_èdè_yorùbá">
+      язык йоруба
+     </option>
+     <option title="Самоано" value="sm_faʻa-samoa">
+      Самоанец
+     </option>
+     <option title="филиппинский" value="tl_filipino">
+      филиппинский
+     </option>
+     <option title="филиппинский" value="fil_filipino">
+      филиппинский
+     </option>
+     <option title="Французский" value="fr_français">
+      Французский
+     </option>
+     <option title="фризский" value="fy_frysk">
+      фризский
+     </option>
+     <option title="Ирландский гэльский" value="ga_gaeilge">
+      ирландский
+     </option>
+     <option title="Красота" value="lg_ganda">
+      Красота
+     </option>
+     <option title="Гуарани" value="gn_guarani">
+      Гуарани
+     </option>
+     <option title="Шотландский гэльский" value="gd_gàidhlig">
+      гэльский
+     </option>
+     <option title="Хауса" value="ha_harshen_hausa">
+      язык хауса
+     </option>
+     <option title="Хмонг" value="hmn_hmong">
+      Хмонг
+     </option>
+     <option title="Киньяруанда" value="rw_ikinyarwanda">
+      Руандийский
+     </option>
+     <option title="Внутри" value="ilo_iloko">
+      Внутри
+     </option>
+     <option title="индонезийский" value="id_indonesia">
+      Индонезия
+     </option>
+     <option title="Коса" value="xh_isixhosa">
+      коса
+     </option>
+     <option title="зулусский" value="zu_isizulu">
+      Зулу
+     </option>
+     <option title="итальянский" value="it_italiano">
+      итальянский
+     </option>
+     <option title="суахили" value="sw_kiswahili">
+      суахили
+     </option>
+     <option title="Конкани" value="gom_konkani">
+      Конкани
+     </option>
+     <option title="гаитянский креольский" value="ht_kreyòl_ayisyen">
+      гаитянский креольский
+     </option>
+     <option title="Крио" value="kri_krio">
+      Крио
+     </option>
+     <option title="Курдский (Сорани)" value="ckb_kurdish_(sorani)">
+      Курдский (Сорани)
+     </option>
+     <option title="Творог (Курманджи)" value="ku_kurdî_(kurmancî)">
+      Курдский (Курманчи)
+     </option>
+     <option title="латинский" value="la_latin">
+      латинский
+     </option>
+     <option title="Лингала" value="ln_lingala">
+      Лингала
+     </option>
+     <option title="Люксембургский" value="lb_lëtzebuergesch">
+      Люксембургский
+     </option>
+     <option title="Майтхили" value="mai_maithili">
+      Майтхили
+     </option>
+     <option title="мальтийский" value="mt_malti">
+      мальтийский
+     </option>
+     <option title="Мейтейлон (Манипури)" value="mni-mtei_meiteilon_(manipuri)">
+      Мейтейлон (Манипури)
+     </option>
+     <option title="Английский" value="lus_mizo">
+      Английский
+     </option>
+     <option title="естественный" value="mi_māori">
+      Маори
+     </option>
+     <option title="Голландский" value="nl_nederlands">
+      Голландский
+     </option>
+     <option title="Северный Сото" value="nso_northern_sotho">
+      Северный Сото
+     </option>
+     <option title="Одия (Ория)" value="or_odia_(oriya)">
+      Одия (Ория)
+     </option>
+     <option title="Оромо" value="om_oromo">
+      Оромо
+     </option>
+     <option title="Узбекский" value="uz_o‘zbek">
+      Узбекский
+     </option>
+     <option title="португальский" value="pt_português">
+      португальский
+     </option>
+     <option title="кечуа" value="qu_quechua">
+      кечуа
+     </option>
+     <option title="румынский" value="ro_română">
+      АНГЛИЙСКИЙ
+     </option>
+     <option title="санскрит" value="sa_sanskrit">
+      санскрит
+     </option>
+     <option title="Английский" value="st_sesotho">
+      Английский
+     </option>
+     <option title="албанский" value="sq_shqip">
+      албанский
+     </option>
+     <option title="Сомали" value="so_soomaali">
+      Сомали
+     </option>
+     <option title="тартар" value="tt_tatar">
+      татарский
+     </option>
+     <option title="Тигрина" value="ti_tigrinya">
+      Тигринья
+     </option>
+     <option title="Тсонга" value="ts_tsonga">
+      Тсонга
+     </option>
+     <option title="Тви" value="ak_twi">
+      Тви
+     </option>
+     <option title="туркменский" value="tk_türkmençe">
+      Турция
+     </option>
+     <option title="турецкий" value="tr_türkçe">
+      турецкий
+     </option>
+     <option title="уйгурский" value="ug_uyghur">
+      уйгурский
+     </option>
+     <option title="вьетнамский" value="vi_việt">
+      вьетнамский
+     </option>
+     <option title="Боснийский" value="bs_bosanski">
+      Боснийский
+     </option>
+     <option title="каталонский" value="ca_català">
+      каталонский
+     </option>
+     <option title="эстонский" value="et_eesti">
+      эстонский
+     </option>
+     <option title="испанский" value="es_español">
+      испанский
+     </option>
+     <option title="Баскский" value="eu_euskara">
+      Баскский
+     </option>
+     <option title="галисийский" value="gl_galego">
+      галисийский
+     </option>
+     <option title="хорватский" value="hr_hrvatski">
+      хорватский
+     </option>
+     <option title="латышский" value="lv_latviešu">
+      латышский
+     </option>
+     <option title="литовский" value="lt_lietuvių">
+      литовский
+     </option>
+     <option title="венгерский" value="hu_magyar">
+      венгерский
+     </option>
+     <option title="малагасийский" value="mg_malagasy">
+      малагасийский
+     </option>
+     <option title="норвежский" value="no_norsk">
+      норвежский
+     </option>
+     <option title="Польский" value="pl_polski">
+      Польский
+     </option>
+     <option title="словацкий" value="sk_slovenčina">
+      словацкий
+     </option>
+     <option title="словенский" value="sl_slovenščina">
+      словенский
+     </option>
+     <option title="финский" value="fi_suomi">
+      финский
+     </option>
+     <option title="Шведский" value="sv_svenska">
+      Шведский
+     </option>
+     <option title="исландский" value="is_íslenska">
+      исландский
+     </option>
+     <option title="чешский" value="cs_čeština">
+      чешский
+     </option>
+     <option title="греческий" value="el_ελληνικά">
+      греческий
+     </option>
+     <option title="белорусский" value="be_беларуская">
+      белорусский
+     </option>
+     <option title="монгольский" value="mn_монгол">
+      Монголия
+     </option>
+     <option title="Таджик" value="tg_тоҷикӣ">
+      таджикский
+     </option>
+     <option title="болгарский" value="bg_български">
+      болгарский
+     </option>
+     <option title="Кыргызстан" value="ky_кыргызча">
+      киргизский
+     </option>
+     <option title="македонский" value="mk_македонски">
+      македонский
+     </option>
+     <option title="руссо" value="ru_русский">
+      русский
+     </option>
+     <option title="сербский" value="sr_српски">
+      сербский
+     </option>
+     <option title="Украинский" value="uk_українська">
+      украинский
+     </option>
+     <option title="казахский" value="kk_қазақ">
+      казахский
+     </option>
+     <option title="Армянский" value="hy_հայերեն">
+      Армянский:
+     </option>
+     <option title="Иидиче" value="yi_יידיש">
+      идиш
+     </option>
+     <option title="иврит" value="iw_עברית">
+      иврит
+     </option>
+     <option title="иврит" value="he_עברית">
+      иврит
+     </option>
+     <option title="урду" value="ur_اردو">
+      Урду
+     </option>
+     <option title="арабский" value="ar_العربية">
+      арабский
+     </option>
+     <option title="Синди" value="sd_سنڌي">
+      Синдхи
+     </option>
+     <option title="потерянный" value="fa_فارسی">
+      фарси
+     </option>
+     <option title="пушту" value="ps_پښتو">
+      пушту
+     </option>
+     <option title="непальский" value="ne_नेपाली">
+      непальский
+     </option>
+     <option title="маратхи" value="mr_मराठी">
+      Маратхи
+     </option>
+     <option title="Нет" value="hi_हिन्दी">
+      хинди
+     </option>
+     <option title="бенгальский" value="bn_বাংলা">
+      Бангла
+     </option>
+     <option title="португальский" value="pa_ਪੰਜਾਬੀ">
+      панджаби
+     </option>
+     <option title="португальский" value="gu_ગુજરાતી">
+      Гуджарати
+     </option>
+     <option title="тамильский" value="ta_தமிழ்">
+      тамильский
+     </option>
+     <option title="Зима" value="te_తెలుగు">
+      телугу
+     </option>
+     <option title="Канарес" value="kn_ಕನ್ನಡ">
+      Каннада
+     </option>
+     <option title="Стратегия" value="ml_മലയാളം">
+      малаялам
+     </option>
+     <option title="сингальский" value="si_සිංහල">
+      сингальский
+     </option>
+     <option title="тайский" value="th_ไทย">
+      тайский
+     </option>
+     <option title="туберкулез" value="lo_ລາວ">
+      он
+     </option>
+     <option title="Мьянма (бирманский)" value="my_မြန်မာ">
+      Мьянма
+     </option>
+     <option title="грузинский" value="ka_ქართული">
+      грузинский
+     </option>
+     <option title="амхарский" value="am_አማርኛ">
+      амхарский
+     </option>
+     <option title="кхмерский" value="km_ខ្មែរ">
+      кхмерский
+     </option>
+     <option title="Китайский (традиционный)" value="zh-tw_中文_(繁體)">
+      Китайский (традиционный)
+     </option>
+     <option title="Китайский (упрощенный)" value="zh_中文（简体）">
+      Китайский (упрощенный)
+     </option>
+     <option title="Китайский (упрощенный)" value="zh-cn_中文（简体）">
+      Китайский (упрощенный)
+     </option>
+     <option title="японский" value="ja_日本語">
+      японский
+     </option>
+     <option title="корейский" value="ko_한국어">
+      корейский
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Добро пожаловать
+     </h1>
+     <p class="lead">
+      Это страница с кнопками и счетчиками нажатий.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Количество кнопок:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="привет">
+       Новый
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="привет">
+       Делиться
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="привет">
+       Введите пароль
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="привет">
+       Восстановить данные
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Капитал
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Подтвердить действие
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Вы уверены, что хотите удалить некоторые кнопки? Это действие нельзя отменить. Кнопки будут удалены с конца.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Отмена
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Подтверждать
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   URL опроса успешно скопирован.
+  </span>
+  <span id="voting" style="display:none;">
+   Голосование
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

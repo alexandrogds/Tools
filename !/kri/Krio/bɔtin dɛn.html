@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="kri">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 Bɔtin dɛn
+  </title>
+  <meta content="Tul fɔ kɔnt bɔtin klik dɛn." name="description"/>
+  <meta content="3 bɔtin, klik, kɔnt, strim, tul, ɔnlayn, wɛb" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Na Awayi pipul dɛn" value="haw_'ōlelo_hawaiʻi">
+      ‘Na Hawaiian
+     </option>
+     <option title="Afrikan pipul dɛn" value="af_afrikaans">
+      Afrikan pipul dɛn
+     </option>
+     <option title="Asam pipul dɛn" value="as_assamese">
+      Assamese
+     </option>
+     <option title="Igbo pipul dɛn" value="ig_asụsụ_igbo">
+      Igbo langwej
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Na Azaybayjano" value="az_azərbaycan_dili">
+      Azerbaijani langwej
+     </option>
+     <option title="stet" value="ms_bahasa_melayu">
+      Malay langwej
+     </option>
+     <option title="Dɛn kin yuz am" value="bm_bambara">
+      Dɛn kin wɛr am
+     </option>
+     <option title="Javan pipul dɛn" value="jw_basa_jawa">
+      Javanese langwej
+     </option>
+     <option title="Javan pipul dɛn" value="jv_basa_jawa">
+      Javanese langwej
+     </option>
+     <option title="Sudanese pipul dɛn" value="su_basa_sunda">
+      Sundanese langwej
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano we dɛn kɔl Cebuano" value="ceb_cebuano">
+      Cebuano we dɛn kɔl Cebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      Inglish
+     </option>
+     <option title="Chaynish pipul dɛn" value="ny_chichewa">
+      Chaynish pipul dɛn
+     </option>
+     <option title="Kɔz" value="co_corsu">
+      Kɔsikan
+     </option>
+     <option title="Welsh pipul dɛn" value="cy_cymraeg">
+      Welsh pipul dɛn
+     </option>
+     <option title="Danish pipul dɛn" value="da_dansk">
+      Danish pipul dɛn
+     </option>
+     <option title="Jaman langwej" value="de_deutsch">
+      Jaman langwej
+     </option>
+     <option title="Divehi we de na di wɔl" value="dv_divehi">
+      Divehi we de na di wɔl
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="Inglish" value="en_english">
+      Inglish
+     </option>
+     <option title="esperanto we dɛn kɔl esperanto" value="eo_esperanto">
+      Esperanto we dɛn kɔl Esperanto
+     </option>
+     <option title="Shit" value="ee_ewe">
+      Lif
+     </option>
+     <option title="Yoruba langwej" value="yo_èdè_yorùbá">
+      Yoruba langwej
+     </option>
+     <option title="samoano pipul dɛn" value="sm_faʻa-samoa">
+      Samoan
+     </option>
+     <option title="Filipino pɔsin" value="tl_filipino">
+      Filipino pɔsin
+     </option>
+     <option title="Filipino pɔsin" value="fil_filipino">
+      Filipino pɔsin
+     </option>
+     <option title="Frɛnch" value="fr_français">
+      Frɛnch
+     </option>
+     <option title="Frisian we dɛn kɔl" value="fy_frysk">
+      Frisian we dɛn kɔl
+     </option>
+     <option title="Ayrish Gelik langwej" value="ga_gaeilge">
+      Irish pipul dɛn
+     </option>
+     <option title="Fayn" value="lg_ganda">
+      Fayn
+     </option>
+     <option title="Guarani" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="Skɔtish Gelik langwej" value="gd_gàidhlig">
+      Gelik langwej
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Hausa langwej
+     </option>
+     <option title="Hmong pipul dɛn" value="hmn_hmong">
+      Hmong pipul dɛn
+     </option>
+     <option title="Kinyarwanda langwej" value="rw_ikinyarwanda">
+      Ruwanda pipul dɛn
+     </option>
+     <option title="Insay" value="ilo_iloko">
+      Insay
+     </option>
+     <option title="Indonishian langwej" value="id_indonesia">
+      Indonishia
+     </option>
+     <option title="Xhosa we dɛn kɔl Xhosa" value="xh_isixhosa">
+      Xhosa we dɛn kɔl Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Zulu
+     </option>
+     <option title="Italiyan langwej" value="it_italiano">
+      Italiyan langwej
+     </option>
+     <option title="Swahili langwej" value="sw_kiswahili">
+      Swahili langwej
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Haitian Krio" value="ht_kreyòl_ayisyen">
+      Haitian Krio
+     </option>
+     <option title="Kryo we de na di wɔl" value="kri_krio">
+      Kryo we de na di wɔl
+     </option>
+     <option title="Kurdish (Sɔran) ." value="ckb_kurdish_(sorani)">
+      Kurdish (Sɔran) .
+     </option>
+     <option title="Kɔd (Kurmanji) ." value="ku_kurdî_(kurmancî)">
+      Kurdish (Kurmanci) we de tɔk bɔt di Baybul.
+     </option>
+     <option title="Latin we dɛn kɔl Latin" value="la_latin">
+      Latin we dɛn kɔl Latin
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="Laksembɔg pipul dɛn" value="lb_lëtzebuergesch">
+      Laksembɔg pipul dɛn
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="Mɔlta pipul dɛn" value="mt_malti">
+      Mɔlta pipul dɛn
+     </option>
+     <option title="Meiteilon (Manipuri) we de na di kɔntri." value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri) we de na di kɔntri.
+     </option>
+     <option title="Inglish" value="lus_mizo">
+      Inglish
+     </option>
+     <option title="kɔmɔn" value="mi_māori">
+      Maori pipul dɛn
+     </option>
+     <option title="Dutch pipul dɛn" value="nl_nederlands">
+      Dutch pipul dɛn
+     </option>
+     <option title="Nɔtan Sɔto" value="nso_northern_sotho">
+      Nɔtan Sɔto
+     </option>
+     <option title="Odia (Oriya) ." value="or_odia_(oriya)">
+      Odia (Oriya) .
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="Uzbek pipul dɛn" value="uz_o‘zbek">
+      Uzbek pipul dɛn
+     </option>
+     <option title="Pɔtyugis langwej" value="pt_português">
+      Pɔtyugis langwej
+     </option>
+     <option title="Quichua we dɛn kin tɔk" value="qu_quechua">
+      Quechua
+     </option>
+     <option title="Romanian langwej" value="ro_română">
+      INGLISH
+     </option>
+     <option title="Sanskrit" value="sa_sanskrit">
+      Sanskrit
+     </option>
+     <option title="Inglish" value="st_sesotho">
+      Inglish
+     </option>
+     <option title="Albanian langwej" value="sq_shqip">
+      Albanian langwej
+     </option>
+     <option title="Sɔmali langwej" value="so_soomaali">
+      Sɔmali langwej
+     </option>
+     <option title="Tartarɔs" value="tt_tatar">
+      Tatar
+     </option>
+     <option title="Tigrinia we de na di kɔntri" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Turkmen pipul dɛn" value="tk_türkmençe">
+      Tɔki
+     </option>
+     <option title="Turkish langwej" value="tr_türkçe">
+      Turkish langwej
+     </option>
+     <option title="Uighur we dɛn kɔl Uighur" value="ug_uyghur">
+      Uyghur pipul dɛn
+     </option>
+     <option title="Vietnamese pipul dɛn" value="vi_việt">
+      Vietnamese pipul dɛn
+     </option>
+     <option title="Bosnian pipul dɛn" value="bs_bosanski">
+      Bosnian pipul dɛn
+     </option>
+     <option title="Katalan langwej" value="ca_català">
+      Katalan langwej
+     </option>
+     <option title="Na Estonian pipul dɛn" value="et_eesti">
+      Na Estonian pipul dɛn
+     </option>
+     <option title="Spanish" value="es_español">
+      Spanish
+     </option>
+     <option title="Bask" value="eu_euskara">
+      Bask
+     </option>
+     <option title="Galishian langwej" value="gl_galego">
+      Galishian langwej
+     </option>
+     <option title="Kroeshian" value="hr_hrvatski">
+      Kroeshian
+     </option>
+     <option title="Latvian pipul dɛn" value="lv_latviešu">
+      Latvian pipul dɛn
+     </option>
+     <option title="Lituɛnia langwej" value="lt_lietuvių">
+      Lituɛnia langwej
+     </option>
+     <option title="Ɔngari pipul dɛn" value="hu_magyar">
+      Ɔngari pipul dɛn
+     </option>
+     <option title="Malagasy" value="mg_malagasy">
+      Malagasy
+     </option>
+     <option title="Nɔwe langwej" value="no_norsk">
+      Nɔwe langwej
+     </option>
+     <option title="Polish langwej" value="pl_polski">
+      Polish langwej
+     </option>
+     <option title="Slovak" value="sk_slovenčina">
+      Slovak
+     </option>
+     <option title="Na Slɔvenian" value="sl_slovenščina">
+      Na Slɔvenian
+     </option>
+     <option title="Finnish pipul dɛn" value="fi_suomi">
+      Finnish pipul dɛn
+     </option>
+     <option title="Swedish langwej" value="sv_svenska">
+      Swedish langwej
+     </option>
+     <option title="Na Ayland we dɛn rayt" value="is_íslenska">
+      Na Ayland we dɛn rayt
+     </option>
+     <option title="Czech langwej" value="cs_čeština">
+      Czech langwej
+     </option>
+     <option title="Grik langwej" value="el_ελληνικά">
+      Grik langwej
+     </option>
+     <option title="Na Belarus we dɛn kɔl" value="be_беларуская">
+      Na Belarus we dɛn kɔl
+     </option>
+     <option title="mongol" value="mn_монгол">
+      Mɔngolia
+     </option>
+     <option title="Tajic na di Baybul" value="tg_тоҷикӣ">
+      Tajik langwej
+     </option>
+     <option title="Bulgarian langwej" value="bg_български">
+      Bulgarian langwej
+     </option>
+     <option title="Kirgistan" value="ky_кыргызча">
+      Kyrgyz
+     </option>
+     <option title="Masidonian pipul dɛn" value="mk_македонски">
+      Masidonian pipul dɛn
+     </option>
+     <option title="russo we dɛn kɔl russo" value="ru_русский">
+      Rɔshian langwej
+     </option>
+     <option title="Serbian langwej" value="sr_српски">
+      Serbian langwej
+     </option>
+     <option title="Yukren langwej" value="uk_українська">
+      Yukren langwej
+     </option>
+     <option title="Kazakhstan" value="kk_қазақ">
+      Kazakhstan
+     </option>
+     <option title="Amɛnian" value="hy_հայերեն">
+      Amɛnian: .
+     </option>
+     <option title="Iidiche we de na di wɔl" value="yi_יידיש">
+      Yiddish langwej
+     </option>
+     <option title="Ibru langwej" value="iw_עברית">
+      Ibru langwej
+     </option>
+     <option title="Ibru langwej" value="he_עברית">
+      Ibru langwej
+     </option>
+     <option title="urdu we dɛn kɔl urdu" value="ur_اردو">
+      Urdu langwej
+     </option>
+     <option title="Arabik langwej" value="ar_العربية">
+      Arabik langwej
+     </option>
+     <option title="Sindi na wan" value="sd_سنڌي">
+      Sindhi we dɛn kɔl Sindhi
+     </option>
+     <option title="lɔs" value="fa_فارسی">
+      Farsi langwej
+     </option>
+     <option title="pashto we dɛn kɔl pashto" value="ps_پښتو">
+      Pashto we dɛn kɔl Pashto
+     </option>
+     <option title="Na Nepal pipul dɛn" value="ne_नेपाली">
+      Nepali langwej
+     </option>
+     <option title="Marathi langwej" value="mr_मराठी">
+      Marathi langwej
+     </option>
+     <option title="Nɔ" value="hi_हिन्दी">
+      Hindi we dɛn kɔl Hindi
+     </option>
+     <option title="bengali we dɛn kin tɔk" value="bn_বাংলা">
+      Bangla langwej
+     </option>
+     <option title="Pɔtyugis langwej" value="pa_ਪੰਜਾਬੀ">
+      Punjabi we dɛn kɔl Punjabi
+     </option>
+     <option title="Pɔtyugis langwej" value="gu_ગુજરાતી">
+      Gujarati we dɛn kɔl Gujarati
+     </option>
+     <option title="Tamil langwej" value="ta_தமிழ்">
+      Tamil langwej
+     </option>
+     <option title="Kol wɛda" value="te_తెలుగు">
+      Telugu we dɛn kɔl Telugu
+     </option>
+     <option title="Kanares we dɛn kɔl" value="kn_ಕನ್ನಡ">
+      Kannada we dɛn kɔl Kannada
+     </option>
+     <option title="Plan" value="ml_മലയാളം">
+      Malayalam langwej
+     </option>
+     <option title="Sinhalese langwej" value="si_සිංහල">
+      Sinhala langwej
+     </option>
+     <option title="Tayland langwej" value="th_ไทย">
+      Tayland langwej
+     </option>
+     <option title="TB we gɛt di sik" value="lo_ລາວ">
+      i
+     </option>
+     <option title="Mianma (Bɔm) ." value="my_မြန်မာ">
+      Mianma na Mianma
+     </option>
+     <option title="Jojian langwej" value="ka_ქართული">
+      Jojian langwej
+     </option>
+     <option title="Amharic" value="am_አማርኛ">
+      Amharic
+     </option>
+     <option title="Khmer pipul dɛn" value="km_ខ្មែរ">
+      Khmer pipul dɛn
+     </option>
+     <option title="Chaynish (Tradishɔnal) ." value="zh-tw_中文_(繁體)">
+      Chaynish (Tradishɔnal) .
+     </option>
+     <option title="Chaynish (Simplified) ." value="zh_中文（简体）">
+      Chaynish (Simplified) .
+     </option>
+     <option title="Chaynish (Simplified) ." value="zh-cn_中文（简体）">
+      Chaynish (Simplified) .
+     </option>
+     <option title="Japanese pipul dɛn" value="ja_日本語">
+      Japanese pipul dɛn
+     </option>
+     <option title="Korian langwej" value="ko_한국어">
+      korian
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Wɛlkɔm
+     </h1>
+     <p class="lead">
+      Dis na pej we gɛt bɔtin dɛn we gɛt klik kɔnt.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Nɔmba fɔ di bɔtin dɛn:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Adu">
+       Nyu
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Adu">
+       Shɛb
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Adu">
+       Put Paswɔd fɔ yu
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Adu">
+       Rikɔva di Data
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Kapital
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Kɔnfɛm Akshɔn
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Yu shɔ se yu want fɔ pul sɔm bɔtin dɛn? Dis akshɔn nɔ go ebul fɔ undone. Dɛn go pul di bɔtin dɛn frɔm di ɛnd.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        nɔ
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Mek wi biliv
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   Poll URL kɔpi fayn fayn wan.
+  </span>
+  <span id="voting" style="display:none;">
+   Fɔ vot
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="la">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   Web Tools.
+  </title>
+  <meta content="Online instrumenta ad usum." name="description"/>
+  <meta content="instrumenta, online, web" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/scripts/redirect-to-lang.js" id="change-lang-autos"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Hawaiian" value="haw_'ōlelo_hawaiʻi">
+      'Hawaiian
+     </option>
+     <option title="African" value="af_afrikaans">
+      African
+     </option>
+     <option title="Assameses" value="as_assamese">
+      Assamese
+     </option>
+     <option title="Igbo" value="ig_asụsụ_igbo">
+      Lingua Igbo
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Azerbaijano" value="az_azərbaycan_dili">
+      Lingua Azerbaijani
+     </option>
+     <option title="status" value="ms_bahasa_melayu">
+      Lingua Malay
+     </option>
+     <option title="Utuntur" value="bm_bambara">
+      Non gerunt eam
+     </option>
+     <option title="Javanese" value="jw_basa_jawa">
+      Lingua Javanese
+     </option>
+     <option title="Javanese" value="jv_basa_jawa">
+      Lingua Javanese
+     </option>
+     <option title="Sudanese" value="su_basa_sunda">
+      Lingua Sundanese
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      Anglicus
+     </option>
+     <option title="Seres" value="ny_chichewa">
+      Seres
+     </option>
+     <option title="Course" value="co_corsu">
+      Corsica
+     </option>
+     <option title="Cambrica" value="cy_cymraeg">
+      Cambrica
+     </option>
+     <option title="Danica" value="da_dansk">
+      Danica
+     </option>
+     <option title="German" value="de_deutsch">
+      German
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="Anglicus" value="en_english">
+      Anglicus
+     </option>
+     <option title="esperanto" value="eo_esperanto">
+      Esperanto
+     </option>
+     <option title="Sheet" value="ee_ewe">
+      Leaf
+     </option>
+     <option title="Ioruba" value="yo_èdè_yorùbá">
+      Lingua Ioruba
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Samoanice
+     </option>
+     <option title="Philippinica" value="tl_filipino">
+      Philippinica
+     </option>
+     <option title="Philippinica" value="fil_filipino">
+      Philippinica
+     </option>
+     <option title="Gallica" value="fr_français">
+      Gallica
+     </option>
+     <option title="Frisian" value="fy_frysk">
+      Frisian
+     </option>
+     <option title="Hibernica Gaelic" value="ga_gaeilge">
+      Hibernica
+     </option>
+     <option title="Pulchritudo" value="lg_ganda">
+      Pulchritudo
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="Scotica Gaelic" value="gd_gàidhlig">
+      Gaelic
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Lingua Hausa
+     </option>
+     <option title="Hmong" value="hmn_hmong">
+      Hmong
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      Rwandan
+     </option>
+     <option title="Intus" value="ilo_iloko">
+      Intus
+     </option>
+     <option title="Indonesiaca" value="id_indonesia">
+      Indonesia
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Zulu
+     </option>
+     <option title="Italian" value="it_italiano">
+      Italian
+     </option>
+     <option title="Swahili" value="sw_kiswahili">
+      Swahili
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Haitian Creole" value="ht_kreyòl_ayisyen">
+      Haitian Creole
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="Kurdish (Sorani)" value="ckb_kurdish_(sorani)">
+      Kurdish (Sorani)
+     </option>
+     <option title="Curd (Kurmanji)" value="ku_kurdî_(kurmancî)">
+      Kurdish (Kurmanci)
+     </option>
+     <option title="Latinus" value="la_latin">
+      Latinus
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="Luxemburgish" value="lb_lëtzebuergesch">
+      Luxemburgish
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="Melitensis" value="mt_malti">
+      Melitensis
+     </option>
+     <option title="Meiteilon (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="Anglicus" value="lus_mizo">
+      Anglicus
+     </option>
+     <option title="naturalis" value="mi_māori">
+      Māori
+     </option>
+     <option title="Batavica" value="nl_nederlands">
+      Batavica
+     </option>
+     <option title="Septentrionalium Sotho" value="nso_northern_sotho">
+      Septentrionalium Sotho
+     </option>
+     <option title="Odia (Oriya)" value="or_odia_(oriya)">
+      Odia (Oriya)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="Uzbek" value="uz_o‘zbek">
+      Uzbek
+     </option>
+     <option title="Portuguese" value="pt_português">
+      Portuguese
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      Quechua
+     </option>
+     <option title="Romanian" value="ro_română">
+      ANGLORUM
+     </option>
+     <option title="Sanscritica" value="sa_sanskrit">
+      Sanscritica
+     </option>
+     <option title="Anglicus" value="st_sesotho">
+      Anglicus
+     </option>
+     <option title="Albanian" value="sq_shqip">
+      Albanian
+     </option>
+     <option title="Somali" value="so_soomaali">
+      Somali
+     </option>
+     <option title="Tartarus" value="tt_tatar">
+      Tatar
+     </option>
+     <option title="Tigrínia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Turci" value="tk_türkmençe">
+      Turkey
+     </option>
+     <option title="Turcicum" value="tr_türkçe">
+      Turcicum
+     </option>
+     <option title="Uighur" value="ug_uyghur">
+      Uyghur
+     </option>
+     <option title="Vietnamica" value="vi_việt">
+      Vietnamica
+     </option>
+     <option title="Bosnian" value="bs_bosanski">
+      Bosnian
+     </option>
+     <option title="Catalan" value="ca_català">
+      Catalan
+     </option>
+     <option title="Estonian" value="et_eesti">
+      Estonian
+     </option>
+     <option title="hispanice" value="es_español">
+      hispanice
+     </option>
+     <option title="Basque" value="eu_euskara">
+      Basque
+     </option>
+     <option title="Gallician" value="gl_galego">
+      Gallician
+     </option>
+     <option title="Croatian" value="hr_hrvatski">
+      Croatian
+     </option>
+     <option title="Latvian" value="lv_latviešu">
+      Latvian
+     </option>
+     <option title="Lithuanian" value="lt_lietuvių">
+      Lithuanian
+     </option>
+     <option title="Hungarica" value="hu_magyar">
+      Hungarica
+     </option>
+     <option title="Malagasy" value="mg_malagasy">
+      Malagasy
+     </option>
+     <option title="Norvegica" value="no_norsk">
+      Norvegica
+     </option>
+     <option title="Polonica" value="pl_polski">
+      Polonica
+     </option>
+     <option title="Moravica" value="sk_slovenčina">
+      Moravica
+     </option>
+     <option title="Slovenian" value="sl_slovenščina">
+      Slovenian
+     </option>
+     <option title="Finnicum" value="fi_suomi">
+      Finnicum
+     </option>
+     <option title="Swedish" value="sv_svenska">
+      Swedish
+     </option>
+     <option title="Islandic" value="is_íslenska">
+      Islandic
+     </option>
+     <option title="Czech" value="cs_čeština">
+      Czech
+     </option>
+     <option title="Greek" value="el_ελληνικά">
+      Greek
+     </option>
+     <option title="Belarusian" value="be_беларуская">
+      Belarusian
+     </option>
+     <option title="mongol" value="mn_монгол">
+      Mongolia
+     </option>
+     <option title="Tajic" value="tg_тоҷикӣ">
+      Tajik
+     </option>
+     <option title="Bulgarica" value="bg_български">
+      Bulgarica
+     </option>
+     <option title="Kyrgyzstan" value="ky_кыргызча">
+      Kyrgyz
+     </option>
+     <option title="macedonicum" value="mk_македонски">
+      macedonicum
+     </option>
+     <option title="russo" value="ru_русский">
+      Russian
+     </option>
+     <option title="Serbian" value="sr_српски">
+      Serbian
+     </option>
+     <option title="Ucraina" value="uk_українська">
+      Ucraina
+     </option>
+     <option title="Kazakh" value="kk_қазақ">
+      Kazakh
+     </option>
+     <option title="Armenian" value="hy_հայերեն">
+      Armenius:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      Yiddish
+     </option>
+     <option title="hebraice" value="iw_עברית">
+      hebraice
+     </option>
+     <option title="hebraice" value="he_עברית">
+      hebraice
+     </option>
+     <option title="urdu" value="ur_اردو">
+      Urdu
+     </option>
+     <option title="Arabice" value="ar_العربية">
+      Arabice
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindhi
+     </option>
+     <option title="perditus" value="fa_فارسی">
+      Farsi
+     </option>
+     <option title="pashto" value="ps_پښتو">
+      Pashto
+     </option>
+     <option title="Nepalese" value="ne_नेपाली">
+      Nepalica
+     </option>
+     <option title="Marathi" value="mr_मराठी">
+      Marathi
+     </option>
+     <option title="No" value="hi_हिन्दी">
+      Hindi
+     </option>
+     <option title="bengali" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="Portuguese" value="pa_ਪੰਜਾਬੀ">
+      Punjabi
+     </option>
+     <option title="Portuguese" value="gu_ગુજરાતી">
+      Gujarati
+     </option>
+     <option title="Tamil" value="ta_தமிழ்">
+      Tamil
+     </option>
+     <option title="hiems" value="te_తెలుగు">
+      Telugu
+     </option>
+     <option title="Canares" value="kn_ಕನ್ನಡ">
+      Kannada
+     </option>
+     <option title="Strategy" value="ml_മലയാളം">
+      Malayalam
+     </option>
+     <option title="Sinhalese" value="si_සිංහල">
+      Sinhala
+     </option>
+     <option title="Thai" value="th_ไทย">
+      Thai
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      he
+     </option>
+     <option title="Africa (Burmese)" value="my_မြန်မာ">
+      Myanmar
+     </option>
+     <option title="Georgian" value="ka_ქართული">
+      Georgian
+     </option>
+     <option title="Aethiopica" value="am_አማርኛ">
+      Aethiopica
+     </option>
+     <option title="Khmer" value="km_ខ្មែរ">
+      Khmer
+     </option>
+     <option title="Seres (Traditional)" value="zh-tw_中文_(繁體)">
+      Seres (Traditional)
+     </option>
+     <option title="Seres (facilius)" value="zh_中文（简体）">
+      Seres (facilius)
+     </option>
+     <option title="Seres (facilius)" value="zh-cn_中文（简体）">
+      Seres (facilius)
+     </option>
+     <option title="Iaponica" value="ja_日本語">
+      Iaponica
+     </option>
+     <option title="Coreanica" value="ko_한국어">
+      Coreanica
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    Grata
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>

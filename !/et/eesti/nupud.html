@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="et">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 nuppu
+  </title>
+  <meta content="Tööriist nupuklõpsude loendamiseks." name="description"/>
+  <meta content="3 nuppu, klõpsud, loendus, voog, tööriistad, võrgus, veeb" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Havai" value="haw_'ōlelo_hawaiʻi">
+      'Havai
+     </option>
+     <option title="Aafrika" value="af_afrikaans">
+      Aafrika
+     </option>
+     <option title="Assamesid" value="as_assamese">
+      Assami
+     </option>
+     <option title="igbo" value="ig_asụsụ_igbo">
+      Igbo keel
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Aserbaidžaano" value="az_azərbaycan_dili">
+      Aserbaidžaani keel
+     </option>
+     <option title="olek" value="ms_bahasa_melayu">
+      malai keel
+     </option>
+     <option title="Nad kasutavad seda" value="bm_bambara">
+      Nad kannavad seda
+     </option>
+     <option title="jaava keel" value="jw_basa_jawa">
+      jaava keel
+     </option>
+     <option title="jaava keel" value="jv_basa_jawa">
+      jaava keel
+     </option>
+     <option title="Sudaani" value="su_basa_sunda">
+      sunda keel
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      inglise keel
+     </option>
+     <option title="hiina keel" value="ny_chichewa">
+      hiina keel
+     </option>
+     <option title="Kursus" value="co_corsu">
+      Korsika
+     </option>
+     <option title="kõmri" value="cy_cymraeg">
+      kõmri
+     </option>
+     <option title="taani keel" value="da_dansk">
+      taani keel
+     </option>
+     <option title="saksa keel" value="de_deutsch">
+      saksa keel
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="inglise keel" value="en_english">
+      inglise keel
+     </option>
+     <option title="esperanto" value="eo_esperanto">
+      esperanto
+     </option>
+     <option title="Leht" value="ee_ewe">
+      Leht
+     </option>
+     <option title="joruba" value="yo_èdè_yorùbá">
+      Joruba keel
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Samoa
+     </option>
+     <option title="filipiinlane" value="tl_filipino">
+      filipiinlane
+     </option>
+     <option title="filipiinlane" value="fil_filipino">
+      filipiinlane
+     </option>
+     <option title="prantsuse keel" value="fr_français">
+      prantsuse keel
+     </option>
+     <option title="friisi keel" value="fy_frysk">
+      friisi keel
+     </option>
+     <option title="iiri gaeli keel" value="ga_gaeilge">
+      iirlane
+     </option>
+     <option title="Ilu" value="lg_ganda">
+      Ilu
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="šoti gaeli keel" value="gd_gàidhlig">
+      gaeli keel
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Hausa keel
+     </option>
+     <option title="hmong" value="hmn_hmong">
+      hmong
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      Rwanda
+     </option>
+     <option title="Sees" value="ilo_iloko">
+      Sees
+     </option>
+     <option title="Indoneesia" value="id_indonesia">
+      Indoneesia
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      suulu
+     </option>
+     <option title="itaalia keel" value="it_italiano">
+      itaalia keel
+     </option>
+     <option title="suahiili keel" value="sw_kiswahili">
+      suahiili keel
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Haiti kreool" value="ht_kreyòl_ayisyen">
+      Haiti kreool
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="kurdi (sorani)" value="ckb_kurdish_(sorani)">
+      kurdi (sorani)
+     </option>
+     <option title="Kohupiim (kurmanji)" value="ku_kurdî_(kurmancî)">
+      kurdi (kurmanci)
+     </option>
+     <option title="ladina keel" value="la_latin">
+      ladina keel
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="Luksemburgi keel" value="lb_lëtzebuergesch">
+      Luksemburgi keel
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="malta keel" value="mt_malti">
+      malta keel
+     </option>
+     <option title="meiteilon (manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      meiteilon (manipuri)
+     </option>
+     <option title="inglise keel" value="lus_mizo">
+      inglise keel
+     </option>
+     <option title="loomulik" value="mi_māori">
+      maoori
+     </option>
+     <option title="hollandi keel" value="nl_nederlands">
+      hollandi keel
+     </option>
+     <option title="Põhja-Sotho" value="nso_northern_sotho">
+      Põhja-Sotho
+     </option>
+     <option title="Odia (Oriya)" value="or_odia_(oriya)">
+      Odia (Oriya)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="usbeki" value="uz_o‘zbek">
+      usbeki
+     </option>
+     <option title="portugali keel" value="pt_português">
+      portugali keel
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      ketšua
+     </option>
+     <option title="rumeenlane" value="ro_română">
+      INGLISE
+     </option>
+     <option title="sanskrit" value="sa_sanskrit">
+      sanskrit
+     </option>
+     <option title="inglise keel" value="st_sesotho">
+      inglise keel
+     </option>
+     <option title="albaanlane" value="sq_shqip">
+      albaanlane
+     </option>
+     <option title="Somaalia" value="so_soomaali">
+      Somaalia
+     </option>
+     <option title="Tartarus" value="tt_tatar">
+      tatarlane
+     </option>
+     <option title="Tigrínia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="türkmeen" value="tk_türkmençe">
+      Türgi
+     </option>
+     <option title="türgi keel" value="tr_türkçe">
+      türgi keel
+     </option>
+     <option title="uiguurid" value="ug_uyghur">
+      uiguurid
+     </option>
+     <option title="vietnamlane" value="vi_việt">
+      vietnamlane
+     </option>
+     <option title="bosnia keel" value="bs_bosanski">
+      bosnia keel
+     </option>
+     <option title="katalaani" value="ca_català">
+      katalaani
+     </option>
+     <option title="eesti keel" value="et_eesti">
+      eesti
+     </option>
+     <option title="hispaania keel" value="es_español">
+      hispaania keel
+     </option>
+     <option title="baski keel" value="eu_euskara">
+      baski keel
+     </option>
+     <option title="Galicia" value="gl_galego">
+      Galicia
+     </option>
+     <option title="Horvaatia" value="hr_hrvatski">
+      Horvaatia
+     </option>
+     <option title="lätlane" value="lv_latviešu">
+      lätlane
+     </option>
+     <option title="Leedu" value="lt_lietuvių">
+      Leedu
+     </option>
+     <option title="ungari" value="hu_magyar">
+      ungari
+     </option>
+     <option title="Madagaskari" value="mg_malagasy">
+      Madagaskari
+     </option>
+     <option title="norra keel" value="no_norsk">
+      norra keel
+     </option>
+     <option title="poola keel" value="pl_polski">
+      poola keel
+     </option>
+     <option title="slovaki" value="sk_slovenčina">
+      slovaki
+     </option>
+     <option title="Sloveenia" value="sl_slovenščina">
+      Sloveenia
+     </option>
+     <option title="soome keel" value="fi_suomi">
+      soome keel
+     </option>
+     <option title="rootsi keel" value="sv_svenska">
+      rootsi keel
+     </option>
+     <option title="islandi" value="is_íslenska">
+      islandi
+     </option>
+     <option title="tšehhi" value="cs_čeština">
+      tšehhi
+     </option>
+     <option title="kreeka keel" value="el_ελληνικά">
+      kreeka keel
+     </option>
+     <option title="valgevenelane" value="be_беларуская">
+      valgevenelane
+     </option>
+     <option title="mongol" value="mn_монгол">
+      Mongoolia
+     </option>
+     <option title="tadžiki" value="tg_тоҷикӣ">
+      tadžiki
+     </option>
+     <option title="bulgaaria keel" value="bg_български">
+      bulgaaria keel
+     </option>
+     <option title="Kõrgõzstan" value="ky_кыргызча">
+      kirgiisi
+     </option>
+     <option title="makedoonlane" value="mk_македонски">
+      makedoonlane
+     </option>
+     <option title="vene keel" value="ru_русский">
+      vene keel
+     </option>
+     <option title="serblane" value="sr_српски">
+      serblane
+     </option>
+     <option title="ukrainlane" value="uk_українська">
+      ukrainlane
+     </option>
+     <option title="kasahhi" value="kk_қазақ">
+      kasahhi
+     </option>
+     <option title="armeenlane" value="hy_հայերեն">
+      armeenia:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      jidiš
+     </option>
+     <option title="heebrea" value="iw_עברית">
+      heebrea
+     </option>
+     <option title="heebrea" value="he_עברית">
+      heebrea
+     </option>
+     <option title="urdu keel" value="ur_اردو">
+      urdu
+     </option>
+     <option title="araabia keel" value="ar_العربية">
+      araabia keel
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindhi
+     </option>
+     <option title="kadunud" value="fa_فارسی">
+      farsi
+     </option>
+     <option title="puštu" value="ps_پښتو">
+      puštu
+     </option>
+     <option title="Nepali" value="ne_नेपाली">
+      Nepali
+     </option>
+     <option title="marati" value="mr_मराठी">
+      marati
+     </option>
+     <option title="Ei" value="hi_हिन्दी">
+      hindi
+     </option>
+     <option title="bengali keel" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="portugali keel" value="pa_ਪੰਜਾਬੀ">
+      pandžabi
+     </option>
+     <option title="portugali keel" value="gu_ગુજરાતી">
+      gudžarati
+     </option>
+     <option title="tamili keel" value="ta_தமிழ்">
+      tamili keel
+     </option>
+     <option title="Talv" value="te_తెలుగు">
+      telugu
+     </option>
+     <option title="Kanaarid" value="kn_ಕನ್ನಡ">
+      kannada
+     </option>
+     <option title="strateegia" value="ml_മലയാളം">
+      malajalami
+     </option>
+     <option title="singali keel" value="si_සිංහල">
+      singali keel
+     </option>
+     <option title="Tai" value="th_ไทย">
+      Tai
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      ta
+     </option>
+     <option title="Myanmar (Birma)" value="my_မြန်မာ">
+      Myanmar
+     </option>
+     <option title="Gruusia keel" value="ka_ქართული">
+      Gruusia keel
+     </option>
+     <option title="amhari" value="am_አማርኛ">
+      amhari
+     </option>
+     <option title="khmeerid" value="km_ខ្មែរ">
+      khmeerid
+     </option>
+     <option title="hiina keel (traditsiooniline)" value="zh-tw_中文_(繁體)">
+      hiina keel (traditsiooniline)
+     </option>
+     <option title="hiina (lihtsustatud)" value="zh_中文（简体）">
+      hiina (lihtsustatud)
+     </option>
+     <option title="hiina (lihtsustatud)" value="zh-cn_中文（简体）">
+      hiina (lihtsustatud)
+     </option>
+     <option title="Jaapani" value="ja_日本語">
+      Jaapani
+     </option>
+     <option title="korea keel" value="ko_한국어">
+      korealane
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Tere tulemast
+     </h1>
+     <p class="lead">
+      See on lehekülg, millel on nupud klõpsude arvuga.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Nuppude arv:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="tere">
+       Uus
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="tere">
+       Jaga
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="tere">
+       Pane parool
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="tere">
+       Andmete taastamine
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Kapital
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Kinnitage toiming
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Kas olete kindel, et soovite mõned nupud eemaldada? Seda toimingut ei saa tagasi võtta. Nupud eemaldatakse otsast.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Tühista
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Kinnita
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   Küsitluse URL kopeerimine õnnestus.
+  </span>
+  <span id="voting" style="display:none;">
+   Hääletamine
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

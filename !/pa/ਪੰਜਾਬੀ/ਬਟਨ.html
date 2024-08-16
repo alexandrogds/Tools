@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="pa">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 ਬਟਨ
+  </title>
+  <meta content="ਬਟਨ ਕਲਿੱਕਾਂ ਦੀ ਗਿਣਤੀ ਕਰਨ ਲਈ ਟੂਲ।" name="description"/>
+  <meta content="3 ਬਟਨ, ਕਲਿੱਕ, ਗਿਣਤੀ, ਸਟ੍ਰੀਮ, ਟੂਲ, ਔਨਲਾਈਨ, ਵੈੱਬ" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="ਹਵਾਈਅਨ" value="haw_'ōlelo_hawaiʻi">
+      'ਹਵਾਈਅਨ
+     </option>
+     <option title="ਅਫਰੀਕੀ" value="af_afrikaans">
+      ਅਫਰੀਕੀ
+     </option>
+     <option title="ਅਸਾਮੀਆਂ" value="as_assamese">
+      ਅਸਾਮੀ
+     </option>
+     <option title="ਇਗਬੋ" value="ig_asụsụ_igbo">
+      ਇਗਬੋ ਭਾਸ਼ਾ
+     </option>
+     <option title="ਅਯਮਾਰਾ" value="ay_aymara">
+      ਅਯਮਾਰਾ
+     </option>
+     <option title="ਅਜ਼ਰਬਾਈਜਾਨੋ" value="az_azərbaycan_dili">
+      ਅਜ਼ਰਬਾਈਜਾਨੀ ਭਾਸ਼ਾ
+     </option>
+     <option title="ਰਾਜ" value="ms_bahasa_melayu">
+      ਮਲਯ ਭਾਸ਼ਾ
+     </option>
+     <option title="ਉਹ ਇਸ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਨ" value="bm_bambara">
+      ਉਹ ਇਸ ਨੂੰ ਪਹਿਨਦੇ ਹਨ
+     </option>
+     <option title="ਜਾਵਨੀਜ਼" value="jw_basa_jawa">
+      ਜਾਵਨੀਜ਼ ਭਾਸ਼ਾ
+     </option>
+     <option title="ਜਾਵਨੀਜ਼" value="jv_basa_jawa">
+      ਜਾਵਨੀਜ਼ ਭਾਸ਼ਾ
+     </option>
+     <option title="ਸੂਡਾਨੀ" value="su_basa_sunda">
+      ਸੁੰਡਨੀਜ਼ ਭਾਸ਼ਾ
+     </option>
+     <option title="ਭੋਜਪੁਰੀ" value="bho_bhojpuri">
+      ਭੋਜਪੁਰੀ
+     </option>
+     <option title="ਸੇਬੁਆਨੋ" value="ceb_cebuano">
+      ਸੇਬੁਆਨੋ
+     </option>
+     <option title="ਸ਼ੋਨਾ" value="sn_chishona">
+      ਅੰਗਰੇਜ਼ੀ
+     </option>
+     <option title="ਚੀਨੀ" value="ny_chichewa">
+      ਚੀਨੀ
+     </option>
+     <option title="ਕੋਰਸ" value="co_corsu">
+      ਕੋਰਸਿਕਨ
+     </option>
+     <option title="ਵੈਲਸ਼" value="cy_cymraeg">
+      ਵੈਲਸ਼
+     </option>
+     <option title="ਡੈਨਿਸ਼" value="da_dansk">
+      ਡੈਨਿਸ਼
+     </option>
+     <option title="ਜਰਮਨ" value="de_deutsch">
+      ਜਰਮਨ
+     </option>
+     <option title="ਦਿਵੇਹੀ" value="dv_divehi">
+      ਦਿਵੇਹੀ
+     </option>
+     <option title="ਡੋਗਰੀ" value="doi_dogri">
+      ਡੋਗਰੀ
+     </option>
+     <option title="ਅੰਗਰੇਜ਼ੀ" value="en_english">
+      ਅੰਗਰੇਜ਼ੀ
+     </option>
+     <option title="ਐਸਪੇਰਾਂਟੋ" value="eo_esperanto">
+      ਐਸਪੇਰਾਂਟੋ
+     </option>
+     <option title="ਸ਼ੀਟ" value="ee_ewe">
+      ਪੱਤਾ
+     </option>
+     <option title="ਯੋਰੂਬਾ" value="yo_èdè_yorùbá">
+      ਯੋਰੂਬਾ ਭਾਸ਼ਾ
+     </option>
+     <option title="ਸਮੋਆਨੋ" value="sm_faʻa-samoa">
+      ਸਮੋਆਨ
+     </option>
+     <option title="ਫਿਲੀਪੀਨੋ" value="tl_filipino">
+      ਫਿਲੀਪੀਨੋ
+     </option>
+     <option title="ਫਿਲੀਪੀਨੋ" value="fil_filipino">
+      ਫਿਲੀਪੀਨੋ
+     </option>
+     <option title="ਫ੍ਰੈਂਚ" value="fr_français">
+      ਫ੍ਰੈਂਚ
+     </option>
+     <option title="ਫ੍ਰੀਜ਼ੀਅਨ" value="fy_frysk">
+      ਫ੍ਰੀਜ਼ੀਅਨ
+     </option>
+     <option title="ਆਇਰਿਸ਼ ਗੈਲਿਕ" value="ga_gaeilge">
+      ਆਇਰਿਸ਼
+     </option>
+     <option title="ਸੁੰਦਰਤਾ" value="lg_ganda">
+      ਸੁੰਦਰਤਾ
+     </option>
+     <option title="ਗੁਆਰਾਨੀ" value="gn_guarani">
+      ਗੁਆਰਾਨੀ
+     </option>
+     <option title="ਸਕਾਟਿਸ਼ ਗੇਲਿਕ" value="gd_gàidhlig">
+      ਗੇਲਿਕ
+     </option>
+     <option title="ਹਾਉਸਾ" value="ha_harshen_hausa">
+      ਹਾਉਸਾ ਭਾਸ਼ਾ
+     </option>
+     <option title="ਹਮੋਂਗ" value="hmn_hmong">
+      ਹਮੋਂਗ
+     </option>
+     <option title="ਕਿਨਯਾਰਵਾਂਡਾ" value="rw_ikinyarwanda">
+      ਰਵਾਂਡਾ
+     </option>
+     <option title="ਅੰਦਰ" value="ilo_iloko">
+      ਅੰਦਰ
+     </option>
+     <option title="ਇੰਡੋਨੇਸ਼ੀਆਈ" value="id_indonesia">
+      ਇੰਡੋਨੇਸ਼ੀਆ
+     </option>
+     <option title="ਖੋਸਾ" value="xh_isixhosa">
+      ਖੋਸਾ
+     </option>
+     <option title="ਜ਼ੁਲੂ" value="zu_isizulu">
+      ਜ਼ੁਲੂ
+     </option>
+     <option title="ਇਤਾਲਵੀ" value="it_italiano">
+      ਇਤਾਲਵੀ
+     </option>
+     <option title="ਸਵਾਹਿਲੀ" value="sw_kiswahili">
+      ਸਵਾਹਿਲੀ
+     </option>
+     <option title="ਕੋਂਕਣੀ" value="gom_konkani">
+      ਕੋਂਕਣੀ
+     </option>
+     <option title="ਹੈਤੀਆਈ ਕ੍ਰੀਓਲ" value="ht_kreyòl_ayisyen">
+      ਹੈਤੀਆਈ ਕ੍ਰੀਓਲ
+     </option>
+     <option title="ਕਰਿਓ" value="kri_krio">
+      ਕਰਿਓ
+     </option>
+     <option title="ਕੁਰਦਿਸ਼ (ਸੋਰਾਨੀ)" value="ckb_kurdish_(sorani)">
+      ਕੁਰਦਿਸ਼ (ਸੋਰਾਨੀ)
+     </option>
+     <option title="ਦਹੀਂ (ਕੁਰਮੰਜੀ)" value="ku_kurdî_(kurmancî)">
+      ਕੁਰਦਿਸ਼ (ਕੁਰਮਾਂਸੀ)
+     </option>
+     <option title="ਲਾਤੀਨੀ" value="la_latin">
+      ਲਾਤੀਨੀ
+     </option>
+     <option title="ਲਿੰਗਾਲਾ" value="ln_lingala">
+      ਲਿੰਗਾਲਾ
+     </option>
+     <option title="ਲਕਸਮਬਰਗਿਸ਼" value="lb_lëtzebuergesch">
+      ਲਕਸਮਬਰਗਿਸ਼
+     </option>
+     <option title="ਮੈਥਿਲੀ" value="mai_maithili">
+      ਮੈਥਿਲੀ
+     </option>
+     <option title="ਮਾਲਟੀਜ਼" value="mt_malti">
+      ਮਾਲਟੀਜ਼
+     </option>
+     <option title="ਮੀਤੀਲੋਨ (ਮਨੀਪੁਰੀ)" value="mni-mtei_meiteilon_(manipuri)">
+      ਮੀਤੀਲੋਨ (ਮਨੀਪੁਰੀ)
+     </option>
+     <option title="ਅੰਗਰੇਜ਼ੀ" value="lus_mizo">
+      ਅੰਗਰੇਜ਼ੀ
+     </option>
+     <option title="ਕੁਦਰਤੀ" value="mi_māori">
+      ਮਾਓਰੀ
+     </option>
+     <option title="ਡੱਚ" value="nl_nederlands">
+      ਡੱਚ
+     </option>
+     <option title="ਉੱਤਰੀ ਸੋਥੋ" value="nso_northern_sotho">
+      ਉੱਤਰੀ ਸੋਥੋ
+     </option>
+     <option title="ਉੜੀਆ (ਉੜੀਆ)" value="or_odia_(oriya)">
+      ਉੜੀਆ (ਉੜੀਆ)
+     </option>
+     <option title="ਓਰੋਮੋ" value="om_oromo">
+      ਓਰੋਮੋ
+     </option>
+     <option title="ਉਜ਼ਬੇਕ" value="uz_o‘zbek">
+      ਉਜ਼ਬੇਕ
+     </option>
+     <option title="ਪੁਰਤਗਾਲੀ" value="pt_português">
+      ਪੁਰਤਗਾਲੀ
+     </option>
+     <option title="ਕਿਚੁਆ" value="qu_quechua">
+      ਕੇਚੂਆ
+     </option>
+     <option title="ਰੋਮਾਨੀਅਨ" value="ro_română">
+      ਅੰਗਰੇਜ਼ੀ
+     </option>
+     <option title="ਸੰਸਕ੍ਰਿਤ" value="sa_sanskrit">
+      ਸੰਸਕ੍ਰਿਤ
+     </option>
+     <option title="ਅੰਗਰੇਜ਼ੀ" value="st_sesotho">
+      ਅੰਗਰੇਜ਼ੀ
+     </option>
+     <option title="ਅਲਬਾਨੀਅਨ" value="sq_shqip">
+      ਅਲਬਾਨੀਅਨ
+     </option>
+     <option title="ਸੋਮਾਲੀ" value="so_soomaali">
+      ਸੋਮਾਲੀ
+     </option>
+     <option title="ਟਾਰਟਰਸ" value="tt_tatar">
+      ਤਾਤਾਰ
+     </option>
+     <option title="ਟਾਈਗਰੀਨੀਆ" value="ti_tigrinya">
+      ਤਿਗਰਿਨੀਆ
+     </option>
+     <option title="ਸੋਂਗਾ" value="ts_tsonga">
+      ਸੋਂਗਾ
+     </option>
+     <option title="ਟਵੀ" value="ak_twi">
+      ਟਵੀ
+     </option>
+     <option title="ਤੁਰਕਮੇਨ" value="tk_türkmençe">
+      ਟਰਕੀ
+     </option>
+     <option title="ਤੁਰਕੀ" value="tr_türkçe">
+      ਤੁਰਕੀ
+     </option>
+     <option title="ਉਈਗਰ" value="ug_uyghur">
+      ਉਇਘੁਰ
+     </option>
+     <option title="ਵੀਅਤਨਾਮੀ" value="vi_việt">
+      ਵੀਅਤਨਾਮੀ
+     </option>
+     <option title="ਬੋਸਨੀਆਈ" value="bs_bosanski">
+      ਬੋਸਨੀਆਈ
+     </option>
+     <option title="ਕੈਟਲਨ" value="ca_català">
+      ਕੈਟਲਨ
+     </option>
+     <option title="ਇਸਟੋਨੀਅਨ" value="et_eesti">
+      ਇਸਟੋਨੀਅਨ
+     </option>
+     <option title="ਸਪੇਨੀ" value="es_español">
+      ਸਪੇਨੀ
+     </option>
+     <option title="ਬਾਸਕ" value="eu_euskara">
+      ਬਾਸਕ
+     </option>
+     <option title="ਗੈਲੀਸ਼ੀਅਨ" value="gl_galego">
+      ਗੈਲੀਸ਼ੀਅਨ
+     </option>
+     <option title="ਕਰੋਸ਼ੀਅਨ" value="hr_hrvatski">
+      ਕਰੋਸ਼ੀਅਨ
+     </option>
+     <option title="ਲਾਤਵੀਅਨ" value="lv_latviešu">
+      ਲਾਤਵੀਅਨ
+     </option>
+     <option title="ਲਿਥੁਆਨੀਅਨ" value="lt_lietuvių">
+      ਲਿਥੁਆਨੀਅਨ
+     </option>
+     <option title="ਹੰਗੇਰੀਅਨ" value="hu_magyar">
+      ਹੰਗੇਰੀਅਨ
+     </option>
+     <option title="ਮੈਲਾਗਾਸੀ" value="mg_malagasy">
+      ਮੈਲਾਗਾਸੀ
+     </option>
+     <option title="ਨਾਰਵੇਜਿਅਨ" value="no_norsk">
+      ਨਾਰਵੇਜਿਅਨ
+     </option>
+     <option title="ਪੋਲਿਸ਼" value="pl_polski">
+      ਪੋਲਿਸ਼
+     </option>
+     <option title="ਸਲੋਵਾਕ" value="sk_slovenčina">
+      ਸਲੋਵਾਕ
+     </option>
+     <option title="ਸਲੋਵੇਨੀਆਈ" value="sl_slovenščina">
+      ਸਲੋਵੇਨੀਆਈ
+     </option>
+     <option title="ਫਿਨਿਸ਼" value="fi_suomi">
+      ਫਿਨਿਸ਼
+     </option>
+     <option title="ਸਵੀਡਿਸ਼" value="sv_svenska">
+      ਸਵੀਡਿਸ਼
+     </option>
+     <option title="ਆਈਸਲੈਂਡਿਕ" value="is_íslenska">
+      ਆਈਸਲੈਂਡਿਕ
+     </option>
+     <option title="ਚੈੱਕ" value="cs_čeština">
+      ਚੈੱਕ
+     </option>
+     <option title="ਯੂਨਾਨੀ" value="el_ελληνικά">
+      ਯੂਨਾਨੀ
+     </option>
+     <option title="ਬੇਲਾਰੂਸੀ" value="be_беларуская">
+      ਬੇਲਾਰੂਸੀ
+     </option>
+     <option title="ਮੰਗੋਲ" value="mn_монгол">
+      ਮੰਗੋਲੀਆ
+     </option>
+     <option title="ਤਾਜਿਕ" value="tg_тоҷикӣ">
+      ਤਾਜਿਕ
+     </option>
+     <option title="ਬਲਗੇਰੀਅਨ" value="bg_български">
+      ਬਲਗੇਰੀਅਨ
+     </option>
+     <option title="ਕਿਰਗਿਸਤਾਨ" value="ky_кыргызча">
+      ਕਿਰਗਿਜ਼
+     </option>
+     <option title="ਮੈਸੇਡੋਨੀਅਨ" value="mk_македонски">
+      ਮੈਸੇਡੋਨੀਅਨ
+     </option>
+     <option title="ਰੂਸੋ" value="ru_русский">
+      ਰੂਸੀ
+     </option>
+     <option title="ਸਰਬੀਆਈ" value="sr_српски">
+      ਸਰਬੀਆਈ
+     </option>
+     <option title="ਯੂਕਰੇਨੀ" value="uk_українська">
+      ਯੂਕਰੇਨੀ
+     </option>
+     <option title="ਕਜ਼ਾਖ" value="kk_қазақ">
+      ਕਜ਼ਾਖ
+     </option>
+     <option title="ਅਰਮੀਨੀਆਈ" value="hy_հայերեն">
+      ਅਰਮੀਨੀਆਈ:
+     </option>
+     <option title="ਆਈਡੀਚੇ" value="yi_יידיש">
+      ਯਿੱਦੀ
+     </option>
+     <option title="ਇਬਰਾਨੀ" value="iw_עברית">
+      ਇਬਰਾਨੀ
+     </option>
+     <option title="ਇਬਰਾਨੀ" value="he_עברית">
+      ਇਬਰਾਨੀ
+     </option>
+     <option title="ਉਰਦੂ" value="ur_اردو">
+      ਉਰਦੂ
+     </option>
+     <option title="ਅਰਬੀ" value="ar_العربية">
+      ਅਰਬੀ
+     </option>
+     <option title="ਸਿੰਦੀ" value="sd_سنڌي">
+      ਸਿੰਧੀ
+     </option>
+     <option title="ਗੁਆਚ ਗਿਆ" value="fa_فارسی">
+      ਫਾਰਸੀ
+     </option>
+     <option title="ਪਸ਼ਤੋ" value="ps_پښتو">
+      ਪਸ਼ਤੋ
+     </option>
+     <option title="ਨੇਪਾਲੀ" value="ne_नेपाली">
+      ਨੇਪਾਲੀ
+     </option>
+     <option title="ਮਰਾਠੀ" value="mr_मराठी">
+      ਮਰਾਠੀ
+     </option>
+     <option title="ਨੰ" value="hi_हिन्दी">
+      ਹਿੰਦੀ
+     </option>
+     <option title="ਬੰਗਾਲੀ" value="bn_বাংলা">
+      ਬੰਗਲਾ
+     </option>
+     <option title="ਪੁਰਤਗਾਲੀ" value="pa_ਪੰਜਾਬੀ">
+      ਪੰਜਾਬੀ
+     </option>
+     <option title="ਪੁਰਤਗਾਲੀ" value="gu_ગુજરાતી">
+      ਗੁਜਰਾਤੀ
+     </option>
+     <option title="ਤਾਮਿਲ" value="ta_தமிழ்">
+      ਤਾਮਿਲ
+     </option>
+     <option title="ਸਰਦੀਆਂ" value="te_తెలుగు">
+      ਤੇਲਗੂ
+     </option>
+     <option title="ਕੈਨੇਰਸ" value="kn_ಕನ್ನಡ">
+      ਕੰਨੜ
+     </option>
+     <option title="ਰਣਨੀਤੀ" value="ml_മലയാളം">
+      ਮਲਿਆਲਮ
+     </option>
+     <option title="ਸਿੰਹਲੀ" value="si_සිංහල">
+      ਸਿੰਹਾਲਾ
+     </option>
+     <option title="ਥਾਈ" value="th_ไทย">
+      ਥਾਈ
+     </option>
+     <option title="ਟੀ.ਬੀ" value="lo_ລາວ">
+      ਉਹ
+     </option>
+     <option title="ਮਿਆਂਮਾਰ (ਬਰਮੀ)" value="my_မြန်မာ">
+      ਮਿਆਂਮਾਰ
+     </option>
+     <option title="ਜਾਰਜੀਅਨ" value="ka_ქართული">
+      ਜਾਰਜੀਅਨ
+     </option>
+     <option title="ਅਮਹਾਰਿਕ" value="am_አማርኛ">
+      ਅਮਹਾਰਿਕ
+     </option>
+     <option title="ਖਮੇਰ" value="km_ខ្មែរ">
+      ਖਮੇਰ
+     </option>
+     <option title="ਚੀਨੀ (ਰਵਾਇਤੀ)" value="zh-tw_中文_(繁體)">
+      ਚੀਨੀ (ਰਵਾਇਤੀ)
+     </option>
+     <option title="ਚੀਨੀ (ਸਰਲੀਕ੍ਰਿਤ)" value="zh_中文（简体）">
+      ਚੀਨੀ (ਸਰਲੀਕ੍ਰਿਤ)
+     </option>
+     <option title="ਚੀਨੀ (ਸਰਲੀਕ੍ਰਿਤ)" value="zh-cn_中文（简体）">
+      ਚੀਨੀ (ਸਰਲੀਕ੍ਰਿਤ)
+     </option>
+     <option title="ਜਾਪਾਨੀ" value="ja_日本語">
+      ਜਾਪਾਨੀ
+     </option>
+     <option title="ਕੋਰੀਅਨ" value="ko_한국어">
+      ਕੋਰੀਆਈ
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      ਸੁਆਗਤ ਹੈ
+     </h1>
+     <p class="lead">
+      ਇਹ ਇੱਕ ਪੰਨਾ ਹੈ ਜਿਸ ਵਿੱਚ ਕਲਿੱਕ ਗਿਣਤੀ ਵਾਲੇ ਬਟਨ ਹਨ।
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       ਬਟਨਾਂ ਦੀ ਗਿਣਤੀ:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="ਸਤ ਸ੍ਰੀ ਅਕਾਲ">
+       ਨਵਾਂ
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="ਸਤ ਸ੍ਰੀ ਅਕਾਲ">
+       ਸ਼ੇਅਰ ਕਰੋ
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="ਸਤ ਸ੍ਰੀ ਅਕਾਲ">
+       ਪਾਸਵਰਡ ਪਾਓ
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="ਸਤ ਸ੍ਰੀ ਅਕਾਲ">
+       ਡਾਟਾ ਮੁੜ ਪ੍ਰਾਪਤ ਕਰੋ
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   ਪੂੰਜੀ
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        ਕਾਰਵਾਈ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       ਕੀ ਤੁਸੀਂ ਯਕੀਨੀ ਤੌਰ 'ਤੇ ਕੁਝ ਬਟਨਾਂ ਨੂੰ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ? ਇਸ ਕਾਰਵਾਈ ਨੂੰ ਅਣਕੀਤਾ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਬਟਨਾਂ ਨੂੰ ਸਿਰੇ ਤੋਂ ਹਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ।
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        ਰੱਦ ਕਰੋ
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        ਪੁਸ਼ਟੀ ਕਰੋ
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   ਪੋਲ URL ਨੂੰ ਸਫਲਤਾਪੂਰਵਕ ਕਾਪੀ ਕੀਤਾ ਗਿਆ।
+  </span>
+  <span id="voting" style="display:none;">
+   ਵੋਟਿੰਗ
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

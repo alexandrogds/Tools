@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   웹 도구.
+  </title>
+  <meta content="사용할 수 있는 온라인 도구입니다." name="description"/>
+  <meta content="도구, 온라인, 웹" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/scripts/redirect-to-lang.js" id="변경-언어-자동"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="하와이안" value="haw_'ōlelo_hawaiʻi">
+      '하와이안
+     </option>
+     <option title="아프리카 사람" value="af_afrikaans">
+      아프리카 사람
+     </option>
+     <option title="아삼족" value="as_assamese">
+      아삼어
+     </option>
+     <option title="이그보어" value="ig_asụsụ_igbo">
+      이그보어
+     </option>
+     <option title="아이마라어" value="ay_aymara">
+      아이마라어
+     </option>
+     <option title="아제르바이잔" value="az_azərbaycan_dili">
+      아제르바이잔어
+     </option>
+     <option title="상태" value="ms_bahasa_melayu">
+      말레이어
+     </option>
+     <option title="그들은 그것을 사용합니다" value="bm_bambara">
+      그들은 그것을 입는다
+     </option>
+     <option title="자바어" value="jw_basa_jawa">
+      자바어
+     </option>
+     <option title="자바어" value="jv_basa_jawa">
+      자바어
+     </option>
+     <option title="수단 인" value="su_basa_sunda">
+      순다어
+     </option>
+     <option title="보즈푸리" value="bho_bhojpuri">
+      보즈푸리
+     </option>
+     <option title="세부아노어" value="ceb_cebuano">
+      세부아노어
+     </option>
+     <option title="쇼나어" value="sn_chishona">
+      영어
+     </option>
+     <option title="중국인" value="ny_chichewa">
+      중국인
+     </option>
+     <option title="강의" value="co_corsu">
+      코르시카어
+     </option>
+     <option title="웨일스 말" value="cy_cymraeg">
+      웨일스 말
+     </option>
+     <option title="덴마크 말" value="da_dansk">
+      덴마크 말
+     </option>
+     <option title="독일 사람" value="de_deutsch">
+      독일 사람
+     </option>
+     <option title="디베히" value="dv_divehi">
+      디베히
+     </option>
+     <option title="도그리" value="doi_dogri">
+      도그리
+     </option>
+     <option title="영어" value="en_english">
+      영어
+     </option>
+     <option title="에스페란토 말" value="eo_esperanto">
+      에스페란토 말
+     </option>
+     <option title="시트" value="ee_ewe">
+      잎
+     </option>
+     <option title="요루바어" value="yo_èdè_yorùbá">
+      요루바어
+     </option>
+     <option title="사모아노" value="sm_faʻa-samoa">
+      사모아어
+     </option>
+     <option title="필리핀어" value="tl_filipino">
+      필리핀어
+     </option>
+     <option title="필리핀어" value="fil_filipino">
+      필리핀어
+     </option>
+     <option title="프랑스 국민" value="fr_français">
+      프랑스 국민
+     </option>
+     <option title="프리지아어" value="fy_frysk">
+      프리지아어
+     </option>
+     <option title="아일랜드 게일어" value="ga_gaeilge">
+      아일랜드
+     </option>
+     <option title="아름다움" value="lg_ganda">
+      아름다움
+     </option>
+     <option title="과라니" value="gn_guarani">
+      과라니어
+     </option>
+     <option title="스코틀랜드 게일어" value="gd_gàidhlig">
+      게일 말
+     </option>
+     <option title="하우사어" value="ha_harshen_hausa">
+      하우사어
+     </option>
+     <option title="몽족" value="hmn_hmong">
+      몽족
+     </option>
+     <option title="키냐르완다어" value="rw_ikinyarwanda">
+      르완다
+     </option>
+     <option title="내부에" value="ilo_iloko">
+      내부에
+     </option>
+     <option title="인도네시아 인" value="id_indonesia">
+      인도네시아 공화국
+     </option>
+     <option title="코사어" value="xh_isixhosa">
+      코사어
+     </option>
+     <option title="줄루 족" value="zu_isizulu">
+      줄루 족
+     </option>
+     <option title="이탈리아 사람" value="it_italiano">
+      이탈리아 사람
+     </option>
+     <option title="스와힐리어" value="sw_kiswahili">
+      스와힐리어
+     </option>
+     <option title="콘카니" value="gom_konkani">
+      콘카니
+     </option>
+     <option title="아이티 크리올어" value="ht_kreyòl_ayisyen">
+      아이티 크리올어
+     </option>
+     <option title="크리오" value="kri_krio">
+      크리오
+     </option>
+     <option title="쿠르드어(소라니어)" value="ckb_kurdish_(sorani)">
+      쿠르드어(소라니어)
+     </option>
+     <option title="커드(쿠르만지)" value="ku_kurdî_(kurmancî)">
+      쿠르드어(쿠르만시)
+     </option>
+     <option title="라틴어" value="la_latin">
+      라틴어
+     </option>
+     <option title="링갈라" value="ln_lingala">
+      링갈라
+     </option>
+     <option title="룩셈부르크어" value="lb_lëtzebuergesch">
+      룩셈부르크어
+     </option>
+     <option title="마이틸리" value="mai_maithili">
+      마이틸리
+     </option>
+     <option title="몰티즈" value="mt_malti">
+      몰티즈
+     </option>
+     <option title="Meiteilon (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="영어" value="lus_mizo">
+      영어
+     </option>
+     <option title="자연스러운" value="mi_māori">
+      마오리족
+     </option>
+     <option title="네덜란드 사람" value="nl_nederlands">
+      네덜란드 사람
+     </option>
+     <option title="북부 소토" value="nso_northern_sotho">
+      북부 소토어
+     </option>
+     <option title="오디아(오리야어)" value="or_odia_(oriya)">
+      오디아(오리야어)
+     </option>
+     <option title="오로모어" value="om_oromo">
+      오로모어
+     </option>
+     <option title="우즈벡어" value="uz_o‘zbek">
+      우즈벡어
+     </option>
+     <option title="포르투갈 인" value="pt_português">
+      포르투갈 인
+     </option>
+     <option title="키추아어" value="qu_quechua">
+      케추아어
+     </option>
+     <option title="루마니아 사람" value="ro_română">
+      영어
+     </option>
+     <option title="산스크리트" value="sa_sanskrit">
+      산스크리트
+     </option>
+     <option title="영어" value="st_sesotho">
+      영어
+     </option>
+     <option title="알바니아" value="sq_shqip">
+      알바니아
+     </option>
+     <option title="소말리아어" value="so_soomaali">
+      소말리아어
+     </option>
+     <option title="타르타로스" value="tt_tatar">
+      타타르어
+     </option>
+     <option title="티그리니아" value="ti_tigrinya">
+      티그리냐
+     </option>
+     <option title="송가어" value="ts_tsonga">
+      송가어
+     </option>
+     <option title="트위어" value="ak_twi">
+      트위어
+     </option>
+     <option title="투르크멘 말" value="tk_türkmençe">
+      칠면조
+     </option>
+     <option title="터키어" value="tr_türkçe">
+      터키어
+     </option>
+     <option title="위구르어" value="ug_uyghur">
+      위구르어
+     </option>
+     <option title="베트남 사람" value="vi_việt">
+      베트남 사람
+     </option>
+     <option title="보스니아어" value="bs_bosanski">
+      보스니아어
+     </option>
+     <option title="카탈로니아 사람" value="ca_català">
+      카탈로니아 사람
+     </option>
+     <option title="에스토니아 사람" value="et_eesti">
+      에스토니아 사람
+     </option>
+     <option title="스페인 사람" value="es_español">
+      스페인 사람
+     </option>
+     <option title="바스크 사람" value="eu_euskara">
+      바스크 사람
+     </option>
+     <option title="갈리시아어" value="gl_galego">
+      갈리시아어
+     </option>
+     <option title="크로아티아어" value="hr_hrvatski">
+      크로아티아어
+     </option>
+     <option title="라트비아 사람" value="lv_latviešu">
+      라트비아 사람
+     </option>
+     <option title="리투아니아 사람" value="lt_lietuvių">
+      리투아니아 사람
+     </option>
+     <option title="헝가리 인" value="hu_magyar">
+      헝가리 인
+     </option>
+     <option title="마다가스카르 사람" value="mg_malagasy">
+      마다가스카르 사람
+     </option>
+     <option title="노르웨이 인" value="no_norsk">
+      노르웨이 인
+     </option>
+     <option title="광택" value="pl_polski">
+      광택
+     </option>
+     <option title="슬로바키아 사람" value="sk_slovenčina">
+      슬로바키아 사람
+     </option>
+     <option title="슬로베니아" value="sl_slovenščina">
+      슬로베니아
+     </option>
+     <option title="핀란드어" value="fi_suomi">
+      핀란드어
+     </option>
+     <option title="스웨덴어" value="sv_svenska">
+      스웨덴어
+     </option>
+     <option title="아이슬란드어" value="is_íslenska">
+      아이슬란드어
+     </option>
+     <option title="체코 사람" value="cs_čeština">
+      체코 사람
+     </option>
+     <option title="그리스 사람" value="el_ελληνικά">
+      그리스 사람
+     </option>
+     <option title="벨로루시어" value="be_беларуская">
+      벨로루시어
+     </option>
+     <option title="몽고 인" value="mn_монгол">
+      몽골리아
+     </option>
+     <option title="타직어" value="tg_тоҷикӣ">
+      타지크어
+     </option>
+     <option title="불가리아 사람" value="bg_български">
+      불가리아 사람
+     </option>
+     <option title="키르기스스탄" value="ky_кыргызча">
+      키르기스어
+     </option>
+     <option title="마케도니아 어" value="mk_македонски">
+      마케도니아 어
+     </option>
+     <option title="루소" value="ru_русский">
+      러시아인
+     </option>
+     <option title="세르비아 사람" value="sr_српски">
+      세르비아 사람
+     </option>
+     <option title="우크라이나 말" value="uk_українська">
+      우크라이나 말
+     </option>
+     <option title="카자흐어" value="kk_қазақ">
+      카자흐어
+     </option>
+     <option title="아르메니아 사람" value="hy_հայերեն">
+      아르메니아 사람:
+     </option>
+     <option title="이디체" value="yi_יידיש">
+      이디시어
+     </option>
+     <option title="헤브라이 사람" value="iw_עברית">
+      헤브라이 사람
+     </option>
+     <option title="헤브라이 사람" value="he_עברית">
+      헤브라이 사람
+     </option>
+     <option title="우르두어" value="ur_اردو">
+      우르두어
+     </option>
+     <option title="아라비아 말" value="ar_العربية">
+      아라비아 말
+     </option>
+     <option title="신디" value="sd_سنڌي">
+      신디어
+     </option>
+     <option title="잃어버린" value="fa_فارسی">
+      페르시아어
+     </option>
+     <option title="파슈토어" value="ps_پښتو">
+      파슈토어
+     </option>
+     <option title="네팔어" value="ne_नेपाली">
+      네팔어
+     </option>
+     <option title="마라티어" value="mr_मराठी">
+      마라티어
+     </option>
+     <option title="아니요" value="hi_हिन्दी">
+      힌디 어
+     </option>
+     <option title="벵골 사람" value="bn_বাংলা">
+      벵골어
+     </option>
+     <option title="포르투갈 인" value="pa_ਪੰਜਾਬੀ">
+      펀자브어
+     </option>
+     <option title="포르투갈 인" value="gu_ગુજરાતી">
+      구자라트어
+     </option>
+     <option title="타밀 사람" value="ta_தமிழ்">
+      타밀 사람
+     </option>
+     <option title="겨울" value="te_తెలుగు">
+      텔루구어
+     </option>
+     <option title="카나레스" value="kn_ಕನ್ನಡ">
+      칸나다어
+     </option>
+     <option title="전략" value="ml_മലയാളം">
+      말라얄람어
+     </option>
+     <option title="신할라어" value="si_සිංහල">
+      신할라어
+     </option>
+     <option title="태국어" value="th_ไทย">
+      태국어
+     </option>
+     <option title="결핵" value="lo_ລາວ">
+      그
+     </option>
+     <option title="미얀마(버마어)" value="my_မြန်မာ">
+      미얀마
+     </option>
+     <option title="그루지야 사람" value="ka_ქართული">
+      그루지야 사람
+     </option>
+     <option title="암하라어" value="am_አማርኛ">
+      암하라어
+     </option>
+     <option title="크메르어" value="km_ខ្មែរ">
+      크메르어
+     </option>
+     <option title="중국어(번체)" value="zh-tw_中文_(繁體)">
+      중국어(번체)
+     </option>
+     <option title="중국어(간체)" value="zh_中文（简体）">
+      중국어(간체)
+     </option>
+     <option title="중국어(간체)" value="zh-cn_中文（简体）">
+      중국어(간체)
+     </option>
+     <option title="일본어" value="ja_日本語">
+      일본어
+     </option>
+     <option title="한국인" value="ko_한국어">
+      한국어
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    환영
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>

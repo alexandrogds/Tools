@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="si">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   වෙබ් මෙවලම්.
+  </title>
+  <meta content="භාවිතය සඳහා මාර්ගගත මෙවලම්." name="description"/>
+  <meta content="මෙවලම්, මාර්ගගත, වෙබ්" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/scripts/redirect-to-lang.js" id="change-lang-autos"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="හවායි" value="haw_'ōlelo_hawaiʻi">
+      'හවායි
+     </option>
+     <option title="අප්රිකානු" value="af_afrikaans">
+      අප්රිකානු
+     </option>
+     <option title="ඇසෑමියන්" value="as_assamese">
+      ඇසෑමි
+     </option>
+     <option title="ඉග්බෝ" value="ig_asụsụ_igbo">
+      ඉග්බෝ භාෂාව
+     </option>
+     <option title="අයිමාරා" value="ay_aymara">
+      අයිමාරා
+     </option>
+     <option title="අසර්බයිජානෝ" value="az_azərbaycan_dili">
+      අසර්බයිජානියානු භාෂාව
+     </option>
+     <option title="රාජ්ය" value="ms_bahasa_melayu">
+      මැලේ භාෂාව
+     </option>
+     <option title="ඔවුන් එය භාවිතා කරයි" value="bm_bambara">
+      ඔවුන් එය අඳිනවා
+     </option>
+     <option title="ජාවානි" value="jw_basa_jawa">
+      ජාවානි භාෂාව
+     </option>
+     <option title="ජාවානි" value="jv_basa_jawa">
+      ජාවානි භාෂාව
+     </option>
+     <option title="සුඩාන ජාතික" value="su_basa_sunda">
+      සන්ඩනීස් භාෂාව
+     </option>
+     <option title="භෝජ්පූරි" value="bho_bhojpuri">
+      භෝජ්පූරි
+     </option>
+     <option title="සෙබුවානෝ" value="ceb_cebuano">
+      සෙබුවානෝ
+     </option>
+     <option title="ෂෝනා" value="sn_chishona">
+      ඉංග්රීසි
+     </option>
+     <option title="චීන" value="ny_chichewa">
+      චීන
+     </option>
+     <option title="පාඨමාලාව" value="co_corsu">
+      කෝර්සිකන්
+     </option>
+     <option title="වේල්ස්" value="cy_cymraeg">
+      වේල්ස්
+     </option>
+     <option title="ඩෙන්මාර්ක" value="da_dansk">
+      ඩෙන්මාර්ක
+     </option>
+     <option title="ජර්මන්" value="de_deutsch">
+      ජර්මන්
+     </option>
+     <option title="දීවෙහි" value="dv_divehi">
+      දීවෙහි
+     </option>
+     <option title="ඩොග්රි" value="doi_dogri">
+      ඩොග්රි
+     </option>
+     <option title="ඉංග්රීසි" value="en_english">
+      ඉංග්රීසි
+     </option>
+     <option title="esperanto" value="eo_esperanto">
+      එස්පෙරන්ටෝ
+     </option>
+     <option title="පත්රය" value="ee_ewe">
+      කොළ
+     </option>
+     <option title="යොරුබා" value="yo_èdè_yorùbá">
+      යොරුබා භාෂාව
+     </option>
+     <option title="සමෝවානෝ" value="sm_faʻa-samoa">
+      සැමෝවන්
+     </option>
+     <option title="පිලිපීනය" value="tl_filipino">
+      පිලිපීනය
+     </option>
+     <option title="පිලිපීනය" value="fil_filipino">
+      පිලිපීනය
+     </option>
+     <option title="ප්රංශ" value="fr_français">
+      ප්රංශ
+     </option>
+     <option title="Frisian" value="fy_frysk">
+      Frisian
+     </option>
+     <option title="අයර්ලන්ත ගැලික්" value="ga_gaeilge">
+      අයර්ලන්ත
+     </option>
+     <option title="අලංකාරය" value="lg_ganda">
+      අලංකාරය
+     </option>
+     <option title="Guarani" value="gn_guarani">
+      ගුරානි
+     </option>
+     <option title="ස්කොට්ලන්ත ගේලික්" value="gd_gàidhlig">
+      ගැලික්
+     </option>
+     <option title="හවුසා" value="ha_harshen_hausa">
+      හවුසා භාෂාව
+     </option>
+     <option title="හ්මොන්ග්" value="hmn_hmong">
+      හ්මොන්ග්
+     </option>
+     <option title="කින්යර්වාන්ඩා" value="rw_ikinyarwanda">
+      රුවන්ඩාව
+     </option>
+     <option title="ඇතුළත" value="ilo_iloko">
+      ඇතුළත
+     </option>
+     <option title="ඉන්දුනීසියානු" value="id_indonesia">
+      ඉන්දුනීසියාව
+     </option>
+     <option title="ෂෝසා" value="xh_isixhosa">
+      ෂෝසා
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      සූලු
+     </option>
+     <option title="ඉතාලි" value="it_italiano">
+      ඉතාලි
+     </option>
+     <option title="ස්වහීලී" value="sw_kiswahili">
+      ස්වහීලී
+     </option>
+     <option title="කොන්කානි" value="gom_konkani">
+      කොන්කානි
+     </option>
+     <option title="හයිටි ක්‍රියෝල්" value="ht_kreyòl_ayisyen">
+      හයිටි ක්‍රියෝල්
+     </option>
+     <option title="ක්‍රියෝ" value="kri_krio">
+      ක්‍රියෝ
+     </option>
+     <option title="කුර්දි (සොරානි)" value="ckb_kurdish_(sorani)">
+      කුර්දි (සොරානි)
+     </option>
+     <option title="කිරි (කුර්මන්ජි)" value="ku_kurdî_(kurmancî)">
+      කුර්දි (Kurmanci)
+     </option>
+     <option title="ලතින්" value="la_latin">
+      ලතින්
+     </option>
+     <option title="ලිංගාලා" value="ln_lingala">
+      ලිංගාලා
+     </option>
+     <option title="ලක්සම්බර්ග්" value="lb_lëtzebuergesch">
+      ලක්සම්බර්ග්
+     </option>
+     <option title="මයිතිලි" value="mai_maithili">
+      මයිතිලි
+     </option>
+     <option title="මෝල්ටිස්" value="mt_malti">
+      මෝල්ටිස්
+     </option>
+     <option title="Meiteilon (මනිපුරි)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (මනිපුරි)
+     </option>
+     <option title="ඉංග්රීසි" value="lus_mizo">
+      ඉංග්රීසි
+     </option>
+     <option title="ස්වභාවික" value="mi_māori">
+      මයෝරි
+     </option>
+     <option title="ලන්දේසි" value="nl_nederlands">
+      ලන්දේසි
+     </option>
+     <option title="උතුරු සෝතෝ" value="nso_northern_sotho">
+      උතුරු සෝතෝ
+     </option>
+     <option title="ඔඩියා (ඔරියා)" value="or_odia_(oriya)">
+      ඔඩියා (ඔරියා)
+     </option>
+     <option title="ඔරොමෝ" value="om_oromo">
+      ඔරොමෝ
+     </option>
+     <option title="උස්බෙක්" value="uz_o‘zbek">
+      උස්බෙක්
+     </option>
+     <option title="පෘතුගීසි" value="pt_português">
+      පෘතුගීසි
+     </option>
+     <option title="ක්විචුවා" value="qu_quechua">
+      කෙචුවා
+     </option>
+     <option title="රුමේනියානු" value="ro_română">
+      ඉංග්රීසි
+     </option>
+     <option title="සංස්කෘත" value="sa_sanskrit">
+      සංස්කෘත
+     </option>
+     <option title="ඉංග්රීසි" value="st_sesotho">
+      ඉංග්රීසි
+     </option>
+     <option title="ඇල්බේනියානු" value="sq_shqip">
+      ඇල්බේනියානු
+     </option>
+     <option title="සෝමාලි" value="so_soomaali">
+      සෝමාලි
+     </option>
+     <option title="ටාටරස්" value="tt_tatar">
+      ටාටාර්
+     </option>
+     <option title="ටිග්රිනියා" value="ti_tigrinya">
+      ටිග්රිනියා
+     </option>
+     <option title="සොංගා" value="ts_tsonga">
+      සොංගා
+     </option>
+     <option title="ට්වි" value="ak_twi">
+      ට්වි
+     </option>
+     <option title="ටර්ක්මන්" value="tk_türkmençe">
+      කළුකුමා
+     </option>
+     <option title="තුර්කි" value="tr_türkçe">
+      තුර්කි
+     </option>
+     <option title="උයිගර්" value="ug_uyghur">
+      උයිගුර්
+     </option>
+     <option title="වියට්නාම" value="vi_việt">
+      වියට්නාම
+     </option>
+     <option title="බොස්නියානු" value="bs_bosanski">
+      බොස්නියානු
+     </option>
+     <option title="කැටලන්" value="ca_català">
+      කැටලන්
+     </option>
+     <option title="එස්තෝනියානු" value="et_eesti">
+      එස්තෝනියානු
+     </option>
+     <option title="ස්පාඤ්ඤ" value="es_español">
+      ස්පාඤ්ඤ
+     </option>
+     <option title="බාස්ක්" value="eu_euskara">
+      බාස්ක්
+     </option>
+     <option title="ගැලීසියන්" value="gl_galego">
+      ගැලීසියන්
+     </option>
+     <option title="ක්රොඒෂියානු" value="hr_hrvatski">
+      ක්රොඒෂියානු
+     </option>
+     <option title="ලැට්වියානු" value="lv_latviešu">
+      ලැට්වියානු
+     </option>
+     <option title="ලිතුවේනියානු" value="lt_lietuvių">
+      ලිතුවේනියානු
+     </option>
+     <option title="හංගේරියානු" value="hu_magyar">
+      හංගේරියානු
+     </option>
+     <option title="මැලගසි" value="mg_malagasy">
+      මැලගසි
+     </option>
+     <option title="නෝර්වීජියානු" value="no_norsk">
+      නෝර්වීජියානු
+     </option>
+     <option title="පෝලන්ත" value="pl_polski">
+      පෝලන්ත
+     </option>
+     <option title="ස්ලෝවැක්" value="sk_slovenčina">
+      ස්ලෝවැක්
+     </option>
+     <option title="ස්ලෝවේනියානු" value="sl_slovenščina">
+      ස්ලෝවේනියානු
+     </option>
+     <option title="ෆින්ලන්ත" value="fi_suomi">
+      ෆින්ලන්ත
+     </option>
+     <option title="ස්වීඩන්" value="sv_svenska">
+      ස්වීඩන්
+     </option>
+     <option title="අයිස්ලන්ත" value="is_íslenska">
+      අයිස්ලන්ත
+     </option>
+     <option title="චෙක්" value="cs_čeština">
+      චෙක්
+     </option>
+     <option title="ග්රීක" value="el_ελληνικά">
+      ග්රීක
+     </option>
+     <option title="බෙලාරුසියානු" value="be_беларуская">
+      බෙලාරුසියානු
+     </option>
+     <option title="මොංගල්" value="mn_монгол">
+      මොංගෝලියාව
+     </option>
+     <option title="ටජික්" value="tg_тоҷикӣ">
+      ටජික්
+     </option>
+     <option title="බල්ගේරියානු" value="bg_български">
+      බල්ගේරියානු
+     </option>
+     <option title="කිර්ගිස්තානය" value="ky_кыргызча">
+      කිර්ගිස්
+     </option>
+     <option title="මැසිඩෝනියානු" value="mk_македонски">
+      මැසිඩෝනියානු
+     </option>
+     <option title="රුසෝ" value="ru_русский">
+      රුසියානු
+     </option>
+     <option title="සර්බියානු" value="sr_српски">
+      සර්බියානු
+     </option>
+     <option title="යුක්රේනියානු" value="uk_українська">
+      යුක්රේනියානු
+     </option>
+     <option title="කසාක්" value="kk_қазақ">
+      කසාක්
+     </option>
+     <option title="ආර්මේනියානු" value="hy_հայերեն">
+      ආර්මේනියානු:
+     </option>
+     <option title="අයිඩිචේ" value="yi_יידיש">
+      Yiddish
+     </option>
+     <option title="හෙබ්රෙව්" value="iw_עברית">
+      හෙබ්රෙව්
+     </option>
+     <option title="හෙබ්රෙව්" value="he_עברית">
+      හෙබ්රෙව්
+     </option>
+     <option title="උර්දු" value="ur_اردو">
+      උර්දු
+     </option>
+     <option title="අරාබි" value="ar_العربية">
+      අරාබි
+     </option>
+     <option title="සින්ඩි" value="sd_سنڌي">
+      සින්දි
+     </option>
+     <option title="නැති වුණා" value="fa_فارسی">
+      ෆාර්සි
+     </option>
+     <option title="පැෂ්ටෝ" value="ps_پښتو">
+      පැෂ්ටෝ
+     </option>
+     <option title="නේපාල" value="ne_नेपाली">
+      නේපාල
+     </option>
+     <option title="මරාති" value="mr_मराठी">
+      මරාති
+     </option>
+     <option title="නැත" value="hi_हिन्दी">
+      හින්දි
+     </option>
+     <option title="බෙංගාලි" value="bn_বাংলা">
+      බංග්ලා
+     </option>
+     <option title="පෘතුගීසි" value="pa_ਪੰਜਾਬੀ">
+      පන්ජාබි
+     </option>
+     <option title="පෘතුගීසි" value="gu_ગુજરાતી">
+      ගුජරාටි
+     </option>
+     <option title="දෙමළ" value="ta_தமிழ்">
+      දෙමළ
+     </option>
+     <option title="ශීත ඍතුව" value="te_తెలుగు">
+      තෙළිඟු
+     </option>
+     <option title="කැනරස්" value="kn_ಕನ್ನಡ">
+      කන්නඩ
+     </option>
+     <option title="උපාය මාර්ගය" value="ml_മലയാളം">
+      මලයාලම්
+     </option>
+     <option title="සිංහල" value="si_සිංහල">
+      සිංහල
+     </option>
+     <option title="තායි" value="th_ไทย">
+      තායි
+     </option>
+     <option title="ටී.බී" value="lo_ລາວ">
+      ඔහු
+     </option>
+     <option title="මියන්මාරය (බුරුම)" value="my_မြန်မာ">
+      මියන්මාරය
+     </option>
+     <option title="ජෝර්ජියානු" value="ka_ქართული">
+      ජෝර්ජියානු
+     </option>
+     <option title="අම්හාරික්" value="am_አማርኛ">
+      අම්හාරික්
+     </option>
+     <option title="ඛමර්" value="km_ខ្មែរ">
+      ඛමර්
+     </option>
+     <option title="චීන (සාම්ප්‍රදායික)" value="zh-tw_中文_(繁體)">
+      චීන (සාම්ප්‍රදායික)
+     </option>
+     <option title="චීන (සරල)" value="zh_中文（简体）">
+      චීන (සරල)
+     </option>
+     <option title="චීන (සරල)" value="zh-cn_中文（简体）">
+      චීන (සරල)
+     </option>
+     <option title="ජපන්" value="ja_日本語">
+      ජපන්
+     </option>
+     <option title="කොරියානු" value="ko_한국어">
+      කොරියානු
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    සාදරයෙන් පිළිගනිමු
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>

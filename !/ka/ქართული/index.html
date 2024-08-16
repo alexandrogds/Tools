@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ka">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   ვებ ინსტრუმენტები.
+  </title>
+  <meta content="ონლაინ ინსტრუმენტები გამოსაყენებლად." name="description"/>
+  <meta content="ინსტრუმენტები, ონლაინ, ვებ" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/scripts/redirect-to-lang.js" id="change-lang-autos"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="ჰავაიური" value="haw_'ōlelo_hawaiʻi">
+      'ჰავაიელი
+     </option>
+     <option title="აფრიკელი" value="af_afrikaans">
+      აფრიკელი
+     </option>
+     <option title="ასამელები" value="as_assamese">
+      ასამური
+     </option>
+     <option title="იგბო" value="ig_asụsụ_igbo">
+      იგბო ენა
+     </option>
+     <option title="აიმარა" value="ay_aymara">
+      აიმარა
+     </option>
+     <option title="აზერბაიჯანული" value="az_azərbaycan_dili">
+      აზერბაიჯანული ენა
+     </option>
+     <option title="სახელმწიფო" value="ms_bahasa_melayu">
+      მალაიური ენა
+     </option>
+     <option title="ისინი იყენებენ მას" value="bm_bambara">
+      ატარებენ
+     </option>
+     <option title="იავური" value="jw_basa_jawa">
+      იავური ენა
+     </option>
+     <option title="იავური" value="jv_basa_jawa">
+      იავური ენა
+     </option>
+     <option title="სუდანელი" value="su_basa_sunda">
+      სუნდური ენა
+     </option>
+     <option title="ბოჯპური" value="bho_bhojpuri">
+      ბოჯპური
+     </option>
+     <option title="სებუანო" value="ceb_cebuano">
+      სებუანო
+     </option>
+     <option title="შონა" value="sn_chishona">
+      ინგლისური
+     </option>
+     <option title="ჩინური" value="ny_chichewa">
+      ჩინური
+     </option>
+     <option title="კურსი" value="co_corsu">
+      კორსიკელი
+     </option>
+     <option title="უელსური" value="cy_cymraeg">
+      უელსური
+     </option>
+     <option title="დანიური" value="da_dansk">
+      დანიური
+     </option>
+     <option title="გერმანული" value="de_deutsch">
+      გერმანული
+     </option>
+     <option title="დივეჰი" value="dv_divehi">
+      დივეჰი
+     </option>
+     <option title="დოგრი" value="doi_dogri">
+      დოგრი
+     </option>
+     <option title="ინგლისური" value="en_english">
+      ინგლისური
+     </option>
+     <option title="ესპერანტო" value="eo_esperanto">
+      ესპერანტო
+     </option>
+     <option title="ფურცელი" value="ee_ewe">
+      ფოთოლი
+     </option>
+     <option title="იორუბა" value="yo_èdè_yorùbá">
+      იორუბა ენა
+     </option>
+     <option title="სამოანო" value="sm_faʻa-samoa">
+      სამოა
+     </option>
+     <option title="ფილიპინელი" value="tl_filipino">
+      ფილიპინელი
+     </option>
+     <option title="ფილიპინელი" value="fil_filipino">
+      ფილიპინელი
+     </option>
+     <option title="ფრანგული" value="fr_français">
+      ფრანგული
+     </option>
+     <option title="ფრიზიული" value="fy_frysk">
+      ფრიზიული
+     </option>
+     <option title="ირლანდიური გალური" value="ga_gaeilge">
+      ირლანდიელი
+     </option>
+     <option title="სილამაზე" value="lg_ganda">
+      სილამაზე
+     </option>
+     <option title="გუარანი" value="gn_guarani">
+      გუარანი
+     </option>
+     <option title="შოტლანდიური გალური" value="gd_gàidhlig">
+      გალური
+     </option>
+     <option title="ჰაუსა" value="ha_harshen_hausa">
+      ჰაუსა ენა
+     </option>
+     <option title="ჰმონგი" value="hmn_hmong">
+      ჰმონგი
+     </option>
+     <option title="კინიარუანდა" value="rw_ikinyarwanda">
+      რუანდა
+     </option>
+     <option title="შიგნით" value="ilo_iloko">
+      შიგნით
+     </option>
+     <option title="ინდონეზიური" value="id_indonesia">
+      ინდონეზია
+     </option>
+     <option title="ხოსა" value="xh_isixhosa">
+      ხოსა
+     </option>
+     <option title="ზულუ" value="zu_isizulu">
+      ზულუ
+     </option>
+     <option title="იტალიური" value="it_italiano">
+      იტალიური
+     </option>
+     <option title="სუაჰილი" value="sw_kiswahili">
+      სუაჰილი
+     </option>
+     <option title="კონკანი" value="gom_konkani">
+      კონკანი
+     </option>
+     <option title="ჰაიტური კრეოლური" value="ht_kreyòl_ayisyen">
+      ჰაიტური კრეოლური
+     </option>
+     <option title="კრიო" value="kri_krio">
+      კრიო
+     </option>
+     <option title="ქურთული (სორანი)" value="ckb_kurdish_(sorani)">
+      ქურთული (სორანი)
+     </option>
+     <option title="ხაჭო (კურმანჯი)" value="ku_kurdî_(kurmancî)">
+      ქურთული (კურმანული)
+     </option>
+     <option title="ლათინური" value="la_latin">
+      ლათინური
+     </option>
+     <option title="ლინგალა" value="ln_lingala">
+      ლინგალა
+     </option>
+     <option title="ლუქსემბურგული" value="lb_lëtzebuergesch">
+      ლუქსემბურგული
+     </option>
+     <option title="მაითილი" value="mai_maithili">
+      მაითილი
+     </option>
+     <option title="მალტური" value="mt_malti">
+      მალტური
+     </option>
+     <option title="მეიტეილონი (მანიპური)" value="mni-mtei_meiteilon_(manipuri)">
+      მეიტეილონი (მანიპური)
+     </option>
+     <option title="ინგლისური" value="lus_mizo">
+      ინგლისური
+     </option>
+     <option title="ბუნებრივი" value="mi_māori">
+      მაორი
+     </option>
+     <option title="ჰოლანდიური" value="nl_nederlands">
+      ჰოლანდიური
+     </option>
+     <option title="ჩრდილოეთ სოთო" value="nso_northern_sotho">
+      ჩრდილოეთ სოთო
+     </option>
+     <option title="ოდია (ორია)" value="or_odia_(oriya)">
+      ოდია (ორია)
+     </option>
+     <option title="ორომო" value="om_oromo">
+      ორომო
+     </option>
+     <option title="უზბეკური" value="uz_o‘zbek">
+      უზბეკური
+     </option>
+     <option title="პორტუგალიური" value="pt_português">
+      პორტუგალიური
+     </option>
+     <option title="კიჩუა" value="qu_quechua">
+      კეჩუა
+     </option>
+     <option title="რუმინული" value="ro_română">
+      ინგლისური
+     </option>
+     <option title="სანსკრიტი" value="sa_sanskrit">
+      სანსკრიტი
+     </option>
+     <option title="ინგლისური" value="st_sesotho">
+      ინგლისური
+     </option>
+     <option title="ალბანური" value="sq_shqip">
+      ალბანური
+     </option>
+     <option title="სომალიური" value="so_soomaali">
+      სომალიური
+     </option>
+     <option title="ტარტარუსი" value="tt_tatar">
+      თათრული
+     </option>
+     <option title="ტიგრინია" value="ti_tigrinya">
+      ტიგრინია
+     </option>
+     <option title="ცონგა" value="ts_tsonga">
+      ცონგა
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="თურქმენი" value="tk_türkmençe">
+      თურქეთი
+     </option>
+     <option title="თურქული" value="tr_türkçe">
+      თურქული
+     </option>
+     <option title="უიღური" value="ug_uyghur">
+      უიღური
+     </option>
+     <option title="ვიეტნამური" value="vi_việt">
+      ვიეტნამური
+     </option>
+     <option title="ბოსნიელი" value="bs_bosanski">
+      ბოსნიელი
+     </option>
+     <option title="კატალონიური" value="ca_català">
+      კატალონიური
+     </option>
+     <option title="ესტონური" value="et_eesti">
+      ესტონური
+     </option>
+     <option title="ესპანური" value="es_español">
+      ესპანური
+     </option>
+     <option title="ბასკური" value="eu_euskara">
+      ბასკური
+     </option>
+     <option title="გალისიური" value="gl_galego">
+      გალისიური
+     </option>
+     <option title="ხორვატული" value="hr_hrvatski">
+      ხორვატული
+     </option>
+     <option title="ლატვიური" value="lv_latviešu">
+      ლატვიური
+     </option>
+     <option title="ლიტვური" value="lt_lietuvių">
+      ლიტვური
+     </option>
+     <option title="უნგრული" value="hu_magyar">
+      უნგრული
+     </option>
+     <option title="მალაგასური" value="mg_malagasy">
+      მალაგასური
+     </option>
+     <option title="ნორვეგიული" value="no_norsk">
+      ნორვეგიული
+     </option>
+     <option title="პოლონური" value="pl_polski">
+      პოლონური
+     </option>
+     <option title="სლოვაკური" value="sk_slovenčina">
+      სლოვაკური
+     </option>
+     <option title="სლოვენური" value="sl_slovenščina">
+      სლოვენური
+     </option>
+     <option title="ფინური" value="fi_suomi">
+      ფინური
+     </option>
+     <option title="შვედური" value="sv_svenska">
+      შვედური
+     </option>
+     <option title="ისლანდიური" value="is_íslenska">
+      ისლანდიური
+     </option>
+     <option title="ჩეხური" value="cs_čeština">
+      ჩეხური
+     </option>
+     <option title="ბერძენი" value="el_ελληνικά">
+      ბერძენი
+     </option>
+     <option title="ბელორუსული" value="be_беларуская">
+      ბელორუსული
+     </option>
+     <option title="მონღოლი" value="mn_монгол">
+      მონღოლეთი
+     </option>
+     <option title="ტაჯიჩი" value="tg_тоҷикӣ">
+      ტაჯიკური
+     </option>
+     <option title="ბულგარული" value="bg_български">
+      ბულგარული
+     </option>
+     <option title="ყირგიზეთი" value="ky_кыргызча">
+      ყირგიზული
+     </option>
+     <option title="მაკედონელი" value="mk_македонски">
+      მაკედონელი
+     </option>
+     <option title="რუსო" value="ru_русский">
+      რუსული
+     </option>
+     <option title="სერბული" value="sr_српски">
+      სერბული
+     </option>
+     <option title="უკრაინული" value="uk_українська">
+      უკრაინული
+     </option>
+     <option title="ყაზახური" value="kk_қазақ">
+      ყაზახური
+     </option>
+     <option title="სომხური" value="hy_հայերեն">
+      სომხური:
+     </option>
+     <option title="იიდიჩე" value="yi_יידיש">
+      იდიში
+     </option>
+     <option title="ებრაული" value="iw_עברית">
+      ებრაული
+     </option>
+     <option title="ებრაული" value="he_עברית">
+      ებრაული
+     </option>
+     <option title="ურდუ" value="ur_اردو">
+      ურდუ
+     </option>
+     <option title="არაბული" value="ar_العربية">
+      არაბული
+     </option>
+     <option title="სინდი" value="sd_سنڌي">
+      სინდი
+     </option>
+     <option title="დაკარგული" value="fa_فارسی">
+      სპარსული
+     </option>
+     <option title="პუშტუ" value="ps_پښتو">
+      პუშტუ
+     </option>
+     <option title="ნეპალური" value="ne_नेपाली">
+      ნეპალური
+     </option>
+     <option title="მარათჰი" value="mr_मराठी">
+      მარათჰი
+     </option>
+     <option title="არა" value="hi_हिन्दी">
+      ჰინდი
+     </option>
+     <option title="ბენგალური" value="bn_বাংলা">
+      ბანგლა
+     </option>
+     <option title="პორტუგალიური" value="pa_ਪੰਜਾਬੀ">
+      პენჯაბური
+     </option>
+     <option title="პორტუგალიური" value="gu_ગુજરાતી">
+      გუჯარათი
+     </option>
+     <option title="ტამილური" value="ta_தமிழ்">
+      ტამილური
+     </option>
+     <option title="ზამთარი" value="te_తెలుగు">
+      ტელუგუ
+     </option>
+     <option title="კანარები" value="kn_ಕನ್ನಡ">
+      კანადა
+     </option>
+     <option title="სტრატეგია" value="ml_മലയാളം">
+      მალაიალამური
+     </option>
+     <option title="სინჰალური" value="si_සිංහල">
+      სინჰალური
+     </option>
+     <option title="ტაილანდური" value="th_ไทย">
+      ტაილანდური
+     </option>
+     <option title="ტუბერკულოზი" value="lo_ລາວ">
+      ის
+     </option>
+     <option title="მიანმარი (ბირმული)" value="my_မြန်မာ">
+      მიანმარი
+     </option>
+     <option title="ქართული" value="ka_ქართული">
+      ქართული
+     </option>
+     <option title="ამჰარული" value="am_አማርኛ">
+      ამჰარული
+     </option>
+     <option title="ქმერული" value="km_ខ្មែរ">
+      ქმერული
+     </option>
+     <option title="ჩინური (ტრადიციული)" value="zh-tw_中文_(繁體)">
+      ჩინური (ტრადიციული)
+     </option>
+     <option title="ჩინური (გამარტივებული)" value="zh_中文（简体）">
+      ჩინური (გამარტივებული)
+     </option>
+     <option title="ჩინური (გამარტივებული)" value="zh-cn_中文（简体）">
+      ჩინური (გამარტივებული)
+     </option>
+     <option title="იაპონური" value="ja_日本語">
+      იაპონური
+     </option>
+     <option title="კორეული" value="ko_한국어">
+      კორეული
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    მოგესალმებით
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>

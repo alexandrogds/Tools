@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ky">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   Веб куралдары.
+  </title>
+  <meta content="Колдонуу үчүн онлайн куралдар." name="description"/>
+  <meta content="куралдар, онлайн, веб" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/scripts/redirect-to-lang.js" id="change-lang-autos"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Гавайча" value="haw_'ōlelo_hawaiʻi">
+      'Гавайча
+     </option>
+     <option title="африкалык" value="af_afrikaans">
+      африкалык
+     </option>
+     <option title="Assames" value="as_assamese">
+      Ассам
+     </option>
+     <option title="Игбо" value="ig_asụsụ_igbo">
+      Игбо тили
+     </option>
+     <option title="Аймара" value="ay_aymara">
+      Аймара
+     </option>
+     <option title="Азербайжан" value="az_azərbaycan_dili">
+      азербайжан тили
+     </option>
+     <option title="мамлекет" value="ms_bahasa_melayu">
+      Малай тили
+     </option>
+     <option title="Алар аны колдонушат" value="bm_bambara">
+      Алар аны кийишет
+     </option>
+     <option title="Жанавизче" value="jw_basa_jawa">
+      Яван тили
+     </option>
+     <option title="Жанавизче" value="jv_basa_jawa">
+      Яван тили
+     </option>
+     <option title="судандык" value="su_basa_sunda">
+      сундан тили
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Себуано" value="ceb_cebuano">
+      Себуано
+     </option>
+     <option title="Shona" value="sn_chishona">
+      Англисче
+     </option>
+     <option title="Кытайча" value="ny_chichewa">
+      Кытайча
+     </option>
+     <option title="Курс" value="co_corsu">
+      Корсикче
+     </option>
+     <option title="Валлийче" value="cy_cymraeg">
+      Валлийче
+     </option>
+     <option title="Датча" value="da_dansk">
+      Датча
+     </option>
+     <option title="Немисче" value="de_deutsch">
+      Немисче
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="Англисче" value="en_english">
+      Англисче
+     </option>
+     <option title="Эсперанто" value="eo_esperanto">
+      Эсперанто
+     </option>
+     <option title="Барак" value="ee_ewe">
+      Leaf
+     </option>
+     <option title="Йорубача" value="yo_èdè_yorùbá">
+      Йоруба тили
+     </option>
+     <option title="самоано" value="sm_faʻa-samoa">
+      самоа
+     </option>
+     <option title="Филиппин" value="tl_filipino">
+      Филиппин
+     </option>
+     <option title="Филиппин" value="fil_filipino">
+      Филиппин
+     </option>
+     <option title="Франсузча" value="fr_français">
+      Франсузча
+     </option>
+     <option title="фриз" value="fy_frysk">
+      фриз
+     </option>
+     <option title="Irish Gaelic" value="ga_gaeilge">
+      Ирландча
+     </option>
+     <option title="Сулуулук" value="lg_ganda">
+      Сулуулук
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="Шотландиялык галец" value="gd_gàidhlig">
+      Gaelic
+     </option>
+     <option title="Хаусача" value="ha_harshen_hausa">
+      Хауса тили
+     </option>
+     <option title="Хмонгчо" value="hmn_hmong">
+      Хмонгчо
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      Руанда
+     </option>
+     <option title="Inside" value="ilo_iloko">
+      Inside
+     </option>
+     <option title="Индонезияча" value="id_indonesia">
+      Индонезия
+     </option>
+     <option title="Хосача" value="xh_isixhosa">
+      Хосача
+     </option>
+     <option title="Зулуча" value="zu_isizulu">
+      Зулуча
+     </option>
+     <option title="Итальянча" value="it_italiano">
+      Итальянча
+     </option>
+     <option title="Свахиличе" value="sw_kiswahili">
+      Свахиличе
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Гаити креол" value="ht_kreyòl_ayisyen">
+      Гаити креол
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="күрт (сорани)" value="ckb_kurdish_(sorani)">
+      күрт (сорани)
+     </option>
+     <option title="Быштак (курманжи)" value="ku_kurdî_(kurmancî)">
+      күрт (курманчы)
+     </option>
+     <option title="Латынча" value="la_latin">
+      Латынча
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="Люксембургча" value="lb_lëtzebuergesch">
+      Люксембургча
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="Малтизче" value="mt_malti">
+      Малтизче
+     </option>
+     <option title="Мейтейлон (Манипури)" value="mni-mtei_meiteilon_(manipuri)">
+      Мейтейлон (Манипури)
+     </option>
+     <option title="Англисче" value="lus_mizo">
+      Англисче
+     </option>
+     <option title="табигый" value="mi_māori">
+      Маориче
+     </option>
+     <option title="Нидерландча" value="nl_nederlands">
+      Нидерландча
+     </option>
+     <option title="Түндүк Сото" value="nso_northern_sotho">
+      Түндүк Сото
+     </option>
+     <option title="Одияча (Ория)" value="or_odia_(oriya)">
+      Одияча (Ория)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="Өзбекче" value="uz_o‘zbek">
+      Өзбекче
+     </option>
+     <option title="Португалча" value="pt_português">
+      Португалча
+     </option>
+     <option title="Кичуа" value="qu_quechua">
+      Кечуа
+     </option>
+     <option title="Румынча" value="ro_română">
+      АНГЛИСЧЕ
+     </option>
+     <option title="Санскритче" value="sa_sanskrit">
+      Санскритче
+     </option>
+     <option title="Англисче" value="st_sesotho">
+      Англисче
+     </option>
+     <option title="Албанча" value="sq_shqip">
+      Албанча
+     </option>
+     <option title="Сомаличе" value="so_soomaali">
+      Сомаличе
+     </option>
+     <option title="Тартар" value="tt_tatar">
+      татар
+     </option>
+     <option title="Tigrínia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Түркмөнчө" value="tk_türkmençe">
+      Туркия
+     </option>
+     <option title="Түркчө" value="tr_türkçe">
+      Түркчө
+     </option>
+     <option title="уйгур" value="ug_uyghur">
+      уйгур
+     </option>
+     <option title="Вьетнамча" value="vi_việt">
+      Вьетнамча
+     </option>
+     <option title="Бошнакча" value="bs_bosanski">
+      Бошнакча
+     </option>
+     <option title="Каталанча" value="ca_català">
+      Каталанча
+     </option>
+     <option title="Эстончо" value="et_eesti">
+      Эстончо
+     </option>
+     <option title="Испанча" value="es_español">
+      Испанча
+     </option>
+     <option title="Баскча" value="eu_euskara">
+      Баскча
+     </option>
+     <option title="Галицияча" value="gl_galego">
+      Галицияча
+     </option>
+     <option title="Хорватча" value="hr_hrvatski">
+      Хорватча
+     </option>
+     <option title="Латвияча" value="lv_latviešu">
+      Латвияча
+     </option>
+     <option title="Литвача" value="lt_lietuvių">
+      Литвача
+     </option>
+     <option title="Венгерче" value="hu_magyar">
+      Венгерче
+     </option>
+     <option title="Малагаси" value="mg_malagasy">
+      Малагаси
+     </option>
+     <option title="Норвежче" value="no_norsk">
+      Норвежче
+     </option>
+     <option title="Полякча" value="pl_polski">
+      Полякча
+     </option>
+     <option title="Словакча" value="sk_slovenčina">
+      Словакча
+     </option>
+     <option title="Словенияча" value="sl_slovenščina">
+      Словенияча
+     </option>
+     <option title="Финче" value="fi_suomi">
+      Финче
+     </option>
+     <option title="Шведче" value="sv_svenska">
+      Шведче
+     </option>
+     <option title="Исландияча" value="is_íslenska">
+      Исландияча
+     </option>
+     <option title="Чехче" value="cs_čeština">
+      Чехче
+     </option>
+     <option title="Грекче" value="el_ελληνικά">
+      Грекче
+     </option>
+     <option title="Беларусча" value="be_беларуская">
+      Беларусча
+     </option>
+     <option title="монгол" value="mn_монгол">
+      Монголия
+     </option>
+     <option title="тажик" value="tg_тоҷикӣ">
+      тажик
+     </option>
+     <option title="Болгарча" value="bg_български">
+      Болгарча
+     </option>
+     <option title="Кыргызстан" value="ky_кыргызча">
+      кыргызча
+     </option>
+     <option title="Македонияча" value="mk_македонски">
+      Македонияча
+     </option>
+     <option title="орус" value="ru_русский">
+      Орусча
+     </option>
+     <option title="Сербче" value="sr_српски">
+      Сербче
+     </option>
+     <option title="Украинче" value="uk_українська">
+      Украинче
+     </option>
+     <option title="Казакча" value="kk_қазақ">
+      Казакча
+     </option>
+     <option title="Армянча" value="hy_հայերեն">
+      Армянча:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      Идишче
+     </option>
+     <option title="Еврейче" value="iw_עברית">
+      Еврейче
+     </option>
+     <option title="Еврейче" value="he_עברית">
+      Еврейче
+     </option>
+     <option title="Урдуча" value="ur_اردو">
+      Урдуча
+     </option>
+     <option title="Арабча" value="ar_العربية">
+      Арабча
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Синдиче
+     </option>
+     <option title="жоголду" value="fa_فارسی">
+      фарси
+     </option>
+     <option title="Пуштунча" value="ps_پښتو">
+      Пуштунча
+     </option>
+     <option title="непалдык" value="ne_नेपाली">
+      Непаличе
+     </option>
+     <option title="Маратиче" value="mr_मराठी">
+      Маратиче
+     </option>
+     <option title="Жок" value="hi_हिन्दी">
+      Хиндиче
+     </option>
+     <option title="Бенгалча" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="Португалча" value="pa_ਪੰਜਾਬੀ">
+      Пунжабиче
+     </option>
+     <option title="Португалча" value="gu_ગુજરાતી">
+      Гужаратиче
+     </option>
+     <option title="Тамилче" value="ta_தமிழ்">
+      Тамилче
+     </option>
+     <option title="Кыш" value="te_తెలుగు">
+      Телугуча
+     </option>
+     <option title="Канарес" value="kn_ಕನ್ನಡ">
+      Каннадача
+     </option>
+     <option title="Стратегия" value="ml_മലയാളം">
+      Малаяламча
+     </option>
+     <option title="сингалча" value="si_සිංහල">
+      Sinhala
+     </option>
+     <option title="Тайча" value="th_ไทย">
+      Тайча
+     </option>
+     <option title="ТБ" value="lo_ລາວ">
+      ал
+     </option>
+     <option title="Мьянма (Бирма)" value="my_မြန်မာ">
+      Мьянма
+     </option>
+     <option title="Грузинче" value="ka_ქართული">
+      Грузинче
+     </option>
+     <option title="Амхарча" value="am_አማርኛ">
+      Амхарча
+     </option>
+     <option title="кхмер" value="km_ខ្មែរ">
+      кхмер
+     </option>
+     <option title="Кытай (Салттуу)" value="zh-tw_中文_(繁體)">
+      Кытай (Салттуу)
+     </option>
+     <option title="Кытай (жөнөкөйлөштүрүлгөн)" value="zh_中文（简体）">
+      Кытай (жөнөкөйлөштүрүлгөн)
+     </option>
+     <option title="Кытай (жөнөкөйлөштүрүлгөн)" value="zh-cn_中文（简体）">
+      Кытай (жөнөкөйлөштүрүлгөн)
+     </option>
+     <option title="Жапончо" value="ja_日本語">
+      Жапончо
+     </option>
+     <option title="Корейче" value="ko_한국어">
+      Корейче
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    Кош келдиңиз
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>

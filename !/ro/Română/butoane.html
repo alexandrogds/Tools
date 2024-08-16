@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ro">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 butoane
+  </title>
+  <meta content="Instrument pentru a număra clicurile pe buton." name="description"/>
+  <meta content="3 butoane, clicuri, numărare, flux, instrumente, online, web" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Hawaiian" value="haw_'ōlelo_hawaiʻi">
+      „Hawaian
+     </option>
+     <option title="african" value="af_afrikaans">
+      african
+     </option>
+     <option title="assamezi" value="as_assamese">
+      assameză
+     </option>
+     <option title="Igbo" value="ig_asụsụ_igbo">
+      limba igbo
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Azerbaidjan" value="az_azərbaycan_dili">
+      Limba azeră
+     </option>
+     <option title="stat" value="ms_bahasa_melayu">
+      limba malaeză
+     </option>
+     <option title="Ei îl folosesc" value="bm_bambara">
+      Îl poartă
+     </option>
+     <option title="javaneză" value="jw_basa_jawa">
+      limba javaneză
+     </option>
+     <option title="javaneză" value="jv_basa_jawa">
+      limba javaneză
+     </option>
+     <option title="sudanez" value="su_basa_sunda">
+      Limba sudaneză
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      engleză
+     </option>
+     <option title="chinez" value="ny_chichewa">
+      chinez
+     </option>
+     <option title="Curs" value="co_corsu">
+      corsicană
+     </option>
+     <option title="galeză" value="cy_cymraeg">
+      galeză
+     </option>
+     <option title="danez" value="da_dansk">
+      danez
+     </option>
+     <option title="german" value="de_deutsch">
+      german
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="engleză" value="en_english">
+      engleză
+     </option>
+     <option title="esperanto" value="eo_esperanto">
+      esperanto
+     </option>
+     <option title="foaie" value="ee_ewe">
+      Frunze
+     </option>
+     <option title="Yoruba" value="yo_èdè_yorùbá">
+      limba yoruba
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Samoan
+     </option>
+     <option title="filipineză" value="tl_filipino">
+      filipineză
+     </option>
+     <option title="filipineză" value="fil_filipino">
+      filipineză
+     </option>
+     <option title="franceză" value="fr_français">
+      franceză
+     </option>
+     <option title="frizonă" value="fy_frysk">
+      frizonă
+     </option>
+     <option title="gaelic irlandez" value="ga_gaeilge">
+      irlandez
+     </option>
+     <option title="Frumuseţe" value="lg_ganda">
+      Frumuseţe
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="gaelic scoțian" value="gd_gàidhlig">
+      gaelică
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      limba hausa
+     </option>
+     <option title="Hmong" value="hmn_hmong">
+      Hmong
+     </option>
+     <option title="kinyarwanda" value="rw_ikinyarwanda">
+      ruandez
+     </option>
+     <option title="Interior" value="ilo_iloko">
+      Interior
+     </option>
+     <option title="indoneziană" value="id_indonesia">
+      Indonezia
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Zulu
+     </option>
+     <option title="italian" value="it_italiano">
+      italian
+     </option>
+     <option title="Swahili" value="sw_kiswahili">
+      Swahili
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="creolul haitian" value="ht_kreyòl_ayisyen">
+      creolul haitian
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="kurdă (sorani)" value="ckb_kurdish_(sorani)">
+      kurdă (sorani)
+     </option>
+     <option title="caș (Kurmanji)" value="ku_kurdî_(kurmancî)">
+      kurdă (kurmanci)
+     </option>
+     <option title="latin" value="la_latin">
+      latin
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="luxemburghez" value="lb_lëtzebuergesch">
+      luxemburghez
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="malteză" value="mt_malti">
+      malteză
+     </option>
+     <option title="Meiteilon (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="engleză" value="lus_mizo">
+      engleză
+     </option>
+     <option title="natural" value="mi_māori">
+      maori
+     </option>
+     <option title="olandeză" value="nl_nederlands">
+      olandeză
+     </option>
+     <option title="Sotho de Nord" value="nso_northern_sotho">
+      Sotho de Nord
+     </option>
+     <option title="Odia (Oriya)" value="or_odia_(oriya)">
+      Odia (Oriya)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="uzbec" value="uz_o‘zbek">
+      uzbec
+     </option>
+     <option title="portugheză" value="pt_português">
+      portugheză
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      quechua
+     </option>
+     <option title="română" value="ro_română">
+      Română
+     </option>
+     <option title="sanscrit" value="sa_sanskrit">
+      sanscrit
+     </option>
+     <option title="engleză" value="st_sesotho">
+      engleză
+     </option>
+     <option title="albanez" value="sq_shqip">
+      albanez
+     </option>
+     <option title="somalez" value="so_soomaali">
+      somalez
+     </option>
+     <option title="Tartarul" value="tt_tatar">
+      tătar
+     </option>
+     <option title="Tigrínia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="turkmeni" value="tk_türkmençe">
+      Curcan
+     </option>
+     <option title="turc" value="tr_türkçe">
+      turc
+     </option>
+     <option title="Uighur" value="ug_uyghur">
+      uigură
+     </option>
+     <option title="vietnamez" value="vi_việt">
+      vietnamez
+     </option>
+     <option title="Bosniac" value="bs_bosanski">
+      Bosniac
+     </option>
+     <option title="catalan" value="ca_català">
+      catalan
+     </option>
+     <option title="estonă" value="et_eesti">
+      estonă
+     </option>
+     <option title="spaniolă" value="es_español">
+      spaniolă
+     </option>
+     <option title="bască" value="eu_euskara">
+      bască
+     </option>
+     <option title="Galician" value="gl_galego">
+      Galician
+     </option>
+     <option title="croat" value="hr_hrvatski">
+      croat
+     </option>
+     <option title="letonă" value="lv_latviešu">
+      letonă
+     </option>
+     <option title="lituanian" value="lt_lietuvių">
+      lituanian
+     </option>
+     <option title="maghiară" value="hu_magyar">
+      maghiară
+     </option>
+     <option title="malgaș" value="mg_malagasy">
+      malgaș
+     </option>
+     <option title="norvegian" value="no_norsk">
+      norvegian
+     </option>
+     <option title="Lustrui" value="pl_polski">
+      Lustrui
+     </option>
+     <option title="slovacă" value="sk_slovenčina">
+      slovacă
+     </option>
+     <option title="slovenă" value="sl_slovenščina">
+      slovenă
+     </option>
+     <option title="finlandeză" value="fi_suomi">
+      finlandeză
+     </option>
+     <option title="suedez" value="sv_svenska">
+      suedez
+     </option>
+     <option title="islandez" value="is_íslenska">
+      islandez
+     </option>
+     <option title="ceh" value="cs_čeština">
+      ceh
+     </option>
+     <option title="greacă" value="el_ελληνικά">
+      greacă
+     </option>
+     <option title="Belarus" value="be_беларуская">
+      Belarus
+     </option>
+     <option title="mongol" value="mn_монгол">
+      Mongolia
+     </option>
+     <option title="Tajic" value="tg_тоҷикӣ">
+      Tadjik
+     </option>
+     <option title="bulgar" value="bg_български">
+      bulgar
+     </option>
+     <option title="Kârgâzstan" value="ky_кыргызча">
+      Kârgâz
+     </option>
+     <option title="macedonean" value="mk_македонски">
+      macedonean
+     </option>
+     <option title="ruso" value="ru_русский">
+      rusă
+     </option>
+     <option title="sârb" value="sr_српски">
+      sârb
+     </option>
+     <option title="ucrainean" value="uk_українська">
+      ucrainean
+     </option>
+     <option title="kazah" value="kk_қазақ">
+      kazah
+     </option>
+     <option title="armean" value="hy_հայերեն">
+      Armean:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      idiş
+     </option>
+     <option title="ebraică" value="iw_עברית">
+      ebraică
+     </option>
+     <option title="ebraică" value="he_עברית">
+      ebraică
+     </option>
+     <option title="urdu" value="ur_اردو">
+      Urdu
+     </option>
+     <option title="arabic" value="ar_العربية">
+      arabic
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindhi
+     </option>
+     <option title="pierdut" value="fa_فارسی">
+      Farsi
+     </option>
+     <option title="pashto" value="ps_پښتو">
+      Pashto
+     </option>
+     <option title="nepalez" value="ne_नेपाली">
+      nepaleză
+     </option>
+     <option title="marathi" value="mr_मराठी">
+      marathi
+     </option>
+     <option title="Nu" value="hi_हिन्दी">
+      hindi
+     </option>
+     <option title="bengale" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="portugheză" value="pa_ਪੰਜਾਬੀ">
+      punjabi
+     </option>
+     <option title="portugheză" value="gu_ગુજરાતી">
+      Gujarati
+     </option>
+     <option title="tamil" value="ta_தமிழ்">
+      tamil
+     </option>
+     <option title="Iarnă" value="te_తెలుగు">
+      Telugu
+     </option>
+     <option title="Canares" value="kn_ಕನ್ನಡ">
+      Kannada
+     </option>
+     <option title="Strategie" value="ml_മലയാളം">
+      Malayalam
+     </option>
+     <option title="Sinhalez" value="si_සිංහල">
+      Sinhala
+     </option>
+     <option title="thailandeză" value="th_ไทย">
+      thailandeză
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      el
+     </option>
+     <option title="Myanmar (birmanză)" value="my_မြန်မာ">
+      Myanmar
+     </option>
+     <option title="georgian" value="ka_ქართული">
+      georgian
+     </option>
+     <option title="amharică" value="am_አማርኛ">
+      amharică
+     </option>
+     <option title="Khmer" value="km_ខ្មែរ">
+      Khmer
+     </option>
+     <option title="Chineză (tradițională)" value="zh-tw_中文_(繁體)">
+      Chineză (tradițională)
+     </option>
+     <option title="Chineză (simplificată)" value="zh_中文（简体）">
+      Chineză (simplificată)
+     </option>
+     <option title="Chineză (simplificată)" value="zh-cn_中文（简体）">
+      Chineză (simplificată)
+     </option>
+     <option title="japonez" value="ja_日本語">
+      japonez
+     </option>
+     <option title="coreean" value="ko_한국어">
+      coreean
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Bun venit
+     </h1>
+     <p class="lead">
+      Aceasta este o pagină cu butoane cu număr de clicuri.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Numar de butoane:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Buna ziua">
+       Nou
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Buna ziua">
+       Distribuie
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Buna ziua">
+       Pune parola
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Buna ziua">
+       Recuperați datele
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Capital
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Confirmați acțiunea
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Sigur doriți să eliminați unele butoane? Această acțiune nu poate fi anulată. Butoanele vor fi îndepărtate de la capăt.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Anula
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Confirma
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   Adresa URL a sondajului a fost copiată cu succes.
+  </span>
+  <span id="voting" style="display:none;">
+   Vot
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

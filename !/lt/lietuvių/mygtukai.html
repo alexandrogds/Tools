@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="lt">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 Mygtukai
+  </title>
+  <meta content="Įrankis mygtukų paspaudimams skaičiuoti." name="description"/>
+  <meta content="3 mygtukai, paspaudimai, skaičiavimas, srautas, įrankiai, internete, žiniatinklis" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Havajų" value="haw_'ōlelo_hawaiʻi">
+      'Havajų
+     </option>
+     <option title="Afrikos" value="af_afrikaans">
+      Afrikos
+     </option>
+     <option title="asamiečiai" value="as_assamese">
+      asamiečių
+     </option>
+     <option title="Igbo" value="ig_asụsụ_igbo">
+      Igbo kalba
+     </option>
+     <option title="Aimara" value="ay_aymara">
+      Aimara
+     </option>
+     <option title="Azerbaidžanas" value="az_azərbaycan_dili">
+      Azerbaidžaniečių kalba
+     </option>
+     <option title="valstybė" value="ms_bahasa_melayu">
+      malajų kalba
+     </option>
+     <option title="Jie tuo naudojasi" value="bm_bambara">
+      Jie nešioja
+     </option>
+     <option title="javiečių" value="jw_basa_jawa">
+      javiečių kalba
+     </option>
+     <option title="javiečių" value="jv_basa_jawa">
+      javiečių kalba
+     </option>
+     <option title="Sudano" value="su_basa_sunda">
+      Sundanų kalba
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Šona" value="sn_chishona">
+      anglų kalba
+     </option>
+     <option title="kinų" value="ny_chichewa">
+      kinų
+     </option>
+     <option title="Kursas" value="co_corsu">
+      Korsikos
+     </option>
+     <option title="valų" value="cy_cymraeg">
+      valų
+     </option>
+     <option title="danų" value="da_dansk">
+      danų
+     </option>
+     <option title="vokiečių kalba" value="de_deutsch">
+      vokiečių kalba
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="anglų kalba" value="en_english">
+      anglų kalba
+     </option>
+     <option title="esperanto" value="eo_esperanto">
+      Esperanto
+     </option>
+     <option title="Lapas" value="ee_ewe">
+      Lapas
+     </option>
+     <option title="Joruba" value="yo_èdè_yorùbá">
+      Jorubų kalba
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      samoiečių
+     </option>
+     <option title="filipiniečių" value="tl_filipino">
+      filipiniečių
+     </option>
+     <option title="filipiniečių" value="fil_filipino">
+      filipiniečių
+     </option>
+     <option title="prancūzų" value="fr_français">
+      prancūzų
+     </option>
+     <option title="fryzų" value="fy_frysk">
+      fryzų
+     </option>
+     <option title="airių gėlų" value="ga_gaeilge">
+      airių
+     </option>
+     <option title="Grožis" value="lg_ganda">
+      Grožis
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="škotų gėlų" value="gd_gàidhlig">
+      gėlų
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Hausų kalba
+     </option>
+     <option title="hmong" value="hmn_hmong">
+      hmong
+     </option>
+     <option title="Kinijaruanda" value="rw_ikinyarwanda">
+      Ruandos
+     </option>
+     <option title="Viduje" value="ilo_iloko">
+      Viduje
+     </option>
+     <option title="Indoneziečių" value="id_indonesia">
+      Indonezija
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Zulu
+     </option>
+     <option title="italų" value="it_italiano">
+      italų
+     </option>
+     <option title="suahilių" value="sw_kiswahili">
+      suahilių
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Haičio kreolų" value="ht_kreyòl_ayisyen">
+      Haičio kreolų
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="kurdų (sorani)" value="ckb_kurdish_(sorani)">
+      kurdų (sorani)
+     </option>
+     <option title="Varškė (Kurmanji)" value="ku_kurdî_(kurmancî)">
+      kurdų (kurmanci)
+     </option>
+     <option title="lotynų kalba" value="la_latin">
+      lotynų kalba
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="liuksemburgiečių" value="lb_lëtzebuergesch">
+      liuksemburgiečių
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="maltiečių" value="mt_malti">
+      maltiečių
+     </option>
+     <option title="Meiteilon (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="anglų kalba" value="lus_mizo">
+      anglų kalba
+     </option>
+     <option title="natūralus" value="mi_māori">
+      maorių
+     </option>
+     <option title="olandų" value="nl_nederlands">
+      olandų
+     </option>
+     <option title="Šiaurės Sotas" value="nso_northern_sotho">
+      Šiaurės Sotas
+     </option>
+     <option title="Odia (Orija)" value="or_odia_(oriya)">
+      Odia (Orija)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="uzbekas" value="uz_o‘zbek">
+      uzbekas
+     </option>
+     <option title="portugalų" value="pt_português">
+      portugalų
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      kečujų
+     </option>
+     <option title="rumunų" value="ro_română">
+      ANGLIŠKAI
+     </option>
+     <option title="Sanskritas" value="sa_sanskrit">
+      Sanskritas
+     </option>
+     <option title="anglų kalba" value="st_sesotho">
+      anglų kalba
+     </option>
+     <option title="albanų" value="sq_shqip">
+      albanų
+     </option>
+     <option title="Somalis" value="so_soomaali">
+      Somalis
+     </option>
+     <option title="Totorius" value="tt_tatar">
+      totorių
+     </option>
+     <option title="Tigrinija" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Tvi" value="ak_twi">
+      Tvi
+     </option>
+     <option title="turkmėnų" value="tk_türkmençe">
+      Turkija
+     </option>
+     <option title="turkų" value="tr_türkçe">
+      turkų
+     </option>
+     <option title="Uigūras" value="ug_uyghur">
+      uigūras
+     </option>
+     <option title="vietnamiečių" value="vi_việt">
+      vietnamiečių
+     </option>
+     <option title="bosnių" value="bs_bosanski">
+      bosnių
+     </option>
+     <option title="katalonų" value="ca_català">
+      katalonų
+     </option>
+     <option title="Estų" value="et_eesti">
+      Estų
+     </option>
+     <option title="ispanų" value="es_español">
+      ispanų
+     </option>
+     <option title="baskų" value="eu_euskara">
+      baskų
+     </option>
+     <option title="Galisų" value="gl_galego">
+      Galisų
+     </option>
+     <option title="kroatų" value="hr_hrvatski">
+      kroatų
+     </option>
+     <option title="latvių" value="lv_latviešu">
+      latvių
+     </option>
+     <option title="lietuvių" value="lt_lietuvių">
+      lietuvių
+     </option>
+     <option title="vengrų" value="hu_magyar">
+      vengrų
+     </option>
+     <option title="malagasų" value="mg_malagasy">
+      malagasų
+     </option>
+     <option title="norvegų" value="no_norsk">
+      norvegų
+     </option>
+     <option title="lenkų" value="pl_polski">
+      lenkų
+     </option>
+     <option title="slovakų" value="sk_slovenčina">
+      slovakų
+     </option>
+     <option title="slovėnų" value="sl_slovenščina">
+      slovėnų
+     </option>
+     <option title="suomių" value="fi_suomi">
+      suomių
+     </option>
+     <option title="švedų" value="sv_svenska">
+      švedų
+     </option>
+     <option title="islandų" value="is_íslenska">
+      islandų
+     </option>
+     <option title="čekų" value="cs_čeština">
+      čekų
+     </option>
+     <option title="graikų" value="el_ελληνικά">
+      graikų
+     </option>
+     <option title="baltarusių" value="be_беларуская">
+      baltarusių
+     </option>
+     <option title="mongolas" value="mn_монгол">
+      Mongolija
+     </option>
+     <option title="Tadžikas" value="tg_тоҷикӣ">
+      tadžikų
+     </option>
+     <option title="bulgarų" value="bg_български">
+      bulgarų
+     </option>
+     <option title="Kirgizija" value="ky_кыргызча">
+      Kirgizų
+     </option>
+     <option title="Makedonietis" value="mk_македонски">
+      Makedonietis
+     </option>
+     <option title="ruso" value="ru_русский">
+      rusų
+     </option>
+     <option title="serbų" value="sr_српски">
+      serbų
+     </option>
+     <option title="ukrainiečių" value="uk_українська">
+      ukrainiečių
+     </option>
+     <option title="kazachų" value="kk_қазақ">
+      kazachų
+     </option>
+     <option title="armėnų" value="hy_հայերեն">
+      armėnų kalba:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      jidiš
+     </option>
+     <option title="hebrajų" value="iw_עברית">
+      hebrajų
+     </option>
+     <option title="hebrajų" value="he_עברית">
+      hebrajų
+     </option>
+     <option title="urdu" value="ur_اردو">
+      urdu
+     </option>
+     <option title="arabų" value="ar_العربية">
+      arabų
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindų
+     </option>
+     <option title="prarado" value="fa_فارسی">
+      persų
+     </option>
+     <option title="puštonų" value="ps_پښتو">
+      puštūnų
+     </option>
+     <option title="Nepalo" value="ne_नेपाली">
+      Nepaliečių
+     </option>
+     <option title="marati" value="mr_मराठी">
+      marati
+     </option>
+     <option title="Nr" value="hi_हिन्दी">
+      hindi
+     </option>
+     <option title="bengalų" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="portugalų" value="pa_ਪੰਜਾਬੀ">
+      Pandžabų
+     </option>
+     <option title="portugalų" value="gu_ગુજરાતી">
+      gudžaratų
+     </option>
+     <option title="tamilų" value="ta_தமிழ்">
+      tamilų
+     </option>
+     <option title="Žiema" value="te_తెలుగు">
+      telugų
+     </option>
+     <option title="Kanarai" value="kn_ಕನ್ನಡ">
+      kanada
+     </option>
+     <option title="strategija" value="ml_മലയാളം">
+      malajalių
+     </option>
+     <option title="sinhalų" value="si_සිංහල">
+      sinhalų kalba
+     </option>
+     <option title="tajų" value="th_ไทย">
+      tajų
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      jis
+     </option>
+     <option title="Mianmaras (Birmos k.)" value="my_မြန်မာ">
+      Mianmaras
+     </option>
+     <option title="gruzinų" value="ka_ქართული">
+      gruzinų
+     </option>
+     <option title="amharų" value="am_አማርኛ">
+      amharų
+     </option>
+     <option title="khmerų" value="km_ខ្មែរ">
+      khmerų
+     </option>
+     <option title="kinų (tradicinė)" value="zh-tw_中文_(繁體)">
+      kinų (tradicinė)
+     </option>
+     <option title="kinų (supaprastinta)" value="zh_中文（简体）">
+      kinų (supaprastinta)
+     </option>
+     <option title="kinų (supaprastinta)" value="zh-cn_中文（简体）">
+      kinų (supaprastinta)
+     </option>
+     <option title="japonų" value="ja_日本語">
+      japonų
+     </option>
+     <option title="korėjiečių" value="ko_한국어">
+      korėjiečių
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Sveiki atvykę
+     </h1>
+     <p class="lead">
+      Tai puslapis su mygtukais su paspaudimų skaičiumi.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Mygtukų skaičius:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="sveiki">
+       Nauja
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="sveiki">
+       Dalintis
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="sveiki">
+       Įdėkite slaptažodį
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="sveiki">
+       Atkurti duomenis
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Kapitalas
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Patvirtinkite veiksmą
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Ar tikrai norite pašalinti kai kuriuos mygtukus? Šio veiksmo anuliuoti negalima. Mygtukai bus pašalinti iš galo.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Atšaukti
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Patvirtinti
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   Apklausos URL nukopijuotas sėkmingai.
+  </span>
+  <span id="voting" style="display:none;">
+   Balsavimas
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

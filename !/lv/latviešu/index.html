@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="lv">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   Tīmekļa rīki.
+  </title>
+  <meta content="Tiešsaistes rīki lietošanai." name="description"/>
+  <meta content="rīki, tiešsaistē, tīmeklī" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/scripts/redirect-to-lang.js" id="change-lang-autos"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Havajiešu" value="haw_'ōlelo_hawaiʻi">
+      'Havajiešu
+     </option>
+     <option title="Āfrikas" value="af_afrikaans">
+      Āfrikas
+     </option>
+     <option title="asamieši" value="as_assamese">
+      asamiešu
+     </option>
+     <option title="Igbo" value="ig_asụsụ_igbo">
+      Igbo valoda
+     </option>
+     <option title="Aimara" value="ay_aymara">
+      Aimara
+     </option>
+     <option title="Azerbaidžāna" value="az_azərbaycan_dili">
+      Azerbaidžāņu valoda
+     </option>
+     <option title="valsts" value="ms_bahasa_melayu">
+      malajiešu valoda
+     </option>
+     <option title="Viņi to izmanto" value="bm_bambara">
+      Viņi to valkā
+     </option>
+     <option title="javiešu" value="jw_basa_jawa">
+      javiešu valoda
+     </option>
+     <option title="javiešu" value="jv_basa_jawa">
+      javiešu valoda
+     </option>
+     <option title="Sudānas" value="su_basa_sunda">
+      Sundāņu valoda
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Šona" value="sn_chishona">
+      angļu valoda
+     </option>
+     <option title="ķīniešu" value="ny_chichewa">
+      ķīniešu
+     </option>
+     <option title="Kurss" value="co_corsu">
+      Korsikānis
+     </option>
+     <option title="velsiešu" value="cy_cymraeg">
+      velsiešu
+     </option>
+     <option title="dāņu" value="da_dansk">
+      dāņu
+     </option>
+     <option title="vācu" value="de_deutsch">
+      vācu
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="angļu valoda" value="en_english">
+      angļu valoda
+     </option>
+     <option title="esperanto" value="eo_esperanto">
+      Esperanto
+     </option>
+     <option title="Lapa" value="ee_ewe">
+      Lapa
+     </option>
+     <option title="Joruba" value="yo_èdè_yorùbá">
+      Jorubu valoda
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Samoa
+     </option>
+     <option title="filipīniešu" value="tl_filipino">
+      filipīniešu
+     </option>
+     <option title="filipīniešu" value="fil_filipino">
+      filipīniešu
+     </option>
+     <option title="franču valoda" value="fr_français">
+      franču valoda
+     </option>
+     <option title="frīzu valoda" value="fy_frysk">
+      frīzu valoda
+     </option>
+     <option title="īru gēlu valoda" value="ga_gaeilge">
+      īru
+     </option>
+     <option title="Skaistums" value="lg_ganda">
+      Skaistums
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="skotu gēlu valoda" value="gd_gàidhlig">
+      gēlu
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Hausu valoda
+     </option>
+     <option title="Hmong" value="hmn_hmong">
+      Hmong
+     </option>
+     <option title="Kinjaruanda" value="rw_ikinyarwanda">
+      Ruandā
+     </option>
+     <option title="Iekšā" value="ilo_iloko">
+      Iekšā
+     </option>
+     <option title="Indonēziešu" value="id_indonesia">
+      Indonēzija
+     </option>
+     <option title="Ksosa" value="xh_isixhosa">
+      Ksosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      zulu
+     </option>
+     <option title="itāļu valoda" value="it_italiano">
+      itāļu valoda
+     </option>
+     <option title="svahili" value="sw_kiswahili">
+      svahili
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Haiti kreols" value="ht_kreyòl_ayisyen">
+      Haiti kreols
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="kurdu (sorani)" value="ckb_kurdish_(sorani)">
+      kurdu (sorani)
+     </option>
+     <option title="Biezpiens (Kurmanji)" value="ku_kurdî_(kurmancî)">
+      kurdu (kurmanci)
+     </option>
+     <option title="latīņu valoda" value="la_latin">
+      latīņu valoda
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="luksemburgiešu" value="lb_lëtzebuergesch">
+      luksemburgiešu
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="maltiešu" value="mt_malti">
+      maltiešu
+     </option>
+     <option title="Meiteilona (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilona (Manipuri)
+     </option>
+     <option title="angļu valoda" value="lus_mizo">
+      angļu valoda
+     </option>
+     <option title="dabisks" value="mi_māori">
+      maori
+     </option>
+     <option title="holandiešu valoda" value="nl_nederlands">
+      holandiešu valoda
+     </option>
+     <option title="Ziemeļsoto" value="nso_northern_sotho">
+      Ziemeļsoto
+     </option>
+     <option title="Odija (Orija)" value="or_odia_(oriya)">
+      Odija (Orija)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="uzbeku" value="uz_o‘zbek">
+      uzbeku
+     </option>
+     <option title="portugāļu" value="pt_português">
+      portugāļu
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      kečua
+     </option>
+     <option title="rumāņu" value="ro_română">
+      ANGĻU VALODĀ
+     </option>
+     <option title="sanskrits" value="sa_sanskrit">
+      sanskrits
+     </option>
+     <option title="angļu valoda" value="st_sesotho">
+      angļu valoda
+     </option>
+     <option title="albānis" value="sq_shqip">
+      albānis
+     </option>
+     <option title="somāliešu" value="so_soomaali">
+      somāliešu
+     </option>
+     <option title="Zobakmens" value="tt_tatar">
+      tatārs
+     </option>
+     <option title="Tigrīnija" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Tvi" value="ak_twi">
+      Tvi
+     </option>
+     <option title="Turkmēņu" value="tk_türkmençe">
+      Turcija
+     </option>
+     <option title="turku" value="tr_türkçe">
+      turku
+     </option>
+     <option title="Uiguru" value="ug_uyghur">
+      uiguru
+     </option>
+     <option title="vjetnamietis" value="vi_việt">
+      vjetnamietis
+     </option>
+     <option title="bosniešu" value="bs_bosanski">
+      bosniešu
+     </option>
+     <option title="katalāņu" value="ca_català">
+      katalāņu
+     </option>
+     <option title="igauņu" value="et_eesti">
+      igauņu
+     </option>
+     <option title="spāņu valoda" value="es_español">
+      spāņu valoda
+     </option>
+     <option title="basku" value="eu_euskara">
+      basku
+     </option>
+     <option title="Galisiešu" value="gl_galego">
+      Galisiešu
+     </option>
+     <option title="horvātu" value="hr_hrvatski">
+      horvātu
+     </option>
+     <option title="latviski" value="lv_latviešu">
+      latviešu
+     </option>
+     <option title="lietuviešu" value="lt_lietuvių">
+      lietuviešu
+     </option>
+     <option title="ungāru" value="hu_magyar">
+      ungāru
+     </option>
+     <option title="malagasu" value="mg_malagasy">
+      malagasu
+     </option>
+     <option title="norvēģu" value="no_norsk">
+      norvēģu
+     </option>
+     <option title="poļu" value="pl_polski">
+      poļu
+     </option>
+     <option title="slovāku" value="sk_slovenčina">
+      slovāku
+     </option>
+     <option title="slovēņu" value="sl_slovenščina">
+      slovēņu
+     </option>
+     <option title="somu" value="fi_suomi">
+      somu
+     </option>
+     <option title="zviedru" value="sv_svenska">
+      zviedru
+     </option>
+     <option title="islandiešu" value="is_íslenska">
+      islandiešu
+     </option>
+     <option title="čehu" value="cs_čeština">
+      čehu
+     </option>
+     <option title="grieķu valoda" value="el_ελληνικά">
+      grieķu valoda
+     </option>
+     <option title="baltkrievu" value="be_беларуская">
+      baltkrievu
+     </option>
+     <option title="mongoļu" value="mn_монгол">
+      Mongolija
+     </option>
+     <option title="Tadžiks" value="tg_тоҷикӣ">
+      tadžiks
+     </option>
+     <option title="bulgāru" value="bg_български">
+      bulgāru
+     </option>
+     <option title="Kirgizstāna" value="ky_кыргызча">
+      Kirgizstānas
+     </option>
+     <option title="maķedonietis" value="mk_македонски">
+      maķedonietis
+     </option>
+     <option title="russo" value="ru_русский">
+      krievu valoda
+     </option>
+     <option title="serbu" value="sr_српски">
+      serbu
+     </option>
+     <option title="ukraiņu" value="uk_українська">
+      ukraiņu
+     </option>
+     <option title="kazahu" value="kk_қазақ">
+      kazahu
+     </option>
+     <option title="armēņu" value="hy_հայերեն">
+      armēņu:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      jidiša
+     </option>
+     <option title="ebreju valoda" value="iw_עברית">
+      ebreju valoda
+     </option>
+     <option title="ebreju valoda" value="he_עברית">
+      ebreju valoda
+     </option>
+     <option title="urdu" value="ur_اردو">
+      urdu
+     </option>
+     <option title="arābu valoda" value="ar_العربية">
+      arābu valoda
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindhi
+     </option>
+     <option title="zaudēja" value="fa_فارسی">
+      persiešu valoda
+     </option>
+     <option title="puštu" value="ps_پښتو">
+      puštu
+     </option>
+     <option title="Nepāliešu" value="ne_नेपाली">
+      Nepāliešu
+     </option>
+     <option title="maratu" value="mr_मराठी">
+      maratu
+     </option>
+     <option title="Nē" value="hi_हिन्दी">
+      hindi
+     </option>
+     <option title="bengāļu" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="portugāļu" value="pa_ਪੰਜਾਬੀ">
+      pandžabu
+     </option>
+     <option title="portugāļu" value="gu_ગુજરાતી">
+      gudžaratu
+     </option>
+     <option title="tamilu" value="ta_தமிழ்">
+      tamilu
+     </option>
+     <option title="Ziema" value="te_తెలుగు">
+      telugu
+     </option>
+     <option title="Kanāras" value="kn_ಕನ್ನಡ">
+      kannada
+     </option>
+     <option title="stratēģija" value="ml_മലയാളം">
+      malajalu
+     </option>
+     <option title="singāļu" value="si_සිංහල">
+      sinhalu
+     </option>
+     <option title="taju" value="th_ไทย">
+      taju
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      viņš
+     </option>
+     <option title="Mjanma (birmiešu)" value="my_မြန်မာ">
+      Mjanma
+     </option>
+     <option title="gruzīnu" value="ka_ქართული">
+      gruzīnu
+     </option>
+     <option title="amharu" value="am_አማርኛ">
+      amharu
+     </option>
+     <option title="khmeru" value="km_ខ្មែរ">
+      khmeru
+     </option>
+     <option title="ķīniešu (tradicionālā)" value="zh-tw_中文_(繁體)">
+      ķīniešu (tradicionālā)
+     </option>
+     <option title="ķīniešu (vienkāršotā)" value="zh_中文（简体）">
+      ķīniešu (vienkāršotā)
+     </option>
+     <option title="ķīniešu (vienkāršotā)" value="zh-cn_中文（简体）">
+      ķīniešu (vienkāršotā)
+     </option>
+     <option title="japāņi" value="ja_日本語">
+      japāņi
+     </option>
+     <option title="korejiešu" value="ko_한국어">
+      korejiešu
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    Laipni lūdzam
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>

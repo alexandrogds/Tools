@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fy">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   Web Tools.
+  </title>
+  <meta content="Online ark foar gebrûk." name="description"/>
+  <meta content="tools, online, web" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/scripts/redirect-to-lang.js" id="change-lang-autos"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Hawaïaansk" value="haw_'ōlelo_hawaiʻi">
+      'Hawaïaansk
+     </option>
+     <option title="Afrikaanske" value="af_afrikaans">
+      Afrikaanske
+     </option>
+     <option title="Assamesen" value="as_assamese">
+      Assameesk
+     </option>
+     <option title="Igbo" value="ig_asụsụ_igbo">
+      Igbo taal
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Azerbeidzjan" value="az_azərbaycan_dili">
+      Azerbeidzjaanske taal
+     </option>
+     <option title="steat" value="ms_bahasa_melayu">
+      Maleiske taal
+     </option>
+     <option title="Se brûke it" value="bm_bambara">
+      Se drage it
+     </option>
+     <option title="Javaansk" value="jw_basa_jawa">
+      Javaanske taal
+     </option>
+     <option title="Javaansk" value="jv_basa_jawa">
+      Javaanske taal
+     </option>
+     <option title="Sudanese" value="su_basa_sunda">
+      Sundanese taal
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      Ingelsk
+     </option>
+     <option title="Sineesk" value="ny_chichewa">
+      Sineesk
+     </option>
+     <option title="Ferrin" value="co_corsu">
+      Korsikaansk
+     </option>
+     <option title="Welsh" value="cy_cymraeg">
+      Welsh
+     </option>
+     <option title="Deensk" value="da_dansk">
+      Deensk
+     </option>
+     <option title="Dútsk" value="de_deutsch">
+      Dútsk
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="Ingelsk" value="en_english">
+      Ingelsk
+     </option>
+     <option title="Esperanto" value="eo_esperanto">
+      Esperanto
+     </option>
+     <option title="Fel" value="ee_ewe">
+      Blêd
+     </option>
+     <option title="Yoruba" value="yo_èdè_yorùbá">
+      Yoruba taal
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Samoan
+     </option>
+     <option title="Filipino" value="tl_filipino">
+      Filipino
+     </option>
+     <option title="Filipino" value="fil_filipino">
+      Filipino
+     </option>
+     <option title="Frânsk" value="fr_français">
+      Frânsk
+     </option>
+     <option title="Frysk" value="fy_frysk">
+      Frysk
+     </option>
+     <option title="Iersk Gaelic" value="ga_gaeilge">
+      Iersk
+     </option>
+     <option title="Skientme" value="lg_ganda">
+      Skientme
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="Skotsk Gaelic" value="gd_gàidhlig">
+      Gaelic
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Hausa taal
+     </option>
+     <option title="Hmong" value="hmn_hmong">
+      Hmong
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      Rwandan
+     </option>
+     <option title="Binnenkant" value="ilo_iloko">
+      Binnenkant
+     </option>
+     <option title="Yndonesysk" value="id_indonesia">
+      Yndoneezje
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Zulu
+     </option>
+     <option title="Italiaansk" value="it_italiano">
+      Italiaansk
+     </option>
+     <option title="Swahily" value="sw_kiswahili">
+      Swahily
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Haïtiaansk Kreaolsk" value="ht_kreyòl_ayisyen">
+      Haïtiaansk Kreaolsk
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="Koerdysk (Sorani)" value="ckb_kurdish_(sorani)">
+      Koerdysk (Sorani)
+     </option>
+     <option title="Curd (Kurmanji)" value="ku_kurdî_(kurmancî)">
+      Koerdysk (Kurmanci)
+     </option>
+     <option title="Latyn" value="la_latin">
+      Latyn
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="Lúksemboarchsk" value="lb_lëtzebuergesch">
+      Lúksemboarchsk
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="Malteesk" value="mt_malti">
+      Malteesk
+     </option>
+     <option title="Meiteilon (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="Ingelsk" value="lus_mizo">
+      Ingelsk
+     </option>
+     <option title="natuerlik" value="mi_māori">
+      Maori
+     </option>
+     <option title="Nederlânsk" value="nl_nederlands">
+      Nederlânsk
+     </option>
+     <option title="Noard-Sotho" value="nso_northern_sotho">
+      Noard-Sotho
+     </option>
+     <option title="Odia (Oriya)" value="or_odia_(oriya)">
+      Odia (Oriya)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="Uzbek" value="uz_o‘zbek">
+      Uzbek
+     </option>
+     <option title="Portegeesk" value="pt_português">
+      Portegeesk
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      Quechua
+     </option>
+     <option title="Roemeensk" value="ro_română">
+      INGELSK
+     </option>
+     <option title="Sanskryt" value="sa_sanskrit">
+      Sanskryt
+     </option>
+     <option title="Ingelsk" value="st_sesotho">
+      Ingelsk
+     </option>
+     <option title="Albaneesk" value="sq_shqip">
+      Albaneesk
+     </option>
+     <option title="Somalysk" value="so_soomaali">
+      Somalysk
+     </option>
+     <option title="Tartarus" value="tt_tatar">
+      Tatar
+     </option>
+     <option title="Tigrinia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Turkmeensk" value="tk_türkmençe">
+      Turkije
+     </option>
+     <option title="Turksk" value="tr_türkçe">
+      Turksk
+     </option>
+     <option title="Uighur" value="ug_uyghur">
+      Oejgoersk
+     </option>
+     <option title="Fietnameesk" value="vi_việt">
+      Fietnameesk
+     </option>
+     <option title="Bosnysk" value="bs_bosanski">
+      Bosnysk
+     </option>
+     <option title="Katalaansk" value="ca_català">
+      Katalaansk
+     </option>
+     <option title="Estysk" value="et_eesti">
+      Estysk
+     </option>
+     <option title="Spaansk" value="es_español">
+      Spaansk
+     </option>
+     <option title="Baskysk" value="eu_euskara">
+      Baskysk
+     </option>
+     <option title="Galyskysk" value="gl_galego">
+      Galyskysk
+     </option>
+     <option title="Kroatysk" value="hr_hrvatski">
+      Kroatysk
+     </option>
+     <option title="Letsk" value="lv_latviešu">
+      Letsk
+     </option>
+     <option title="Litousk" value="lt_lietuvių">
+      Litousk
+     </option>
+     <option title="Hongaarsk" value="hu_magyar">
+      Hongaarsk
+     </option>
+     <option title="Malagasy" value="mg_malagasy">
+      Malagasy
+     </option>
+     <option title="Noarsk" value="no_norsk">
+      Noarsk
+     </option>
+     <option title="Poalsk" value="pl_polski">
+      Poalsk
+     </option>
+     <option title="Slowaaksk" value="sk_slovenčina">
+      Slowaaksk
+     </option>
+     <option title="Sloveensk" value="sl_slovenščina">
+      Sloveensk
+     </option>
+     <option title="Finsk" value="fi_suomi">
+      Finsk
+     </option>
+     <option title="Sweedsk" value="sv_svenska">
+      Sweedsk
+     </option>
+     <option title="Yslânsk" value="is_íslenska">
+      Yslânsk
+     </option>
+     <option title="Tsjechysk" value="cs_čeština">
+      Tsjechysk
+     </option>
+     <option title="Gryksk" value="el_ελληνικά">
+      Gryksk
+     </option>
+     <option title="Wytrussysk" value="be_беларуская">
+      Wytrussysk
+     </option>
+     <option title="mongoalsk" value="mn_монгол">
+      Mongoalje
+     </option>
+     <option title="Tajic" value="tg_тоҷикӣ">
+      Tajik
+     </option>
+     <option title="Bulgaarsk" value="bg_български">
+      Bulgaarsk
+     </option>
+     <option title="Kirgyzje" value="ky_кыргызча">
+      Kirgizysk
+     </option>
+     <option title="Masedoanysk" value="mk_македонски">
+      Masedoanysk
+     </option>
+     <option title="russo" value="ru_русский">
+      Russysk
+     </option>
+     <option title="Servysk" value="sr_српски">
+      Servysk
+     </option>
+     <option title="Oekraynsk" value="uk_українська">
+      Oekraynsk
+     </option>
+     <option title="Kazachsk" value="kk_қазақ">
+      Kazachsk
+     </option>
+     <option title="Armeensk" value="hy_հայերեն">
+      Armeensk:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      Jiddysk
+     </option>
+     <option title="Hebrieuwsk" value="iw_עברית">
+      Hebrieuwsk
+     </option>
+     <option title="Hebrieuwsk" value="he_עברית">
+      Hebrieuwsk
+     </option>
+     <option title="urdu" value="ur_اردو">
+      Urdu
+     </option>
+     <option title="Arabysk" value="ar_العربية">
+      Arabysk
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindysk
+     </option>
+     <option title="ferlern" value="fa_فارسی">
+      Farsi
+     </option>
+     <option title="Pashtu" value="ps_پښتو">
+      Pashtu
+     </option>
+     <option title="Nepalese" value="ne_नेपाली">
+      Nepaleesk
+     </option>
+     <option title="Maratysk" value="mr_मराठी">
+      Maratysk
+     </option>
+     <option title="Nee" value="hi_हिन्दी">
+      Hindoestaansk
+     </option>
+     <option title="Bengaalsk" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="Portegeesk" value="pa_ਪੰਜਾਬੀ">
+      Pûndjaabsk
+     </option>
+     <option title="Portegeesk" value="gu_ગુજરાતી">
+      Gujaratysk
+     </option>
+     <option title="Tamyl" value="ta_தமிழ்">
+      Tamyl
+     </option>
+     <option title="Winter" value="te_తెలుగు">
+      Telugu
+     </option>
+     <option title="Canares" value="kn_ಕನ್ನಡ">
+      Kannada
+     </option>
+     <option title="Strategy" value="ml_മലയാളം">
+      Malayalam
+     </option>
+     <option title="Sinhaleesk" value="si_සිංහල">
+      Sinhala
+     </option>
+     <option title="Taisk" value="th_ไทย">
+      Taisk
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      hy
+     </option>
+     <option title="Myanmar (Birmeesk)" value="my_မြန်မာ">
+      Birma
+     </option>
+     <option title="Georgysk" value="ka_ქართული">
+      Georgysk
+     </option>
+     <option title="Amhaarsk" value="am_አማርኛ">
+      Amhaarsk
+     </option>
+     <option title="Khmer" value="km_ខ្មែរ">
+      Khmer
+     </option>
+     <option title="Sineesk (tradisjoneel)" value="zh-tw_中文_(繁體)">
+      Sineesk (tradisjoneel)
+     </option>
+     <option title="Sineesk (ferfâldige)" value="zh_中文（简体）">
+      Sineesk (ferfâldige)
+     </option>
+     <option title="Sineesk (ferfâldige)" value="zh-cn_中文（简体）">
+      Sineesk (ferfâldige)
+     </option>
+     <option title="Japansk" value="ja_日本語">
+      Japansk
+     </option>
+     <option title="Koreaansk" value="ko_한국어">
+      Koreaansk
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    Wolkom
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>

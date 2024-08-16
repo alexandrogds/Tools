@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="lg">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 Obutambi
+  </title>
+  <meta content="Ekintu eky’okubala okunyiga kwa button." name="description"/>
+  <meta content="3 buttons, clicks, count, stream, ebikozesebwa, ku mutimbagano, omukutu" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Olulimi Oluhawaii" value="haw_'ōlelo_hawaiʻi">
+      ‘Omuwala wa Hawaii
+     </option>
+     <option title="Omufirika" value="af_afrikaans">
+      Omufirika
+     </option>
+     <option title="Abaasamesa" value="as_assamese">
+      Assamese
+     </option>
+     <option title="Omuigbo" value="ig_asụsụ_igbo">
+      Olulimi Oluigbo
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Omuzungu wa Azerbaijano" value="az_azərbaycan_dili">
+      Olulimi Oluazerbaijan
+     </option>
+     <option title="eggwanga" value="ms_bahasa_melayu">
+      Olulimi Olumalaaya
+     </option>
+     <option title="Bakikozesa" value="bm_bambara">
+      Bagyambala
+     </option>
+     <option title="Olujava" value="jw_basa_jawa">
+      Olulimi Olujava
+     </option>
+     <option title="Olujava" value="jv_basa_jawa">
+      Olulimi Olujava
+     </option>
+     <option title="Abasudan" value="su_basa_sunda">
+      Olulimi Olusundani
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Omucebuano" value="ceb_cebuano">
+      Omucebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      Olungereeza
+     </option>
+     <option title="Abachina" value="ny_chichewa">
+      Abachina
+     </option>
+     <option title="Essomo" value="co_corsu">
+      Olulimi Olucorsica
+     </option>
+     <option title="Olulimi Oluwalese" value="cy_cymraeg">
+      Olulimi Oluwalese
+     </option>
+     <option title="Oludansi" value="da_dansk">
+      Oludansi
+     </option>
+     <option title="Omugirimaani" value="de_deutsch">
+      Omugirimaani
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="Olungereeza" value="en_english">
+      Olungereeza
+     </option>
+     <option title="olulimi oluyitibwa esperanto" value="eo_esperanto">
+      Olulimi Oluesperanto
+     </option>
+     <option title="Ebbaati" value="ee_ewe">
+      Ekikoola
+     </option>
+     <option title="Oluyoruba" value="yo_èdè_yorùbá">
+      Olulimi Oluyoruba
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Omusamoa
+     </option>
+     <option title="Omufilipino" value="tl_filipino">
+      Omufilipino
+     </option>
+     <option title="Omufilipino" value="fil_filipino">
+      Omufilipino
+     </option>
+     <option title="Olufaransa" value="fr_français">
+      Olufaransa
+     </option>
+     <option title="Omufirisiya" value="fy_frysk">
+      Omufirisiya
+     </option>
+     <option title="Olulimi Olugaelic olw’e Ireland" value="ga_gaeilge">
+      Oluyindi
+     </option>
+     <option title="Obulungi" value="lg_ganda">
+      Obulungi
+     </option>
+     <option title="Guarani" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="Olulimi Olugaelic olw’e Scotland" value="gd_gàidhlig">
+      Olugaelic
+     </option>
+     <option title="Oluhausa" value="ha_harshen_hausa">
+      Olulimi Oluhausa
+     </option>
+     <option title="Hmong" value="hmn_hmong">
+      Hmong
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      Omunyarwanda
+     </option>
+     <option title="Mu nda" value="ilo_iloko">
+      Mu nda
+     </option>
+     <option title="Oluindonesia" value="id_indonesia">
+      Indonesia
+     </option>
+     <option title="Oluxhosa" value="xh_isixhosa">
+      Oluxhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Oluzulu
+     </option>
+     <option title="Oluyitale" value="it_italiano">
+      Oluyitale
+     </option>
+     <option title="Oluswayiri" value="sw_kiswahili">
+      Oluswayiri
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Olulimi Oluhaiti Olucreole" value="ht_kreyòl_ayisyen">
+      Olulimi Oluhaiti Olucreole
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="Olukurdi (Olusorani) ." value="ckb_kurdish_(sorani)">
+      Olukurdi (Olusorani) .
+     </option>
+     <option title="Omubisi gw’enjuki (Kurmanji) ." value="ku_kurdî_(kurmancî)">
+      Olukurdi (Kurmanci) .
+     </option>
+     <option title="Olulattini" value="la_latin">
+      Olulattini
+     </option>
+     <option title="Olulingala" value="ln_lingala">
+      Olulingala
+     </option>
+     <option title="Olulimi Oluluxembourg" value="lb_lëtzebuergesch">
+      Olulimi Oluluxembourg
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="Olulimi Olumalta" value="mt_malti">
+      Olulimi Olumalta
+     </option>
+     <option title="Meiteilon (Manipuri) ." value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri) .
+     </option>
+     <option title="Olungereeza" value="lus_mizo">
+      Olungereeza
+     </option>
+     <option title="buzaalirwana" value="mi_māori">
+      Olumaori
+     </option>
+     <option title="Omudaaki" value="nl_nederlands">
+      Omudaaki
+     </option>
+     <option title="Olusotho olw’obukiikakkono" value="nso_northern_sotho">
+      Olusotho olw’obukiikakkono
+     </option>
+     <option title="Olulimi Oluganda (Oriya) ." value="or_odia_(oriya)">
+      Olulimi Oluganda (Oriya) .
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="Oluuzbek" value="uz_o‘zbek">
+      Oluuzbek
+     </option>
+     <option title="Olupotugo" value="pt_português">
+      Olupotugo
+     </option>
+     <option title="Olulimi Oluquichua" value="qu_quechua">
+      Quechua
+     </option>
+     <option title="Oluromania" value="ro_română">
+      OLUNGEREEZA
+     </option>
+     <option title="Sanskrit" value="sa_sanskrit">
+      Sanskrit
+     </option>
+     <option title="Olungereeza" value="st_sesotho">
+      Olungereeza
+     </option>
+     <option title="Olualbania" value="sq_shqip">
+      Olualbania
+     </option>
+     <option title="Olusomali" value="so_soomaali">
+      Olusomali
+     </option>
+     <option title="Tartarus" value="tt_tatar">
+      Omutatar
+     </option>
+     <option title="Tigrínia, ekibuga ky’e Tigrínia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Aba Turkmen" value="tk_türkmençe">
+      Ssekokko
+     </option>
+     <option title="Olutuluuki" value="tr_türkçe">
+      Olutuluuki
+     </option>
+     <option title="Oluuighur" value="ug_uyghur">
+      Aba Uyghur
+     </option>
+     <option title="Olulimi Oluvietnam" value="vi_việt">
+      Olulimi Oluvietnam
+     </option>
+     <option title="Omubosnia" value="bs_bosanski">
+      Omubosnia
+     </option>
+     <option title="Olucatalan" value="ca_català">
+      Olucatalan
+     </option>
+     <option title="Olulimi Oluestonia" value="et_eesti">
+      Olulimi Oluestonia
+     </option>
+     <option title="Olusupeyini" value="es_español">
+      Olusupeyini
+     </option>
+     <option title="Olubasque" value="eu_euskara">
+      Olubasque
+     </option>
+     <option title="Olulimi Olugalisiya" value="gl_galego">
+      Olulimi Olugalisiya
+     </option>
+     <option title="Olucroatia" value="hr_hrvatski">
+      Olucroatia
+     </option>
+     <option title="Olulatvia" value="lv_latviešu">
+      Olulatvia
+     </option>
+     <option title="Olulimi Olulithuania" value="lt_lietuvių">
+      Olulimi Olulithuania
+     </option>
+     <option title="Olulimi Oluhungary" value="hu_magyar">
+      Olulimi Oluhungary
+     </option>
+     <option title="Olulimi Olumalagasy" value="mg_malagasy">
+      Olulimi Olumalagasy
+     </option>
+     <option title="Omunorway" value="no_norsk">
+      Omunorway
+     </option>
+     <option title="Olupolandi" value="pl_polski">
+      Olupolandi
+     </option>
+     <option title="Oluslovakia" value="sk_slovenčina">
+      Oluslovakia
+     </option>
+     <option title="Oluslovenia" value="sl_slovenščina">
+      Oluslovenia
+     </option>
+     <option title="Olufinishi" value="fi_suomi">
+      Olufinishi
+     </option>
+     <option title="Oluswedi" value="sv_svenska">
+      Oluswedi
+     </option>
+     <option title="Olulimi Olu-Iceland" value="is_íslenska">
+      Olulimi Olu-Iceland
+     </option>
+     <option title="Omuczech" value="cs_čeština">
+      Omuczech
+     </option>
+     <option title="Oluyonaani" value="el_ελληνικά">
+      Oluyonaani
+     </option>
+     <option title="Olulimi Olubelarus" value="be_беларуская">
+      Olulimi Olubelarus
+     </option>
+     <option title="mongol" value="mn_монгол">
+      Mongolia
+     </option>
+     <option title="Olutajic" value="tg_тоҷикӣ">
+      Olutajiki
+     </option>
+     <option title="Olulimi Olubulgaria" value="bg_български">
+      Olulimi Olubulgaria
+     </option>
+     <option title="Kyrgyzstan" value="ky_кыргызча">
+      Kyrgyz
+     </option>
+     <option title="Olulimi Olumakedoniya" value="mk_македонски">
+      Olulimi Olumakedoniya
+     </option>
+     <option title="russo ekika kya russo" value="ru_русский">
+      Olurussia
+     </option>
+     <option title="Olulimi Oluserbia" value="sr_српски">
+      Olulimi Oluserbia
+     </option>
+     <option title="Oluyukireniya" value="uk_українська">
+      Oluukraine
+     </option>
+     <option title="Olukazakh" value="kk_қазақ">
+      Olukazakh
+     </option>
+     <option title="Oluarmenia" value="hy_հայերեն">
+      Oluarmenia:
+     </option>
+     <option title="Iidiche nga bwe kiri" value="yi_יידיש">
+      Oluyiddish
+     </option>
+     <option title="Olwebbulaniya" value="iw_עברית">
+      Olwebbulaniya
+     </option>
+     <option title="Olwebbulaniya" value="he_עברית">
+      Olwebbulaniya
+     </option>
+     <option title="urdu" value="ur_اردو">
+      Oluurudu
+     </option>
+     <option title="Oluwarabu" value="ar_العربية">
+      Oluwarabu
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Olulimi Olusindhi
+     </option>
+     <option title="okubula" value="fa_فارسی">
+      Olufarsi
+     </option>
+     <option title="pashto" value="ps_پښتو">
+      Olupashto
+     </option>
+     <option title="Olulimi Olunepal" value="ne_नेपाली">
+      Olunepali
+     </option>
+     <option title="Olumarathi" value="mr_मराठी">
+      Olumarathi
+     </option>
+     <option title="Nedda" value="hi_हिन्दी">
+      Oluhindu
+     </option>
+     <option title="olulimi olubengali" value="bn_বাংলা">
+      Olungereza
+     </option>
+     <option title="Olupotugo" value="pa_ਪੰਜਾਬੀ">
+      Olupunjabi
+     </option>
+     <option title="Olupotugo" value="gu_ગુજરાતી">
+      Olulimi Olugujarati
+     </option>
+     <option title="Olutamil" value="ta_தமிழ்">
+      Olutamil
+     </option>
+     <option title="Ekiseera eky'obutiti" value="te_తెలుగు">
+      Olutelugu
+     </option>
+     <option title="Canares" value="kn_ಕನ್ನಡ">
+      Olukannada
+     </option>
+     <option title="Akakodyo" value="ml_മലയാളം">
+      Olumalayalam
+     </option>
+     <option title="Olulimi Olusinhalese" value="si_සිංහල">
+      Olulimi Olusinhala
+     </option>
+     <option title="Oluthailand" value="th_ไทย">
+      Oluthailand
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      ye
+     </option>
+     <option title="Myanmar (Oluburmaani) ." value="my_မြန်မာ">
+      Myanmar
+     </option>
+     <option title="Olugeorgia" value="ka_ქართული">
+      Olugeorgia
+     </option>
+     <option title="Oluamharic" value="am_አማርኛ">
+      Oluamharic
+     </option>
+     <option title="Khmer" value="km_ខ្មែរ">
+      Khmer
+     </option>
+     <option title="Abachina (Eby'ennono) ." value="zh-tw_中文_(繁體)">
+      Abachina (Eby'ennono) .
+     </option>
+     <option title="Oluchina (Ebyangu) ." value="zh_中文（简体）">
+      Oluchina (Ebyangu) .
+     </option>
+     <option title="Oluchina (Ebyangu) ." value="zh-cn_中文（简体）">
+      Oluchina (Ebyangu) .
+     </option>
+     <option title="Olujapani" value="ja_日本語">
+      Olujapani
+     </option>
+     <option title="Olukorea" value="ko_한국어">
+      olulimi Olukorea
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Kaale
+     </h1>
+     <p class="lead">
+      Guno muko oguliko buttons eziriko click counts.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Omuwendo gwa buttons:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Nkulamusizza">
+       Pya
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Nkulamusizza">
+       Omugabo
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Nkulamusizza">
+       Teeka Password
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Nkulamusizza">
+       Okuzzaawo Data
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Kapitaali
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Kakasa Ekikolwa
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Okakasa nti oyagala kuggyawo buttons ezimu? Ekikolwa kino tekiyinza kuddibwamu. Butaamu zijja kuggyibwawo okuva ku nkomerero.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        okusazaamu
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Okukakasa
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   URL y'okulonda ekoppa bulungi.
+  </span>
+  <span id="voting" style="display:none;">
+   Okulonda
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

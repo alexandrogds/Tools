@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ln">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 Ba boutons
+  </title>
+  <meta content="Esaleli mpo na kotánga ba cliquage ya bouton." name="description"/>
+  <meta content="3 boutons, clics, kotanga, flux, bisaleli, en ligne, web" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Moto ya Hawaii" value="haw_'ōlelo_hawaiʻi">
+      ‘Moto ya Hawaii
+     </option>
+     <option title="Moto ya Afrika" value="af_afrikaans">
+      Moto ya Afrika
+     </option>
+     <option title="Bato ya Assamese" value="as_assamese">
+      Assamese
+     </option>
+     <option title="Ba-Igbo" value="ig_asụsụ_igbo">
+      Monɔkɔ ya Igbo
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Moto ya Azerbaïdjan" value="az_azərbaycan_dili">
+      Monoko ya Azerbaïdjan
+     </option>
+     <option title="etuka" value="ms_bahasa_melayu">
+      Monoko ya Malaisie
+     </option>
+     <option title="Basalelaka yango" value="bm_bambara">
+      Balataka yango
+     </option>
+     <option title="Bato ya Java" value="jw_basa_jawa">
+      Monoko ya Java
+     </option>
+     <option title="Bato ya Java" value="jv_basa_jawa">
+      Monoko ya Java
+     </option>
+     <option title="Bato ya Soudan" value="su_basa_sunda">
+      Monɔkɔ ya Sundan
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Moto ya Cebuano" value="ceb_cebuano">
+      Moto ya Cebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      Lingelesi
+     </option>
+     <option title="Ba Chinois" value="ny_chichewa">
+      Ba Chinois
+     </option>
+     <option title="Nzela" value="co_corsu">
+      Moto ya Corse
+     </option>
+     <option title="Moto ya Galles" value="cy_cymraeg">
+      Moto ya Galles
+     </option>
+     <option title="Danois" value="da_dansk">
+      Danois
+     </option>
+     <option title="Allemand" value="de_deutsch">
+      Allemand
+     </option>
+     <option title="Divehi na likambo yango" value="dv_divehi">
+      Divehi na likambo yango
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="Lingelesi" value="en_english">
+      Lingelesi
+     </option>
+     <option title="esperanto ya esperanto" value="eo_esperanto">
+      Lingomba ya Esperanto
+     </option>
+     <option title="Lokasa" value="ee_ewe">
+      Nkasa
+     </option>
+     <option title="Yoruba" value="yo_èdè_yorùbá">
+      Monɔkɔ ya Yoruba
+     </option>
+     <option title="bato ya samoano" value="sm_faʻa-samoa">
+      Moto ya Samoa
+     </option>
+     <option title="Moto ya Philippines" value="tl_filipino">
+      Moto ya Philippines
+     </option>
+     <option title="Moto ya Philippines" value="fil_filipino">
+      Moto ya Philippines
+     </option>
+     <option title="Lifalanse" value="fr_français">
+      Lifalanse
+     </option>
+     <option title="Moto ya Frisien" value="fy_frysk">
+      Moto ya Frisien
+     </option>
+     <option title="Liloba ya Gaélique ya Irlande" value="ga_gaeilge">
+      Irlandais
+     </option>
+     <option title="Bonzenga" value="lg_ganda">
+      Bonzenga
+     </option>
+     <option title="Guarani" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="Liloba ya Gaélique ya Écosse" value="gd_gàidhlig">
+      Liloba ya Gaélic
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Monɔkɔ ya Hausa
+     </option>
+     <option title="Hmong" value="hmn_hmong">
+      Hmong
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      Rwandais
+     </option>
+     <option title="Na kati" value="ilo_iloko">
+      Na kati
+     </option>
+     <option title="Moto ya Indonésie" value="id_indonesia">
+      Indonésie
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Zulu
+     </option>
+     <option title="Italien" value="it_italiano">
+      Italien
+     </option>
+     <option title="Swahili" value="sw_kiswahili">
+      Swahili
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Créole ya Haïtien" value="ht_kreyòl_ayisyen">
+      Créole ya Haïtien
+     </option>
+     <option title="Kryo, oyo azali" value="kri_krio">
+      Kryo, oyo azali
+     </option>
+     <option title="Kurde (Sorani) ." value="ckb_kurdish_(sorani)">
+      Kurde (Sorani) .
+     </option>
+     <option title="Mafuta ya nzoi (Kurmanji) ." value="ku_kurdî_(kurmancî)">
+      Kurde (Kurmanci) .
+     </option>
+     <option title="Latin" value="la_latin">
+      Latin
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="Moto ya Luxembourg" value="lb_lëtzebuergesch">
+      Moto ya Luxembourg
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="Moto ya Malte" value="mt_malti">
+      Moto ya Malte
+     </option>
+     <option title="Meiteilon (Manipuri) na mokili mobimba." value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri) mpe na .
+     </option>
+     <option title="Lingelesi" value="lus_mizo">
+      Lingelesi
+     </option>
+     <option title="ya malamu" value="mi_māori">
+      Māori
+     </option>
+     <option title="Néerlandais" value="nl_nederlands">
+      Néerlandais
+     </option>
+     <option title="Sotho ya Nɔrdi" value="nso_northern_sotho">
+      Sotho ya Nɔrdi
+     </option>
+     <option title="Odia (Oriya) ." value="or_odia_(oriya)">
+      Odia (Oriya) .
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="Ouzbék" value="uz_o‘zbek">
+      Ouzbék
+     </option>
+     <option title="Liloba ya Portugal" value="pt_português">
+      Liloba ya Portugal
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      Quechua
+     </option>
+     <option title="Roumanien" value="ro_română">
+      LINGELESI
+     </option>
+     <option title="Sanskrit" value="sa_sanskrit">
+      Sanskrit
+     </option>
+     <option title="Lingelesi" value="st_sesotho">
+      Lingelesi
+     </option>
+     <option title="Moto ya Albanie" value="sq_shqip">
+      Moto ya Albanie
+     </option>
+     <option title="Na monɔkɔ ya Somalia" value="so_soomaali">
+      Na monɔkɔ ya Somalia
+     </option>
+     <option title="Tartare, oyo babengi Tartare" value="tt_tatar">
+      Tatar
+     </option>
+     <option title="Tigrínia, mboka" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Turkmen" value="tk_türkmençe">
+      Dindon
+     </option>
+     <option title="Liloba ya Turquie" value="tr_türkçe">
+      Liloba ya Turquie
+     </option>
+     <option title="Uighur, bato ya Uighur" value="ug_uyghur">
+      Bato ya Uyghur
+     </option>
+     <option title="Bato ya Vietnam" value="vi_việt">
+      Bato ya Vietnam
+     </option>
+     <option title="Moto ya Bosnie" value="bs_bosanski">
+      Moto ya Bosnie
+     </option>
+     <option title="Catalan" value="ca_català">
+      Catalan
+     </option>
+     <option title="Moto ya Estonie" value="et_eesti">
+      Moto ya Estonie
+     </option>
+     <option title="Espagnole" value="es_español">
+      Espagnole
+     </option>
+     <option title="Basque" value="eu_euskara">
+      Basque
+     </option>
+     <option title="Moto ya Galicien" value="gl_galego">
+      Moto ya Galicien
+     </option>
+     <option title="Mokolo ya Croatie" value="hr_hrvatski">
+      Mokolo ya Croatie
+     </option>
+     <option title="Moto ya Lettonie" value="lv_latviešu">
+      Moto ya Lettonie
+     </option>
+     <option title="Lituanien na monɔkɔ" value="lt_lietuvių">
+      Lituanien, Lituanien
+     </option>
+     <option title="Moto ya Hongrie" value="hu_magyar">
+      Moto ya Hongrie
+     </option>
+     <option title="Malagasy" value="mg_malagasy">
+      Malagasy
+     </option>
+     <option title="Mokolo ya Norvège" value="no_norsk">
+      Mokolo ya Norvège
+     </option>
+     <option title="Polonais" value="pl_polski">
+      Polonais
+     </option>
+     <option title="Slovaque" value="sk_slovenčina">
+      Slovaque
+     </option>
+     <option title="Moto ya Slovénie" value="sl_slovenščina">
+      Moto ya Slovénie
+     </option>
+     <option title="Finlande" value="fi_suomi">
+      Finnois
+     </option>
+     <option title="Liloba ya Suède" value="sv_svenska">
+      Liloba ya Suède
+     </option>
+     <option title="Moto ya Islande" value="is_íslenska">
+      Moto ya Islande
+     </option>
+     <option title="Mokolo ya Tchèque" value="cs_čeština">
+      Mokolo ya Tchèque
+     </option>
+     <option title="Greke" value="el_ελληνικά">
+      Greke
+     </option>
+     <option title="Moto ya Biélorussie" value="be_беларуская">
+      Moto ya Biélorussie
+     </option>
+     <option title="mongol" value="mn_монгол">
+      Mongolie, mboka
+     </option>
+     <option title="Tajic" value="tg_тоҷикӣ">
+      Motajik
+     </option>
+     <option title="Likolo ya Bulgarie" value="bg_български">
+      Likolo ya Bulgarie
+     </option>
+     <option title="Kirghizistan" value="ky_кыргызча">
+      Kirghizistan
+     </option>
+     <option title="Moto ya Masedonia" value="mk_македонски">
+      Moto ya Masedonia
+     </option>
+     <option title="russo oyo ezali na kati" value="ru_русский">
+      Liloba ya Russe
+     </option>
+     <option title="Liloba ya Serbie" value="sr_српски">
+      Liloba ya Serbie
+     </option>
+     <option title="Moto ya Ukraine" value="uk_українська">
+      Moto ya Ukraine
+     </option>
+     <option title="Kazakhstan" value="kk_қазақ">
+      Kazakhstan
+     </option>
+     <option title="Moto ya Arménie" value="hy_հայերեն">
+      Liloba ya Arménie:
+     </option>
+     <option title="Iidiche ezali" value="yi_יידיש">
+      Liloba ya Yiddish
+     </option>
+     <option title="Liebele" value="iw_עברית">
+      Liebele
+     </option>
+     <option title="Liebele" value="he_עברית">
+      Liebele
+     </option>
+     <option title="urdu, na urdu" value="ur_اردو">
+      Urdu
+     </option>
+     <option title="Arabe" value="ar_العربية">
+      Arabe
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindhi ya bato
+     </option>
+     <option title="kobungisa" value="fa_فارسی">
+      Farsi ya koloba
+     </option>
+     <option title="pashto na likambo yango" value="ps_پښتو">
+      Pashto
+     </option>
+     <option title="Bato ya Népal" value="ne_नेपाली">
+      Népal
+     </option>
+     <option title="Marathi" value="mr_मराठी">
+      Marathi
+     </option>
+     <option title="Te" value="hi_हिन्दी">
+      Hindi
+     </option>
+     <option title="na monɔkɔ ya bengali" value="bn_বাংলা">
+      Banglais
+     </option>
+     <option title="Liloba ya Portugal" value="pa_ਪੰਜਾਬੀ">
+      Lipunjabi
+     </option>
+     <option title="Liloba ya Portugal" value="gu_ગુજરાતી">
+      Na monɔkɔ ya Gujarati
+     </option>
+     <option title="Tamil" value="ta_தமிழ்">
+      Tamil
+     </option>
+     <option title="Eleko ya malili" value="te_తెలుగు">
+      Telugu
+     </option>
+     <option title="Canares na engumba" value="kn_ಕನ್ನಡ">
+      Kannada
+     </option>
+     <option title="Mayele" value="ml_മലയാളം">
+      Malayalam
+     </option>
+     <option title="Liloba ya Sinhalese" value="si_සිංහල">
+      Monɔkɔ ya Sinhala
+     </option>
+     <option title="Thaïlandais" value="th_ไทย">
+      Thaïlandais
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      ye
+     </option>
+     <option title="Myanmar (Birman) ." value="my_မြန်မာ">
+      Myanmar, mboka
+     </option>
+     <option title="Mokolo ya Géorgie" value="ka_ქართული">
+      Mokolo ya Géorgie
+     </option>
+     <option title="Na monɔkɔ ya Amharique" value="am_አማርኛ">
+      Na monɔkɔ ya Amharique
+     </option>
+     <option title="Khmer" value="km_ខ្មែរ">
+      Khmer
+     </option>
+     <option title="Chinois (ya bonkoko) ." value="zh-tw_中文_(繁體)">
+      Chinois (ya bonkoko) .
+     </option>
+     <option title="Chinois (Ezali na pete) ." value="zh_中文（简体）">
+      Chinois (Ezali na pete) .
+     </option>
+     <option title="Chinois (Ezali na pete) ." value="zh-cn_中文（简体）">
+      Chinois (Ezali na pete) .
+     </option>
+     <option title="Bato ya Japon" value="ja_日本語">
+      Bato ya Japon
+     </option>
+     <option title="Mokolo ya Corée" value="ko_한국어">
+      moto ya Corée
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Boyei malamu
+     </h1>
+     <p class="lead">
+      Oyo ezali lokasa oyo ezali na ba boutons oyo ezali na ba cliquage.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Motango ya ba boutons:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Mbote">
+       Ya sika
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Mbote">
+       Kokabola
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Mbote">
+       Tia Mot de passe
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Mbote">
+       Récupérer ba Données
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Mboka-mokonzi
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Confirmer Action
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Ozali na ntembe te ete olingi kolongola mwa ba boutons? Action oyo ekoki kozongisama sima te. Ba boutons ekolongolama na suka.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Kolongola
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Kondimisa
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   URL ya sondage esalemi kopi na elonga.
+  </span>
+  <span id="voting" style="display:none;">
+   Kosala voti
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

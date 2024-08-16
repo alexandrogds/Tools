@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fa">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   ابزارهای وب
+  </title>
+  <meta content="ابزارهای آنلاین برای استفاده" name="description"/>
+  <meta content="ابزار، آنلاین، وب" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/scripts/redirect-to-lang.js" id="change-lang-autos"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="هاوایی" value="haw_'ōlelo_hawaiʻi">
+      هاوایی
+     </option>
+     <option title="آفریقایی" value="af_afrikaans">
+      آفریقایی
+     </option>
+     <option title="آسامیزها" value="as_assamese">
+      آسامی
+     </option>
+     <option title="ایگبو" value="ig_asụsụ_igbo">
+      زبان ایگبو
+     </option>
+     <option title="آیمارا" value="ay_aymara">
+      آیمارا
+     </option>
+     <option title="آذربایجانی" value="az_azərbaycan_dili">
+      زبان آذربایجانی
+     </option>
+     <option title="دولت" value="ms_bahasa_melayu">
+      زبان مالایی
+     </option>
+     <option title="از آن استفاده می کنند" value="bm_bambara">
+      آن را می پوشند
+     </option>
+     <option title="جاوه ای" value="jw_basa_jawa">
+      زبان جاوه ای
+     </option>
+     <option title="جاوه ای" value="jv_basa_jawa">
+      زبان جاوه ای
+     </option>
+     <option title="سودانی" value="su_basa_sunda">
+      زبان ساندانی
+     </option>
+     <option title="بوجپوری" value="bho_bhojpuri">
+      بوجپوری
+     </option>
+     <option title="سبوانو" value="ceb_cebuano">
+      سبوانو
+     </option>
+     <option title="شونا" value="sn_chishona">
+      انگلیسی
+     </option>
+     <option title="چینی" value="ny_chichewa">
+      چینی
+     </option>
+     <option title="دوره" value="co_corsu">
+      کورسی
+     </option>
+     <option title="ولز" value="cy_cymraeg">
+      ولز
+     </option>
+     <option title="دانمارکی" value="da_dansk">
+      دانمارکی
+     </option>
+     <option title="آلمانی" value="de_deutsch">
+      آلمانی
+     </option>
+     <option title="دیوه ای" value="dv_divehi">
+      دیوه ای
+     </option>
+     <option title="دوگری" value="doi_dogri">
+      دوگری
+     </option>
+     <option title="انگلیسی" value="en_english">
+      انگلیسی
+     </option>
+     <option title="اسپرانتو" value="eo_esperanto">
+      اسپرانتو
+     </option>
+     <option title="ورق" value="ee_ewe">
+      برگ
+     </option>
+     <option title="یوروبا" value="yo_èdè_yorùbá">
+      زبان یوروبا
+     </option>
+     <option title="ساموآنو" value="sm_faʻa-samoa">
+      ساموآ
+     </option>
+     <option title="فیلیپینی" value="tl_filipino">
+      فیلیپینی
+     </option>
+     <option title="فیلیپینی" value="fil_filipino">
+      فیلیپینی
+     </option>
+     <option title="فرانسوی" value="fr_français">
+      فرانسوی
+     </option>
+     <option title="فریزی" value="fy_frysk">
+      فریزی
+     </option>
+     <option title="گیلیک ایرلندی" value="ga_gaeilge">
+      ایرلندی
+     </option>
+     <option title="زیبایی" value="lg_ganda">
+      زیبایی
+     </option>
+     <option title="گارانی" value="gn_guarani">
+      گوارانی
+     </option>
+     <option title="گیلیک اسکاتلندی" value="gd_gàidhlig">
+      گالیک
+     </option>
+     <option title="هاوسا" value="ha_harshen_hausa">
+      زبان هاوسا
+     </option>
+     <option title="همونگ" value="hmn_hmong">
+      همونگ
+     </option>
+     <option title="کینیارواندا" value="rw_ikinyarwanda">
+      رواندا
+     </option>
+     <option title="داخل" value="ilo_iloko">
+      داخل
+     </option>
+     <option title="اندونزیایی" value="id_indonesia">
+      اندونزی
+     </option>
+     <option title="خوسا" value="xh_isixhosa">
+      خوسا
+     </option>
+     <option title="زولو" value="zu_isizulu">
+      زولو
+     </option>
+     <option title="ایتالیایی" value="it_italiano">
+      ایتالیایی
+     </option>
+     <option title="سواحیلی" value="sw_kiswahili">
+      سواحیلی
+     </option>
+     <option title="کنکانی" value="gom_konkani">
+      کنکانی
+     </option>
+     <option title="کریول هائیتی" value="ht_kreyòl_ayisyen">
+      کریول هائیتی
+     </option>
+     <option title="کریو" value="kri_krio">
+      کریو
+     </option>
+     <option title="کردی (سورانی)" value="ckb_kurdish_(sorani)">
+      کردی (سورانی)
+     </option>
+     <option title="کشک (کرمانجی)" value="ku_kurdî_(kurmancî)">
+      کردی (کرمانی)
+     </option>
+     <option title="لاتین" value="la_latin">
+      لاتین
+     </option>
+     <option title="لینگالا" value="ln_lingala">
+      لینگالا
+     </option>
+     <option title="لوگزامبورگی" value="lb_lëtzebuergesch">
+      لوگزامبورگی
+     </option>
+     <option title="مایتیلی" value="mai_maithili">
+      مایتیلی
+     </option>
+     <option title="مالتی" value="mt_malti">
+      مالتی
+     </option>
+     <option title="Meiteilon (مانیپوری)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (مانیپوری)
+     </option>
+     <option title="انگلیسی" value="lus_mizo">
+      انگلیسی
+     </option>
+     <option title="طبیعی" value="mi_māori">
+      مائوری
+     </option>
+     <option title="هلندی" value="nl_nederlands">
+      هلندی
+     </option>
+     <option title="سوتوی شمالی" value="nso_northern_sotho">
+      سوتوی شمالی
+     </option>
+     <option title="اودیا (اوریا)" value="or_odia_(oriya)">
+      اودیا (اوریا)
+     </option>
+     <option title="اورومو" value="om_oromo">
+      اورومو
+     </option>
+     <option title="ازبکستان" value="uz_o‘zbek">
+      ازبکستان
+     </option>
+     <option title="پرتغالی" value="pt_português">
+      پرتغالی
+     </option>
+     <option title="کیچوا" value="qu_quechua">
+      کچوا
+     </option>
+     <option title="رومانیایی" value="ro_română">
+      انگلیسی
+     </option>
+     <option title="سانسکریت" value="sa_sanskrit">
+      سانسکریت
+     </option>
+     <option title="انگلیسی" value="st_sesotho">
+      انگلیسی
+     </option>
+     <option title="آلبانیایی" value="sq_shqip">
+      آلبانیایی
+     </option>
+     <option title="سومالی" value="so_soomaali">
+      سومالی
+     </option>
+     <option title="تارتاروس" value="tt_tatar">
+      تاتاری
+     </option>
+     <option title="تیگرینیا" value="ti_tigrinya">
+      تیگرینیا
+     </option>
+     <option title="سونگا" value="ts_tsonga">
+      سونگا
+     </option>
+     <option title="توئی" value="ak_twi">
+      توئی
+     </option>
+     <option title="ترکمن" value="tk_türkmençe">
+      ترکیه
+     </option>
+     <option title="ترکی" value="tr_türkçe">
+      ترکی
+     </option>
+     <option title="اویغور" value="ug_uyghur">
+      اویغور
+     </option>
+     <option title="ویتنامی" value="vi_việt">
+      ویتنامی
+     </option>
+     <option title="بوسنیایی" value="bs_bosanski">
+      بوسنیایی
+     </option>
+     <option title="کاتالان" value="ca_català">
+      کاتالان
+     </option>
+     <option title="استونیایی" value="et_eesti">
+      استونیایی
+     </option>
+     <option title="اسپانیایی" value="es_español">
+      اسپانیایی
+     </option>
+     <option title="باسکی" value="eu_euskara">
+      باسکی
+     </option>
+     <option title="گالیسیایی" value="gl_galego">
+      گالیسیایی
+     </option>
+     <option title="کروات" value="hr_hrvatski">
+      کروات
+     </option>
+     <option title="لتونی" value="lv_latviešu">
+      لتونی
+     </option>
+     <option title="لیتوانیایی" value="lt_lietuvių">
+      لیتوانیایی
+     </option>
+     <option title="مجارستانی" value="hu_magyar">
+      مجارستانی
+     </option>
+     <option title="مالاگاسی" value="mg_malagasy">
+      مالاگاسی
+     </option>
+     <option title="نروژی" value="no_norsk">
+      نروژی
+     </option>
+     <option title="لهستانی" value="pl_polski">
+      لهستانی
+     </option>
+     <option title="اسلواکی" value="sk_slovenčina">
+      اسلواکی
+     </option>
+     <option title="اسلوونیایی" value="sl_slovenščina">
+      اسلوونیایی
+     </option>
+     <option title="فنلاندی" value="fi_suomi">
+      فنلاندی
+     </option>
+     <option title="سوئدی" value="sv_svenska">
+      سوئدی
+     </option>
+     <option title="ایسلندی" value="is_íslenska">
+      ایسلندی
+     </option>
+     <option title="چک" value="cs_čeština">
+      چک
+     </option>
+     <option title="یونانی" value="el_ελληνικά">
+      یونانی
+     </option>
+     <option title="بلاروسی" value="be_беларуская">
+      بلاروسی
+     </option>
+     <option title="مغول" value="mn_монгол">
+      مغولستان
+     </option>
+     <option title="تاجیک" value="tg_тоҷикӣ">
+      تاجیک
+     </option>
+     <option title="بلغاری" value="bg_български">
+      بلغاری
+     </option>
+     <option title="قرقیزستان" value="ky_кыргызча">
+      قرقیزستان
+     </option>
+     <option title="مقدونی" value="mk_македонски">
+      مقدونی
+     </option>
+     <option title="روسو" value="ru_русский">
+      روسی
+     </option>
+     <option title="صربی" value="sr_српски">
+      صربی
+     </option>
+     <option title="اوکراینی" value="uk_українська">
+      اوکراینی
+     </option>
+     <option title="قزاقستان" value="kk_қазақ">
+      قزاقستان
+     </option>
+     <option title="ارمنی" value="hy_հայերեն">
+      ارمنی:
+     </option>
+     <option title="آیدیچه" value="yi_יידיש">
+      ییدیش
+     </option>
+     <option title="عبری" value="iw_עברית">
+      عبری
+     </option>
+     <option title="عبری" value="he_עברית">
+      عبری
+     </option>
+     <option title="اردو" value="ur_اردو">
+      اردو
+     </option>
+     <option title="عربی" value="ar_العربية">
+      عربی
+     </option>
+     <option title="سندی" value="sd_سنڌي">
+      سندی
+     </option>
+     <option title="گمشده" value="fa_فارسی">
+      فارسی
+     </option>
+     <option title="پشتو" value="ps_پښتو">
+      پشتو
+     </option>
+     <option title="نپالی" value="ne_नेपाली">
+      نپالی
+     </option>
+     <option title="مراتی" value="mr_मराठी">
+      مراتی
+     </option>
+     <option title="خیر" value="hi_हिन्दी">
+      هندی
+     </option>
+     <option title="بنگالی" value="bn_বাংলা">
+      بنگلا
+     </option>
+     <option title="پرتغالی" value="pa_ਪੰਜਾਬੀ">
+      پنجابی
+     </option>
+     <option title="پرتغالی" value="gu_ગુજરાતી">
+      گجراتی
+     </option>
+     <option title="تامیل" value="ta_தமிழ்">
+      تامیل
+     </option>
+     <option title="زمستان" value="te_తెలుగు">
+      تلوگو
+     </option>
+     <option title="قناری" value="kn_ಕನ್ನಡ">
+      کانادا
+     </option>
+     <option title="استراتژی" value="ml_മലയാളം">
+      مالایایی
+     </option>
+     <option title="سینهالی" value="si_සිංහල">
+      سینهالی
+     </option>
+     <option title="تایلندی" value="th_ไทย">
+      تایلندی
+     </option>
+     <option title="سل" value="lo_ລາວ">
+      او
+     </option>
+     <option title="میانمار (برمه)" value="my_မြန်မာ">
+      میانمار
+     </option>
+     <option title="گرجی" value="ka_ქართული">
+      گرجی
+     </option>
+     <option title="آمهری" value="am_አማርኛ">
+      آمهری
+     </option>
+     <option title="خمر" value="km_ខ្មែរ">
+      خمر
+     </option>
+     <option title="چینی (سنتی)" value="zh-tw_中文_(繁體)">
+      چینی (سنتی)
+     </option>
+     <option title="چینی (ساده شده)" value="zh_中文（简体）">
+      چینی (ساده شده)
+     </option>
+     <option title="چینی (ساده شده)" value="zh-cn_中文（简体）">
+      چینی (ساده شده)
+     </option>
+     <option title="ژاپنی" value="ja_日本語">
+      ژاپنی
+     </option>
+     <option title="کره ای" value="ko_한국어">
+      کره ای
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    خوش آمدید
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>
