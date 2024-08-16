@@ -36,7 +36,7 @@ def main():
     with open('supported_languages.json', 'r', encoding='utf-8') as f: texts = json.loads(f.read())
     # with open('supported_languages.json', 'w', encoding='utf-8') as f: f.write(json.dumps(texts, ensure_ascii=False))
     # input('texts serializados, enter para continuar, comente a geração da variável texts e carregue ela do arquivo')
-
+    a = []
     languages = get_supported_languages(project, 'en')
     for i in range(len(languages)):
         lang_code = languages[i].language_code
@@ -67,18 +67,20 @@ def main():
             with open('sitemap', 'a') as f: f.write(f'https://tests.dev.br/!/{lang_code}/{texts[i]}/{file}')
             # input('Enter = Continuar')
         for file_path in file_paths:
-            threads = threading.Thread(target=x1, args=(file_path, lang_code, lang_name,))
-            threads.append(thread)
-            thread.start()
+            b = threading.Thread(target=x1, args=(file_path, lang_code, lang_name,))
+            a.append(b)
+            b.start()
+            print('start')
 
-            # Aguardando todas as threads terminarem
-            for thread in threads:
-                thread.join()
+    # Aguardando todas as threads terminarem
+    for thread in threads:
+        print('join *')
+        thread.join()
 
 
-            # Iniciando a thread
+        # Iniciando a thread
 
-            print("Threads finalizada!")
+        print("Threads finalizada!")
 
 if __name__ == "__main__":
     main()
