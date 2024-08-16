@@ -64,7 +64,7 @@ def main():
                 file = file_path
             salvar_arquivo(soup, texts[i], lang_code, file)
             print(f"Tradução para {lang_name} ({lang_code}) salva em /!/{lang_code}/{texts[i]}/{file}.")
-            with open('sitemap', 'a') as f: f.write(f'https://tests.dev.br/!/{lang_code}/{texts[i]}/{file}')
+            with open('sitemap', 'a', encoding="utf-8") as f: f.write(f'https://tests.dev.br/!/{lang_code}/{texts[i]}/{file}')
             # input('Enter = Continuar')
         for file_path in file_paths:
             b = threading.Thread(target=x1, args=(file_path, lang_code, lang_name,))
@@ -73,7 +73,7 @@ def main():
             print('start')
 
     # Aguardando todas as threads terminarem
-    for thread in threads:
+    for thread in a:
         print('join *')
         thread.join()
 

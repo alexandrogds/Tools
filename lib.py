@@ -133,7 +133,7 @@ def salvar_arquivo(soup, lang_text, dest_lang, file, dir_name=None):
         dir_path = f"./!/{dest_lang}/{lang_text}"
 
     os.makedirs(dir_path, exist_ok=True)
-    file_path = os.path.join(dir_path, "index.html")
+    file_path = os.path.join(dir_path, file)
 
     soup.find('meta', charset='utf-8')['charset'] = 'utf-8'
     soup.html['lang'] = dest_lang
