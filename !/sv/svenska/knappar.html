@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="sv">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 knappar
+  </title>
+  <meta content="Verktyg för att räkna knappklick." name="description"/>
+  <meta content="3 knappar, klick, räkna, streama, verktyg, online, webb" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Hawaiian" value="haw_'ōlelo_hawaiʻi">
+      'Hawaiian
+     </option>
+     <option title="afrikanska" value="af_afrikaans">
+      afrikanska
+     </option>
+     <option title="Assameser" value="as_assamese">
+      assamiska
+     </option>
+     <option title="Igbo" value="ig_asụsụ_igbo">
+      Igbo-språk
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Azerbajdzjan" value="az_azərbaycan_dili">
+      azerbajdzjanska språket
+     </option>
+     <option title="ange" value="ms_bahasa_melayu">
+      Malajiska språk
+     </option>
+     <option title="De använder det" value="bm_bambara">
+      De bär den
+     </option>
+     <option title="javanesiska" value="jw_basa_jawa">
+      javanesiska språk
+     </option>
+     <option title="javanesiska" value="jv_basa_jawa">
+      javanesiska språk
+     </option>
+     <option title="sudanesiska" value="su_basa_sunda">
+      Sundanesiska språket
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Shona" value="sn_chishona">
+      engelska
+     </option>
+     <option title="kinesiska" value="ny_chichewa">
+      kinesiska
+     </option>
+     <option title="Kurs" value="co_corsu">
+      korsikanska
+     </option>
+     <option title="walesiska" value="cy_cymraeg">
+      walesiska
+     </option>
+     <option title="danska" value="da_dansk">
+      danska
+     </option>
+     <option title="tyska" value="de_deutsch">
+      tyska
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="engelska" value="en_english">
+      engelska
+     </option>
+     <option title="esperanto" value="eo_esperanto">
+      esperanto
+     </option>
+     <option title="Ark" value="ee_ewe">
+      Blad
+     </option>
+     <option title="Yoruba" value="yo_èdè_yorùbá">
+      Yoruba språk
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Samoan
+     </option>
+     <option title="Filippinare" value="tl_filipino">
+      Filippinare
+     </option>
+     <option title="Filippinare" value="fil_filipino">
+      Filippinare
+     </option>
+     <option title="franska" value="fr_français">
+      franska
+     </option>
+     <option title="frisiska" value="fy_frysk">
+      frisiska
+     </option>
+     <option title="irländsk gaeliska" value="ga_gaeilge">
+      irländska
+     </option>
+     <option title="Skönhet" value="lg_ganda">
+      Skönhet
+     </option>
+     <option title="Guaraní" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="skotsk gaeliska" value="gd_gàidhlig">
+      Gaeliska
+     </option>
+     <option title="Hausa" value="ha_harshen_hausa">
+      Hausa språk
+     </option>
+     <option title="Hmong" value="hmn_hmong">
+      Hmong
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      rwandiska
+     </option>
+     <option title="Inuti" value="ilo_iloko">
+      Inuti
+     </option>
+     <option title="indonesiska" value="id_indonesia">
+      Indonesien
+     </option>
+     <option title="Xhosa" value="xh_isixhosa">
+      Xhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Zulu
+     </option>
+     <option title="italienska" value="it_italiano">
+      italienska
+     </option>
+     <option title="Swahili" value="sw_kiswahili">
+      Swahili
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="haitisk kreol" value="ht_kreyòl_ayisyen">
+      haitisk kreol
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="kurdiska (sorani)" value="ckb_kurdish_(sorani)">
+      kurdiska (sorani)
+     </option>
+     <option title="Ostmassa (Kurmanji)" value="ku_kurdî_(kurmancî)">
+      kurdiska (Kurmanci)
+     </option>
+     <option title="latin" value="la_latin">
+      latin
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="Luxemburgiska" value="lb_lëtzebuergesch">
+      Luxemburgiska
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="maltesiska" value="mt_malti">
+      maltesiska
+     </option>
+     <option title="Meiteilon (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="engelska" value="lus_mizo">
+      engelska
+     </option>
+     <option title="naturlig" value="mi_māori">
+      Māori
+     </option>
+     <option title="holländska" value="nl_nederlands">
+      holländska
+     </option>
+     <option title="norra Sotho" value="nso_northern_sotho">
+      norra Sotho
+     </option>
+     <option title="Odia (Oriya)" value="or_odia_(oriya)">
+      Odia (Oriya)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="uzbekiska" value="uz_o‘zbek">
+      uzbekiska
+     </option>
+     <option title="portugisiska" value="pt_português">
+      portugisiska
+     </option>
+     <option title="Quichua" value="qu_quechua">
+      Quechua
+     </option>
+     <option title="rumänska" value="ro_română">
+      ENGELSKA
+     </option>
+     <option title="Sanskrit" value="sa_sanskrit">
+      Sanskrit
+     </option>
+     <option title="engelska" value="st_sesotho">
+      engelska
+     </option>
+     <option title="albanska" value="sq_shqip">
+      albanska
+     </option>
+     <option title="somaliska" value="so_soomaali">
+      somaliska
+     </option>
+     <option title="Tartarus" value="tt_tatar">
+      tatariska
+     </option>
+     <option title="Tigrinia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="turkmeniska" value="tk_türkmençe">
+      Turkiet
+     </option>
+     <option title="turkiska" value="tr_türkçe">
+      turkiska
+     </option>
+     <option title="Uigur" value="ug_uyghur">
+      uiguriska
+     </option>
+     <option title="vietnamesiska" value="vi_việt">
+      vietnamesiska
+     </option>
+     <option title="bosniska" value="bs_bosanski">
+      bosniska
+     </option>
+     <option title="katalanska" value="ca_català">
+      katalanska
+     </option>
+     <option title="estniska" value="et_eesti">
+      estniska
+     </option>
+     <option title="spanska" value="es_español">
+      spanska
+     </option>
+     <option title="baskiska" value="eu_euskara">
+      baskiska
+     </option>
+     <option title="galiciska" value="gl_galego">
+      galiciska
+     </option>
+     <option title="Kroatisk" value="hr_hrvatski">
+      Kroatisk
+     </option>
+     <option title="lettiska" value="lv_latviešu">
+      lettiska
+     </option>
+     <option title="litauiska" value="lt_lietuvių">
+      litauiska
+     </option>
+     <option title="ungerska" value="hu_magyar">
+      ungerska
+     </option>
+     <option title="Madagaskar" value="mg_malagasy">
+      Madagaskar
+     </option>
+     <option title="norska" value="no_norsk">
+      norska
+     </option>
+     <option title="polska" value="pl_polski">
+      polska
+     </option>
+     <option title="slovakiska" value="sk_slovenčina">
+      slovakiska
+     </option>
+     <option title="slovenska" value="sl_slovenščina">
+      slovenska
+     </option>
+     <option title="finska" value="fi_suomi">
+      finska
+     </option>
+     <option title="svenska" value="sv_svenska">
+      svenska
+     </option>
+     <option title="isländska" value="is_íslenska">
+      isländska
+     </option>
+     <option title="tjeckiska" value="cs_čeština">
+      tjeckiska
+     </option>
+     <option title="grekiska" value="el_ελληνικά">
+      grekiska
+     </option>
+     <option title="vitryska" value="be_беларуская">
+      vitryska
+     </option>
+     <option title="mongol" value="mn_монгол">
+      mongoliet
+     </option>
+     <option title="Tajic" value="tg_тоҷикӣ">
+      tadzjikiska
+     </option>
+     <option title="bulgariska" value="bg_български">
+      bulgariska
+     </option>
+     <option title="Kirgizistan" value="ky_кыргызча">
+      kirgiziska
+     </option>
+     <option title="makedonska" value="mk_македонски">
+      makedonska
+     </option>
+     <option title="russo" value="ru_русский">
+      ryska
+     </option>
+     <option title="serbiska" value="sr_српски">
+      serbiska
+     </option>
+     <option title="ukrainska" value="uk_українська">
+      ukrainska
+     </option>
+     <option title="Kazakiska" value="kk_қазақ">
+      Kazakiska
+     </option>
+     <option title="armeniska" value="hy_հայերեն">
+      armeniska:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      jiddisch
+     </option>
+     <option title="hebreiska" value="iw_עברית">
+      hebreiska
+     </option>
+     <option title="hebreiska" value="he_עברית">
+      hebreiska
+     </option>
+     <option title="urdu" value="ur_اردو">
+      Urdu
+     </option>
+     <option title="arabiska" value="ar_العربية">
+      arabiska
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Sindhi
+     </option>
+     <option title="förlorad" value="fa_فارسی">
+      Farsi
+     </option>
+     <option title="pashto" value="ps_پښتو">
+      Pashto
+     </option>
+     <option title="nepalesiska" value="ne_नेपाली">
+      nepalesiska
+     </option>
+     <option title="Marathi" value="mr_मराठी">
+      Marathi
+     </option>
+     <option title="Inga" value="hi_हिन्दी">
+      hindi
+     </option>
+     <option title="bengali" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="portugisiska" value="pa_ਪੰਜਾਬੀ">
+      Punjabi
+     </option>
+     <option title="portugisiska" value="gu_ગુજરાતી">
+      Gujarati
+     </option>
+     <option title="Tamil" value="ta_தமிழ்">
+      Tamil
+     </option>
+     <option title="Vinter" value="te_తెలుగు">
+      Telugu
+     </option>
+     <option title="Canares" value="kn_ಕನ್ನಡ">
+      Kannada
+     </option>
+     <option title="Strategi" value="ml_മലയാളം">
+      Malayalam
+     </option>
+     <option title="singalesiska" value="si_සිංහල">
+      singalesiska
+     </option>
+     <option title="Thai" value="th_ไทย">
+      Thai
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      han
+     </option>
+     <option title="Myanmar (burmesiska)" value="my_မြန်မာ">
+      Myanmar
+     </option>
+     <option title="georgiska" value="ka_ქართული">
+      georgiska
+     </option>
+     <option title="amhariska" value="am_አማርኛ">
+      amhariska
+     </option>
+     <option title="Khmer" value="km_ខ្មែរ">
+      Khmer
+     </option>
+     <option title="kinesiska (traditionell)" value="zh-tw_中文_(繁體)">
+      kinesiska (traditionell)
+     </option>
+     <option title="kinesiska (förenklad)" value="zh_中文（简体）">
+      kinesiska (förenklad)
+     </option>
+     <option title="kinesiska (förenklad)" value="zh-cn_中文（简体）">
+      kinesiska (förenklad)
+     </option>
+     <option title="japanska" value="ja_日本語">
+      japanska
+     </option>
+     <option title="koreanska" value="ko_한국어">
+      koreanska
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Välkomna
+     </h1>
+     <p class="lead">
+      Detta är en sida med knappar med antal klick.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Antal knappar:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Hej">
+       Ny
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Hej">
+       Dela
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Hej">
+       Lägg lösenord
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Hej">
+       Återställ data
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Kapital
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Bekräfta åtgärd
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Är du säker på att du vill ta bort några knappar? Denna åtgärd kan inte ångras. Knapparna kommer att tas bort från slutet.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Avboka
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Bekräfta
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   Enkätens webbadress har kopierats.
+  </span>
+  <span id="voting" style="display:none;">
+   Röstning
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

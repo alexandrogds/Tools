@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="tg">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   3 Тугмаҳо
+  </title>
+  <meta content="Асбоб барои ҳисоб кардани кликҳои тугма." name="description"/>
+  <meta content="3 тугма, кликҳо, ҳисоб, ҷараён, асбобҳо, онлайн, веб" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Ҳавайӣ" value="haw_'ōlelo_hawaiʻi">
+      'Ҳавайӣ
+     </option>
+     <option title="африқоӣ" value="af_afrikaans">
+      африқоӣ
+     </option>
+     <option title="Ассамхо" value="as_assamese">
+      Ассамӣ
+     </option>
+     <option title="Игбо" value="ig_asụsụ_igbo">
+      Забони игбо
+     </option>
+     <option title="Аймара" value="ay_aymara">
+      Аймара
+     </option>
+     <option title="Озарбойҷон" value="az_azərbaycan_dili">
+      Забони озарбойҷонӣ
+     </option>
+     <option title="давлат" value="ms_bahasa_melayu">
+      Забони малайӣ
+     </option>
+     <option title="Ондо истифода мебаранд" value="bm_bambara">
+      Онҳо онро мепӯшанд
+     </option>
+     <option title="ёвонӣ" value="jw_basa_jawa">
+      забони явонӣ
+     </option>
+     <option title="ёвонӣ" value="jv_basa_jawa">
+      забони явонӣ
+     </option>
+     <option title="судонй" value="su_basa_sunda">
+      забони сунданӣ
+     </option>
+     <option title="Бхочпури" value="bho_bhojpuri">
+      Бхочпури
+     </option>
+     <option title="Себуано" value="ceb_cebuano">
+      Себуано
+     </option>
+     <option title="Шона" value="sn_chishona">
+      англисӣ
+     </option>
+     <option title="чинӣ" value="ny_chichewa">
+      чинӣ
+     </option>
+     <option title="Курс" value="co_corsu">
+      Корсикӣ
+     </option>
+     <option title="Уелсӣ" value="cy_cymraeg">
+      Уелсӣ
+     </option>
+     <option title="Дания" value="da_dansk">
+      Дания
+     </option>
+     <option title="олмонӣ" value="de_deutsch">
+      олмонӣ
+     </option>
+     <option title="Дивехи" value="dv_divehi">
+      Дивехи
+     </option>
+     <option title="Догри" value="doi_dogri">
+      Догри
+     </option>
+     <option title="англисӣ" value="en_english">
+      англисӣ
+     </option>
+     <option title="эсперанто" value="eo_esperanto">
+      эсперанто
+     </option>
+     <option title="Варақ" value="ee_ewe">
+      Барг
+     </option>
+     <option title="Ёруба" value="yo_èdè_yorùbá">
+      забони йоруба
+     </option>
+     <option title="самоано" value="sm_faʻa-samoa">
+      самоа
+     </option>
+     <option title="Филиппинӣ" value="tl_filipino">
+      Филиппинӣ
+     </option>
+     <option title="Филиппинӣ" value="fil_filipino">
+      Филиппинӣ
+     </option>
+     <option title="фаронсавӣ" value="fr_français">
+      фаронсавӣ
+     </option>
+     <option title="фризӣ" value="fy_frysk">
+      фризӣ
+     </option>
+     <option title="Гаэли ирландӣ" value="ga_gaeilge">
+      ирландӣ
+     </option>
+     <option title="Зебоӣ" value="lg_ganda">
+      Зебоӣ
+     </option>
+     <option title="Кафолат" value="gn_guarani">
+      Гуарани
+     </option>
+     <option title="Гаэли Шотландия" value="gd_gàidhlig">
+      Гаелӣ
+     </option>
+     <option title="Хауса" value="ha_harshen_hausa">
+      Забони ҳауза
+     </option>
+     <option title="Хмонг" value="hmn_hmong">
+      Хмонг
+     </option>
+     <option title="кинярванд" value="rw_ikinyarwanda">
+      Руанда
+     </option>
+     <option title="Дарун" value="ilo_iloko">
+      Дарун
+     </option>
+     <option title="Индонезия" value="id_indonesia">
+      Индонезия
+     </option>
+     <option title="Хоса" value="xh_isixhosa">
+      Хоса
+     </option>
+     <option title="зулу" value="zu_isizulu">
+      Зулу
+     </option>
+     <option title="Италия" value="it_italiano">
+      Италия
+     </option>
+     <option title="суахили" value="sw_kiswahili">
+      суахили
+     </option>
+     <option title="Конканӣ" value="gom_konkani">
+      Конканӣ
+     </option>
+     <option title="Креоли Гаити" value="ht_kreyòl_ayisyen">
+      Креоли Гаити
+     </option>
+     <option title="Крё" value="kri_krio">
+      Крё
+     </option>
+     <option title="курдӣ (соронӣ)" value="ckb_kurdish_(sorani)">
+      курдӣ (соронӣ)
+     </option>
+     <option title="Курманҷӣ (курманҷӣ)" value="ku_kurdî_(kurmancî)">
+      курд (курманҷӣ)
+     </option>
+     <option title="лотинӣ" value="la_latin">
+      лотинӣ
+     </option>
+     <option title="Лингала" value="ln_lingala">
+      Лингала
+     </option>
+     <option title="Люксембург" value="lb_lëtzebuergesch">
+      Люксембург
+     </option>
+     <option title="Майтили" value="mai_maithili">
+      Майтили
+     </option>
+     <option title="малтаӣ" value="mt_malti">
+      малтаӣ
+     </option>
+     <option title="Мейтейлон (Манипури)" value="mni-mtei_meiteilon_(manipuri)">
+      Мейтейлон (Манипури)
+     </option>
+     <option title="англисӣ" value="lus_mizo">
+      англисӣ
+     </option>
+     <option title="табий" value="mi_māori">
+      маорӣ
+     </option>
+     <option title="Голландия" value="nl_nederlands">
+      Голландия
+     </option>
+     <option title="Сотои Шимолӣ" value="nso_northern_sotho">
+      Сотои Шимолӣ
+     </option>
+     <option title="Одия (Ориё)" value="or_odia_(oriya)">
+      Одия (Ориё)
+     </option>
+     <option title="Оромо" value="om_oromo">
+      Оромо
+     </option>
+     <option title="узбек" value="uz_o‘zbek">
+      узбек
+     </option>
+     <option title="португалӣ" value="pt_português">
+      португалӣ
+     </option>
+     <option title="Кичуа" value="qu_quechua">
+      Кечуа
+     </option>
+     <option title="руминӣ" value="ro_română">
+      АНГЛИСИ
+     </option>
+     <option title="санскрит" value="sa_sanskrit">
+      санскрит
+     </option>
+     <option title="англисӣ" value="st_sesotho">
+      англисӣ
+     </option>
+     <option title="албанӣ" value="sq_shqip">
+      албанӣ
+     </option>
+     <option title="Сомали" value="so_soomaali">
+      Сомали
+     </option>
+     <option title="Тартарус" value="tt_tatar">
+      тоторӣ
+     </option>
+     <option title="Тигриния" value="ti_tigrinya">
+      Тигрня
+     </option>
+     <option title="Цонга" value="ts_tsonga">
+      Цонга
+     </option>
+     <option title="Тви" value="ak_twi">
+      Тви
+     </option>
+     <option title="туркман" value="tk_türkmençe">
+      мурғи марҷон
+     </option>
+     <option title="туркӣ" value="tr_türkçe">
+      туркӣ
+     </option>
+     <option title="уйгур" value="ug_uyghur">
+      уйгур
+     </option>
+     <option title="Ветнами" value="vi_việt">
+      Ветнами
+     </option>
+     <option title="боснӣ" value="bs_bosanski">
+      босниягӣ
+     </option>
+     <option title="каталонӣ" value="ca_català">
+      каталонӣ
+     </option>
+     <option title="эстонӣ" value="et_eesti">
+      эстонӣ
+     </option>
+     <option title="испанӣ" value="es_español">
+      испанӣ
+     </option>
+     <option title="баскӣ" value="eu_euskara">
+      баскӣ
+     </option>
+     <option title="галисия" value="gl_galego">
+      галисия
+     </option>
+     <option title="хорватӣ" value="hr_hrvatski">
+      хорватӣ
+     </option>
+     <option title="латыш" value="lv_latviešu">
+      латыш
+     </option>
+     <option title="литваӣ" value="lt_lietuvių">
+      литваӣ
+     </option>
+     <option title="Венгрия" value="hu_magyar">
+      Венгрия
+     </option>
+     <option title="малагасий" value="mg_malagasy">
+      малагасий
+     </option>
+     <option title="норвегӣ" value="no_norsk">
+      норвегӣ
+     </option>
+     <option title="полякӣ" value="pl_polski">
+      полякӣ
+     </option>
+     <option title="словакӣ" value="sk_slovenčina">
+      словакӣ
+     </option>
+     <option title="словенӣ" value="sl_slovenščina">
+      словенӣ
+     </option>
+     <option title="финландӣ" value="fi_suomi">
+      финландӣ
+     </option>
+     <option title="шведӣ" value="sv_svenska">
+      шведӣ
+     </option>
+     <option title="исландӣ" value="is_íslenska">
+      исландӣ
+     </option>
+     <option title="чех" value="cs_čeština">
+      чех
+     </option>
+     <option title="юнонӣ" value="el_ελληνικά">
+      юнонӣ
+     </option>
+     <option title="белорус" value="be_беларуская">
+      белорус
+     </option>
+     <option title="мугул" value="mn_монгол">
+      Мугулистон
+     </option>
+     <option title="тоҷикӣ" value="tg_тоҷикӣ">
+      Тоҷикӣ
+     </option>
+     <option title="булгорӣ" value="bg_български">
+      булгорӣ
+     </option>
+     <option title="Қирғизистон" value="ky_кыргызча">
+      киргиз
+     </option>
+     <option title="македонӣ" value="mk_македонски">
+      македонӣ
+     </option>
+     <option title="русӣ" value="ru_русский">
+      русӣ
+     </option>
+     <option title="сербӣ" value="sr_српски">
+      сербӣ
+     </option>
+     <option title="украинӣ" value="uk_українська">
+      украинӣ
+     </option>
+     <option title="қазоқ" value="kk_қазақ">
+      қазоқ
+     </option>
+     <option title="арманӣ" value="hy_հայերեն">
+      арманӣ:
+     </option>
+     <option title="Иидиче" value="yi_יידיש">
+      идишӣ
+     </option>
+     <option title="ибрӣ" value="iw_עברית">
+      ибрӣ
+     </option>
+     <option title="ибрӣ" value="he_עברית">
+      ибрӣ
+     </option>
+     <option title="урду" value="ur_اردو">
+      урду
+     </option>
+     <option title="арабӣ" value="ar_العربية">
+      арабӣ
+     </option>
+     <option title="Синди" value="sd_سنڌي">
+      Синдӣ
+     </option>
+     <option title="гум шуд" value="fa_فارسی">
+      форсӣ
+     </option>
+     <option title="пашту" value="ps_پښتو">
+      пашту
+     </option>
+     <option title="непалӣ" value="ne_नेपाली">
+      непалӣ
+     </option>
+     <option title="маратҳӣ" value="mr_मराठी">
+      маратҳӣ
+     </option>
+     <option title="Не" value="hi_हिन्दी">
+      ҳиндӣ
+     </option>
+     <option title="бенгалӣ" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="португалӣ" value="pa_ਪੰਜਾਬੀ">
+      Панҷобӣ
+     </option>
+     <option title="португалӣ" value="gu_ગુજરાતી">
+      Гуҷаратӣ
+     </option>
+     <option title="тамилӣ" value="ta_தமிழ்">
+      тамилӣ
+     </option>
+     <option title="Зимистон" value="te_తెలుగు">
+      телугу
+     </option>
+     <option title="Канарес" value="kn_ಕನ್ನಡ">
+      каннада
+     </option>
+     <option title="Стратегия" value="ml_മലയാളം">
+      малаялам
+     </option>
+     <option title="Сингалӣ" value="si_සිංහල">
+      Сингал
+     </option>
+     <option title="тай" value="th_ไทย">
+      тай
+     </option>
+     <option title="сил" value="lo_ລາວ">
+      вай
+     </option>
+     <option title="Мянмар (Бирма)" value="my_မြန်မာ">
+      Мянмар
+     </option>
+     <option title="гурҷӣ" value="ka_ქართული">
+      гурҷӣ
+     </option>
+     <option title="амхарӣ" value="am_አማርኛ">
+      амхарӣ
+     </option>
+     <option title="кхмер" value="km_ខ្មែរ">
+      кхмер
+     </option>
+     <option title="Чинӣ (анъанавӣ)" value="zh-tw_中文_(繁體)">
+      Чинӣ (анъанавӣ)
+     </option>
+     <option title="Чинӣ (соддашуда)" value="zh_中文（简体）">
+      Чинӣ (соддашуда)
+     </option>
+     <option title="Чинӣ (соддашуда)" value="zh-cn_中文（简体）">
+      Чинӣ (соддашуда)
+     </option>
+     <option title="Ҷопон" value="ja_日本語">
+      Ҷопон
+     </option>
+     <option title="Корея" value="ko_한국어">
+      кореягӣ
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Хуш омадед
+     </h1>
+     <p class="lead">
+      Ин саҳифа бо тугмаҳо бо ҳисобҳои клик аст.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Шумораи тугмаҳо:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Салом">
+       Нав
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Салом">
+       Мубодила
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Салом">
+       Гузаронидани парол
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Салом">
+       Барқарор кардани маълумот
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Сармоя
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Тасдиқи амал
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Шумо мутмаин ҳастед, ки мехоҳед баъзе тугмаҳоро нест кунед? Ин амалро бекор кардан мумкин нест. Тугмаҳо аз охири он хориҷ карда мешаванд.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Бекор кардан
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Тасдиқ кунед
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   URL-и пурсиш бо муваффақият нусхабардорӣ карда шуд.
+  </span>
+  <span id="voting" style="display:none;">
+   Овоздиҳӣ
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>

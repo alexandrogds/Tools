@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="sw">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   Vifungo 3
+  </title>
+  <meta content="Zana ya kuhesabu mibofyo ya vitufe." name="description"/>
+  <meta content="Vitufe 3, mibofyo, hesabu, mtiririko, zana, mtandaoni, wavuti" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Kihawai" value="haw_'ōlelo_hawaiʻi">
+      'Kihawai
+     </option>
+     <option title="Mwafrika" value="af_afrikaans">
+      Mwafrika
+     </option>
+     <option title="Waassamesi" value="as_assamese">
+      Kiassamese
+     </option>
+     <option title="Kiigbo" value="ig_asụsụ_igbo">
+      Lugha ya Igbo
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Kiazabajani" value="az_azərbaycan_dili">
+      Lugha ya Kiazabajani
+     </option>
+     <option title="jimbo" value="ms_bahasa_melayu">
+      Lugha ya Kimalay
+     </option>
+     <option title="Wanaitumia" value="bm_bambara">
+      Wanavaa
+     </option>
+     <option title="Kijava" value="jw_basa_jawa">
+      Lugha ya Kijava
+     </option>
+     <option title="Kijava" value="jv_basa_jawa">
+      Lugha ya Kijava
+     </option>
+     <option title="Wasudani" value="su_basa_sunda">
+      Lugha ya Sundanese
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Cebuano" value="ceb_cebuano">
+      Cebuano
+     </option>
+     <option title="Kishona" value="sn_chishona">
+      Kiingereza
+     </option>
+     <option title="Kichina" value="ny_chichewa">
+      Kichina
+     </option>
+     <option title="Kozi" value="co_corsu">
+      Kikosikani
+     </option>
+     <option title="Kiwelisi" value="cy_cymraeg">
+      Kiwelisi
+     </option>
+     <option title="Kideni" value="da_dansk">
+      Kideni
+     </option>
+     <option title="Kijerumani" value="de_deutsch">
+      Kijerumani
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="Kiingereza" value="en_english">
+      Kiingereza
+     </option>
+     <option title="Kiesperanto" value="eo_esperanto">
+      Kiesperanto
+     </option>
+     <option title="Laha" value="ee_ewe">
+      Jani
+     </option>
+     <option title="Kiyoruba" value="yo_èdè_yorùbá">
+      Lugha ya Kiyoruba
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Kisamoa
+     </option>
+     <option title="Kifilipino" value="tl_filipino">
+      Kifilipino
+     </option>
+     <option title="Kifilipino" value="fil_filipino">
+      Kifilipino
+     </option>
+     <option title="Kifaransa" value="fr_français">
+      Kifaransa
+     </option>
+     <option title="Kifrisia" value="fy_frysk">
+      Kifrisia
+     </option>
+     <option title="Kigaeli cha Kiayalandi" value="ga_gaeilge">
+      Kiayalandi
+     </option>
+     <option title="Uzuri" value="lg_ganda">
+      Uzuri
+     </option>
+     <option title="Guarani" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="Kigaeli cha Kiskoti" value="gd_gàidhlig">
+      Kigaeli
+     </option>
+     <option title="Kihausa" value="ha_harshen_hausa">
+      Lugha ya Kihausa
+     </option>
+     <option title="Hmong" value="hmn_hmong">
+      Hmong
+     </option>
+     <option title="Kinyarwanda" value="rw_ikinyarwanda">
+      Mnyarwanda
+     </option>
+     <option title="Ndani" value="ilo_iloko">
+      Ndani
+     </option>
+     <option title="Kiindonesia" value="id_indonesia">
+      Indonesia
+     </option>
+     <option title="Kixhosa" value="xh_isixhosa">
+      Kixhosa
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Kizulu
+     </option>
+     <option title="Kiitaliano" value="it_italiano">
+      Kiitaliano
+     </option>
+     <option title="kiswahili" value="sw_kiswahili">
+      Kiswahili
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Krioli ya Haiti" value="ht_kreyòl_ayisyen">
+      Krioli ya Haiti
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="Kikurdi (Sorani)" value="ckb_kurdish_(sorani)">
+      Kikurdi (Sorani)
+     </option>
+     <option title="Curd (Kurmanji)" value="ku_kurdî_(kurmancî)">
+      Kikurdi (Kurmanci)
+     </option>
+     <option title="Kilatini" value="la_latin">
+      Kilatini
+     </option>
+     <option title="Kilingala" value="ln_lingala">
+      Kilingala
+     </option>
+     <option title="Kilasembagi" value="lb_lëtzebuergesch">
+      Kilasembagi
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="Kimalta" value="mt_malti">
+      Kimalta
+     </option>
+     <option title="Meiteilon (Manipuri)" value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri)
+     </option>
+     <option title="Kiingereza" value="lus_mizo">
+      Kiingereza
+     </option>
+     <option title="asili" value="mi_māori">
+      Māori
+     </option>
+     <option title="Kiholanzi" value="nl_nederlands">
+      Kiholanzi
+     </option>
+     <option title="Kisotho cha Kaskazini" value="nso_northern_sotho">
+      Kisotho cha Kaskazini
+     </option>
+     <option title="Odia (Oriya)" value="or_odia_(oriya)">
+      Odia (Oriya)
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="Kiuzbeki" value="uz_o‘zbek">
+      Kiuzbeki
+     </option>
+     <option title="Kireno" value="pt_português">
+      Kireno
+     </option>
+     <option title="Kiquichua" value="qu_quechua">
+      Kiquechua
+     </option>
+     <option title="Kiromania" value="ro_română">
+      KISWAHILI
+     </option>
+     <option title="Sanskrit" value="sa_sanskrit">
+      Sanskrit
+     </option>
+     <option title="Kiingereza" value="st_sesotho">
+      Kiingereza
+     </option>
+     <option title="Kialbeni" value="sq_shqip">
+      Kialbeni
+     </option>
+     <option title="Msomali" value="so_soomaali">
+      Msomali
+     </option>
+     <option title="Tartarasi" value="tt_tatar">
+      Kitatari
+     </option>
+     <option title="Tigrinia" value="ti_tigrinya">
+      Kitigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Waturukimeni" value="tk_türkmençe">
+      Uturuki
+     </option>
+     <option title="Kituruki" value="tr_türkçe">
+      Kituruki
+     </option>
+     <option title="Uighur" value="ug_uyghur">
+      Uyghur
+     </option>
+     <option title="Kivietinamu" value="vi_việt">
+      Kivietinamu
+     </option>
+     <option title="Kibosnia" value="bs_bosanski">
+      Kibosnia
+     </option>
+     <option title="Kikatalani" value="ca_català">
+      Kikatalani
+     </option>
+     <option title="Kiestonia" value="et_eesti">
+      Kiestonia
+     </option>
+     <option title="Kihispania" value="es_español">
+      Kihispania
+     </option>
+     <option title="Kibasque" value="eu_euskara">
+      Kibasque
+     </option>
+     <option title="Kigalisia" value="gl_galego">
+      Kigalisia
+     </option>
+     <option title="Kikroeshia" value="hr_hrvatski">
+      Kikroeshia
+     </option>
+     <option title="Kilatvia" value="lv_latviešu">
+      Kilatvia
+     </option>
+     <option title="Kilithuania" value="lt_lietuvių">
+      Kilithuania
+     </option>
+     <option title="Kihungaria" value="hu_magyar">
+      Kihungaria
+     </option>
+     <option title="Kimalagasi" value="mg_malagasy">
+      Kimalagasi
+     </option>
+     <option title="Kinorwe" value="no_norsk">
+      Kinorwe
+     </option>
+     <option title="Kipolandi" value="pl_polski">
+      Kipolandi
+     </option>
+     <option title="Kislovakia" value="sk_slovenčina">
+      Kislovakia
+     </option>
+     <option title="Kislovenia" value="sl_slovenščina">
+      Kislovenia
+     </option>
+     <option title="Kifini" value="fi_suomi">
+      Kifini
+     </option>
+     <option title="Kiswidi" value="sv_svenska">
+      Kiswidi
+     </option>
+     <option title="Kiaislandi" value="is_íslenska">
+      Kiaislandi
+     </option>
+     <option title="Kicheki" value="cs_čeština">
+      Kicheki
+     </option>
+     <option title="Kigiriki" value="el_ελληνικά">
+      Kigiriki
+     </option>
+     <option title="Kibelarusi" value="be_беларуская">
+      Kibelarusi
+     </option>
+     <option title="mongol" value="mn_монгол">
+      Mongolia
+     </option>
+     <option title="Tajic" value="tg_тоҷикӣ">
+      Tajiki
+     </option>
+     <option title="Kibulgaria" value="bg_български">
+      Kibulgaria
+     </option>
+     <option title="Kyrgyzstan" value="ky_кыргызча">
+      Kirigizi
+     </option>
+     <option title="Kimasedonia" value="mk_македонски">
+      Kimasedonia
+     </option>
+     <option title="Urusi" value="ru_русский">
+      Kirusi
+     </option>
+     <option title="Kiserbia" value="sr_српски">
+      Kiserbia
+     </option>
+     <option title="Kiukreni" value="uk_українська">
+      Kiukreni
+     </option>
+     <option title="Kazakh" value="kk_қазақ">
+      Kazakh
+     </option>
+     <option title="Kiarmenia" value="hy_հայերեն">
+      Kiarmenia:
+     </option>
+     <option title="Iidiche" value="yi_יידיש">
+      Kiyidi
+     </option>
+     <option title="Kiebrania" value="iw_עברית">
+      Kiebrania
+     </option>
+     <option title="Kiebrania" value="he_עברית">
+      Kiebrania
+     </option>
+     <option title="Kiurdu" value="ur_اردو">
+      Kiurdu
+     </option>
+     <option title="Kiarabu" value="ar_العربية">
+      Kiarabu
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Kisindhi
+     </option>
+     <option title="kupotea" value="fa_فارسی">
+      Kiajemi
+     </option>
+     <option title="pashto" value="ps_پښتو">
+      Kipashto
+     </option>
+     <option title="Kinepali" value="ne_नेपाली">
+      Kinepali
+     </option>
+     <option title="Marathi" value="mr_मराठी">
+      Marathi
+     </option>
+     <option title="Hapana" value="hi_हिन्दी">
+      Kihindi
+     </option>
+     <option title="bengali" value="bn_বাংলা">
+      Bangla
+     </option>
+     <option title="Kireno" value="pa_ਪੰਜਾਬੀ">
+      Kipunjabi
+     </option>
+     <option title="Kireno" value="gu_ગુજરાતી">
+      Kigujarati
+     </option>
+     <option title="Kitamil" value="ta_தமிழ்">
+      Kitamil
+     </option>
+     <option title="Majira ya baridi" value="te_తెలుగు">
+      Kitelugu
+     </option>
+     <option title="Canares" value="kn_ಕನ್ನಡ">
+      Kikanada
+     </option>
+     <option title="Mkakati" value="ml_മലയാളം">
+      Kimalayalam
+     </option>
+     <option title="Kisinhali" value="si_සිංහල">
+      Kisinhala
+     </option>
+     <option title="Thai" value="th_ไทย">
+      Thai
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      yeye
+     </option>
+     <option title="Myanmar (Kiburma)" value="my_မြန်မာ">
+      Myanmar
+     </option>
+     <option title="Kijojiajia" value="ka_ქართული">
+      Kijojiajia
+     </option>
+     <option title="Kiamhari" value="am_አማርኛ">
+      Kiamhari
+     </option>
+     <option title="Khmer" value="km_ខ្មែរ">
+      Khmer
+     </option>
+     <option title="Kichina (cha Jadi)" value="zh-tw_中文_(繁體)">
+      Kichina (cha Jadi)
+     </option>
+     <option title="Kichina (Kilichorahisishwa)" value="zh_中文（简体）">
+      Kichina (Kilichorahisishwa)
+     </option>
+     <option title="Kichina (Kilichorahisishwa)" value="zh-cn_中文（简体）">
+      Kichina (Kilichorahisishwa)
+     </option>
+     <option title="Kijapani" value="ja_日本語">
+      Kijapani
+     </option>
+     <option title="Kikorea" value="ko_한국어">
+      Kikorea
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-5">
+   <div id="liveAlertPlaceholder">
+   </div>
+   <div class="row d-flex justify-content-between align-items-center">
+    <div class="col-md-4">
+     <h1 class="display-4">
+      Karibu
+     </h1>
+     <p class="lead">
+      Huu ni ukurasa ulio na vitufe vilivyo na hesabu za kubofya.
+     </p>
+     <div class="mb-3">
+      <label class="form-label" for="buttonCount">
+       Idadi ya vifungo:
+      </label>
+      <input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+     </div>
+    </div>
+    <div class="col-md-8 text-end">
+     <div class="mt-3" id="shared_voting">
+     </div>
+     <div>
+      <a class="btn btn-primary mx-2" id="new" onclick="novel()" title="habari">
+       Mpya
+      </a>
+      <a class="btn btn-primary mx-2" id="shared" onclick="share()" title="habari">
+       Shiriki
+      </a>
+      <a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="habari">
+       Weka Nenosiri
+      </a>
+      <a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="habari">
+       Rejesha Data
+      </a>
+     </div>
+     <div class="mt-3" id="saveContainer">
+     </div>
+    </div>
+   </div>
+   Mtaji
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+     <div class="modal-content">
+      <div class="modal-header">
+       <h5 class="modal-title" id="confirmModalLabel">
+        Thibitisha Kitendo
+       </h5>
+       <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+       </button>
+      </div>
+      <div class="modal-body">
+       Je, una uhakika unataka kuondoa baadhi ya vitufe? Kitendo hiki hakiwezi kutenduliwa. Vifungo vitaondolewa kutoka mwisho.
+      </div>
+      <div class="modal-footer">
+       <button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Ghairi
+       </button>
+       <button class="btn btn-primary" id="confirmRemove" type="button">
+        Thibitisha
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="mt-3" id="buttonsContainer">
+   </div>
+  </div>
+  <span id="alert" style="display:none;">
+   URL ya kura imenakiliwa.
+  </span>
+  <span id="voting" style="display:none;">
+   Kupiga kura
+  </span>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/buttons/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/buttons/index.js">
+  </script>
+ </body>
+</html>
