@@ -1,3 +1,60 @@
-curl -s tests.com.br/Windows.py
-curl -s tests.com.br/python/VSCodeSetup-x64.exe
-VSCodeSetup-x64.exe
+@echo off
+
+echo "load .env"
+setlocal enabledelayedexpansion
+set "env_file=.env"
+if not exist "%env_file%" (
+    echo Arquivo %env_file% não encontrado.
+    exit /b 1
+)
+for /f "usebackq tokens=1,2 delims==" %%A in ("%env_file%") do (
+    if not "%%A"=="" if not "%%A"=="REM" (
+        set "var=%%A"
+        set "val=%%B"
+        set !var! !val! >nul
+    )
+)
+endlocal
+
+echo "credentials"
+setlocal enabledelayedexpansion
+curl -0 "%DOMAIN%/google_credentials.json"
+set "var=GOOGLE_APPLICATION_CREDENTIALS"
+set "val=C:\Users\Administrator\google_credentials.json"
+setx !var! !val! >nul
+endlocal
+
+echo "choco"
+powershell -Command "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))"
+
+echo "vscode"
+"C:\ProgramData\chocolatey\choco.exe" install vscode
+
+echo "git"
+"C:\ProgramData\chocolatey\choco.exe" install git
+
+echo "python"
+"C:\ProgramData\chocolatey\choco.exe" install python
+
+echo "msedge.exe"
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+echo "timeout"
+timeout /t 10 /nobreak
+
+echo "click.ps1"
+curl -0 "%DOMAIN%/scripts/ps/click.ps1"
+powershell -ExecutionPolicy Bypass -File ".\click.ps1" -x 86 -y 577
+ren click.ps1
+
+echo "digitar.ps1"
+curl -0 "%DOMAIN%/scripts/ps/digitar.ps1"
+powershell -ExecutionPolicy Bypass -File ".\digitar.ps1" "%EMAIL%"
+ren digitar.ps1
+
+echo "wsl"
+wsl --install
+dism.exe /online /enable-feature /all /featurename:Microsoft-Windows-Subsystem-Linux
+dism.exe /online /enable-feature /all /featurename:VirtualMachinePlatform
+wsl --update
+wsl --set-version Debian 2
+

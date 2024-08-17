@@ -11,8 +11,9 @@ from lib import *
 from dotenv import load_dotenv
 
 def main():
-    load_dotenv()
-    file_paths = ["index.html", 'buttons/index.html']
+    a1 = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../.env"))
+    load_dotenv(dotenv_path=a1)
+    file_paths = ["templates/index.html", 'templates/buttons/index.html']
     project = os.getenv("GOOGLE_CLOUD_PROJECT_ID")
 
     """Get nomes das línguas
@@ -33,14 +34,21 @@ def main():
     #         if lang.language_code == code:
     #             texts += [lang.display_name]
 
-    with open('supported_languages.json', 'r', encoding='utf-8') as f: texts = json.loads(f.read())
+    a1 = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../dbs/", "supported_languages.json"))
+    with open(a1, 'r', encoding='utf-8') as f: texts = json.loads(f.read())
     # with open('supported_languages.json', 'w', encoding='utf-8') as f: f.write(json.dumps(texts, ensure_ascii=False))
     # input('texts serializados, enter para continuar, comente a geração da variável texts e carregue ela do arquivo')
     a = []
+    flag = True
     languages = get_supported_languages(project, 'en')
     for i in range(len(languages)):
         lang_code = languages[i].language_code
         lang_name = languages[i].display_name
+
+        if lang_code != "ts" and flag:
+            continue
+        else:
+            flag = not flag
 
         for file_path in file_paths:
             conteudo = ler_arquivo_local(file_path)
@@ -58,12 +66,12 @@ def main():
             translate_seo(soup, lang_code)
             extract_script(soup, 'change-lang-autos')
 
-            if len(file_path.split('/')) > 1:
-                file = translate_text(lang_code, file_path.split('/')[0]) + '.html'
+            if len(file_path.split('/')) > 2:
+                file = translate_text(lang_code, file_path.split('/')[1]) + '.html'
             else:
-                file = file_path
+                file = file_path.split('/')[1]
             salvar_arquivo(soup, texts[i], lang_code, file)
-            print(f"Tradução {i/len(languages)} para {lang_name} ({lang_code}) salva em /!/{lang_code}/{texts[i]}/{file}.")
+            print(f"Tradução {i}/{len(languages)} para {lang_name} ({lang_code}) salva em /!/{lang_code}/{texts[i]}/{file}.")
             with open('sitemap', 'a', encoding="utf-8") as f: f.write(f'https://tests.dev.br/!/{lang_code}/{texts[i]}/{file}\n')
             # input('Enter = Continuar')
     print('fim')

@@ -36,6 +36,8 @@ Use os arquivos que criam a base de dados com o console na pasta raiz de Tools p
 # Tricks
 Não usar variáveis para usar a menor quantidade de memória possível. Chamar direto.
 
+Não foi usado a cgi do python pois está deprecated.
+
 # Docs
 As edições ocorrem em buttons.
 
@@ -46,3 +48,5 @@ Rodar os migrations em buttons.
 Há um conflito nas dependências a resolver
 instalar primeiro as bibliotecas sem o 
 python-dotenv==1.0.1 e depois instalar ele.
+
+Configure o follow symlinks

@@ -1,10 +1,10 @@
-import os
-import re
+import os; import ctypes; import re
 from bs4 import NavigableString
 from google.cloud import translate
-import json
 from datetime import datetime
 from dotenv import load_dotenv
+from google.api_core.retry import Retry
+import json
 
 load_dotenv()
 
@@ -47,11 +47,15 @@ def translate_text(target: str = '',
     project_id = os.getenv("GOOGLE_CLOUD_PROJECT_ID")
     parent = f"projects/{project_id}/locations/{location}"
 
+    a2 = 2*(10**9)
+    retry = Retry(initial=a2)
     response = client.translate_text(
         parent=parent,
         contents=[text],
         mime_type="text/plain",  # mime types: text/plain, text/html
         target_language_code=target,
+        retry=retry,
+        timeout=a2
     )
     return response.translations[0].translated_text
 

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ts">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+  <title>
+   Switirhisiwa swa Webu.
+  </title>
+  <meta content="Switirhisiwa swa le ka inthanete leswi tirhisiwaka." name="description"/>
+  <meta content="switirhisiwa, eka inthanete, webu" name="keywords">
+   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+   <script async="" src="/scripts/lib.js">
+   </script>
+   <link href="/styles/lib.css" rel="stylesheet"/>
+   &lt;script src="/swikripti/swi kongomisa-eka-lang.js" id="cinca-lang-autos"&gt;&lt;/script&gt;
+  </meta>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid" id="menu">
+   </div>
+   <div class="m-2" id="select">
+    <select class="form-select" onchange="changeLanguage(this.value)">
+     <option>
+     </option>
+     <option title="Xihawaii" value="haw_'ōlelo_hawaiʻi">
+      'Xi-Hawaii.'
+     </option>
+     <option title="Xiafrika" value="af_afrikaans">
+      Xiafrika
+     </option>
+     <option title="Vanhu va le Assam" value="as_assamese">
+      Assamese
+     </option>
+     <option title="Xiigbo" value="ig_asụsụ_igbo">
+      Ririmi ra Xiigbo
+     </option>
+     <option title="Aymara" value="ay_aymara">
+      Aymara
+     </option>
+     <option title="Xiazerbaijano xa le xihundleni" value="az_azərbaycan_dili">
+      Ririmi ra Xiazerbaijan
+     </option>
+     <option title="hlamusela" value="ms_bahasa_melayu">
+      Ririmi ra Ximalayi
+     </option>
+     <option title="Va ri tirhisa" value="bm_bambara">
+      Va yi ambala
+     </option>
+     <option title="Xijava" value="jw_basa_jawa">
+      Ririmi ra Xijava
+     </option>
+     <option title="Xijava" value="jv_basa_jawa">
+      Ririmi ra Xijava
+     </option>
+     <option title="Xisudan" value="su_basa_sunda">
+      Ririmi ra Xisundani
+     </option>
+     <option title="Bhojpuri" value="bho_bhojpuri">
+      Bhojpuri
+     </option>
+     <option title="Xicebuano xa Xicebuano" value="ceb_cebuano">
+      Xicebuano xa Xicebuano
+     </option>
+     <option title="Xishona" value="sn_chishona">
+      Xinghezi
+     </option>
+     <option title="Xichayina" value="ny_chichewa">
+      Xichayina
+     </option>
+     <option title="Xivangelo" value="co_corsu">
+      Xicorsica
+     </option>
+     <option title="Xiwalese" value="cy_cymraeg">
+      Xiwalese
+     </option>
+     <option title="Xidenixi" value="da_dansk">
+      Xidenixi
+     </option>
+     <option title="Xijarimani" value="de_deutsch">
+      Xijarimani
+     </option>
+     <option title="Divehi" value="dv_divehi">
+      Divehi
+     </option>
+     <option title="Dogri" value="doi_dogri">
+      Dogri
+     </option>
+     <option title="Xinghezi" value="en_english">
+      Xinghezi
+     </option>
+     <option title="xi-esperanto xa xirhendzevutani" value="eo_esperanto">
+      Xiesperanto xa Xiesperanto
+     </option>
+     <option title="Lakana" value="ee_ewe">
+      Tluka
+     </option>
+     <option title="Xiyoruba" value="yo_èdè_yorùbá">
+      Ririmi ra Xiyoruba
+     </option>
+     <option title="samoano" value="sm_faʻa-samoa">
+      Xisamoa
+     </option>
+     <option title="Xifilipino" value="tl_filipino">
+      Xifilipino
+     </option>
+     <option title="Xifilipino" value="fil_filipino">
+      Xifilipino
+     </option>
+     <option title="Xifurwa" value="fr_français">
+      Xifurwa
+     </option>
+     <option title="Xifrisian" value="fy_frysk">
+      Xifrisian
+     </option>
+     <option title="Xigaelic xa le Ireland" value="ga_gaeilge">
+      Xi-Irish
+     </option>
+     <option title="Saseka" value="lg_ganda">
+      Saseka
+     </option>
+     <option title="Guarani" value="gn_guarani">
+      Guarani
+     </option>
+     <option title="Xigaelic xa le Scotland" value="gd_gàidhlig">
+      Xigaelic
+     </option>
+     <option title="Xihausa" value="ha_harshen_hausa">
+      Ririmi ra Xihausa
+     </option>
+     <option title="Xihmong" value="hmn_hmong">
+      Xihmong
+     </option>
+     <option title="Xikinyarwanda" value="rw_ikinyarwanda">
+      Xirhanda xa le Rwanda
+     </option>
+     <option title="Endzeni" value="ilo_iloko">
+      Endzeni
+     </option>
+     <option title="Xiindonesia" value="id_indonesia">
+      Indonesia
+     </option>
+     <option title="Xitsonga" value="xh_isixhosa">
+      Xitsonga
+     </option>
+     <option title="zulu" value="zu_isizulu">
+      Xizulu
+     </option>
+     <option title="Xintariyana" value="it_italiano">
+      Xintariyana
+     </option>
+     <option title="Xiswahili" value="sw_kiswahili">
+      Xiswahili
+     </option>
+     <option title="Konkani" value="gom_konkani">
+      Konkani
+     </option>
+     <option title="Xicreole xa Xihaiti" value="ht_kreyòl_ayisyen">
+      Xicreole xa Xihaiti
+     </option>
+     <option title="Kryo" value="kri_krio">
+      Kryo
+     </option>
+     <option title="Xikurd (Xisorani) ." value="ckb_kurdish_(sorani)">
+      Xikurd (Xisorani) .
+     </option>
+     <option title="Xigwitsirisi (Kurmanji) ." value="ku_kurdî_(kurmancî)">
+      Xikurd (Xikurmanci) .
+     </option>
+     <option title="Xilatini" value="la_latin">
+      Xilatini
+     </option>
+     <option title="Lingala" value="ln_lingala">
+      Lingala
+     </option>
+     <option title="Xiluxembourg" value="lb_lëtzebuergesch">
+      Xiluxembourg
+     </option>
+     <option title="Maithili" value="mai_maithili">
+      Maithili
+     </option>
+     <option title="Ximalta" value="mt_malti">
+      Ximalta
+     </option>
+     <option title="Meiteilon (Manipuri) ." value="mni-mtei_meiteilon_(manipuri)">
+      Meiteilon (Manipuri) .
+     </option>
+     <option title="Xinghezi" value="lus_mizo">
+      Xinghezi
+     </option>
+     <option title="hi ntumbuluko" value="mi_māori">
+      Maori
+     </option>
+     <option title="Xidachi" value="nl_nederlands">
+      Xidachi
+     </option>
+     <option title="Xisotho xa le N’walungwini" value="nso_northern_sotho">
+      Xisotho xa le N’walungwini
+     </option>
+     <option title="Xiodia (Xioriya) ." value="or_odia_(oriya)">
+      Xiodia (Xioriya) .
+     </option>
+     <option title="Oromo" value="om_oromo">
+      Oromo
+     </option>
+     <option title="Xiuzbek" value="uz_o‘zbek">
+      Xiuzbek
+     </option>
+     <option title="Xiputukezi" value="pt_português">
+      Xiputukezi
+     </option>
+     <option title="Xiquichua" value="qu_quechua">
+      Quechua
+     </option>
+     <option title="Xiromania" value="ro_română">
+      XINGHEZI
+     </option>
+     <option title="Sanskrit" value="sa_sanskrit">
+      Sanskrit
+     </option>
+     <option title="Xinghezi" value="st_sesotho">
+      Xinghezi
+     </option>
+     <option title="Xialbania" value="sq_shqip">
+      Xialbania
+     </option>
+     <option title="Xisomalia" value="so_soomaali">
+      Xisomalia
+     </option>
+     <option title="Tartarus" value="tt_tatar">
+      Xitatar
+     </option>
+     <option title="Tigrínia" value="ti_tigrinya">
+      Tigrinya
+     </option>
+     <option title="Tsonga" value="ts_tsonga">
+      Tsonga
+     </option>
+     <option title="Twi" value="ak_twi">
+      Twi
+     </option>
+     <option title="Turkmen" value="tk_türkmençe">
+      Galankulu
+     </option>
+     <option title="Xiturkey" value="tr_türkçe">
+      Xiturkey
+     </option>
+     <option title="Xiuighur xa xirhendzevutani" value="ug_uyghur">
+      Xi-Uyghur
+     </option>
+     <option title="Xivietnam" value="vi_việt">
+      Xivietnam
+     </option>
+     <option title="Xibosnia" value="bs_bosanski">
+      Xibosnia
+     </option>
+     <option title="Xicatalan" value="ca_català">
+      Xicatalan
+     </option>
+     <option title="Xiestonia" value="et_eesti">
+      Xiestonia
+     </option>
+     <option title="Spanish" value="es_español">
+      Spanish
+     </option>
+     <option title="Xibasque xa Xibasque" value="eu_euskara">
+      Xibasque xa Xibasque
+     </option>
+     <option title="Xigalicia" value="gl_galego">
+      Xigalicia
+     </option>
+     <option title="Xicroatia" value="hr_hrvatski">
+      Xicroatia
+     </option>
+     <option title="Xilatvia" value="lv_latviešu">
+      Xilatvia
+     </option>
+     <option title="Xilithuania" value="lt_lietuvių">
+      Xilithuania
+     </option>
+     <option title="Xihungary" value="hu_magyar">
+      Xihungary
+     </option>
+     <option title="Ximalagasy" value="mg_malagasy">
+      Ximalagasy
+     </option>
+     <option title="Xinorway" value="no_norsk">
+      Xinorway
+     </option>
+     <option title="Xipolish" value="pl_polski">
+      Xipolish
+     </option>
+     <option title="Xislovakia" value="sk_slovenčina">
+      Xislovakia
+     </option>
+     <option title="Xislovenia" value="sl_slovenščina">
+      Xislovenia
+     </option>
+     <option title="Xifinixi" value="fi_suomi">
+      Xifinixi
+     </option>
+     <option title="Xisweden" value="sv_svenska">
+      Xisweden
+     </option>
+     <option title="Xi-Iceland" value="is_íslenska">
+      Xi-Iceland
+     </option>
+     <option title="Xiczech" value="cs_čeština">
+      Xiczech
+     </option>
+     <option title="Xigriki" value="el_ελληνικά">
+      Xigriki
+     </option>
+     <option title="Xibelarus" value="be_беларуская">
+      Xibelarus
+     </option>
+     <option title="mongol" value="mn_монгол">
+      Mongolia
+     </option>
+     <option title="Xitajic" value="tg_тоҷикӣ">
+      Xitajiki
+     </option>
+     <option title="Xibulgaria" value="bg_български">
+      Xibulgaria
+     </option>
+     <option title="Kyrgyzstan" value="ky_кыргызча">
+      Xikyrgyz
+     </option>
+     <option title="Ximakedoniya" value="mk_македонски">
+      Ximakedoniya
+     </option>
+     <option title="russo ya xirhendzevutani" value="ru_русский">
+      Xirhaxiya
+     </option>
+     <option title="Xiserbia" value="sr_српски">
+      Xiserbia
+     </option>
+     <option title="xi-ukrainian" value="uk_українська">
+      Xiukraine
+     </option>
+     <option title="Xikazakh" value="kk_қазақ">
+      Xikazakh
+     </option>
+     <option title="Xiarmenia" value="hy_հայերեն">
+      Xiarmenia:
+     </option>
+     <option title="Iidiche ya xirhendzevutani" value="yi_יידיש">
+      Xiyiddish
+     </option>
+     <option title="Xiheveru" value="iw_עברית">
+      Xiheveru
+     </option>
+     <option title="Xiheveru" value="he_עברית">
+      Xiheveru
+     </option>
+     <option title="xi-urdu" value="ur_اردو">
+      Xiurdu
+     </option>
+     <option title="Xiarabu" value="ar_العربية">
+      Xiarabu
+     </option>
+     <option title="Sindi" value="sd_سنڌي">
+      Xisindhi xa Xisindhi
+     </option>
+     <option title="lahlekeriwa" value="fa_فارسی">
+      Xifarsi
+     </option>
+     <option title="pashto" value="ps_پښتو">
+      Xipashto
+     </option>
+     <option title="Xinepal" value="ne_नेपाली">
+      Xinepali
+     </option>
+     <option title="Ximarathi" value="mr_मराठी">
+      Ximarathi
+     </option>
+     <option title="E-e" value="hi_हिन्दी">
+      Xihindi
+     </option>
+     <option title="xibengali" value="bn_বাংলা">
+      Xibangla xa Xitsonga
+     </option>
+     <option title="Xiputukezi" value="pa_ਪੰਜਾਬੀ">
+      Xipunjabi
+     </option>
+     <option title="Xiputukezi" value="gu_ગુજરાતી">
+      Xigujarati
+     </option>
+     <option title="Xitamil" value="ta_தமிழ்">
+      Xitamil
+     </option>
+     <option title="Xixika" value="te_తెలుగు">
+      Xitelugu xa Xitelugu
+     </option>
+     <option title="Canares" value="kn_ಕನ್ನಡ">
+      Xikannada
+     </option>
+     <option title="Endlelo" value="ml_മലയാളം">
+      Ximalayalam
+     </option>
+     <option title="Xisinhalese" value="si_සිංහල">
+      Xisinhala
+     </option>
+     <option title="Xithailand" value="th_ไทย">
+      Xithailand
+     </option>
+     <option title="TB" value="lo_ລາວ">
+      yena
+     </option>
+     <option title="Myanmar (Xiburma) ." value="my_မြန်မာ">
+      Myanmar
+     </option>
+     <option title="Xigeorgia" value="ka_ქართული">
+      Xigeorgia
+     </option>
+     <option title="Xiamharic" value="am_አማርኛ">
+      Xiamharic
+     </option>
+     <option title="Xikhmer" value="km_ខ្មែរ">
+      Xikhmer
+     </option>
+     <option title="Xichayina (Xitsonga) ." value="zh-tw_中文_(繁體)">
+      Xichayina (Xitsonga) .
+     </option>
+     <option title="Xichayina (Xi oloviwe) ." value="zh_中文（简体）">
+      Xichayina (Xi oloviwe) .
+     </option>
+     <option title="Xichayina (Xi oloviwe) ." value="zh-cn_中文（简体）">
+      Xichayina (Xi oloviwe) .
+     </option>
+     <option title="Xijapani" value="ja_日本語">
+      Xijapani
+     </option>
+     <option title="Xikorea" value="ko_한국어">
+      xikorea
+     </option>
+    </select>
+   </div>
+  </nav>
+  <div class="container mt-4" id="container">
+   <h1 class="display-4">
+    Amukela
+   </h1>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/url.js">
+  </script>
+  <script src="/scripts/begin/logo.js">
+  </script>
+  <script src="/scripts/menu.js">
+  </script>
+  <script src="/scripts/begin/links.js">
+  </script>
+ </body>
+</html>
