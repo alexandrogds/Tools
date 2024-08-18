@@ -36,7 +36,7 @@ def main():
     for i in range(len(languages)):
         options += [{'text': texts[i], 
                         'title': translate_text('pt', languages[i].display_name), 
-                        'value': languages[i].language_code + '_' + texts[i]}]
+                        'value': languages[i].language_code + '_' + texts[i].lower()}]
     options_sorted = sorted(options, key=lambda x: x['text'])
         
     for file_path in file_paths:
