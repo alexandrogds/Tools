@@ -1,7 +1,3 @@
 RewriteEngine On
-
-# Verifica se o caminho não está em minúsculas
-RewriteCond %{REQUEST_URI} [A-Z]
-
-# Define a variável para a URI reformulada com a primeira letra em maiúscula e as demais em minúsculas
-RewriteRule ^(.*)$ /${lowercase:%{REQUEST_URI}} [L,R=301]
+RewriteCond %{REQUEST_URI} ^/index\.html$
+RewriteRule ^index\.html$ /res/layout/index.html [L]
