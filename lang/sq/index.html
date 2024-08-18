@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="sq">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Mjete në internet.
+  </title>
+  <meta content="Mjetet në internet për përdorim." name="description"/>
+  <meta content="Mjete, në internet, ueb" name="keywords"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+  <script src="/scripts/lib.js">
+  </script>
+  <link href="/styles/lib.css" rel="stylesheet"/>
+  &lt;script src = "/skriptet/redirect-to-lang.js" id = "change-lang-autos"&gt; &lt;/script&gt;
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="logo" title="Shkoni në faqen kryesore.">
+     <img alt="Imazhi i logos së faqes." class="img-fluid" src="/images/logo.png"/>
+    </a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+       <a aria-current="page" class="nav-link active" href="#" id="menu-item-home" title="Shkoni në faqen kryesore (faqja kryesore e faqes)">
+        Faqe në shtëpi
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#" id="menu-item-3-buttons" title="Shkoni te mjeti 3 butona">
+        3 butona
+       </a>
+      </li>
+     </ul>
+     <select class="form-select ms-3" id="languageSelect" onchange="changeLanguage(this.value)">
+      <option>
+      </option>
+      <option title="Curdo (Kurmanji)" value="ku">
+       Kurdî (Kurmancî)
+      </option>
+      <option lang="af" title="Afrikanë" value="af">
+       Afrikaans
+      </option>
+      <option lang="sq" selected="selected" title="Shqip" value="sq">
+       Shqip
+      </option>
+      <option lang="am" title="Amarik" value="am">
+       አማርኛ
+      </option>
+      <option lang="ar" title="Arab" value="ar">
+       العربية
+      </option>
+      <option lang="hy" title="Armen" value="hy">
+       Հայերեն
+      </option>
+      <option lang="az" title="Azer" value="az">
+       Azərbaycan dili
+      </option>
+      <option lang="eu" title="Bask" value="eu">
+       Euskara
+      </option>
+      <option lang="be" title="Bjellor" value="be">
+       Беларуская
+      </option>
+      <option lang="bn" title="Bengal" value="bn">
+       বাংলা
+      </option>
+      <option lang="bs" title="Gji" value="bs">
+       Bosanski
+      </option>
+      <option lang="bg" title="Bullgar" value="bg">
+       български
+      </option>
+      <option lang="ca" title="Katalonas" value="ca">
+       Català
+      </option>
+      <option lang="ceb" title="Cebuan" value="ceb">
+       Cebuano
+      </option>
+      <option lang="ny" title="Chichewa" value="ny">
+       Chichewa
+      </option>
+      <option lang="zh" title="Kineze e thjeshtuar)" value="zh">
+       简体中文
+      </option>
+      <option lang="zh-TW" title="Kineze Tradicionale)" value="zh-TW">
+       繁體中文
+      </option>
+      <option lang="co" title="Korije" value="co">
+       Corsu
+      </option>
+      <option lang="hr" title="Kroat" value="hr">
+       Hrvatski
+      </option>
+      <option lang="cs" title="Çek" value="cs">
+       Čeština
+      </option>
+      <option lang="da" title="Danez" value="da">
+       Dansk
+      </option>
+      <option lang="nl" title="Holandez" value="nl">
+       Nederlands
+      </option>
+      <option lang="en" title="Anglisht" value="en">
+       English
+      </option>
+      <option lang="eo" title="Esperanto" value="eo">
+       Esperanto
+      </option>
+      <option lang="et" title="Yll" value="et">
+       Eesti
+      </option>
+      <option lang="tl" title="Filipin" value="tl">
+       Filipino
+      </option>
+      <option lang="fi" title="Finlandez" value="fi">
+       Suomi
+      </option>
+      <option lang="fr" title="Francez" value="fr">
+       Français
+      </option>
+      <option lang="fy" title="Frizian" value="fy">
+       Frysk
+      </option>
+      <option lang="gl" title="Galicist" value="gl">
+       Galego
+      </option>
+      <option lang="ka" title="Gjeorgjian" value="ka">
+       ქართული
+      </option>
+      <option lang="de" title="Gjerman" value="de">
+       Deutsch
+      </option>
+      <option lang="el" title="Grek" value="el">
+       Ελληνικά
+      </option>
+      <option lang="gu" title="Mashtroj" value="gu">
+       ગુજરાતી
+      </option>
+      <option lang="ht" title="Haitian" value="ht">
+       Kreyòl ayisyen
+      </option>
+      <option lang="ha" title="Hausa" value="ha">
+       Hausa
+      </option>
+      <option lang="haw" title="Havaj" value="haw">
+       ʻŌlelo Hawaiʻi
+      </option>
+      <option lang="he" title="Hebraik" value="he">
+       עברית
+      </option>
+      <option lang="hi" title="Indi" value="hi">
+       हिन्दी
+      </option>
+      <option lang="hmn" title="Hmong" value="hmn">
+       Hmong
+      </option>
+      <option lang="hu" title="Hungarez" value="hu">
+       Magyar
+      </option>
+      <option lang="is" title="Islandez" value="is">
+       Íslenska
+      </option>
+      <option lang="ig" title="Ibo" value="ig">
+       Igbo
+      </option>
+      <option lang="id" title="Indonezian" value="id">
+       Bahasa Indonesia
+      </option>
+      <option lang="ga" title="Irlandez" value="ga">
+       Gaeilge
+      </option>
+      <option lang="it" title="Italian" value="it">
+       Italiano
+      </option>
+      <option lang="ja" title="Japonez" value="ja">
+       日本語
+      </option>
+      <option lang="jw" title="I javës" value="jw">
+       Jawa
+      </option>
+      <option lang="kn" title="Kanare" value="kn">
+       ಕನ್ನಡ
+      </option>
+      <option lang="kk" title="Kazah" value="kk">
+       Қазақ тілі
+      </option>
+      <option lang="km" title="Khmer" value="km">
+       ភាសាខ្មែរ
+      </option>
+      <option lang="rw" title="Quiniaruanda" value="rw">
+       Kinyarwanda
+      </option>
+      <option lang="ko" title="Korean" value="ko">
+       한국어
+      </option>
+      <option lang="ky" title="Marrëzi" value="ky">
+       Кыргызча
+      </option>
+      <option lang="lo" title="Laik" value="lo">
+       ພາສາລາວ
+      </option>
+      <option lang="la" title="Latin" value="la">
+       Latina
+      </option>
+      <option lang="lv" title="Letonisht" value="lv">
+       Latviešu
+      </option>
+      <option lang="lt" title="Lituanisht" value="lt">
+       Lietuvių
+      </option>
+      <option lang="lb" title="Luksemburg" value="lb">
+       Lëtzebuergesch
+      </option>
+      <option lang="mk" title="Maqedonas" value="mk">
+       Македонски
+      </option>
+      <option lang="mg" title="Humbje" value="mg">
+       Malagasy
+      </option>
+      <option lang="ms" title="Mios" value="ms">
+       Bahasa Melayu
+      </option>
+      <option lang="ml" title="I munguar" value="ml">
+       മലയാളം
+      </option>
+      <option lang="mt" title="Maltez" value="mt">
+       Malti
+      </option>
+      <option lang="mi" title="Maori" value="mi">
+       Māori
+      </option>
+      <option lang="mr" title="Maratisht" value="mr">
+       मराठी
+      </option>
+      <option lang="mn" title="Mongol" value="mn">
+       Монгол
+      </option>
+      <option lang="my" title="Birman" value="my">
+       ဗမာ
+      </option>
+      <option lang="ne" title="Nepalês" value="ne">
+       नेपाली
+      </option>
+      <option lang="no" title="Norvegjez" value="no">
+       Norsk
+      </option>
+      <option lang="or" title="Oriá" value="or">
+       ଓଡ଼ିଆ
+      </option>
+      <option lang="ps" title="Pashë" value="ps">
+       پښتو
+      </option>
+      <option lang="fa" title="I humbur" value="fa">
+       فارسی
+      </option>
+      <option lang="pl" title="Lustroj" value="pl">
+       Polski
+      </option>
+      <option lang="pt" title="Portugez (Portugali, Brazil)" value="pt">
+       Português
+      </option>
+      <option lang="pa" title="Panxhar" value="pa">
+       ਪੰਜਾਬੀ
+      </option>
+      <option lang="ro" title="Rumun" value="ro">
+       Română
+      </option>
+      <option lang="ru" title="Ruse" value="ru">
+       Русский
+      </option>
+      <option lang="sm" title="Samoan" value="sm">
+       Gagana fa'a Samoa
+      </option>
+      <option lang="gd" title="Gjeli skocez" value="gd">
+       Gàidhlig
+      </option>
+      <option lang="sr" title="Serb" value="sr">
+       Српски
+      </option>
+      <option lang="st" title="Sesoto" value="st">
+       Sesotho
+      </option>
+      <option lang="sn" title="Shon" value="sn">
+       ChiShona
+      </option>
+      <option lang="sd" title="Sindi" value="sd">
+       سنڌي
+      </option>
+      <option lang="si" title="I kultivuar" value="si">
+       සිංහල
+      </option>
+      <option lang="sk" title="Sllovak" value="sk">
+       Slovenčina
+      </option>
+      <option lang="sl" title="Slloven" value="sl">
+       Slovenščina
+      </option>
+      <option lang="so" title="Somali" value="so">
+       Soomaali
+      </option>
+      <option lang="es" title="Spanjisht" value="es">
+       Español
+      </option>
+      <option lang="su" title="Sundanez" value="su">
+       Basa Sunda
+      </option>
+      <option lang="sw" title="Djersitem" value="sw">
+       Kiswahili
+      </option>
+      <option lang="sv" title="Suedez" value="sv">
+       Svenska
+      </option>
+      <option lang="tg" title="Tajic" value="tg">
+       тоҷикӣ
+      </option>
+      <option lang="ta" title="Tamil" value="ta">
+       தமிழ்
+      </option>
+      <option lang="tt" title="Tartarus" value="tt">
+       татарча
+      </option>
+      <option lang="te" title="Dimër" value="te">
+       తెలుగు
+      </option>
+      <option lang="th" title="Thai" value="th">
+       ไทย
+      </option>
+      <option lang="tr" title="Turko" value="tr">
+       Türkçe
+      </option>
+      <option lang="tk" title="Turkoman" value="tk">
+       Türkmençe
+      </option>
+      <option lang="uk" title="Ukrainas" value="uk">
+       Українська
+      </option>
+      <option lang="ur" title="Urdu" value="ur">
+       اردو
+      </option>
+      <option lang="ug" title="Uigur" value="ug">
+       ئۇيغۇرچە
+      </option>
+      <option lang="uz" title="Kuvertë" value="uz">
+       Oʻzbekcha
+      </option>
+      <option lang="vi" title="Vietnamez" value="vi">
+       Tiếng Việt
+      </option>
+      <option lang="cy" title="I Uellsit" value="cy">
+       Cymraeg
+      </option>
+      <option lang="xh" title="Xhosa" value="xh">
+       isiXhosa
+      </option>
+      <option lang="yi" title="Iídiche" value="yi">
+       ייִדיש
+      </option>
+      <option lang="yo" title="Jorubë" value="yo">
+       Èdè Yorùbá
+      </option>
+      <option lang="zu" title="Zulu" value="zu">
+       isiZulu
+      </option>
+     </select>
+    </div>
+   </div>
+  </nav>
+  <div class="container mt-4">
+   <h1 class="display-4">
+    Mirëseardhje
+   </h1>
+   <div class="mt-3">
+    <a class="btn btn-gradient me-2" id="button-3-buttons" title="Shkoni në butonat e mjetit 3.">
+     3 butona
+    </a>
+   </div>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="/scripts/links.js">
+  </script>
+ </body>
+</html>
