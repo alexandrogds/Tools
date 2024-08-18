@@ -13,8 +13,9 @@
     navLinkHome.textContent = 'Home Page';
     navItemHome.appendChild(navLinkHome);
 
+    let navItem3Buttons
     if (segments.length != 1) {
-        let navItem3Buttons = document.createElement('li');
+        navItem3Buttons = document.createElement('li');
         navItem3Buttons.className = 'nav-item';
         let navLink3Buttons = document.createElement('a');
         navLink3Buttons.className = 'nav-link';
@@ -28,6 +29,6 @@
     if (segments.length != 1) {
        navbarNav.appendChild(navItem3Buttons);
     }
-    
+
     document.getElementById("menu").appendChild(navbarNav)
 })()
