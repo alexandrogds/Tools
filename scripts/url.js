@@ -13,7 +13,7 @@ if (window.location.port) {
     base += ':' + window.location.port;
 }
 
-if (segments[1].length == 1) {
+if (segments.length == 1) {
     aux = base
 } else if (!segments[1]) {
     aux = base + '/' + segments[1]
