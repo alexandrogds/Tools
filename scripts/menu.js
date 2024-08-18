@@ -13,17 +13,21 @@
     navLinkHome.textContent = 'Home Page';
     navItemHome.appendChild(navLinkHome);
 
-    let navItem3Buttons = document.createElement('li');
-    navItem3Buttons.className = 'nav-item';
-    let navLink3Buttons = document.createElement('a');
-    navLink3Buttons.className = 'nav-link';
-    navLink3Buttons.textContent = 'Create Buttons';
-    navLink3Buttons.href = aux + 'buttons'
-    navLink3Buttons.title = 'Go to tool 3 buttons';
-    navItem3Buttons.appendChild(navLink3Buttons);
+    if (segments.length != 1) {
+        let navItem3Buttons = document.createElement('li');
+        navItem3Buttons.className = 'nav-item';
+        let navLink3Buttons = document.createElement('a');
+        navLink3Buttons.className = 'nav-link';
+        navLink3Buttons.textContent = 'Create Buttons';
+        navLink3Buttons.href = aux + '/buttons'
+        navLink3Buttons.title = 'Go to tool 3 buttons';
+        navItem3Buttons.appendChild(navLink3Buttons);
+    }
 
     navbarNav.appendChild(navItemHome);
-    navbarNav.appendChild(navItem3Buttons);
-
+    if (segments.length != 1) {
+       navbarNav.appendChild(navItem3Buttons);
+    }
+    
     document.getElementById("menu").appendChild(navbarNav)
 })()

@@ -22,6 +22,5 @@ if (segments.length == 1) {
 }
 
 folderPath = null
-segments = null
 domain = null
 base = null
