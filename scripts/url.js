@@ -20,8 +20,3 @@ if (segments.length == 1) {
 } else {
     aux = base + '/' + segments[1] + '/' + segments[2]
 }
-
-folderPath = null
-segments = null
-domain = null
-base = null
