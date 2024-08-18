@@ -30,6 +30,27 @@ pip install -r requirements.txt
 venv\Scripts\activate
 ```
 
+# Dev
+Ao adicionar mais libs popule o
+arquivo requirements.txt com
+`pip freeze > requirements.txt`
+
+Esse app segue o padrão android da pasta
+res assim as strings de traduções ficam
+dentro dessa pasta. Em raw fica os vídeos,
+audios e outros arquivos brutos. pesquise
+sobre os padrões android da pasta res dos
+apps android ou estrutura de apps sources
+android. Em mipmap ficam os ícones.
+Diferente do android, aqui é aceito subpastas
+nessa estrutura. Também em values é aceito
+json para as traduções. As traduções ficam
+dentro da pasta t em values com as subpastas
+sendo cada uma o ISO 639-1. O favicon fica
+em mipmap com o nome ic_launcher.png. As
+pastas derivadas que tem o - (hífem) são
+colocadas como subpastas.
+
 # Database
 Use os arquivos que criam a base de dados com o console na pasta raiz de Tools para que a base de dados SQLite fique na raiz.
 

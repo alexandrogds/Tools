@@ -1,0 +1,1 @@
+animações frame por frame.
