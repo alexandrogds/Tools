@@ -1,6 +1,6 @@
-var url = new URL(window.location.href);
-var folderPath = url.pathname;
-var segments = folderPath.split('/');
+let url = new URL(window.location.href);
+let folderPath = url.pathname;
+let segments = folderPath.split('/');
 segments.shift();
 
 domain = window.location.host
@@ -8,7 +8,7 @@ if (!domain) {
     domain = 'localhost'
 }
 
-var base = window.location.protocol + "//" + domain
+let base = window.location.protocol + "//" + domain
 if (window.location.port) {
     base += ':' + window.location.port;
 }
