@@ -71,3 +71,7 @@ instalar primeiro as bibliotecas sem o
 python-dotenv==1.0.1 e depois instalar ele.
 
 Configure o follow symlinks
+
+A pasta dev fica com os scrits
+pensar se move as subpastaspara raw
+para adequar às regras de um app android

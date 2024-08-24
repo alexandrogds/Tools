@@ -15,7 +15,7 @@
     newLink.className = 'btn me-2';
     newLink.title = 'Go to tool 3 Buttons.';
     newLink.textContent = '3 Buttons';
-    newLink.href = aux + 'buttons';
+    newLink.href = aux + '/buttons';
     const color1 = getRandomColor();
     const color2 = getRandomColor();
     newLink.style.background = `linear-gradient(${Math.floor(Math.random() * 360)}deg, ${color1}, ${color2})`;
