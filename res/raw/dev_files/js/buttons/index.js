@@ -18,7 +18,7 @@ function initialize() {
             && localStorage.getItem(Config.voting + '_buttons') !== null) {
         let data = { user: Config.user }
         let queryString = new URLSearchParams(data).toString();
-        fetch(`/buttons/get.php?${queryString}`, {
+        fetch(`/get?${queryString}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -37,6 +37,7 @@ function initialize() {
                 populateButtons(Config.voting);
             });
         })
+        .catch(err => console.log(err))
     }
     if (localStorage.getItem(Config.voting + '_buttons') === null) {
         addNewButton(0, 'btn-danger', 0);
@@ -108,9 +109,10 @@ function addVoting(voting_local, index, container_id) {
 
 function updateSaveButtons(voting_local) {
     // Cria e configura o novo botão de votação
+    console.log('updateSaveButtons', 'start')
     let saveButton = createSaveButton(voting_local, JSON.parse(localStorage.getItem('votings')).length);
     document.getElementById('saveContainer').appendChild(saveButton);
-
+    console.log('SaveButton inseridos')
     // Define o botão como 'btn-success' se for a votação atual
     if (localStorage.getItem('voting') === voting_local) {
         saveButton.className = 'btn btn-success mx-2 my-2';
@@ -120,8 +122,16 @@ function updateSaveButtons(voting_local) {
 }
 
 function populateButtons(voting) {
+    console.log('populateButtons', 'start')
     document.getElementById('buttonsContainer').innerHTML = ''
     let buttons = JSON.parse(localStorage.getItem(voting + '_buttons')) || [];
+    console.log(voting, 'voting')
+    console.log('buttons', buttons)
+    if (buttons.length === 0) {
+        console.log('preenchendo voting_buttons')
+        addNewButton(0, 'btn-danger', 0);
+        addNewButton(1, 'btn-primary', 0);
+    }
     buttons.forEach((buttonData) => {
         addNewButton2(buttonData.button, buttonData.color, buttonData.clicks);
     });
@@ -164,6 +174,7 @@ function getQueryParam(param) {
 }
 
 function createSaveButton(voting_local, index) {
+    console.log('createSaveButton', 'start')
     let saveButton = document.createElement('a');
     saveButton.className = (localStorage.getItem('voting') === voting_local) ? 'btn btn-success mx-2 my-2' : 'btn btn-primary mx-2 my-2';
     saveButton.textContent = `${document.getElementById('voting').innerText} ${index}`;
@@ -223,7 +234,7 @@ function sendPostRequest(button, clicks, color = null) {
     if (buttonIndex >= 0) {
         if (clicks != null ) {
             buttons[buttonIndex]['clicks'] = clicks
-        }   
+        }
         if (color != null ) {
             buttons[buttonIndex]['color'] = color
         }
@@ -234,14 +245,14 @@ function sendPostRequest(button, clicks, color = null) {
     localStorage.setItem(Config.voting + '_buttons', JSON.stringify(buttons));
 
     console.log(data)
-    fetch('/buttons/post.php', {
+    fetch('/post', {
         method: 'POST',
         headers: {
-            // 'Content-Type': 'application/json',
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
     })
-    // .then(response => response.json())
+    .then(response => response.json())
     .then(response => response.text())
     .then(data => console.log(data, 0))
     .catch(err => console.log(err))

@@ -26,8 +26,10 @@ pip install -r requirements.txt
 # git clone repository
 cd tools
 python -m venv venv
-pip install -r requirements.txt
 venv\Scripts\activate
+pip install -r requirements.txt
+# quando instalar mais libs
+pip freeze > requirements.txt
 ```
 
 # Dev
@@ -53,6 +55,9 @@ colocadas como subpastas.
 
 # Database
 Use os arquivos que criam a base de dados com o console na pasta raiz de Tools para que a base de dados SQLite fique na raiz.
+
+Os arquivos estão na pasta php.
+pode pesquisar por migration.
 
 # Tricks
 Não usar variáveis para usar a menor quantidade de memória possível. Chamar direto.
