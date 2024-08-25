@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="fa">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+<title>
+   3 دکمه
+  </title>
+<meta content="ابزاری برای شمارش کلیک های دکمه." name="description"/>
+<meta content="3 دکمه، کلیک، شمارش، جریان، ابزار، آنلاین، وب" name="keywords"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<script async="" src="/scripts/lib.js">
+</script>
+<link href="/styles/lib.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid" id="menu">
+</div>
+<div class="m-2" id="select">
+<select class="form-select" onchange="changeLanguage(this.value)">
+<option value="fa_فارسی">
+</option>
+<option title="هاوایی" value="fa_فارسی">
+      هاوایی
+     </option>
+<option title="آفریقایی" value="fa_فارسی">
+      آفریقایی
+     </option>
+<option title="آسامیزها" value="fa_فارسی">
+      آسامی
+     </option>
+<option title="ایگبو" value="fa_فارسی">
+      زبان ایگبو
+     </option>
+<option title="آیمارا" value="fa_فارسی">
+      آیمارا
+     </option>
+<option title="آذربایجانی" value="fa_فارسی">
+      زبان آذربایجانی
+     </option>
+<option title="دولت" value="fa_فارسی">
+      زبان مالایی
+     </option>
+<option title="از آن استفاده می کنند" value="fa_فارسی">
+      آن را می پوشند
+     </option>
+<option title="جاوه ای" value="fa_فارسی">
+      زبان جاوه ای
+     </option>
+<option title="جاوه ای" value="fa_فارسی">
+      زبان جاوه ای
+     </option>
+<option title="سودانی" value="fa_فارسی">
+      زبان ساندانی
+     </option>
+<option title="بوجپوری" value="fa_فارسی">
+      بوجپوری
+     </option>
+<option title="سبوانو" value="fa_فارسی">
+      سبوانو
+     </option>
+<option title="شونا" value="fa_فارسی">
+      انگلیسی
+     </option>
+<option title="چینی" value="fa_فارسی">
+      چینی
+     </option>
+<option title="دوره" value="fa_فارسی">
+      کورسی
+     </option>
+<option title="ولز" value="fa_فارسی">
+      ولز
+     </option>
+<option title="دانمارکی" value="fa_فارسی">
+      دانمارکی
+     </option>
+<option title="آلمانی" value="fa_فارسی">
+      آلمانی
+     </option>
+<option title="دیوه ای" value="fa_فارسی">
+      دیوه ای
+     </option>
+<option title="دوگری" value="fa_فارسی">
+      دوگری
+     </option>
+<option title="انگلیسی" value="fa_فارسی">
+      انگلیسی
+     </option>
+<option title="اسپرانتو" value="fa_فارسی">
+      اسپرانتو
+     </option>
+<option title="ورق" value="fa_فارسی">
+      برگ
+     </option>
+<option title="یوروبا" value="fa_فارسی">
+      زبان یوروبا
+     </option>
+<option title="ساموآنو" value="fa_فارسی">
+      ساموآ
+     </option>
+<option title="فیلیپینی" value="fa_فارسی">
+      فیلیپینی
+     </option>
+<option title="فیلیپینی" value="fa_فارسی">
+      فیلیپینی
+     </option>
+<option title="فرانسوی" value="fa_فارسی">
+      فرانسوی
+     </option>
+<option title="فریزی" value="fa_فارسی">
+      فریزی
+     </option>
+<option title="گیلیک ایرلندی" value="fa_فارسی">
+      ایرلندی
+     </option>
+<option title="زیبایی" value="fa_فارسی">
+      زیبایی
+     </option>
+<option title="گارانی" value="fa_فارسی">
+      گوارانی
+     </option>
+<option title="گیلیک اسکاتلندی" value="fa_فارسی">
+      گالیک
+     </option>
+<option title="هاوسا" value="fa_فارسی">
+      زبان هاوسا
+     </option>
+<option title="همونگ" value="fa_فارسی">
+      همونگ
+     </option>
+<option title="کینیارواندا" value="fa_فارسی">
+      رواندا
+     </option>
+<option title="داخل" value="fa_فارسی">
+      داخل
+     </option>
+<option title="اندونزیایی" value="fa_فارسی">
+      اندونزی
+     </option>
+<option title="خوسا" value="fa_فارسی">
+      خوسا
+     </option>
+<option title="زولو" value="fa_فارسی">
+      زولو
+     </option>
+<option title="ایتالیایی" value="fa_فارسی">
+      ایتالیایی
+     </option>
+<option title="سواحیلی" value="fa_فارسی">
+      سواحیلی
+     </option>
+<option title="کنکانی" value="fa_فارسی">
+      کنکانی
+     </option>
+<option title="کریول هائیتی" value="fa_فارسی">
+      کریول هائیتی
+     </option>
+<option title="کریو" value="fa_فارسی">
+      کریو
+     </option>
+<option title="کردی (سورانی)" value="fa_فارسی">
+      کردی (سورانی)
+     </option>
+<option title="کشک (کرمانجی)" value="fa_فارسی">
+      کردی (کرمانی)
+     </option>
+<option title="لاتین" value="fa_فارسی">
+      لاتین
+     </option>
+<option title="لینگالا" value="fa_فارسی">
+      لینگالا
+     </option>
+<option title="لوگزامبورگی" value="fa_فارسی">
+      لوگزامبورگی
+     </option>
+<option title="مایتیلی" value="fa_فارسی">
+      مایتیلی
+     </option>
+<option title="مالتی" value="fa_فارسی">
+      مالتی
+     </option>
+<option title="Meiteilon (مانیپوری)" value="fa_فارسی">
+      Meiteilon (مانیپوری)
+     </option>
+<option title="انگلیسی" value="fa_فارسی">
+      انگلیسی
+     </option>
+<option title="طبیعی" value="fa_فارسی">
+      مائوری
+     </option>
+<option title="هلندی" value="fa_فارسی">
+      هلندی
+     </option>
+<option title="سوتوی شمالی" value="fa_فارسی">
+      سوتوی شمالی
+     </option>
+<option title="اودیا (اوریا)" value="fa_فارسی">
+      اودیا (اوریا)
+     </option>
+<option title="اورومو" value="fa_فارسی">
+      اورومو
+     </option>
+<option title="ازبکستان" value="fa_فارسی">
+      ازبکستان
+     </option>
+<option title="پرتغالی" value="fa_فارسی">
+      پرتغالی
+     </option>
+<option title="کیچوا" value="fa_فارسی">
+      کچوا
+     </option>
+<option title="رومانیایی" value="fa_فارسی">
+      انگلیسی
+     </option>
+<option title="سانسکریت" value="fa_فارسی">
+      سانسکریت
+     </option>
+<option title="انگلیسی" value="fa_فارسی">
+      انگلیسی
+     </option>
+<option title="آلبانیایی" value="fa_فارسی">
+      آلبانیایی
+     </option>
+<option title="سومالی" value="fa_فارسی">
+      سومالی
+     </option>
+<option title="تارتاروس" value="fa_فارسی">
+      تاتاری
+     </option>
+<option title="تیگرینیا" value="fa_فارسی">
+      تیگرینیا
+     </option>
+<option title="سونگا" value="fa_فارسی">
+      سونگا
+     </option>
+<option title="توئی" value="fa_فارسی">
+      توئی
+     </option>
+<option title="ترکمن" value="fa_فارسی">
+      ترکیه
+     </option>
+<option title="ترکی" value="fa_فارسی">
+      ترکی
+     </option>
+<option title="اویغور" value="fa_فارسی">
+      اویغور
+     </option>
+<option title="ویتنامی" value="fa_فارسی">
+      ویتنامی
+     </option>
+<option title="بوسنیایی" value="fa_فارسی">
+      بوسنیایی
+     </option>
+<option title="کاتالان" value="fa_فارسی">
+      کاتالان
+     </option>
+<option title="استونیایی" value="fa_فارسی">
+      استونیایی
+     </option>
+<option title="اسپانیایی" value="fa_فارسی">
+      اسپانیایی
+     </option>
+<option title="باسکی" value="fa_فارسی">
+      باسکی
+     </option>
+<option title="گالیسیایی" value="fa_فارسی">
+      گالیسیایی
+     </option>
+<option title="کروات" value="fa_فارسی">
+      کروات
+     </option>
+<option title="لتونی" value="fa_فارسی">
+      لتونی
+     </option>
+<option title="لیتوانیایی" value="fa_فارسی">
+      لیتوانیایی
+     </option>
+<option title="مجارستانی" value="fa_فارسی">
+      مجارستانی
+     </option>
+<option title="مالاگاسی" value="fa_فارسی">
+      مالاگاسی
+     </option>
+<option title="نروژی" value="fa_فارسی">
+      نروژی
+     </option>
+<option title="لهستانی" value="fa_فارسی">
+      لهستانی
+     </option>
+<option title="اسلواکی" value="fa_فارسی">
+      اسلواکی
+     </option>
+<option title="اسلوونیایی" value="fa_فارسی">
+      اسلوونیایی
+     </option>
+<option title="فنلاندی" value="fa_فارسی">
+      فنلاندی
+     </option>
+<option title="سوئدی" value="fa_فارسی">
+      سوئدی
+     </option>
+<option title="ایسلندی" value="fa_فارسی">
+      ایسلندی
+     </option>
+<option title="چک" value="fa_فارسی">
+      چک
+     </option>
+<option title="یونانی" value="fa_فارسی">
+      یونانی
+     </option>
+<option title="بلاروسی" value="fa_فارسی">
+      بلاروسی
+     </option>
+<option title="مغول" value="fa_فارسی">
+      مغولستان
+     </option>
+<option title="تاجیک" value="fa_فارسی">
+      تاجیک
+     </option>
+<option title="بلغاری" value="fa_فارسی">
+      بلغاری
+     </option>
+<option title="قرقیزستان" value="fa_فارسی">
+      قرقیزستان
+     </option>
+<option title="مقدونی" value="fa_فارسی">
+      مقدونی
+     </option>
+<option title="روسو" value="fa_فارسی">
+      روسی
+     </option>
+<option title="صربی" value="fa_فارسی">
+      صربی
+     </option>
+<option title="اوکراینی" value="fa_فارسی">
+      اوکراینی
+     </option>
+<option title="قزاقستان" value="fa_فارسی">
+      قزاقستان
+     </option>
+<option title="ارمنی" value="fa_فارسی">
+      ارمنی:
+     </option>
+<option title="آیدیچه" value="fa_فارسی">
+      ییدیش
+     </option>
+<option title="عبری" value="fa_فارسی">
+      عبری
+     </option>
+<option title="عبری" value="fa_فارسی">
+      عبری
+     </option>
+<option title="اردو" value="fa_فارسی">
+      اردو
+     </option>
+<option title="عربی" value="fa_فارسی">
+      عربی
+     </option>
+<option title="سندی" value="fa_فارسی">
+      سندی
+     </option>
+<option title="گمشده" value="fa_فارسی">
+      فارسی
+     </option>
+<option title="پشتو" value="fa_فارسی">
+      پشتو
+     </option>
+<option title="نپالی" value="fa_فارسی">
+      نپالی
+     </option>
+<option title="مراتی" value="fa_فارسی">
+      مراتی
+     </option>
+<option title="خیر" value="fa_فارسی">
+      هندی
+     </option>
+<option title="بنگالی" value="fa_فارسی">
+      بنگلا
+     </option>
+<option title="پرتغالی" value="fa_فارسی">
+      پنجابی
+     </option>
+<option title="پرتغالی" value="fa_فارسی">
+      گجراتی
+     </option>
+<option title="تامیل" value="fa_فارسی">
+      تامیل
+     </option>
+<option title="زمستان" value="fa_فارسی">
+      تلوگو
+     </option>
+<option title="قناری" value="fa_فارسی">
+      کانادا
+     </option>
+<option title="استراتژی" value="fa_فارسی">
+      مالایایی
+     </option>
+<option title="سینهالی" value="fa_فارسی">
+      سینهالی
+     </option>
+<option title="تایلندی" value="fa_فارسی">
+      تایلندی
+     </option>
+<option title="سل" value="fa_فارسی">
+      او
+     </option>
+<option title="میانمار (برمه)" value="fa_فارسی">
+      میانمار
+     </option>
+<option title="گرجی" value="fa_فارسی">
+      گرجی
+     </option>
+<option title="آمهری" value="fa_فارسی">
+      آمهری
+     </option>
+<option title="خمر" value="fa_فارسی">
+      خمر
+     </option>
+<option title="چینی (سنتی)" value="fa_فارسی">
+      چینی (سنتی)
+     </option>
+<option title="چینی (ساده شده)" value="fa_فارسی">
+      چینی (ساده شده)
+     </option>
+<option title="چینی (ساده شده)" value="fa_فارسی">
+      چینی (ساده شده)
+     </option>
+<option title="ژاپنی" value="fa_فارسی">
+      ژاپنی
+     </option>
+<option title="کره ای" value="fa_فارسی">
+      کره ای
+     </option>
+</select>
+</div>
+</nav>
+<div class="container mt-5">
+<div id="liveAlertPlaceholder">
+</div>
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-md-4">
+<h1 class="display-4">
+      خوش آمدید
+     </h1>
+<p class="lead">
+      این صفحه دارای دکمه هایی با تعداد کلیک است.
+     </p>
+<div class="mb-3">
+<label class="form-label" for="buttonCount">
+       تعداد دکمه ها:
+      </label>
+<input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+</div>
+</div>
+<div class="col-md-8 text-end">
+<div class="mt-3" id="shared_voting">
+</div>
+<div>
+<a class="btn btn-primary mx-2" id="new" onclick="novel()" title="سلام">
+       جدید
+      </a>
+<a class="btn btn-primary mx-2" id="shared" onclick="share()" title="سلام">
+       به اشتراک بگذارید
+      </a>
+<a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="سلام">
+       رمز عبور را قرار دهید
+      </a>
+<a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="سلام">
+       بازیابی اطلاعات
+      </a>
+</div>
+<div class="mt-3" id="saveContainer">
+</div>
+</div>
+</div>
+   سرمایه
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="confirmModalLabel">
+        اقدام را تأیید کنید
+       </h5>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body">
+       آیا مطمئن هستید که می خواهید برخی از دکمه ها را حذف کنید؟ این عمل قابل لغو نیست. دکمه ها از انتها حذف خواهند شد.
+      </div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        لغو کنید
+       </button>
+<button class="btn btn-primary" id="confirmRemove" type="button">
+        تایید کنید
+       </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3" id="buttonsContainer">
+</div>
+</div>
+<span id="alert" style="display:none;">
+   URL نظرسنجی با موفقیت کپی شد.
+  </span>
+<span id="voting" style="display:none;">
+   رای دادن
+  </span>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="/scripts/url.js">
+</script>
+<script src="/scripts/buttons/logo.js">
+</script>
+<script src="/scripts/menu.js">
+</script>
+<script src="/scripts/buttons/index.js">
+</script>
+</body>
+</html>

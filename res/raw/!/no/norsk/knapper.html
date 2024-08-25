@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="no">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+<title>
+   3 knapper
+  </title>
+<meta content="Verktøy for å telle knappeklikk." name="description"/>
+<meta content="3 knapper, klikk, telle, strømme, verktøy, online, web" name="keywords"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<script async="" src="/scripts/lib.js">
+</script>
+<link href="/styles/lib.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid" id="menu">
+</div>
+<div class="m-2" id="select">
+<select class="form-select" onchange="changeLanguage(this.value)">
+<option value="no_norsk">
+</option>
+<option title="Hawaiisk" value="no_norsk">
+      'Hawaiisk
+     </option>
+<option title="afrikansk" value="no_norsk">
+      afrikansk
+     </option>
+<option title="Assames" value="no_norsk">
+      assamisk
+     </option>
+<option title="Igbo" value="no_norsk">
+      Igbo-språk
+     </option>
+<option title="Aymara" value="no_norsk">
+      Aymara
+     </option>
+<option title="Aserbajdsjan" value="no_norsk">
+      aserbajdsjansk språk
+     </option>
+<option title="tilstand" value="no_norsk">
+      Malayisk språk
+     </option>
+<option title="De bruker det" value="no_norsk">
+      De bærer den
+     </option>
+<option title="javanesisk" value="no_norsk">
+      Javanesisk språk
+     </option>
+<option title="javanesisk" value="no_norsk">
+      Javanesisk språk
+     </option>
+<option title="sudanesisk" value="no_norsk">
+      Sundanesisk språk
+     </option>
+<option title="Bhojpuri" value="no_norsk">
+      Bhojpuri
+     </option>
+<option title="Cebuano" value="no_norsk">
+      Cebuano
+     </option>
+<option title="Shona" value="no_norsk">
+      engelsk
+     </option>
+<option title="kinesisk" value="no_norsk">
+      kinesisk
+     </option>
+<option title="Kurs" value="no_norsk">
+      korsikansk
+     </option>
+<option title="walisisk" value="no_norsk">
+      walisisk
+     </option>
+<option title="dansk" value="no_norsk">
+      dansk
+     </option>
+<option title="tysk" value="no_norsk">
+      tysk
+     </option>
+<option title="Divehi" value="no_norsk">
+      Divehi
+     </option>
+<option title="Dogri" value="no_norsk">
+      Dogri
+     </option>
+<option title="engelsk" value="no_norsk">
+      engelsk
+     </option>
+<option title="esperanto" value="no_norsk">
+      Esperanto
+     </option>
+<option title="Ark" value="no_norsk">
+      Blad
+     </option>
+<option title="Yoruba" value="no_norsk">
+      Yoruba språk
+     </option>
+<option title="samoano" value="no_norsk">
+      samoansk
+     </option>
+<option title="filippinsk" value="no_norsk">
+      filippinsk
+     </option>
+<option title="filippinsk" value="no_norsk">
+      filippinsk
+     </option>
+<option title="fransk" value="no_norsk">
+      fransk
+     </option>
+<option title="frisisk" value="no_norsk">
+      frisisk
+     </option>
+<option title="irsk gælisk" value="no_norsk">
+      irsk
+     </option>
+<option title="Skjønnhet" value="no_norsk">
+      Skjønnhet
+     </option>
+<option title="Guaraní" value="no_norsk">
+      Guarani
+     </option>
+<option title="skotsk gælisk" value="no_norsk">
+      gælisk
+     </option>
+<option title="Hausa" value="no_norsk">
+      Hausa språk
+     </option>
+<option title="Hmong" value="no_norsk">
+      Hmong
+     </option>
+<option title="Kinyarwanda" value="no_norsk">
+      Rwandisk
+     </option>
+<option title="Inni" value="no_norsk">
+      Inni
+     </option>
+<option title="indonesisk" value="no_norsk">
+      Indonesia
+     </option>
+<option title="Xhosa" value="no_norsk">
+      Xhosa
+     </option>
+<option title="zulu" value="no_norsk">
+      Zulu
+     </option>
+<option title="italiensk" value="no_norsk">
+      italiensk
+     </option>
+<option title="Swahili" value="no_norsk">
+      Swahili
+     </option>
+<option title="Konkani" value="no_norsk">
+      Konkani
+     </option>
+<option title="haitisk kreolsk" value="no_norsk">
+      haitisk kreolsk
+     </option>
+<option title="Kryo" value="no_norsk">
+      Kryo
+     </option>
+<option title="kurdisk (sorani)" value="no_norsk">
+      kurdisk (sorani)
+     </option>
+<option title="Ostemasse (Kurmanji)" value="no_norsk">
+      kurdisk (Kurmanci)
+     </option>
+<option title="latin" value="no_norsk">
+      latin
+     </option>
+<option title="Lingala" value="no_norsk">
+      Lingala
+     </option>
+<option title="luxemburgsk" value="no_norsk">
+      luxemburgsk
+     </option>
+<option title="Maithili" value="no_norsk">
+      Maithili
+     </option>
+<option title="maltesisk" value="no_norsk">
+      maltesisk
+     </option>
+<option title="Meiteilon (Manipuri)" value="no_norsk">
+      Meiteilon (Manipuri)
+     </option>
+<option title="engelsk" value="no_norsk">
+      engelsk
+     </option>
+<option title="naturlig" value="no_norsk">
+      Māori
+     </option>
+<option title="nederlandsk" value="no_norsk">
+      nederlandsk
+     </option>
+<option title="Nord-Sotho" value="no_norsk">
+      Nord-Sotho
+     </option>
+<option title="Odia (Oriya)" value="no_norsk">
+      Odia (Oriya)
+     </option>
+<option title="Oromo" value="no_norsk">
+      Oromo
+     </option>
+<option title="usbekisk" value="no_norsk">
+      usbekisk
+     </option>
+<option title="portugisisk" value="no_norsk">
+      portugisisk
+     </option>
+<option title="Quichua" value="no_norsk">
+      Quechua
+     </option>
+<option title="rumensk" value="no_norsk">
+      ENGELSK
+     </option>
+<option title="Sanskrit" value="no_norsk">
+      Sanskrit
+     </option>
+<option title="engelsk" value="no_norsk">
+      engelsk
+     </option>
+<option title="albansk" value="no_norsk">
+      albansk
+     </option>
+<option title="Somali" value="no_norsk">
+      Somali
+     </option>
+<option title="Tartarus" value="no_norsk">
+      tatarisk
+     </option>
+<option title="Tigrinia" value="no_norsk">
+      Tigrinya
+     </option>
+<option title="Tsonga" value="no_norsk">
+      Tsonga
+     </option>
+<option title="Twi" value="no_norsk">
+      Twi
+     </option>
+<option title="turkmenske" value="no_norsk">
+      Kalkun
+     </option>
+<option title="tyrkisk" value="no_norsk">
+      tyrkisk
+     </option>
+<option title="Uigur" value="no_norsk">
+      uigurisk
+     </option>
+<option title="vietnamesisk" value="no_norsk">
+      vietnamesisk
+     </option>
+<option title="bosnisk" value="no_norsk">
+      bosnisk
+     </option>
+<option title="katalansk" value="no_norsk">
+      katalansk
+     </option>
+<option title="estisk" value="no_norsk">
+      estisk
+     </option>
+<option title="spansk" value="no_norsk">
+      spansk
+     </option>
+<option title="baskisk" value="no_norsk">
+      baskisk
+     </option>
+<option title="galisisk" value="no_norsk">
+      galisisk
+     </option>
+<option title="kroatisk" value="no_norsk">
+      kroatisk
+     </option>
+<option title="latvisk" value="no_norsk">
+      latvisk
+     </option>
+<option title="litauisk" value="no_norsk">
+      litauisk
+     </option>
+<option title="ungarsk" value="no_norsk">
+      ungarsk
+     </option>
+<option title="madagaskisk" value="no_norsk">
+      madagaskisk
+     </option>
+<option title="norsk" value="no_norsk">
+      norsk
+     </option>
+<option title="Pusse" value="no_norsk">
+      Pusse
+     </option>
+<option title="slovakisk" value="no_norsk">
+      slovakisk
+     </option>
+<option title="slovensk" value="no_norsk">
+      slovensk
+     </option>
+<option title="finsk" value="no_norsk">
+      finsk
+     </option>
+<option title="svensk" value="no_norsk">
+      svensk
+     </option>
+<option title="islandsk" value="no_norsk">
+      islandsk
+     </option>
+<option title="tsjekkisk" value="no_norsk">
+      tsjekkisk
+     </option>
+<option title="gresk" value="no_norsk">
+      gresk
+     </option>
+<option title="hviterussisk" value="no_norsk">
+      hviterussisk
+     </option>
+<option title="mongol" value="no_norsk">
+      Mongolia
+     </option>
+<option title="Tajic" value="no_norsk">
+      tadsjikisk
+     </option>
+<option title="Bulgarsk" value="no_norsk">
+      Bulgarsk
+     </option>
+<option title="Kirgisistan" value="no_norsk">
+      kirgisisk
+     </option>
+<option title="makedonsk" value="no_norsk">
+      makedonsk
+     </option>
+<option title="russo" value="no_norsk">
+      russisk
+     </option>
+<option title="serbisk" value="no_norsk">
+      serbisk
+     </option>
+<option title="ukrainsk" value="no_norsk">
+      ukrainsk
+     </option>
+<option title="kasakhisk" value="no_norsk">
+      kasakhisk
+     </option>
+<option title="armensk" value="no_norsk">
+      armensk:
+     </option>
+<option title="Iidiche" value="no_norsk">
+      Jiddisch
+     </option>
+<option title="hebraisk" value="no_norsk">
+      hebraisk
+     </option>
+<option title="hebraisk" value="no_norsk">
+      hebraisk
+     </option>
+<option title="urdu" value="no_norsk">
+      Urdu
+     </option>
+<option title="arabisk" value="no_norsk">
+      arabisk
+     </option>
+<option title="Sindi" value="no_norsk">
+      Sindhi
+     </option>
+<option title="tapt" value="no_norsk">
+      Farsi
+     </option>
+<option title="pashto" value="no_norsk">
+      Pashto
+     </option>
+<option title="nepalesisk" value="no_norsk">
+      nepalesisk
+     </option>
+<option title="Marathi" value="no_norsk">
+      Marathi
+     </option>
+<option title="Ingen" value="no_norsk">
+      Hindi
+     </option>
+<option title="bengali" value="no_norsk">
+      Bangla
+     </option>
+<option title="portugisisk" value="no_norsk">
+      Punjabi
+     </option>
+<option title="portugisisk" value="no_norsk">
+      Gujarati
+     </option>
+<option title="Tamil" value="no_norsk">
+      Tamil
+     </option>
+<option title="Vinter" value="no_norsk">
+      Telugu
+     </option>
+<option title="Canares" value="no_norsk">
+      Kannada
+     </option>
+<option title="Strategi" value="no_norsk">
+      Malayalam
+     </option>
+<option title="singalesisk" value="no_norsk">
+      singalesisk
+     </option>
+<option title="Thai" value="no_norsk">
+      Thai
+     </option>
+<option title="TB" value="no_norsk">
+      han
+     </option>
+<option title="Myanmar (burmesisk)" value="no_norsk">
+      Myanmar
+     </option>
+<option title="georgisk" value="no_norsk">
+      georgisk
+     </option>
+<option title="amharisk" value="no_norsk">
+      amharisk
+     </option>
+<option title="Khmer" value="no_norsk">
+      Khmer
+     </option>
+<option title="kinesisk (tradisjonell)" value="no_norsk">
+      kinesisk (tradisjonell)
+     </option>
+<option title="kinesisk (forenklet)" value="no_norsk">
+      kinesisk (forenklet)
+     </option>
+<option title="kinesisk (forenklet)" value="no_norsk">
+      kinesisk (forenklet)
+     </option>
+<option title="japansk" value="no_norsk">
+      japansk
+     </option>
+<option title="koreansk" value="no_norsk">
+      koreansk
+     </option>
+</select>
+</div>
+</nav>
+<div class="container mt-5">
+<div id="liveAlertPlaceholder">
+</div>
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-md-4">
+<h1 class="display-4">
+      Velkomst
+     </h1>
+<p class="lead">
+      Dette er en side med knapper med antall klikk.
+     </p>
+<div class="mb-3">
+<label class="form-label" for="buttonCount">
+       Antall knapper:
+      </label>
+<input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+</div>
+</div>
+<div class="col-md-8 text-end">
+<div class="mt-3" id="shared_voting">
+</div>
+<div>
+<a class="btn btn-primary mx-2" id="new" onclick="novel()" title="hallo">
+       Ny
+      </a>
+<a class="btn btn-primary mx-2" id="shared" onclick="share()" title="hallo">
+       Dele
+      </a>
+<a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="hallo">
+       Sett passord
+      </a>
+<a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="hallo">
+       Gjenopprett data
+      </a>
+</div>
+<div class="mt-3" id="saveContainer">
+</div>
+</div>
+</div>
+   Kapital
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="confirmModalLabel">
+        Bekreft handling
+       </h5>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body">
+       Er du sikker på at du vil fjerne noen knapper? Denne handlingen kan ikke angres. Knappene vil bli fjernet fra slutten.
+      </div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Kansellere
+       </button>
+<button class="btn btn-primary" id="confirmRemove" type="button">
+        Bekrefte
+       </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3" id="buttonsContainer">
+</div>
+</div>
+<span id="alert" style="display:none;">
+   Nettadressen til avstemningen ble kopiert.
+  </span>
+<span id="voting" style="display:none;">
+   Stemmegivning
+  </span>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="/scripts/url.js">
+</script>
+<script src="/scripts/buttons/logo.js">
+</script>
+<script src="/scripts/menu.js">
+</script>
+<script src="/scripts/buttons/index.js">
+</script>
+</body>
+</html>

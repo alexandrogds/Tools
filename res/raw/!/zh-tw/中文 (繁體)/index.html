@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+<title>
+   網路工具。
+  </title>
+<meta content="線上工具使用。" name="description"/>
+<meta content="工具、線上、網絡" name="keywords"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<script async="" src="/scripts/lib.js">
+</script>
+<link href="/styles/lib.css" rel="stylesheet"/>
+   
+  
+ </head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid" id="menu">
+</div>
+<div class="m-2" id="select">
+<select class="form-select" onchange="changeLanguage(this.value)">
+<option value="zh-TW_中文 (繁體)">
+</option>
+<option title="夏威夷語" value="zh-TW_中文 (繁體)">
+      '夏威夷人
+     </option>
+<option title="非洲人" value="zh-TW_中文 (繁體)">
+      非洲人
+     </option>
+<option title="阿薩姆人" value="zh-TW_中文 (繁體)">
+      阿薩姆語
+     </option>
+<option title="伊博語" value="zh-TW_中文 (繁體)">
+      伊博語
+     </option>
+<option title="艾馬拉" value="zh-TW_中文 (繁體)">
+      艾馬拉
+     </option>
+<option title="亞塞拜然語" value="zh-TW_中文 (繁體)">
+      亞塞拜然語
+     </option>
+<option title="狀態" value="zh-TW_中文 (繁體)">
+      馬來語
+     </option>
+<option title="他們用它" value="zh-TW_中文 (繁體)">
+      他們穿著它
+     </option>
+<option title="爪哇語" value="zh-TW_中文 (繁體)">
+      爪哇語
+     </option>
+<option title="爪哇語" value="zh-TW_中文 (繁體)">
+      爪哇語
+     </option>
+<option title="蘇丹人" value="zh-TW_中文 (繁體)">
+      巽他語
+     </option>
+<option title="博傑普爾" value="zh-TW_中文 (繁體)">
+      博傑普爾
+     </option>
+<option title="宿霧語" value="zh-TW_中文 (繁體)">
+      宿霧語
+     </option>
+<option title="紹納語" value="zh-TW_中文 (繁體)">
+      英語
+     </option>
+<option title="中國人" value="zh-TW_中文 (繁體)">
+      中國人
+     </option>
+<option title="課程" value="zh-TW_中文 (繁體)">
+      科西嘉島
+     </option>
+<option title="威爾斯語" value="zh-TW_中文 (繁體)">
+      威爾斯語
+     </option>
+<option title="丹麥語" value="zh-TW_中文 (繁體)">
+      丹麥語
+     </option>
+<option title="德文" value="zh-TW_中文 (繁體)">
+      德文
+     </option>
+<option title="迪維希語" value="zh-TW_中文 (繁體)">
+      迪維希語
+     </option>
+<option title="多格里" value="zh-TW_中文 (繁體)">
+      多格里
+     </option>
+<option title="英語" value="zh-TW_中文 (繁體)">
+      英語
+     </option>
+<option title="世界語" value="zh-TW_中文 (繁體)">
+      世界語
+     </option>
+<option title="床單" value="zh-TW_中文 (繁體)">
+      葉子
+     </option>
+<option title="約魯巴語" value="zh-TW_中文 (繁體)">
+      約魯巴語
+     </option>
+<option title="薩摩亞諾" value="zh-TW_中文 (繁體)">
+      薩摩亞人
+     </option>
+<option title="菲律賓人" value="zh-TW_中文 (繁體)">
+      菲律賓人
+     </option>
+<option title="菲律賓人" value="zh-TW_中文 (繁體)">
+      菲律賓人
+     </option>
+<option title="法語" value="zh-TW_中文 (繁體)">
+      法語
+     </option>
+<option title="弗里斯蘭語" value="zh-TW_中文 (繁體)">
+      弗里斯蘭語
+     </option>
+<option title="愛爾蘭蓋爾語" value="zh-TW_中文 (繁體)">
+      愛爾蘭語
+     </option>
+<option title="美麗" value="zh-TW_中文 (繁體)">
+      美麗
+     </option>
+<option title="瓜拉尼語" value="zh-TW_中文 (繁體)">
+      瓜拉尼語
+     </option>
+<option title="蘇格蘭蓋爾語" value="zh-TW_中文 (繁體)">
+      蓋爾語
+     </option>
+<option title="豪薩語" value="zh-TW_中文 (繁體)">
+      豪薩語
+     </option>
+<option title="苗族" value="zh-TW_中文 (繁體)">
+      苗族
+     </option>
+<option title="基尼亞盧安達語" value="zh-TW_中文 (繁體)">
+      盧安達
+     </option>
+<option title="裡面" value="zh-TW_中文 (繁體)">
+      裡面
+     </option>
+<option title="印尼" value="zh-TW_中文 (繁體)">
+      印尼
+     </option>
+<option title="科薩語" value="zh-TW_中文 (繁體)">
+      科薩語
+     </option>
+<option title="祖魯語" value="zh-TW_中文 (繁體)">
+      祖魯語
+     </option>
+<option title="義大利語" value="zh-TW_中文 (繁體)">
+      義大利語
+     </option>
+<option title="斯瓦希里語" value="zh-TW_中文 (繁體)">
+      斯瓦希里語
+     </option>
+<option title="孔卡尼" value="zh-TW_中文 (繁體)">
+      孔卡尼
+     </option>
+<option title="海地克里奧爾語" value="zh-TW_中文 (繁體)">
+      海地克里奧爾語
+     </option>
+<option title="克里奧" value="zh-TW_中文 (繁體)">
+      克里奧
+     </option>
+<option title="庫德語（索拉尼語）" value="zh-TW_中文 (繁體)">
+      庫德語（索拉尼語）
+     </option>
+<option title="凝乳（庫爾曼吉）" value="zh-TW_中文 (繁體)">
+      庫德語（庫爾曼奇語）
+     </option>
+<option title="拉丁" value="zh-TW_中文 (繁體)">
+      拉丁
+     </option>
+<option title="林加拉語" value="zh-TW_中文 (繁體)">
+      林加拉語
+     </option>
+<option title="盧森堡語" value="zh-TW_中文 (繁體)">
+      盧森堡語
+     </option>
+<option title="邁蒂利" value="zh-TW_中文 (繁體)">
+      邁蒂利
+     </option>
+<option title="馬爾他語" value="zh-TW_中文 (繁體)">
+      馬爾他語
+     </option>
+<option title="梅泰隆（曼尼普里）" value="zh-TW_中文 (繁體)">
+      梅泰隆（曼尼普里）
+     </option>
+<option title="英語" value="zh-TW_中文 (繁體)">
+      英語
+     </option>
+<option title="自然" value="zh-TW_中文 (繁體)">
+      毛利人
+     </option>
+<option title="荷蘭語" value="zh-TW_中文 (繁體)">
+      荷蘭語
+     </option>
+<option title="北索托" value="zh-TW_中文 (繁體)">
+      北索托
+     </option>
+<option title="奧裡亞語（奧裡亞語）" value="zh-TW_中文 (繁體)">
+      奧裡亞語（奧裡亞語）
+     </option>
+<option title="奧羅莫" value="zh-TW_中文 (繁體)">
+      奧羅莫
+     </option>
+<option title="烏茲別克語" value="zh-TW_中文 (繁體)">
+      烏茲別克語
+     </option>
+<option title="葡萄牙語" value="zh-TW_中文 (繁體)">
+      葡萄牙語
+     </option>
+<option title="蓋丘亞語" value="zh-TW_中文 (繁體)">
+      克丘亞語
+     </option>
+<option title="羅馬尼亞語" value="zh-TW_中文 (繁體)">
+      英語
+     </option>
+<option title="梵文" value="zh-TW_中文 (繁體)">
+      梵文
+     </option>
+<option title="英語" value="zh-TW_中文 (繁體)">
+      英語
+     </option>
+<option title="阿爾巴尼亞語" value="zh-TW_中文 (繁體)">
+      阿爾巴尼亞語
+     </option>
+<option title="索馬利亞" value="zh-TW_中文 (繁體)">
+      索馬利亞
+     </option>
+<option title="塔爾塔羅斯" value="zh-TW_中文 (繁體)">
+      韃靼人
+     </option>
+<option title="提格里尼亞" value="zh-TW_中文 (繁體)">
+      提格里尼亞
+     </option>
+<option title="特松加" value="zh-TW_中文 (繁體)">
+      特松加
+     </option>
+<option title="契維語" value="zh-TW_中文 (繁體)">
+      契維語
+     </option>
+<option title="土庫曼語" value="zh-TW_中文 (繁體)">
+      火雞
+     </option>
+<option title="土耳其" value="zh-TW_中文 (繁體)">
+      土耳其
+     </option>
+<option title="維吾爾" value="zh-TW_中文 (繁體)">
+      維吾爾族
+     </option>
+<option title="越南語" value="zh-TW_中文 (繁體)">
+      越南語
+     </option>
+<option title="波士尼亞語" value="zh-TW_中文 (繁體)">
+      波士尼亞語
+     </option>
+<option title="加泰隆尼亞語" value="zh-TW_中文 (繁體)">
+      加泰隆尼亞語
+     </option>
+<option title="愛沙尼亞語" value="zh-TW_中文 (繁體)">
+      愛沙尼亞語
+     </option>
+<option title="西班牙語" value="zh-TW_中文 (繁體)">
+      西班牙語
+     </option>
+<option title="巴斯克" value="zh-TW_中文 (繁體)">
+      巴斯克
+     </option>
+<option title="加利西亞語" value="zh-TW_中文 (繁體)">
+      加利西亞語
+     </option>
+<option title="克羅埃西亞語" value="zh-TW_中文 (繁體)">
+      克羅埃西亞語
+     </option>
+<option title="拉脫維亞語" value="zh-TW_中文 (繁體)">
+      拉脫維亞語
+     </option>
+<option title="立陶宛語" value="zh-TW_中文 (繁體)">
+      立陶宛語
+     </option>
+<option title="匈牙利" value="zh-TW_中文 (繁體)">
+      匈牙利
+     </option>
+<option title="馬爾加什" value="zh-TW_中文 (繁體)">
+      馬爾加什
+     </option>
+<option title="挪威" value="zh-TW_中文 (繁體)">
+      挪威
+     </option>
+<option title="拋光" value="zh-TW_中文 (繁體)">
+      拋光
+     </option>
+<option title="斯洛伐克語" value="zh-TW_中文 (繁體)">
+      斯洛伐克語
+     </option>
+<option title="斯洛維尼亞語" value="zh-TW_中文 (繁體)">
+      斯洛維尼亞語
+     </option>
+<option title="芬蘭" value="zh-TW_中文 (繁體)">
+      芬蘭
+     </option>
+<option title="瑞典" value="zh-TW_中文 (繁體)">
+      瑞典
+     </option>
+<option title="冰島語" value="zh-TW_中文 (繁體)">
+      冰島語
+     </option>
+<option title="捷克語" value="zh-TW_中文 (繁體)">
+      捷克語
+     </option>
+<option title="希臘文" value="zh-TW_中文 (繁體)">
+      希臘文
+     </option>
+<option title="白俄羅斯語" value="zh-TW_中文 (繁體)">
+      白俄羅斯語
+     </option>
+<option title="蒙古人" value="zh-TW_中文 (繁體)">
+      蒙古
+     </option>
+<option title="塔伊奇" value="zh-TW_中文 (繁體)">
+      塔吉克
+     </option>
+<option title="保加利亞語" value="zh-TW_中文 (繁體)">
+      保加利亞語
+     </option>
+<option title="吉爾吉斯斯坦" value="zh-TW_中文 (繁體)">
+      吉爾吉斯斯坦
+     </option>
+<option title="馬其頓語" value="zh-TW_中文 (繁體)">
+      馬其頓語
+     </option>
+<option title="俄羅斯" value="zh-TW_中文 (繁體)">
+      俄文
+     </option>
+<option title="塞爾維亞" value="zh-TW_中文 (繁體)">
+      塞爾維亞
+     </option>
+<option title="烏克蘭" value="zh-TW_中文 (繁體)">
+      烏克蘭
+     </option>
+<option title="哈薩克語" value="zh-TW_中文 (繁體)">
+      哈薩克語
+     </option>
+<option title="亞美尼亞語" value="zh-TW_中文 (繁體)">
+      亞美尼亞語：
+     </option>
+<option title="伊迪什" value="zh-TW_中文 (繁體)">
+      意第緒語
+     </option>
+<option title="希伯來文" value="zh-TW_中文 (繁體)">
+      希伯來文
+     </option>
+<option title="希伯來文" value="zh-TW_中文 (繁體)">
+      希伯來文
+     </option>
+<option title="烏爾都語" value="zh-TW_中文 (繁體)">
+      烏爾都語
+     </option>
+<option title="阿拉伯" value="zh-TW_中文 (繁體)">
+      阿拉伯
+     </option>
+<option title="辛蒂" value="zh-TW_中文 (繁體)">
+      信德語
+     </option>
+<option title="遺失的" value="zh-TW_中文 (繁體)">
+      波斯語
+     </option>
+<option title="普什圖語" value="zh-TW_中文 (繁體)">
+      普什圖語
+     </option>
+<option title="尼泊爾語" value="zh-TW_中文 (繁體)">
+      尼泊爾語
+     </option>
+<option title="馬拉地語" value="zh-TW_中文 (繁體)">
+      馬拉地語
+     </option>
+<option title="不" value="zh-TW_中文 (繁體)">
+      印地語
+     </option>
+<option title="孟加拉" value="zh-TW_中文 (繁體)">
+      孟加拉語
+     </option>
+<option title="葡萄牙語" value="zh-TW_中文 (繁體)">
+      旁遮普語
+     </option>
+<option title="葡萄牙語" value="zh-TW_中文 (繁體)">
+      古吉拉特語
+     </option>
+<option title="泰米爾語" value="zh-TW_中文 (繁體)">
+      泰米爾語
+     </option>
+<option title="冬天" value="zh-TW_中文 (繁體)">
+      泰盧固語
+     </option>
+<option title="卡納雷斯" value="zh-TW_中文 (繁體)">
+      卡納達語
+     </option>
+<option title="策略" value="zh-TW_中文 (繁體)">
+      馬拉雅拉姆語
+     </option>
+<option title="僧伽羅語" value="zh-TW_中文 (繁體)">
+      僧伽羅語
+     </option>
+<option title="泰國" value="zh-TW_中文 (繁體)">
+      泰國
+     </option>
+<option title="結核病" value="zh-TW_中文 (繁體)">
+      他
+     </option>
+<option title="緬甸（緬語）" value="zh-TW_中文 (繁體)">
+      緬甸
+     </option>
+<option title="喬治亞語" value="zh-TW_中文 (繁體)">
+      喬治亞語
+     </option>
+<option title="阿姆哈拉語" value="zh-TW_中文 (繁體)">
+      阿姆哈拉語
+     </option>
+<option title="高棉語" value="zh-TW_中文 (繁體)">
+      高棉語
+     </option>
+<option title="中文（繁體）" value="zh-TW_中文 (繁體)">
+      中文 (繁體)
+     </option>
+<option title="中文（簡體）" value="zh-TW_中文 (繁體)">
+      中文（簡體）
+     </option>
+<option title="中文（簡體）" value="zh-TW_中文 (繁體)">
+      中文（簡體）
+     </option>
+<option title="日本人" value="zh-TW_中文 (繁體)">
+      日本人
+     </option>
+<option title="韓國人" value="zh-TW_中文 (繁體)">
+      韓國人
+     </option>
+</select>
+</div>
+</nav>
+<div class="container mt-4" id="container">
+<h1 class="display-4">
+    歡迎
+   </h1>
+</div>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="/scripts/url.js">
+</script>
+<script src="/scripts/begin/logo.js">
+</script>
+<script src="/scripts/menu.js">
+</script>
+<script src="/scripts/begin/links.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="hy">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+<title>
+   3 կոճակներ
+  </title>
+<meta content="Կոճակի սեղմումները հաշվելու գործիք:" name="description"/>
+<meta content="3 կոճակ, կտտոց, հաշվարկ, հոսք, գործիքներ, առցանց, վեբ" name="keywords"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<script async="" src="/scripts/lib.js">
+</script>
+<link href="/styles/lib.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid" id="menu">
+</div>
+<div class="m-2" id="select">
+<select class="form-select" onchange="changeLanguage(this.value)">
+<option value="hy_հայերեն">
+</option>
+<option title="Հավայան" value="hy_հայերեն">
+      ― Հավայան
+     </option>
+<option title="Աֆրիկյան" value="hy_հայերեն">
+      Աֆրիկյան
+     </option>
+<option title="Ասսամներ" value="hy_հայերեն">
+      Ասամերեն
+     </option>
+<option title="Իգբո" value="hy_հայերեն">
+      Իգբո լեզու
+     </option>
+<option title="Այմարա" value="hy_հայերեն">
+      Այմարա
+     </option>
+<option title="ադրբեջանական" value="hy_հայերեն">
+      ադրբեջաներեն լեզու
+     </option>
+<option title="պետություն" value="hy_հայերեն">
+      Մալայերեն լեզու
+     </option>
+<option title="Նրանք օգտագործում են այն" value="hy_հայերեն">
+      Նրանք հագնում են այն
+     </option>
+<option title="ճավայերեն" value="hy_հայերեն">
+      Ճավայերեն լեզու
+     </option>
+<option title="ճավայերեն" value="hy_հայերեն">
+      Ճավայերեն լեզու
+     </option>
+<option title="Սուդանի" value="hy_հայերեն">
+      Սունդաներեն լեզու
+     </option>
+<option title="Բհոջպուրի" value="hy_հայերեն">
+      Բհոջպուրի
+     </option>
+<option title="Սեբուանո" value="hy_հայերեն">
+      Սեբուանո
+     </option>
+<option title="Շոնա" value="hy_հայերեն">
+      Անգլերեն
+     </option>
+<option title="չինական" value="hy_հայերեն">
+      չինական
+     </option>
+<option title="Դասընթաց" value="hy_հայերեն">
+      Կորսիկան
+     </option>
+<option title="Ուելս" value="hy_հայերեն">
+      Ուելս
+     </option>
+<option title="դանիերեն" value="hy_հայերեն">
+      դանիերեն
+     </option>
+<option title="գերմաներեն" value="hy_հայերեն">
+      գերմաներեն
+     </option>
+<option title="Դիվեհի" value="hy_հայերեն">
+      Դիվեհի
+     </option>
+<option title="Դոգրի" value="hy_հայերեն">
+      Դոգրի
+     </option>
+<option title="Անգլերեն" value="hy_հայերեն">
+      Անգլերեն
+     </option>
+<option title="էսպերանտո" value="hy_հայերեն">
+      Էսպերանտո
+     </option>
+<option title="Թերթիկ" value="hy_հայերեն">
+      Տերեւ
+     </option>
+<option title="Յորուբա" value="hy_հայերեն">
+      Յորուբա լեզու
+     </option>
+<option title="սամոանո" value="hy_հայերեն">
+      Սամոա
+     </option>
+<option title="ֆիլիպիներեն" value="hy_հայերեն">
+      ֆիլիպիներեն
+     </option>
+<option title="ֆիլիպիներեն" value="hy_հայերեն">
+      ֆիլիպիներեն
+     </option>
+<option title="ֆրանսերեն" value="hy_հայերեն">
+      ֆրանսերեն
+     </option>
+<option title="ֆրիզ" value="hy_հայերեն">
+      ֆրիզ
+     </option>
+<option title="Իռլանդական Գելերեն" value="hy_հայերեն">
+      իռլանդական
+     </option>
+<option title="Գեղեցկություն" value="hy_հայերեն">
+      Գեղեցկություն
+     </option>
+<option title="Գուարանին" value="hy_հայերեն">
+      Գուարանին
+     </option>
+<option title="Շոտլանդական Գելերեն" value="hy_հայերեն">
+      Գելերեն
+     </option>
+<option title="Հաուսա" value="hy_հայերեն">
+      Հաուսա լեզու
+     </option>
+<option title="Հմոնգ" value="hy_հայերեն">
+      Հմոնգ
+     </option>
+<option title="Կինյարվանդա" value="hy_հայերեն">
+      Ռուանդա
+     </option>
+<option title="Ներսում" value="hy_հայերեն">
+      Ներսում
+     </option>
+<option title="Ինդոնեզերեն" value="hy_հայերեն">
+      Ինդոնեզիա
+     </option>
+<option title="Քոսա" value="hy_հայերեն">
+      Քոսա
+     </option>
+<option title="զուլու" value="hy_հայերեն">
+      Զուլուս
+     </option>
+<option title="Իտալական" value="hy_հայերեն">
+      Իտալական
+     </option>
+<option title="Սուահիլի" value="hy_հայերեն">
+      Սուահիլի
+     </option>
+<option title="Կոնկանի" value="hy_հայերեն">
+      Կոնկանի
+     </option>
+<option title="Հայիթի կրեոլ" value="hy_հայերեն">
+      Հայիթի կրեոլ
+     </option>
+<option title="Կրյո" value="hy_հայերեն">
+      Կրյո
+     </option>
+<option title="քրդերեն (սորանի)" value="hy_հայերեն">
+      քրդերեն (սորանի)
+     </option>
+<option title="Կաթնաշոռ (Քուրմանջի)" value="hy_հայերեն">
+      քրդերեն (քուրմաներեն)
+     </option>
+<option title="լատիներեն" value="hy_հայերեն">
+      լատիներեն
+     </option>
+<option title="Լինգալա" value="hy_հայերեն">
+      Լինգալա
+     </option>
+<option title="լյուքսեմբուրգերեն" value="hy_հայերեն">
+      լյուքսեմբուրգերեն
+     </option>
+<option title="Մայթիլի" value="hy_հայերեն">
+      Մայթիլի
+     </option>
+<option title="մալթերեն" value="hy_հայերեն">
+      մալթերեն
+     </option>
+<option title="Մեյթեյլոն (Մանիպուրի)" value="hy_հայերեն">
+      Մեյթեյլոն (Մանիպուրի)
+     </option>
+<option title="Անգլերեն" value="hy_հայերեն">
+      Անգլերեն
+     </option>
+<option title="բնականաբար" value="hy_հայերեն">
+      Մաորի
+     </option>
+<option title="հոլանդերեն" value="hy_հայերեն">
+      հոլանդերեն
+     </option>
+<option title="Հյուսիսային Սոթո" value="hy_հայերեն">
+      Հյուսիսային Սոթո
+     </option>
+<option title="Օդիա (Օրիա)" value="hy_հայերեն">
+      Օդիա (Օրիա)
+     </option>
+<option title="Օրոմո" value="hy_հայերեն">
+      Օրոմո
+     </option>
+<option title="Ուզբեկ" value="hy_հայերեն">
+      Ուզբեկ
+     </option>
+<option title="պորտուգալերեն" value="hy_հայերեն">
+      պորտուգալերեն
+     </option>
+<option title="Կիչուա" value="hy_հայերեն">
+      Կեչուա
+     </option>
+<option title="ռումիներեն" value="hy_հայերեն">
+      ԱՆԳԼԵՐԵՆ
+     </option>
+<option title="սանսկրիտ" value="hy_հայերեն">
+      սանսկրիտ
+     </option>
+<option title="Անգլերեն" value="hy_հայերեն">
+      Անգլերեն
+     </option>
+<option title="ալբանացի" value="hy_հայերեն">
+      ալբանացի
+     </option>
+<option title="Սոմալի" value="hy_հայերեն">
+      Սոմալի
+     </option>
+<option title="Տարտարոս" value="hy_հայերեն">
+      թաթար
+     </option>
+<option title="Տիգրինիա" value="hy_հայերեն">
+      Տիգրինյա
+     </option>
+<option title="Ցոնգա" value="hy_հայերեն">
+      Ցոնգա
+     </option>
+<option title="Թվի" value="hy_հայերեն">
+      Թվի
+     </option>
+<option title="թուրքմեն" value="hy_հայերեն">
+      Թուրքիա
+     </option>
+<option title="թուրքական" value="hy_հայերեն">
+      թուրքական
+     </option>
+<option title="Ուիգուր" value="hy_հայերեն">
+      ույղուր
+     </option>
+<option title="Վիետնամերեն" value="hy_հայերեն">
+      Վիետնամերեն
+     </option>
+<option title="բոսնիերեն" value="hy_հայերեն">
+      բոսնիերեն
+     </option>
+<option title="կատալոներեն" value="hy_հայերեն">
+      կատալոներեն
+     </option>
+<option title="էստոնական" value="hy_հայերեն">
+      էստոնական
+     </option>
+<option title="իսպաներեն" value="hy_հայերեն">
+      իսպաներեն
+     </option>
+<option title="բասկերեն" value="hy_հայերեն">
+      բասկերեն
+     </option>
+<option title="գալիցերեն" value="hy_հայերեն">
+      գալիցերեն
+     </option>
+<option title="խորվաթերեն" value="hy_հայերեն">
+      խորվաթերեն
+     </option>
+<option title="լատվիերեն" value="hy_հայերեն">
+      լատվիերեն
+     </option>
+<option title="լիտվերեն" value="hy_հայերեն">
+      լիտվերեն
+     </option>
+<option title="հունգարերեն" value="hy_հայերեն">
+      հունգարերեն
+     </option>
+<option title="մալագասերեն" value="hy_հայերեն">
+      մալագասերեն
+     </option>
+<option title="նորվեգական" value="hy_հայերեն">
+      նորվեգական
+     </option>
+<option title="լեհ" value="hy_հայերեն">
+      լեհ
+     </option>
+<option title="սլովակ" value="hy_հայերեն">
+      սլովակ
+     </option>
+<option title="սլովեներեն" value="hy_հայերեն">
+      սլովեներեն
+     </option>
+<option title="Ֆիններեն" value="hy_հայերեն">
+      Ֆիններեն
+     </option>
+<option title="շվեդ" value="hy_հայերեն">
+      շվեդ
+     </option>
+<option title="իսլանդերեն" value="hy_հայերեն">
+      իսլանդերեն
+     </option>
+<option title="չեխ" value="hy_հայերեն">
+      չեխ
+     </option>
+<option title="հունարեն" value="hy_հայերեն">
+      հունարեն
+     </option>
+<option title="բելառուս" value="hy_հայերեն">
+      բելառուս
+     </option>
+<option title="մոնղոլ" value="hy_հայերեն">
+      Մոնղոլիա
+     </option>
+<option title="Տաջիչ" value="hy_հայերեն">
+      Տաջիկ
+     </option>
+<option title="բուլղարերեն" value="hy_հայերեն">
+      բուլղարերեն
+     </option>
+<option title="Ղրղզստան" value="hy_հայերեն">
+      ղրղզ
+     </option>
+<option title="մակեդոնական" value="hy_հայերեն">
+      մակեդոնական
+     </option>
+<option title="ռուսո" value="hy_հայերեն">
+      ռուսերեն
+     </option>
+<option title="սերբերեն" value="hy_հայերեն">
+      սերբերեն
+     </option>
+<option title="ուկրաինական" value="hy_հայերեն">
+      ուկրաինական
+     </option>
+<option title="ղազախ" value="hy_հայերեն">
+      ղազախ
+     </option>
+<option title="հայկ" value="hy_հայերեն">
+      հայերեն
+     </option>
+<option title="Իիդիչե" value="hy_հայերեն">
+      իդիշ
+     </option>
+<option title="եբրայերեն" value="hy_հայերեն">
+      եբրայերեն
+     </option>
+<option title="եբրայերեն" value="hy_հայերեն">
+      եբրայերեն
+     </option>
+<option title="ուրդու" value="hy_հայերեն">
+      ուրդու
+     </option>
+<option title="արաբերեն" value="hy_հայերեն">
+      արաբերեն
+     </option>
+<option title="Սինդի" value="hy_հայերեն">
+      սինդի
+     </option>
+<option title="կորցրել" value="hy_հայերեն">
+      պարսկերեն
+     </option>
+<option title="փուշթու" value="hy_հայերեն">
+      փուշթու
+     </option>
+<option title="Նեպալերեն" value="hy_հայերեն">
+      Նեպալերեն
+     </option>
+<option title="Մարաթի" value="hy_հայերեն">
+      Մարաթի
+     </option>
+<option title="Ոչ" value="hy_հայերեն">
+      հինդի
+     </option>
+<option title="բենգալերեն" value="hy_հայերեն">
+      Բանգլա
+     </option>
+<option title="պորտուգալերեն" value="hy_հայերեն">
+      փենջաբերեն
+     </option>
+<option title="պորտուգալերեն" value="hy_հայերեն">
+      գուջարաթի
+     </option>
+<option title="թամիլերեն" value="hy_հայերեն">
+      թամիլերեն
+     </option>
+<option title="Ձմեռ" value="hy_հայերեն">
+      թելուգու
+     </option>
+<option title="Կանարես" value="hy_հայերեն">
+      Կաննադա
+     </option>
+<option title="Ռազմավարություն" value="hy_հայերեն">
+      մալայալամ
+     </option>
+<option title="սինհալերեն" value="hy_հայերեն">
+      Սինհալա
+     </option>
+<option title="թայերեն" value="hy_հայերեն">
+      թայերեն
+     </option>
+<option title="ՏԲ" value="hy_հայերեն">
+      նա
+     </option>
+<option title="Մյանմար (Բիրմա)" value="hy_հայերեն">
+      Մյանմար
+     </option>
+<option title="վրաց" value="hy_հայերեն">
+      վրաց
+     </option>
+<option title="ամհարերեն" value="hy_հայերեն">
+      ամհարերեն
+     </option>
+<option title="քմեր" value="hy_հայերեն">
+      քմեր
+     </option>
+<option title="չինարեն (ավանդական)" value="hy_հայերեն">
+      չինարեն (ավանդական)
+     </option>
+<option title="չինարեն (պարզեցված)" value="hy_հայերեն">
+      չինարեն (պարզեցված)
+     </option>
+<option title="չինարեն (պարզեցված)" value="hy_հայերեն">
+      չինարեն (պարզեցված)
+     </option>
+<option title="ճապոներեն" value="hy_հայերեն">
+      ճապոներեն
+     </option>
+<option title="կորեերեն" value="hy_հայերեն">
+      կորեերեն
+     </option>
+</select>
+</div>
+</nav>
+<div class="container mt-5">
+<div id="liveAlertPlaceholder">
+</div>
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-md-4">
+<h1 class="display-4">
+      Բարի գալուստ
+     </h1>
+<p class="lead">
+      Սա սեղմումների քանակով կոճակներով էջ է:
+     </p>
+<div class="mb-3">
+<label class="form-label" for="buttonCount">
+       Կոճակների քանակը:
+      </label>
+<input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+</div>
+</div>
+<div class="col-md-8 text-end">
+<div class="mt-3" id="shared_voting">
+</div>
+<div>
+<a class="btn btn-primary mx-2" id="new" onclick="novel()" title="բարև">
+       Նոր
+      </a>
+<a class="btn btn-primary mx-2" id="shared" onclick="share()" title="բարև">
+       Կիսվել
+      </a>
+<a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="բարև">
+       Տեղադրեք գաղտնաբառը
+      </a>
+<a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="բարև">
+       Վերականգնել տվյալները
+      </a>
+</div>
+<div class="mt-3" id="saveContainer">
+</div>
+</div>
+</div>
+   Կապիտալ
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="confirmModalLabel">
+        Հաստատեք գործողությունը
+       </h5>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body">
+       Իսկապե՞ս ուզում եք հեռացնել որոշ կոճակներ: Այս գործողությունը հնարավոր չէ հետարկել: Կոճակները կհեռացվեն վերջից:
+      </div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Չեղարկել
+       </button>
+<button class="btn btn-primary" id="confirmRemove" type="button">
+        Հաստատել
+       </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3" id="buttonsContainer">
+</div>
+</div>
+<span id="alert" style="display:none;">
+   Հարցման URL-ը հաջողությամբ պատճենվեց:
+  </span>
+<span id="voting" style="display:none;">
+   Քվեարկություն
+  </span>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="/scripts/url.js">
+</script>
+<script src="/scripts/buttons/logo.js">
+</script>
+<script src="/scripts/menu.js">
+</script>
+<script src="/scripts/buttons/index.js">
+</script>
+</body>
+</html>

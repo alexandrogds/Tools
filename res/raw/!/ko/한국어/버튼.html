@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+<title>
+   3개의 버튼
+  </title>
+<meta content="버튼 클릭 수를 계산하는 도구입니다." name="description"/>
+<meta content="버튼 3개, 클릭, 카운트, 스트림, 도구, 온라인, 웹" name="keywords"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<script async="" src="/scripts/lib.js">
+</script>
+<link href="/styles/lib.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid" id="menu">
+</div>
+<div class="m-2" id="select">
+<select class="form-select" onchange="changeLanguage(this.value)">
+<option value="ko_한국어">
+</option>
+<option title="하와이안" value="ko_한국어">
+      '하와이안
+     </option>
+<option title="아프리카 사람" value="ko_한국어">
+      아프리카 사람
+     </option>
+<option title="아삼족" value="ko_한국어">
+      아삼어
+     </option>
+<option title="이그보어" value="ko_한국어">
+      이그보어
+     </option>
+<option title="아이마라어" value="ko_한국어">
+      아이마라어
+     </option>
+<option title="아제르바이잔" value="ko_한국어">
+      아제르바이잔어
+     </option>
+<option title="상태" value="ko_한국어">
+      말레이어
+     </option>
+<option title="그들은 그것을 사용합니다" value="ko_한국어">
+      그들은 그것을 입는다
+     </option>
+<option title="자바어" value="ko_한국어">
+      자바어
+     </option>
+<option title="자바어" value="ko_한국어">
+      자바어
+     </option>
+<option title="수단 인" value="ko_한국어">
+      순다어
+     </option>
+<option title="보즈푸리" value="ko_한국어">
+      보즈푸리
+     </option>
+<option title="세부아노어" value="ko_한국어">
+      세부아노어
+     </option>
+<option title="쇼나어" value="ko_한국어">
+      영어
+     </option>
+<option title="중국인" value="ko_한국어">
+      중국인
+     </option>
+<option title="강의" value="ko_한국어">
+      코르시카어
+     </option>
+<option title="웨일스 말" value="ko_한국어">
+      웨일스 말
+     </option>
+<option title="덴마크 말" value="ko_한국어">
+      덴마크 말
+     </option>
+<option title="독일 사람" value="ko_한국어">
+      독일 사람
+     </option>
+<option title="디베히" value="ko_한국어">
+      디베히
+     </option>
+<option title="도그리" value="ko_한국어">
+      도그리
+     </option>
+<option title="영어" value="ko_한국어">
+      영어
+     </option>
+<option title="에스페란토 말" value="ko_한국어">
+      에스페란토 말
+     </option>
+<option title="시트" value="ko_한국어">
+      잎
+     </option>
+<option title="요루바어" value="ko_한국어">
+      요루바어
+     </option>
+<option title="사모아노" value="ko_한국어">
+      사모아어
+     </option>
+<option title="필리핀어" value="ko_한국어">
+      필리핀어
+     </option>
+<option title="필리핀어" value="ko_한국어">
+      필리핀어
+     </option>
+<option title="프랑스 국민" value="ko_한국어">
+      프랑스 국민
+     </option>
+<option title="프리지아어" value="ko_한국어">
+      프리지아어
+     </option>
+<option title="아일랜드 게일어" value="ko_한국어">
+      아일랜드
+     </option>
+<option title="아름다움" value="ko_한국어">
+      아름다움
+     </option>
+<option title="과라니" value="ko_한국어">
+      과라니어
+     </option>
+<option title="스코틀랜드 게일어" value="ko_한국어">
+      게일 말
+     </option>
+<option title="하우사어" value="ko_한국어">
+      하우사어
+     </option>
+<option title="몽족" value="ko_한국어">
+      몽족
+     </option>
+<option title="키냐르완다어" value="ko_한국어">
+      르완다
+     </option>
+<option title="내부에" value="ko_한국어">
+      내부에
+     </option>
+<option title="인도네시아 인" value="ko_한국어">
+      인도네시아 공화국
+     </option>
+<option title="코사어" value="ko_한국어">
+      코사어
+     </option>
+<option title="줄루 족" value="ko_한국어">
+      줄루 족
+     </option>
+<option title="이탈리아 사람" value="ko_한국어">
+      이탈리아 사람
+     </option>
+<option title="스와힐리어" value="ko_한국어">
+      스와힐리어
+     </option>
+<option title="콘카니" value="ko_한국어">
+      콘카니
+     </option>
+<option title="아이티 크리올어" value="ko_한국어">
+      아이티 크리올어
+     </option>
+<option title="크리오" value="ko_한국어">
+      크리오
+     </option>
+<option title="쿠르드어(소라니어)" value="ko_한국어">
+      쿠르드어(소라니어)
+     </option>
+<option title="커드(쿠르만지)" value="ko_한국어">
+      쿠르드어(쿠르만시어)
+     </option>
+<option title="라틴어" value="ko_한국어">
+      라틴어
+     </option>
+<option title="링갈라" value="ko_한국어">
+      링갈라
+     </option>
+<option title="룩셈부르크어" value="ko_한국어">
+      룩셈부르크어
+     </option>
+<option title="마이틸리" value="ko_한국어">
+      마이틸리
+     </option>
+<option title="몰티즈" value="ko_한국어">
+      몰티즈
+     </option>
+<option title="Meiteilon (Manipuri)" value="ko_한국어">
+      Meiteilon (Manipuri)
+     </option>
+<option title="영어" value="ko_한국어">
+      영어
+     </option>
+<option title="자연스러운" value="ko_한국어">
+      마오리족
+     </option>
+<option title="네덜란드 사람" value="ko_한국어">
+      네덜란드 사람
+     </option>
+<option title="북부 소토" value="ko_한국어">
+      북부 소토어
+     </option>
+<option title="오디아(오리야어)" value="ko_한국어">
+      오디아(오리야어)
+     </option>
+<option title="오로모어" value="ko_한국어">
+      오로모어
+     </option>
+<option title="우즈벡어" value="ko_한국어">
+      우즈벡어
+     </option>
+<option title="포르투갈 인" value="ko_한국어">
+      포르투갈 인
+     </option>
+<option title="키추아어" value="ko_한국어">
+      케추아어
+     </option>
+<option title="루마니아 사람" value="ko_한국어">
+      영어
+     </option>
+<option title="산스크리트" value="ko_한국어">
+      산스크리트
+     </option>
+<option title="영어" value="ko_한국어">
+      영어
+     </option>
+<option title="알바니아" value="ko_한국어">
+      알바니아
+     </option>
+<option title="소말리아어" value="ko_한국어">
+      소말리아어
+     </option>
+<option title="타르타로스" value="ko_한국어">
+      타타르어
+     </option>
+<option title="티그리니아" value="ko_한국어">
+      티그리냐
+     </option>
+<option title="송가어" value="ko_한국어">
+      송가어
+     </option>
+<option title="트위어" value="ko_한국어">
+      트위어
+     </option>
+<option title="투르크멘 말" value="ko_한국어">
+      칠면조
+     </option>
+<option title="터키어" value="ko_한국어">
+      터키어
+     </option>
+<option title="위구르어" value="ko_한국어">
+      위구르어
+     </option>
+<option title="베트남 사람" value="ko_한국어">
+      베트남 사람
+     </option>
+<option title="보스니아어" value="ko_한국어">
+      보스니아어
+     </option>
+<option title="카탈로니아 사람" value="ko_한국어">
+      카탈로니아 사람
+     </option>
+<option title="에스토니아 사람" value="ko_한국어">
+      에스토니아 사람
+     </option>
+<option title="스페인 사람" value="ko_한국어">
+      스페인 사람
+     </option>
+<option title="바스크 사람" value="ko_한국어">
+      바스크 사람
+     </option>
+<option title="갈리시아어" value="ko_한국어">
+      갈리시아어
+     </option>
+<option title="크로아티아어" value="ko_한국어">
+      크로아티아어
+     </option>
+<option title="라트비아 사람" value="ko_한국어">
+      라트비아 사람
+     </option>
+<option title="리투아니아 사람" value="ko_한국어">
+      리투아니아 사람
+     </option>
+<option title="헝가리 인" value="ko_한국어">
+      헝가리 인
+     </option>
+<option title="마다가스카르 사람" value="ko_한국어">
+      마다가스카르 사람
+     </option>
+<option title="노르웨이 인" value="ko_한국어">
+      노르웨이 인
+     </option>
+<option title="광택" value="ko_한국어">
+      광택
+     </option>
+<option title="슬로바키아 사람" value="ko_한국어">
+      슬로바키아 사람
+     </option>
+<option title="슬로베니아" value="ko_한국어">
+      슬로베니아
+     </option>
+<option title="핀란드어" value="ko_한국어">
+      핀란드어
+     </option>
+<option title="스웨덴어" value="ko_한국어">
+      스웨덴어
+     </option>
+<option title="아이슬란드어" value="ko_한국어">
+      아이슬란드어
+     </option>
+<option title="체코 사람" value="ko_한국어">
+      체코 사람
+     </option>
+<option title="그리스 사람" value="ko_한국어">
+      그리스 사람
+     </option>
+<option title="벨로루시어" value="ko_한국어">
+      벨로루시어
+     </option>
+<option title="몽고 인" value="ko_한국어">
+      몽골리아
+     </option>
+<option title="타직어" value="ko_한국어">
+      타지크어
+     </option>
+<option title="불가리아 사람" value="ko_한국어">
+      불가리아 사람
+     </option>
+<option title="키르기스스탄" value="ko_한국어">
+      키르기스어
+     </option>
+<option title="마케도니아 어" value="ko_한국어">
+      마케도니아 어
+     </option>
+<option title="루소" value="ko_한국어">
+      러시아인
+     </option>
+<option title="세르비아 사람" value="ko_한국어">
+      세르비아 사람
+     </option>
+<option title="우크라이나 말" value="ko_한국어">
+      우크라이나 말
+     </option>
+<option title="카자흐어" value="ko_한국어">
+      카자흐어
+     </option>
+<option title="아르메니아 사람" value="ko_한국어">
+      아르메니아 사람:
+     </option>
+<option title="이디체" value="ko_한국어">
+      이디시어
+     </option>
+<option title="헤브라이 사람" value="ko_한국어">
+      헤브라이 사람
+     </option>
+<option title="헤브라이 사람" value="ko_한국어">
+      헤브라이 사람
+     </option>
+<option title="우르두어" value="ko_한국어">
+      우르두어
+     </option>
+<option title="아라비아 말" value="ko_한국어">
+      아라비아 말
+     </option>
+<option title="신디" value="ko_한국어">
+      신디어
+     </option>
+<option title="잃어버린" value="ko_한국어">
+      페르시아어
+     </option>
+<option title="파슈토어" value="ko_한국어">
+      파슈토어
+     </option>
+<option title="네팔어" value="ko_한국어">
+      네팔어
+     </option>
+<option title="마라티어" value="ko_한국어">
+      마라티어
+     </option>
+<option title="아니요" value="ko_한국어">
+      힌디 어
+     </option>
+<option title="벵골 사람" value="ko_한국어">
+      벵골어
+     </option>
+<option title="포르투갈 인" value="ko_한국어">
+      펀자브어
+     </option>
+<option title="포르투갈 인" value="ko_한국어">
+      구자라트어
+     </option>
+<option title="타밀 사람" value="ko_한국어">
+      타밀 사람
+     </option>
+<option title="겨울" value="ko_한국어">
+      텔루구어
+     </option>
+<option title="카나레스" value="ko_한국어">
+      칸나다어
+     </option>
+<option title="전략" value="ko_한국어">
+      말라얄람어
+     </option>
+<option title="신할라어" value="ko_한국어">
+      신할라어
+     </option>
+<option title="태국어" value="ko_한국어">
+      태국어
+     </option>
+<option title="결핵" value="ko_한국어">
+      그
+     </option>
+<option title="미얀마(버마어)" value="ko_한국어">
+      미얀마
+     </option>
+<option title="그루지야 사람" value="ko_한국어">
+      그루지야 사람
+     </option>
+<option title="암하라어" value="ko_한국어">
+      암하라어
+     </option>
+<option title="크메르어" value="ko_한국어">
+      크메르어
+     </option>
+<option title="중국어(번체)" value="ko_한국어">
+      중국어(번체)
+     </option>
+<option title="중국어(간체)" value="ko_한국어">
+      중국어(간체)
+     </option>
+<option title="중국어(간체)" value="ko_한국어">
+      중국어(간체)
+     </option>
+<option title="일본어" value="ko_한국어">
+      일본어
+     </option>
+<option title="한국인" value="ko_한국어">
+      한국어
+     </option>
+</select>
+</div>
+</nav>
+<div class="container mt-5">
+<div id="liveAlertPlaceholder">
+</div>
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-md-4">
+<h1 class="display-4">
+      환영
+     </h1>
+<p class="lead">
+      클릭 수가 적힌 버튼이 있는 페이지입니다.
+     </p>
+<div class="mb-3">
+<label class="form-label" for="buttonCount">
+       버튼의 수:
+      </label>
+<input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+</div>
+</div>
+<div class="col-md-8 text-end">
+<div class="mt-3" id="shared_voting">
+</div>
+<div>
+<a class="btn btn-primary mx-2" id="new" onclick="novel()" title="안녕하세요">
+       새로운
+      </a>
+<a class="btn btn-primary mx-2" id="shared" onclick="share()" title="안녕하세요">
+       공유하다
+      </a>
+<a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="안녕하세요">
+       비밀번호를 입력하세요
+      </a>
+<a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="안녕하세요">
+       데이터 복구
+      </a>
+</div>
+<div class="mt-3" id="saveContainer">
+</div>
+</div>
+</div>
+   수도
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="confirmModalLabel">
+        동작 확인
+       </h5>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body">
+       일부 버튼을 제거하시겠습니까? 이 작업은 취소할 수 없습니다. 버튼은 끝에서 제거됩니다.
+      </div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        취소
+       </button>
+<button class="btn btn-primary" id="confirmRemove" type="button">
+        확인하다
+       </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3" id="buttonsContainer">
+</div>
+</div>
+<span id="alert" style="display:none;">
+   여론조사 URL이 성공적으로 복사되었습니다.
+  </span>
+<span id="voting" style="display:none;">
+   투표
+  </span>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="/scripts/url.js">
+</script>
+<script src="/scripts/buttons/logo.js">
+</script>
+<script src="/scripts/menu.js">
+</script>
+<script src="/scripts/buttons/index.js">
+</script>
+</body>
+</html>

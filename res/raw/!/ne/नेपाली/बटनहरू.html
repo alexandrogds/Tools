@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="ne">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+<title>
+   3 बटनहरू
+  </title>
+<meta content="बटन क्लिकहरू गणना गर्न उपकरण।" name="description"/>
+<meta content="3 बटनहरू, क्लिकहरू, गणना, स्ट्रिम, उपकरणहरू, अनलाइन, वेब" name="keywords"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<script async="" src="/scripts/lib.js">
+</script>
+<link href="/styles/lib.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid" id="menu">
+</div>
+<div class="m-2" id="select">
+<select class="form-select" onchange="changeLanguage(this.value)">
+<option value="ne_नेपाली">
+</option>
+<option title="हवाईयन" value="ne_नेपाली">
+      'हवाइयन
+     </option>
+<option title="अफ्रिकी" value="ne_नेपाली">
+      अफ्रिकी
+     </option>
+<option title="असमिया" value="ne_नेपाली">
+      असमिया
+     </option>
+<option title="इग्बो" value="ne_नेपाली">
+      इग्बो भाषा
+     </option>
+<option title="आयमारा" value="ne_नेपाली">
+      आयमारा
+     </option>
+<option title="अजरबैजानो" value="ne_नेपाली">
+      अजरबैजानी भाषा
+     </option>
+<option title="राज्य" value="ne_नेपाली">
+      मलय भाषा
+     </option>
+<option title="तिनीहरूले प्रयोग गर्छन्" value="ne_नेपाली">
+      तिनीहरूले लगाउँछन्
+     </option>
+<option title="जाभानीज" value="ne_नेपाली">
+      जाभानीज भाषा
+     </option>
+<option title="जाभानीज" value="ne_नेपाली">
+      जाभानीज भाषा
+     </option>
+<option title="सुडानी" value="ne_नेपाली">
+      सुडानी भाषा
+     </option>
+<option title="भोजपुरी" value="ne_नेपाली">
+      भोजपुरी
+     </option>
+<option title="सेबुआनो" value="ne_नेपाली">
+      सेबुआनो
+     </option>
+<option title="शोना" value="ne_नेपाली">
+      अंग्रेजी
+     </option>
+<option title="चिनियाँ" value="ne_नेपाली">
+      चिनियाँ
+     </option>
+<option title="पाठ्यक्रम" value="ne_नेपाली">
+      कोर्सिकन
+     </option>
+<option title="वेल्श" value="ne_नेपाली">
+      वेल्श
+     </option>
+<option title="डेनिस" value="ne_नेपाली">
+      डेनिस
+     </option>
+<option title="जर्मन" value="ne_नेपाली">
+      जर्मन
+     </option>
+<option title="दिवेही" value="ne_नेपाली">
+      दिवेही
+     </option>
+<option title="डोगरी" value="ne_नेपाली">
+      डोगरी
+     </option>
+<option title="अंग्रेजी" value="ne_नेपाली">
+      अंग्रेजी
+     </option>
+<option title="एस्पेरान्तो" value="ne_नेपाली">
+      एस्पेरान्तो
+     </option>
+<option title="पाना" value="ne_नेपाली">
+      पात
+     </option>
+<option title="योरुबा" value="ne_नेपाली">
+      योरुबा भाषा
+     </option>
+<option title="samoano" value="ne_नेपाली">
+      सामोन
+     </option>
+<option title="फिलिपिनो" value="ne_नेपाली">
+      फिलिपिनो
+     </option>
+<option title="फिलिपिनो" value="ne_नेपाली">
+      फिलिपिनो
+     </option>
+<option title="फ्रान्सेली" value="ne_नेपाली">
+      फ्रान्सेली
+     </option>
+<option title="फ्रिसियन" value="ne_नेपाली">
+      फ्रिसियन
+     </option>
+<option title="आयरिश गेलिक" value="ne_नेपाली">
+      आयरिश
+     </option>
+<option title="सौन्दर्य" value="ne_नेपाली">
+      सौन्दर्य
+     </option>
+<option title="Guarani" value="ne_नेपाली">
+      ग्वारानी
+     </option>
+<option title="स्कटिश गेलिक" value="ne_नेपाली">
+      गेलिक
+     </option>
+<option title="हौसा" value="ne_नेपाली">
+      हौसा भाषा
+     </option>
+<option title="Hmong" value="ne_नेपाली">
+      Hmong
+     </option>
+<option title="किन्यारवाण्डा" value="ne_नेपाली">
+      रुवाण्डन
+     </option>
+<option title="भित्र" value="ne_नेपाली">
+      भित्र
+     </option>
+<option title="इन्डोनेसियाली" value="ne_नेपाली">
+      इन्डोनेसिया
+     </option>
+<option title="झोसा" value="ne_नेपाली">
+      झोसा
+     </option>
+<option title="जुलु" value="ne_नेपाली">
+      जुलु
+     </option>
+<option title="इटालियन" value="ne_नेपाली">
+      इटालियन
+     </option>
+<option title="स्वाहिली" value="ne_नेपाली">
+      स्वाहिली
+     </option>
+<option title="कोंकणी" value="ne_नेपाली">
+      कोंकणी
+     </option>
+<option title="हाइटियन क्रियोल" value="ne_नेपाली">
+      हाइटियन क्रियोल
+     </option>
+<option title="क्रियो" value="ne_नेपाली">
+      क्रियो
+     </option>
+<option title="कुर्दिश (सोरानी)" value="ne_नेपाली">
+      कुर्दिश (सोरानी)
+     </option>
+<option title="दही (कुरमान्जी)" value="ne_नेपाली">
+      कुर्दिश (कुर्मान्ची)
+     </option>
+<option title="ल्याटिन" value="ne_नेपाली">
+      ल्याटिन
+     </option>
+<option title="लिंगाला" value="ne_नेपाली">
+      लिंगाला
+     </option>
+<option title="लक्जमबर्गिश" value="ne_नेपाली">
+      लक्जमबर्गिश
+     </option>
+<option title="मैथिली" value="ne_नेपाली">
+      मैथिली
+     </option>
+<option title="माल्टीज" value="ne_नेपाली">
+      माल्टीज
+     </option>
+<option title="मेतेइलोन (मणिपुरी)" value="ne_नेपाली">
+      मेतेइलोन (मणिपुरी)
+     </option>
+<option title="अंग्रेजी" value="ne_नेपाली">
+      अंग्रेजी
+     </option>
+<option title="प्राकृतिक" value="ne_नेपाली">
+      माओरी
+     </option>
+<option title="डच" value="ne_नेपाली">
+      डच
+     </option>
+<option title="उत्तरी सोथो" value="ne_नेपाली">
+      उत्तरी सोथो
+     </option>
+<option title="उडिया (उडिया)" value="ne_नेपाली">
+      उडिया (उडिया)
+     </option>
+<option title="ओरोमो" value="ne_नेपाली">
+      ओरोमो
+     </option>
+<option title="उज्बेक" value="ne_नेपाली">
+      उज्बेक
+     </option>
+<option title="पोर्चुगिज" value="ne_नेपाली">
+      पोर्चुगिज
+     </option>
+<option title="क्विचुआ" value="ne_नेपाली">
+      क्वेचुआ
+     </option>
+<option title="रोमानियाली" value="ne_नेपाली">
+      अङ्ग्रेजी
+     </option>
+<option title="संस्कृत" value="ne_नेपाली">
+      संस्कृत
+     </option>
+<option title="अंग्रेजी" value="ne_नेपाली">
+      अंग्रेजी
+     </option>
+<option title="अल्बेनियन्" value="ne_नेपाली">
+      अल्बेनियन्
+     </option>
+<option title="सोमाली" value="ne_नेपाली">
+      सोमाली
+     </option>
+<option title="टार्टरस" value="ne_नेपाली">
+      टाटर
+     </option>
+<option title="टिग्रिनिया" value="ne_नेपाली">
+      टिग्रीन्या
+     </option>
+<option title="सोंगा" value="ne_नेपाली">
+      सोंगा
+     </option>
+<option title="ट्वी" value="ne_नेपाली">
+      ट्वी
+     </option>
+<option title="तुर्कमेन" value="ne_नेपाली">
+      टर्की
+     </option>
+<option title="टर्की" value="ne_नेपाली">
+      टर्की
+     </option>
+<option title="उइघुर" value="ne_नेपाली">
+      उइघुर
+     </option>
+<option title="भियतनामी" value="ne_नेपाली">
+      भियतनामी
+     </option>
+<option title="बोस्नियाली" value="ne_नेपाली">
+      बोस्नियाली
+     </option>
+<option title="क्याटालान" value="ne_नेपाली">
+      क्याटालान
+     </option>
+<option title="इस्टोनिया" value="ne_नेपाली">
+      इस्टोनिया
+     </option>
+<option title="स्पेनिस" value="ne_नेपाली">
+      स्पेनिस
+     </option>
+<option title="बास्क" value="ne_नेपाली">
+      बास्क
+     </option>
+<option title="ग्यालिसियन" value="ne_नेपाली">
+      ग्यालिसियन
+     </option>
+<option title="क्रोएसियाली" value="ne_नेपाली">
+      क्रोएसियाली
+     </option>
+<option title="लाटभियन" value="ne_नेपाली">
+      लाटभियन
+     </option>
+<option title="लिथुआनियाली" value="ne_नेपाली">
+      लिथुआनियाली
+     </option>
+<option title="हंगेरी" value="ne_नेपाली">
+      हंगेरी
+     </option>
+<option title="मालागासी" value="ne_नेपाली">
+      मालागासी
+     </option>
+<option title="नर्वेजियन" value="ne_नेपाली">
+      नर्वेजियन
+     </option>
+<option title="पोलिश" value="ne_नेपाली">
+      पोलिश
+     </option>
+<option title="स्लोभाक" value="ne_नेपाली">
+      स्लोभाक
+     </option>
+<option title="स्लोभेनियाली" value="ne_नेपाली">
+      स्लोभेनियाली
+     </option>
+<option title="फिनिस" value="ne_नेपाली">
+      फिनिस
+     </option>
+<option title="स्विडेनी" value="ne_नेपाली">
+      स्विडेनी
+     </option>
+<option title="आइसल्याण्डिक" value="ne_नेपाली">
+      आइसल्याण्डिक
+     </option>
+<option title="चेक" value="ne_नेपाली">
+      चेक
+     </option>
+<option title="ग्रीक" value="ne_नेपाली">
+      ग्रीक
+     </option>
+<option title="बेलारूसी" value="ne_नेपाली">
+      बेलारूसी
+     </option>
+<option title="मङ्गोल" value="ne_नेपाली">
+      मंगोलिया
+     </option>
+<option title="ताजिक" value="ne_नेपाली">
+      ताजिक
+     </option>
+<option title="बुल्गेरियन" value="ne_नेपाली">
+      बुल्गेरियन
+     </option>
+<option title="किर्गिजस्तान" value="ne_नेपाली">
+      किर्गिज
+     </option>
+<option title="म्यासेडोनियन" value="ne_नेपाली">
+      म्यासेडोनियन
+     </option>
+<option title="रुसो" value="ne_नेपाली">
+      रुसी
+     </option>
+<option title="सर्बियाई" value="ne_नेपाली">
+      सर्बियाई
+     </option>
+<option title="युक्रेनी" value="ne_नेपाली">
+      युक्रेनी
+     </option>
+<option title="कजाख" value="ne_नेपाली">
+      कजाख
+     </option>
+<option title="आर्मेनियाली" value="ne_नेपाली">
+      आर्मेनियाली:
+     </option>
+<option title="आइडिचे" value="ne_नेपाली">
+      येडिस
+     </option>
+<option title="हिब्रू" value="ne_नेपाली">
+      हिब्रू
+     </option>
+<option title="हिब्रू" value="ne_नेपाली">
+      हिब्रू
+     </option>
+<option title="उर्दू" value="ne_नेपाली">
+      उर्दू
+     </option>
+<option title="अरबी" value="ne_नेपाली">
+      अरबी
+     </option>
+<option title="सिन्दी" value="ne_नेपाली">
+      सिन्धी
+     </option>
+<option title="हरायो" value="ne_नेपाली">
+      फारसी
+     </option>
+<option title="pashto" value="ne_नेपाली">
+      पश्तो
+     </option>
+<option title="नेपाली" value="ne_नेपाली">
+      नेपाली
+     </option>
+<option title="मराठी" value="ne_नेपाली">
+      मराठी
+     </option>
+<option title="छैन" value="ne_नेपाली">
+      हिन्दी
+     </option>
+<option title="बंगाली" value="ne_नेपाली">
+      बंगला
+     </option>
+<option title="पोर्चुगिज" value="ne_नेपाली">
+      पञ्जाबी
+     </option>
+<option title="पोर्चुगिज" value="ne_नेपाली">
+      गुजराती
+     </option>
+<option title="तमिल" value="ne_नेपाली">
+      तमिल
+     </option>
+<option title="जाडो" value="ne_नेपाली">
+      तेलुगु
+     </option>
+<option title="क्यानारेस" value="ne_नेपाली">
+      कन्नड
+     </option>
+<option title="रणनीति" value="ne_नेपाली">
+      मलयालम
+     </option>
+<option title="सिंहली" value="ne_नेपाली">
+      सिंहला
+     </option>
+<option title="थाई" value="ne_नेपाली">
+      थाई
+     </option>
+<option title="TB" value="ne_नेपाली">
+      उहाँ
+     </option>
+<option title="म्यानमार (बर्मी)" value="ne_नेपाली">
+      म्यानमार
+     </option>
+<option title="जर्जियन" value="ne_नेपाली">
+      जर्जियन
+     </option>
+<option title="अम्हारिक" value="ne_नेपाली">
+      अम्हारिक
+     </option>
+<option title="खमेर" value="ne_नेपाली">
+      खमेर
+     </option>
+<option title="चिनियाँ (परम्परागत)" value="ne_नेपाली">
+      चिनियाँ (परम्परागत)
+     </option>
+<option title="चिनियाँ (सरलीकृत)" value="ne_नेपाली">
+      चिनियाँ (सरलीकृत)
+     </option>
+<option title="चिनियाँ (सरलीकृत)" value="ne_नेपाली">
+      चिनियाँ (सरलीकृत)
+     </option>
+<option title="जापानी" value="ne_नेपाली">
+      जापानी
+     </option>
+<option title="कोरियाली" value="ne_नेपाली">
+      कोरियाली
+     </option>
+</select>
+</div>
+</nav>
+<div class="container mt-5">
+<div id="liveAlertPlaceholder">
+</div>
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-md-4">
+<h1 class="display-4">
+      स्वागत छ
+     </h1>
+<p class="lead">
+      यो क्लिक गणना भएको बटन भएको पृष्ठ हो।
+     </p>
+<div class="mb-3">
+<label class="form-label" for="buttonCount">
+       बटनहरूको संख्या:
+      </label>
+<input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+</div>
+</div>
+<div class="col-md-8 text-end">
+<div class="mt-3" id="shared_voting">
+</div>
+<div>
+<a class="btn btn-primary mx-2" id="new" onclick="novel()" title="नमस्कार">
+       नयाँ
+      </a>
+<a class="btn btn-primary mx-2" id="shared" onclick="share()" title="नमस्कार">
+       सेयर गर्नुहोस्
+      </a>
+<a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="नमस्कार">
+       पासवर्ड राख्नुहोस्
+      </a>
+<a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="नमस्कार">
+       डाटा रिकभर गर्नुहोस्
+      </a>
+</div>
+<div class="mt-3" id="saveContainer">
+</div>
+</div>
+</div>
+   राजधानी
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="confirmModalLabel">
+        कार्य पुष्टि गर्नुहोस्
+       </h5>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body">
+       के तपाइँ निश्चित रूपमा केहि बटनहरू हटाउन चाहनुहुन्छ? यो कार्य अन्डू गर्न सकिँदैन। बटनहरू अन्त्यबाट हटाइनेछ।
+      </div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        रद्द गर्नुहोस्
+       </button>
+<button class="btn btn-primary" id="confirmRemove" type="button">
+        पुष्टि गर्नुहोस्
+       </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3" id="buttonsContainer">
+</div>
+</div>
+<span id="alert" style="display:none;">
+   मतदान URL सफलतापूर्वक प्रतिलिपि गरियो।
+  </span>
+<span id="voting" style="display:none;">
+   मतदान
+  </span>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="/scripts/url.js">
+</script>
+<script src="/scripts/buttons/logo.js">
+</script>
+<script src="/scripts/menu.js">
+</script>
+<script src="/scripts/buttons/index.js">
+</script>
+</body>
+</html>

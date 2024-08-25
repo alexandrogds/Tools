@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="sr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+<title>
+   3 Дугмад
+  </title>
+<meta content="Алат за бројање кликова на дугме." name="description"/>
+<meta content="3 дугмета, кликови, бројање, стрим, алати, онлајн, веб" name="keywords"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<script async="" src="/scripts/lib.js">
+</script>
+<link href="/styles/lib.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid" id="menu">
+</div>
+<div class="m-2" id="select">
+<select class="form-select" onchange="changeLanguage(this.value)">
+<option value="sr_српски">
+</option>
+<option title="Хаваииан" value="sr_српски">
+      'Хавајски
+     </option>
+<option title="афрички" value="sr_српски">
+      афрички
+     </option>
+<option title="Асамци" value="sr_српски">
+      Асамски
+     </option>
+<option title="Игбо" value="sr_српски">
+      Игбо језик
+     </option>
+<option title="Аимара" value="sr_српски">
+      Аимара
+     </option>
+<option title="Азербејџански" value="sr_српски">
+      азербејџански језик
+     </option>
+<option title="држава" value="sr_српски">
+      малајски језик
+     </option>
+<option title="Они то користе" value="sr_српски">
+      Они га носе
+     </option>
+<option title="Јаванесе" value="sr_српски">
+      јавански језик
+     </option>
+<option title="Јаванесе" value="sr_српски">
+      јавански језик
+     </option>
+<option title="Суданац" value="sr_српски">
+      сундански језик
+     </option>
+<option title="Бхојпури" value="sr_српски">
+      Бхојпури
+     </option>
+<option title="Цебуано" value="sr_српски">
+      Цебуано
+     </option>
+<option title="Шона" value="sr_српски">
+      енглески
+     </option>
+<option title="кинески" value="sr_српски">
+      кинески
+     </option>
+<option title="Наравно" value="sr_српски">
+      корзикански
+     </option>
+<option title="велшки" value="sr_српски">
+      велшки
+     </option>
+<option title="дански" value="sr_српски">
+      дански
+     </option>
+<option title="немачки" value="sr_српски">
+      немачки
+     </option>
+<option title="Дивехи" value="sr_српски">
+      Дивехи
+     </option>
+<option title="Догри" value="sr_српски">
+      Догри
+     </option>
+<option title="енглески" value="sr_српски">
+      енглески
+     </option>
+<option title="есперанто" value="sr_српски">
+      есперанто
+     </option>
+<option title="Лист" value="sr_српски">
+      Леаф
+     </option>
+<option title="Иоруба" value="sr_српски">
+      Јоруба језик
+     </option>
+<option title="самоано" value="sr_српски">
+      Самоан
+     </option>
+<option title="филипински" value="sr_српски">
+      филипински
+     </option>
+<option title="филипински" value="sr_српски">
+      филипински
+     </option>
+<option title="француски" value="sr_српски">
+      француски
+     </option>
+<option title="фризијски" value="sr_српски">
+      фризијски
+     </option>
+<option title="ирски галски" value="sr_српски">
+      Ирисх
+     </option>
+<option title="лепота" value="sr_српски">
+      лепота
+     </option>
+<option title="Гуарани" value="sr_српски">
+      Гуарани
+     </option>
+<option title="шкотски галски" value="sr_српски">
+      галски
+     </option>
+<option title="Хауса" value="sr_српски">
+      Хауса језик
+     </option>
+<option title="Хмонг" value="sr_српски">
+      Хмонг
+     </option>
+<option title="Киниарванда" value="sr_српски">
+      Руандски
+     </option>
+<option title="Унутра" value="sr_српски">
+      Унутра
+     </option>
+<option title="индонезијски" value="sr_српски">
+      Индонесиа
+     </option>
+<option title="Ксхоса" value="sr_српски">
+      Ксхоса
+     </option>
+<option title="зулу" value="sr_српски">
+      Зулу
+     </option>
+<option title="италијански" value="sr_српски">
+      италијански
+     </option>
+<option title="свахили" value="sr_српски">
+      свахили
+     </option>
+<option title="Конкани" value="sr_српски">
+      Конкани
+     </option>
+<option title="хаићански креолски" value="sr_српски">
+      хаићански креолски
+     </option>
+<option title="Крио" value="sr_српски">
+      Крио
+     </option>
+<option title="курдски (сорани)" value="sr_српски">
+      курдски (сорани)
+     </option>
+<option title="скута (Курмањи)" value="sr_српски">
+      курдски (курманци)
+     </option>
+<option title="латиница" value="sr_српски">
+      латиница
+     </option>
+<option title="Лингала" value="sr_српски">
+      Лингала
+     </option>
+<option title="луксембуршки" value="sr_српски">
+      луксембуршки
+     </option>
+<option title="Маитхили" value="sr_српски">
+      Маитхили
+     </option>
+<option title="малтешки" value="sr_српски">
+      малтешки
+     </option>
+<option title="Меитеилон (Манипури)" value="sr_српски">
+      Меитеилон (Манипури)
+     </option>
+<option title="енглески" value="sr_српски">
+      енглески
+     </option>
+<option title="природним" value="sr_српски">
+      Маори
+     </option>
+<option title="холандски" value="sr_српски">
+      холандски
+     </option>
+<option title="Северни Сото" value="sr_српски">
+      Северни Сото
+     </option>
+<option title="одија (орија)" value="sr_српски">
+      одија (орија)
+     </option>
+<option title="Оромо" value="sr_српски">
+      Оромо
+     </option>
+<option title="Узбек" value="sr_српски">
+      Узбек
+     </option>
+<option title="португалски" value="sr_српски">
+      португалски
+     </option>
+<option title="Куицхуа" value="sr_српски">
+      кечуа
+     </option>
+<option title="румунски" value="sr_српски">
+      ЕНГЛЕСКИ
+     </option>
+<option title="санскрит" value="sr_српски">
+      санскрит
+     </option>
+<option title="енглески" value="sr_српски">
+      енглески
+     </option>
+<option title="Албанац" value="sr_српски">
+      Албанац
+     </option>
+<option title="сомалијски" value="sr_српски">
+      сомалијски
+     </option>
+<option title="Тартарус" value="sr_српски">
+      татарски
+     </option>
+<option title="Тигриниа" value="sr_српски">
+      Тигриња
+     </option>
+<option title="Тсонга" value="sr_српски">
+      Тсонга
+     </option>
+<option title="Тви" value="sr_српски">
+      Тви
+     </option>
+<option title="Туркмен" value="sr_српски">
+      Турска
+     </option>
+<option title="турски" value="sr_српски">
+      турски
+     </option>
+<option title="Ујгурски" value="sr_српски">
+      Уигхур
+     </option>
+<option title="вијетнамски" value="sr_српски">
+      вијетнамски
+     </option>
+<option title="босански" value="sr_српски">
+      босански
+     </option>
+<option title="каталонски" value="sr_српски">
+      каталонски
+     </option>
+<option title="естонски" value="sr_српски">
+      естонски
+     </option>
+<option title="шпански" value="sr_српски">
+      шпански
+     </option>
+<option title="баскијски" value="sr_српски">
+      баскијски
+     </option>
+<option title="галицијски" value="sr_српски">
+      галицијски
+     </option>
+<option title="хрватски" value="sr_српски">
+      хрватски
+     </option>
+<option title="летонски" value="sr_српски">
+      летонски
+     </option>
+<option title="литвански" value="sr_српски">
+      литвански
+     </option>
+<option title="мађарски" value="sr_српски">
+      мађарски
+     </option>
+<option title="малгашки" value="sr_српски">
+      малгашки
+     </option>
+<option title="норвешки" value="sr_српски">
+      норвешки
+     </option>
+<option title="пољски" value="sr_српски">
+      пољски
+     </option>
+<option title="словачки" value="sr_српски">
+      словачки
+     </option>
+<option title="словеначки" value="sr_српски">
+      словеначки
+     </option>
+<option title="фински" value="sr_српски">
+      фински
+     </option>
+<option title="шведски" value="sr_српски">
+      шведски
+     </option>
+<option title="исландски" value="sr_српски">
+      исландски
+     </option>
+<option title="чешки" value="sr_српски">
+      чешки
+     </option>
+<option title="грчки" value="sr_српски">
+      грчки
+     </option>
+<option title="Bielorrusso" value="sr_српски">
+      белоруски
+     </option>
+<option title="монгол" value="sr_српски">
+      Монголија
+     </option>
+<option title="Тајић" value="sr_српски">
+      Тајик
+     </option>
+<option title="бугарски" value="sr_српски">
+      бугарски
+     </option>
+<option title="Киргистан" value="sr_српски">
+      киргиски
+     </option>
+<option title="македонски" value="sr_српски">
+      македонски
+     </option>
+<option title="руссо" value="sr_српски">
+      руски
+     </option>
+<option title="српски" value="sr_српски">
+      српски
+     </option>
+<option title="украјински" value="sr_српски">
+      украјински
+     </option>
+<option title="казахстански" value="sr_српски">
+      казахстански
+     </option>
+<option title="Јерменски" value="sr_српски">
+      јерменски:
+     </option>
+<option title="Иидицхе" value="sr_српски">
+      јидиш
+     </option>
+<option title="хебрејски" value="sr_српски">
+      хебрејски
+     </option>
+<option title="хебрејски" value="sr_српски">
+      хебрејски
+     </option>
+<option title="урду" value="sr_српски">
+      Урду
+     </option>
+<option title="арапски" value="sr_српски">
+      арапски
+     </option>
+<option title="Синди" value="sr_српски">
+      Синдхи
+     </option>
+<option title="изгубљен" value="sr_српски">
+      фарси
+     </option>
+<option title="пасхто" value="sr_српски">
+      пашто
+     </option>
+<option title="непалски" value="sr_српски">
+      непалски
+     </option>
+<option title="Маратхи" value="sr_српски">
+      Маратхи
+     </option>
+<option title="бр" value="sr_српски">
+      Хинди
+     </option>
+<option title="бенгали" value="sr_српски">
+      Бангла
+     </option>
+<option title="португалски" value="sr_српски">
+      панџапски
+     </option>
+<option title="португалски" value="sr_српски">
+      гуџарати
+     </option>
+<option title="тамилски" value="sr_српски">
+      тамилски
+     </option>
+<option title="Зима" value="sr_српски">
+      телугу
+     </option>
+<option title="Цанарес" value="sr_српски">
+      канада
+     </option>
+<option title="Стратегија" value="sr_српски">
+      малајалам
+     </option>
+<option title="Синхалесе" value="sr_српски">
+      Синхала
+     </option>
+<option title="тајландски" value="sr_српски">
+      тајландски
+     </option>
+<option title="ТБ" value="sr_српски">
+      он
+     </option>
+<option title="Мјанмар (бурмански)" value="sr_српски">
+      Мјанмар
+     </option>
+<option title="грузијски" value="sr_српски">
+      грузијски
+     </option>
+<option title="амхарски" value="sr_српски">
+      амхарски
+     </option>
+<option title="кмерски" value="sr_српски">
+      кмерски
+     </option>
+<option title="кинески (традиционални)" value="sr_српски">
+      кинески (традиционални)
+     </option>
+<option title="кинески (поједностављени)" value="sr_српски">
+      кинески (поједностављени)
+     </option>
+<option title="кинески (поједностављени)" value="sr_српски">
+      кинески (поједностављени)
+     </option>
+<option title="јапански" value="sr_српски">
+      јапански
+     </option>
+<option title="Кореан" value="sr_српски">
+      кореан
+     </option>
+</select>
+</div>
+</nav>
+<div class="container mt-5">
+<div id="liveAlertPlaceholder">
+</div>
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-md-4">
+<h1 class="display-4">
+      Добродошли
+     </h1>
+<p class="lead">
+      Ово је страница са дугмадима са бројем кликова.
+     </p>
+<div class="mb-3">
+<label class="form-label" for="buttonCount">
+       Број дугмади:
+      </label>
+<input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+</div>
+</div>
+<div class="col-md-8 text-end">
+<div class="mt-3" id="shared_voting">
+</div>
+<div>
+<a class="btn btn-primary mx-2" id="new" onclick="novel()" title="здраво">
+       Ново
+      </a>
+<a class="btn btn-primary mx-2" id="shared" onclick="share()" title="здраво">
+       Схаре
+      </a>
+<a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="здраво">
+       Ставите лозинку
+      </a>
+<a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="здраво">
+       Опорави податке
+      </a>
+</div>
+<div class="mt-3" id="saveContainer">
+</div>
+</div>
+</div>
+   Капитал
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="confirmModalLabel">
+        Потврдите акцију
+       </h5>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body">
+       Да ли сте сигурни да желите да уклоните неке дугмад? Ова радња се не може опозвати. Дугмад ће бити уклоњена са краја.
+      </div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Откажи
+       </button>
+<button class="btn btn-primary" id="confirmRemove" type="button">
+        Потврди
+       </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3" id="buttonsContainer">
+</div>
+</div>
+<span id="alert" style="display:none;">
+   УРЛ анкете је успешно копиран.
+  </span>
+<span id="voting" style="display:none;">
+   Гласање
+  </span>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="/scripts/url.js">
+</script>
+<script src="/scripts/buttons/logo.js">
+</script>
+<script src="/scripts/menu.js">
+</script>
+<script src="/scripts/buttons/index.js">
+</script>
+</body>
+</html>

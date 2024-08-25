@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html lang="fy">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ca-pub-7895934852775650" name="google-adsense-account"/>
+<title>
+   3 Knoppen
+  </title>
+<meta content="Tool om knopklikken te tellen." name="description"/>
+<meta content="3 knoppen, klikken, telle, stream, ark, online, web" name="keywords"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<script async="" src="/scripts/lib.js">
+</script>
+<link href="/styles/lib.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid" id="menu">
+</div>
+<div class="m-2" id="select">
+<select class="form-select" onchange="changeLanguage(this.value)">
+<option value="fy_Frysk">
+</option>
+<option title="Hawaïaansk" value="fy_Frysk">
+      'Hawaïaansk
+     </option>
+<option title="Afrikaanske" value="fy_Frysk">
+      Afrikaanske
+     </option>
+<option title="Assamesen" value="fy_Frysk">
+      Assameesk
+     </option>
+<option title="Igbo" value="fy_Frysk">
+      Igbo taal
+     </option>
+<option title="Aymara" value="fy_Frysk">
+      Aymara
+     </option>
+<option title="Azerbeidzjan" value="fy_Frysk">
+      Azerbeidzjaanske taal
+     </option>
+<option title="steat" value="fy_Frysk">
+      Maleisk taal
+     </option>
+<option title="Se brûke it" value="fy_Frysk">
+      Se drage it
+     </option>
+<option title="Javaansk" value="fy_Frysk">
+      Javaanske taal
+     </option>
+<option title="Javaansk" value="fy_Frysk">
+      Javaanske taal
+     </option>
+<option title="Sudanese" value="fy_Frysk">
+      Sundanese taal
+     </option>
+<option title="Bhojpuri" value="fy_Frysk">
+      Bhojpuri
+     </option>
+<option title="Cebuano" value="fy_Frysk">
+      Cebuano
+     </option>
+<option title="Shona" value="fy_Frysk">
+      Ingelsk
+     </option>
+<option title="Sineesk" value="fy_Frysk">
+      Sineesk
+     </option>
+<option title="Ferrin" value="fy_Frysk">
+      Korsikaansk
+     </option>
+<option title="Welsh" value="fy_Frysk">
+      Welsh
+     </option>
+<option title="Deensk" value="fy_Frysk">
+      Deensk
+     </option>
+<option title="Dútsk" value="fy_Frysk">
+      Dútsk
+     </option>
+<option title="Divehi" value="fy_Frysk">
+      Divehi
+     </option>
+<option title="Dogri" value="fy_Frysk">
+      Dogri
+     </option>
+<option title="Ingelsk" value="fy_Frysk">
+      Ingelsk
+     </option>
+<option title="Esperanto" value="fy_Frysk">
+      Esperanto
+     </option>
+<option title="Fel" value="fy_Frysk">
+      Blêd
+     </option>
+<option title="Yoruba" value="fy_Frysk">
+      Yoruba taal
+     </option>
+<option title="samoano" value="fy_Frysk">
+      Samoan
+     </option>
+<option title="Filipino" value="fy_Frysk">
+      Filipino
+     </option>
+<option title="Filipino" value="fy_Frysk">
+      Filipino
+     </option>
+<option title="Frânsk" value="fy_Frysk">
+      Frânsk
+     </option>
+<option title="Frysk" value="fy_Frysk">
+      Frysk
+     </option>
+<option title="Iersk Gaelic" value="fy_Frysk">
+      Iersk
+     </option>
+<option title="Skientme" value="fy_Frysk">
+      Skientme
+     </option>
+<option title="Guaraní" value="fy_Frysk">
+      Guarani
+     </option>
+<option title="Skotsk Gaelic" value="fy_Frysk">
+      Gaelic
+     </option>
+<option title="Hausa" value="fy_Frysk">
+      Hausa taal
+     </option>
+<option title="Hmong" value="fy_Frysk">
+      Hmong
+     </option>
+<option title="Kinyarwanda" value="fy_Frysk">
+      Rwandan
+     </option>
+<option title="Binnenkant" value="fy_Frysk">
+      Binnenkant
+     </option>
+<option title="Yndonesysk" value="fy_Frysk">
+      Yndoneezje
+     </option>
+<option title="Xhosa" value="fy_Frysk">
+      Xhosa
+     </option>
+<option title="zulu" value="fy_Frysk">
+      Zulu
+     </option>
+<option title="Italiaansk" value="fy_Frysk">
+      Italiaansk
+     </option>
+<option title="Swahily" value="fy_Frysk">
+      Swahily
+     </option>
+<option title="Konkani" value="fy_Frysk">
+      Konkani
+     </option>
+<option title="Haïtiaansk Kreaolsk" value="fy_Frysk">
+      Haïtiaansk Kreaolsk
+     </option>
+<option title="Kryo" value="fy_Frysk">
+      Kryo
+     </option>
+<option title="Koerdysk (Sorani)" value="fy_Frysk">
+      Koerdysk (Sorani)
+     </option>
+<option title="Curd (Kurmanji)" value="fy_Frysk">
+      Koerdysk (Kurmanci)
+     </option>
+<option title="Latyn" value="fy_Frysk">
+      Latyn
+     </option>
+<option title="Lingala" value="fy_Frysk">
+      Lingala
+     </option>
+<option title="Lúksemboarchsk" value="fy_Frysk">
+      Lúksemboarchsk
+     </option>
+<option title="Maithili" value="fy_Frysk">
+      Maithili
+     </option>
+<option title="Malteesk" value="fy_Frysk">
+      Malteesk
+     </option>
+<option title="Meiteilon (Manipuri)" value="fy_Frysk">
+      Meiteilon (Manipuri)
+     </option>
+<option title="Ingelsk" value="fy_Frysk">
+      Ingelsk
+     </option>
+<option title="natuerlik" value="fy_Frysk">
+      Maori
+     </option>
+<option title="Nederlânsk" value="fy_Frysk">
+      Nederlânsk
+     </option>
+<option title="Noard-Sotho" value="fy_Frysk">
+      Noard-Sotho
+     </option>
+<option title="Odia (Oriya)" value="fy_Frysk">
+      Odia (Oriya)
+     </option>
+<option title="Oromo" value="fy_Frysk">
+      Oromo
+     </option>
+<option title="Uzbek" value="fy_Frysk">
+      Uzbek
+     </option>
+<option title="Portegeesk" value="fy_Frysk">
+      Portegeesk
+     </option>
+<option title="Quichua" value="fy_Frysk">
+      Quechua
+     </option>
+<option title="Roemeensk" value="fy_Frysk">
+      INGELSK
+     </option>
+<option title="Sanskryt" value="fy_Frysk">
+      Sanskryt
+     </option>
+<option title="Ingelsk" value="fy_Frysk">
+      Ingelsk
+     </option>
+<option title="Albaneesk" value="fy_Frysk">
+      Albaneesk
+     </option>
+<option title="Somalysk" value="fy_Frysk">
+      Somalysk
+     </option>
+<option title="Tartarus" value="fy_Frysk">
+      Tatar
+     </option>
+<option title="Tigrinia" value="fy_Frysk">
+      Tigrinya
+     </option>
+<option title="Tsonga" value="fy_Frysk">
+      Tsonga
+     </option>
+<option title="Twi" value="fy_Frysk">
+      Twi
+     </option>
+<option title="Turkmeensk" value="fy_Frysk">
+      Turkije
+     </option>
+<option title="Turksk" value="fy_Frysk">
+      Turksk
+     </option>
+<option title="Uighur" value="fy_Frysk">
+      Oejgoersk
+     </option>
+<option title="Fietnameesk" value="fy_Frysk">
+      Fietnameesk
+     </option>
+<option title="Bosnysk" value="fy_Frysk">
+      Bosnysk
+     </option>
+<option title="Katalaansk" value="fy_Frysk">
+      Katalaansk
+     </option>
+<option title="Estysk" value="fy_Frysk">
+      Estysk
+     </option>
+<option title="Spaansk" value="fy_Frysk">
+      Spaansk
+     </option>
+<option title="Baskysk" value="fy_Frysk">
+      Baskysk
+     </option>
+<option title="Galyskysk" value="fy_Frysk">
+      Galyskysk
+     </option>
+<option title="Kroatysk" value="fy_Frysk">
+      Kroatysk
+     </option>
+<option title="Letsk" value="fy_Frysk">
+      Letsk
+     </option>
+<option title="Litousk" value="fy_Frysk">
+      Litousk
+     </option>
+<option title="Hongaarsk" value="fy_Frysk">
+      Hongaarsk
+     </option>
+<option title="Malagasy" value="fy_Frysk">
+      Malagasy
+     </option>
+<option title="Noarsk" value="fy_Frysk">
+      Noarsk
+     </option>
+<option title="Poalsk" value="fy_Frysk">
+      Poalsk
+     </option>
+<option title="Slowaaksk" value="fy_Frysk">
+      Slowaaksk
+     </option>
+<option title="Sloveensk" value="fy_Frysk">
+      Sloveensk
+     </option>
+<option title="Finsk" value="fy_Frysk">
+      Finsk
+     </option>
+<option title="Sweedsk" value="fy_Frysk">
+      Sweedsk
+     </option>
+<option title="Yslânsk" value="fy_Frysk">
+      Yslânsk
+     </option>
+<option title="Tsjechysk" value="fy_Frysk">
+      Tsjechysk
+     </option>
+<option title="Gryksk" value="fy_Frysk">
+      Gryksk
+     </option>
+<option title="Wytrussysk" value="fy_Frysk">
+      Wytrussysk
+     </option>
+<option title="mongoalsk" value="fy_Frysk">
+      Mongoalje
+     </option>
+<option title="Tajic" value="fy_Frysk">
+      Tajik
+     </option>
+<option title="Bulgaarsk" value="fy_Frysk">
+      Bulgaarsk
+     </option>
+<option title="Kirgyzje" value="fy_Frysk">
+      Kirgizysk
+     </option>
+<option title="Masedoanysk" value="fy_Frysk">
+      Masedoanysk
+     </option>
+<option title="russo" value="fy_Frysk">
+      Russysk
+     </option>
+<option title="Servysk" value="fy_Frysk">
+      Servysk
+     </option>
+<option title="Oekraynsk" value="fy_Frysk">
+      Oekraynsk
+     </option>
+<option title="Kazachsk" value="fy_Frysk">
+      Kazachsk
+     </option>
+<option title="Armeensk" value="fy_Frysk">
+      Armeensk:
+     </option>
+<option title="Iidiche" value="fy_Frysk">
+      Jiddysk
+     </option>
+<option title="Hebrieuwsk" value="fy_Frysk">
+      Hebrieuwsk
+     </option>
+<option title="Hebrieuwsk" value="fy_Frysk">
+      Hebrieuwsk
+     </option>
+<option title="urdu" value="fy_Frysk">
+      Urdu
+     </option>
+<option title="Arabysk" value="fy_Frysk">
+      Arabysk
+     </option>
+<option title="Sindi" value="fy_Frysk">
+      Sindysk
+     </option>
+<option title="ferlern" value="fy_Frysk">
+      Farsi
+     </option>
+<option title="Pashtu" value="fy_Frysk">
+      Pashtu
+     </option>
+<option title="Nepalese" value="fy_Frysk">
+      Nepaleesk
+     </option>
+<option title="Maratysk" value="fy_Frysk">
+      Maratysk
+     </option>
+<option title="Nee" value="fy_Frysk">
+      Hindoestaansk
+     </option>
+<option title="Bengaalsk" value="fy_Frysk">
+      Bangla
+     </option>
+<option title="Portegeesk" value="fy_Frysk">
+      Pûndjaabsk
+     </option>
+<option title="Portegeesk" value="fy_Frysk">
+      Gujaratysk
+     </option>
+<option title="Tamyl" value="fy_Frysk">
+      Tamyl
+     </option>
+<option title="Winter" value="fy_Frysk">
+      Telugu
+     </option>
+<option title="Canares" value="fy_Frysk">
+      Kannada
+     </option>
+<option title="Strategy" value="fy_Frysk">
+      Malayalam
+     </option>
+<option title="Sinhaleesk" value="fy_Frysk">
+      Sinhala
+     </option>
+<option title="Taisk" value="fy_Frysk">
+      Taisk
+     </option>
+<option title="TB" value="fy_Frysk">
+      hy
+     </option>
+<option title="Myanmar (Birmeesk)" value="fy_Frysk">
+      Birma
+     </option>
+<option title="Georgysk" value="fy_Frysk">
+      Georgysk
+     </option>
+<option title="Amhaarsk" value="fy_Frysk">
+      Amhaarsk
+     </option>
+<option title="Khmer" value="fy_Frysk">
+      Khmer
+     </option>
+<option title="Sineesk (tradisjoneel)" value="fy_Frysk">
+      Sineesk (tradisjoneel)
+     </option>
+<option title="Sineesk (ferfâldige)" value="fy_Frysk">
+      Sineesk (ferfâldige)
+     </option>
+<option title="Sineesk (ferfâldige)" value="fy_Frysk">
+      Sineesk (ferfâldige)
+     </option>
+<option title="Japansk" value="fy_Frysk">
+      Japansk
+     </option>
+<option title="Koreaansk" value="fy_Frysk">
+      Koreaansk
+     </option>
+</select>
+</div>
+</nav>
+<div class="container mt-5">
+<div id="liveAlertPlaceholder">
+</div>
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-md-4">
+<h1 class="display-4">
+      Wolkom
+     </h1>
+<p class="lead">
+      Dit is in side mei knoppen mei kliktellen.
+     </p>
+<div class="mb-3">
+<label class="form-label" for="buttonCount">
+       Oantal knoppen:
+      </label>
+<input class="form-control" id="buttonCount" min="0" oninput="createButtons()" type="number" value="0"/>
+</div>
+</div>
+<div class="col-md-8 text-end">
+<div class="mt-3" id="shared_voting">
+</div>
+<div>
+<a class="btn btn-primary mx-2" id="new" onclick="novel()" title="Hallo">
+       Nij
+      </a>
+<a class="btn btn-primary mx-2" id="shared" onclick="share()" title="Hallo">
+       Diele
+      </a>
+<a class="btn btn-primary mx-2" id="pass" onclick="pass()" title="Hallo">
+       Set Wachtwurd
+      </a>
+<a class="btn btn-primary mx-2" id="recover" onclick="recover()" title="Hallo">
+       Gegevens weromhelje
+      </a>
+</div>
+<div class="mt-3" id="saveContainer">
+</div>
+</div>
+</div>
+   Haadstêd
+   <div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade" id="confirmModal" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="confirmModalLabel">
+        Befêstigje aksje
+       </h5>
+<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button">
+</button>
+</div>
+<div class="modal-body">
+       Binne jo wis dat jo guon knoppen fuortsmite wolle? Dizze aksje kin net ûngedien makke wurde. De knoppen wurde fuorthelle út 'e ein.
+      </div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" id="cancelRemove" type="button">
+        Ofbrekke
+       </button>
+<button class="btn btn-primary" id="confirmRemove" type="button">
+        Befêstigje
+       </button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3" id="buttonsContainer">
+</div>
+</div>
+<span id="alert" style="display:none;">
+   Poll URL mei súkses kopiearre.
+  </span>
+<span id="voting" style="display:none;">
+   Stimme
+  </span>
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<script src="/scripts/url.js">
+</script>
+<script src="/scripts/buttons/logo.js">
+</script>
+<script src="/scripts/menu.js">
+</script>
+<script src="/scripts/buttons/index.js">
+</script>
+</body>
+</html>
