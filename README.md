@@ -1,5 +1,6 @@
 # Tools
 Site de ferramentas .
+Acompanhe o desenvolvimento no branch dev.
 
 # Tool One
 Gerador de Querys / Consultas para o SQLite
