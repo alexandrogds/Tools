@@ -29,7 +29,8 @@ def main():
     #     for lang in languages:
     #         if lang.language_code == code:
     #             texts += [lang.display_name]
-    with open('supported_languages.json', 'r', encoding='utf-8') as f: texts = json.loads(f.read())
+    path = os.path.join(os.path.dirname(__file__), '..', 'json', 'supported_languages.json')
+    with open(path, 'r', encoding='utf-8') as f: texts = json.loads(f.read())
     # with open('supported_languages.json', 'w', encoding='utf-8') as f: f.write(json.dumps(texts, ensure_ascii=False))
     # input('texts serializados, enter para continuar, comente a geração da variável texts e carregue ela do arquivo')
     options = []

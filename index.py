@@ -16,6 +16,7 @@ def get_db_connection():
 
 @app.route('/post', methods=['POST'])
 def vote():
+    
     data = request.get_json()
     user = data.get('user')
     voting = data.get('voting')

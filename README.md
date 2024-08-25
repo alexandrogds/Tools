@@ -19,7 +19,10 @@ chmod +x index.sh
 cd Tools
 python3 -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements.
+# quando instalar mais libs
+pip freeze > requirements.txt
+gunicorn -w 4 -b 0.0.0.0:8000 index:app
 ```
 
 # Dev Windows

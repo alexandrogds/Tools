@@ -47,3 +47,6 @@
     max-width: 250px;
     margin-left: auto; /* Alinha à direita */
 }
+.form-select {
+    width: 200px;
+}
