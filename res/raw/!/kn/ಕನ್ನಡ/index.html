@@ -15,425 +15,838 @@
 </script>
 <link href="/res/raw/dev_files/css/lib.css" rel="stylesheet"/>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<div class="container-fluid" id="menu">
-<a class="navbar-brand" href="http://localhost" title="Go to home page."><img alt="Website logo." class="img-fluid" src="/res/drawable/nodpi/logo.png"/></a></div>
-<div class="m-2" id="select">
-<select class="form-select" onchange="changeLanguage(this.value)">
-<option value="kn_ಕನ್ನಡ">
-</option>
-<option title="ಹವಾಯಿಯನ್" value="kn_ಕನ್ನಡ">
-      'ಹವಾಯಿಯನ್
-     </option>
-<option title="ಆಫ್ರಿಕನ್" value="kn_ಕನ್ನಡ">
-      ಆಫ್ರಿಕನ್
-     </option>
-<option title="ಅಸ್ಸಾಮಿಗಳು" value="kn_ಕನ್ನಡ">
-      ಅಸ್ಸಾಮಿ
-     </option>
-<option title="ಇಗ್ಬೊ" value="kn_ಕನ್ನಡ">
-      ಇಗ್ಬೊ ಭಾಷೆ
-     </option>
-<option title="ಅಯ್ಮಾರಾ" value="kn_ಕನ್ನಡ">
-      ಅಯ್ಮಾರಾ
-     </option>
-<option title="ಅಜೆರ್ಬೈಜಾನೋ" value="kn_ಕನ್ನಡ">
-      ಅಜೆರ್ಬೈಜಾನಿ ಭಾಷೆ
-     </option>
-<option title="ರಾಜ್ಯ" value="kn_ಕನ್ನಡ">
-      ಮಲಯ ಭಾಷೆ
-     </option>
-<option title="ಅವರು ಅದನ್ನು ಬಳಸುತ್ತಾರೆ" value="kn_ಕನ್ನಡ">
-      ಅವರು ಅದನ್ನು ಧರಿಸುತ್ತಾರೆ
-     </option>
-<option title="ಜಾವಾನೀಸ್" value="kn_ಕನ್ನಡ">
-      ಜಾವಾನೀಸ್ ಭಾಷೆ
-     </option>
-<option title="ಜಾವಾನೀಸ್" value="kn_ಕನ್ನಡ">
-      ಜಾವಾನೀಸ್ ಭಾಷೆ
-     </option>
-<option title="ಸುಡಾನೀಸ್" value="kn_ಕನ್ನಡ">
-      ಸುಂದನೀಸ್ ಭಾಷೆ
-     </option>
-<option title="ಭೋಜ್‌ಪುರಿ" value="kn_ಕನ್ನಡ">
-      ಭೋಜ್‌ಪುರಿ
-     </option>
-<option title="ಸೆಬುವಾನೋ" value="kn_ಕನ್ನಡ">
-      ಸೆಬುವಾನೋ
-     </option>
-<option title="ಶೋನಾ" value="kn_ಕನ್ನಡ">
-      ಇಂಗ್ಲೀಷ್
-     </option>
-<option title="ಚೈನೀಸ್" value="kn_ಕನ್ನಡ">
-      ಚೈನೀಸ್
-     </option>
-<option title="ಕೋರ್ಸ್" value="kn_ಕನ್ನಡ">
-      ಕಾರ್ಸಿಕನ್
-     </option>
-<option title="ವೆಲ್ಷ್" value="kn_ಕನ್ನಡ">
-      ವೆಲ್ಷ್
-     </option>
-<option title="ಡ್ಯಾನಿಶ್" value="kn_ಕನ್ನಡ">
-      ಡ್ಯಾನಿಶ್
-     </option>
-<option title="ಜರ್ಮನ್" value="kn_ಕನ್ನಡ">
-      ಜರ್ಮನ್
-     </option>
-<option title="ದಿವೇಹಿ" value="kn_ಕನ್ನಡ">
-      ದಿವೇಹಿ
-     </option>
-<option title="ಡೋಗ್ರಿ" value="kn_ಕನ್ನಡ">
-      ಡೋಗ್ರಿ
-     </option>
-<option title="ಇಂಗ್ಲೀಷ್" value="kn_ಕನ್ನಡ">
-      ಇಂಗ್ಲೀಷ್
-     </option>
-<option title="ಎಸ್ಪೆರಾಂಟೊ" value="kn_ಕನ್ನಡ">
-      ಎಸ್ಪೆರಾಂಟೊ
-     </option>
-<option title="ಹಾಳೆ" value="kn_ಕನ್ನಡ">
-      ಎಲೆ
-     </option>
-<option title="ಯೊರುಬಾ" value="kn_ಕನ್ನಡ">
-      ಯೊರುಬಾ ಭಾಷೆ
-     </option>
-<option title="ಸಮೋವಾನೋ" value="kn_ಕನ್ನಡ">
-      ಸಮೋವನ್
-     </option>
-<option title="ಫಿಲಿಪಿನೋ" value="kn_ಕನ್ನಡ">
-      ಫಿಲಿಪಿನೋ
-     </option>
-<option title="ಫಿಲಿಪಿನೋ" value="kn_ಕನ್ನಡ">
-      ಫಿಲಿಪಿನೋ
-     </option>
-<option title="ಫ್ರೆಂಚ್" value="kn_ಕನ್ನಡ">
-      ಫ್ರೆಂಚ್
-     </option>
-<option title="ಫ್ರಿಸಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಫ್ರಿಸಿಯನ್
-     </option>
-<option title="ಐರಿಶ್ ಗೇಲಿಕ್" value="kn_ಕನ್ನಡ">
-      ಐರಿಶ್
-     </option>
-<option title="ಸೌಂದರ್ಯ" value="kn_ಕನ್ನಡ">
-      ಸೌಂದರ್ಯ
-     </option>
-<option title="ಗ್ಯಾರನಿ" value="kn_ಕನ್ನಡ">
-      ಗೌರಾನಿ
-     </option>
-<option title="ಸ್ಕಾಟಿಷ್ ಗೇಲಿಕ್" value="kn_ಕನ್ನಡ">
-      ಗೇಲಿಕ್
-     </option>
-<option title="ಹೌಸಾ" value="kn_ಕನ್ನಡ">
-      ಹೌಸಾ ಭಾಷೆ
-     </option>
-<option title="ಹ್ಮಾಂಗ್" value="kn_ಕನ್ನಡ">
-      ಹ್ಮಾಂಗ್
-     </option>
-<option title="ಕಿನ್ಯಾರವಾಂಡ" value="kn_ಕನ್ನಡ">
-      ರವಾಂಡನ್
-     </option>
-<option title="ಒಳಗೆ" value="kn_ಕನ್ನಡ">
-      ಒಳಗೆ
-     </option>
-<option title="ಇಂಡೋನೇಷಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಇಂಡೋನೇಷ್ಯಾ
-     </option>
-<option title="ಷೋಸಾ" value="kn_ಕನ್ನಡ">
-      ಷೋಸಾ
-     </option>
-<option title="ಜುಲು" value="kn_ಕನ್ನಡ">
-      ಜುಲು
-     </option>
-<option title="ಇಟಾಲಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಇಟಾಲಿಯನ್
-     </option>
-<option title="ಸ್ವಾಹಿಲಿ" value="kn_ಕನ್ನಡ">
-      ಸ್ವಾಹಿಲಿ
-     </option>
-<option title="ಕೊಂಕಣಿ" value="kn_ಕನ್ನಡ">
-      ಕೊಂಕಣಿ
-     </option>
-<option title="ಹೈಟಿ ಕ್ರಿಯೋಲ್" value="kn_ಕನ್ನಡ">
-      ಹೈಟಿ ಕ್ರಿಯೋಲ್
-     </option>
-<option title="ಕ್ರಿಯೋ" value="kn_ಕನ್ನಡ">
-      ಕ್ರಿಯೋ
-     </option>
-<option title="ಕುರ್ದಿಶ್ (ಸೊರಾನಿ)" value="kn_ಕನ್ನಡ">
-      ಕುರ್ದಿಶ್ (ಸೊರಾನಿ)
-     </option>
-<option title="ಮೊಸರು (ಕುರ್ಮಾಂಜಿ)" value="kn_ಕನ್ನಡ">
-      ಕುರ್ದಿಶ್ (ಕುರ್ಮಾನ್ಸಿ)
-     </option>
-<option title="ಲ್ಯಾಟಿನ್" value="kn_ಕನ್ನಡ">
-      ಲ್ಯಾಟಿನ್
-     </option>
-<option title="ಲಿಂಗಾಳ" value="kn_ಕನ್ನಡ">
-      ಲಿಂಗಾಳ
-     </option>
-<option title="ಲಕ್ಸೆಂಬರ್ಗ್" value="kn_ಕನ್ನಡ">
-      ಲಕ್ಸೆಂಬರ್ಗ್
-     </option>
-<option title="ಮೈಥಿಲಿ" value="kn_ಕನ್ನಡ">
-      ಮೈಥಿಲಿ
-     </option>
-<option title="ಮಾಲ್ಟೀಸ್" value="kn_ಕನ್ನಡ">
-      ಮಾಲ್ಟೀಸ್
-     </option>
-<option title="ಮೈಟಿಲೋನ್ (ಮಣಿಪುರಿ)" value="kn_ಕನ್ನಡ">
-      ಮೈಟಿಲೋನ್ (ಮಣಿಪುರಿ)
-     </option>
-<option title="ಇಂಗ್ಲೀಷ್" value="kn_ಕನ್ನಡ">
-      ಇಂಗ್ಲೀಷ್
-     </option>
-<option title="ನೈಸರ್ಗಿಕ" value="kn_ಕನ್ನಡ">
-      ಮಾವೋರಿ
-     </option>
-<option title="ಡಚ್" value="kn_ಕನ್ನಡ">
-      ಡಚ್
-     </option>
-<option title="ಉತ್ತರ ಸೋಥೋ" value="kn_ಕನ್ನಡ">
-      ಉತ್ತರ ಸೋಥೋ
-     </option>
-<option title="ಒಡಿಯಾ (ಒರಿಯಾ)" value="kn_ಕನ್ನಡ">
-      ಒಡಿಯಾ (ಒರಿಯಾ)
-     </option>
-<option title="ಒರೊಮೊ" value="kn_ಕನ್ನಡ">
-      ಒರೊಮೊ
-     </option>
-<option title="ಉಜ್ಬೆಕ್" value="kn_ಕನ್ನಡ">
-      ಉಜ್ಬೆಕ್
-     </option>
-<option title="ಪೋರ್ಚುಗೀಸ್" value="kn_ಕನ್ನಡ">
-      ಪೋರ್ಚುಗೀಸ್
-     </option>
-<option title="ಕ್ವಿಚುವಾ" value="kn_ಕನ್ನಡ">
-      ಕ್ವೆಚುವಾ
-     </option>
-<option title="ರೊಮೇನಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಇಂಗ್ಲೀಷ್
-     </option>
-<option title="ಸಂಸ್ಕೃತ" value="kn_ಕನ್ನಡ">
-      ಸಂಸ್ಕೃತ
-     </option>
-<option title="ಇಂಗ್ಲೀಷ್" value="kn_ಕನ್ನಡ">
-      ಇಂಗ್ಲೀಷ್
-     </option>
-<option title="ಅಲ್ಬೇನಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಅಲ್ಬೇನಿಯನ್
-     </option>
-<option title="ಸೊಮಾಲಿ" value="kn_ಕನ್ನಡ">
-      ಸೊಮಾಲಿ
-     </option>
-<option title="ಟಾರ್ಟಾರಸ್" value="kn_ಕನ್ನಡ">
-      ಟಾಟರ್
-     </option>
-<option title="ಟೈಗ್ರಿನಿಯಾ" value="kn_ಕನ್ನಡ">
-      ಟಿಗ್ರಿನ್ಯಾ
-     </option>
-<option title="ಸೋಂಗಾ" value="kn_ಕನ್ನಡ">
-      ಸೋಂಗಾ
-     </option>
-<option title="ಟ್ವಿ" value="kn_ಕನ್ನಡ">
-      ಟ್ವಿ
-     </option>
-<option title="ತುರ್ಕಮೆನ್" value="kn_ಕನ್ನಡ">
-      ಟರ್ಕಿ
-     </option>
-<option title="ಟರ್ಕಿಶ್" value="kn_ಕನ್ನಡ">
-      ಟರ್ಕಿಶ್
-     </option>
-<option title="ಉಯಿಘರ್" value="kn_ಕನ್ನಡ">
-      ಉಯ್ಘರ್
-     </option>
-<option title="ವಿಯೆಟ್ನಾಮೀಸ್" value="kn_ಕನ್ನಡ">
-      ವಿಯೆಟ್ನಾಮೀಸ್
-     </option>
-<option title="ಬೋಸ್ನಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಬೋಸ್ನಿಯನ್
-     </option>
-<option title="ಕೆಟಲಾನ್" value="kn_ಕನ್ನಡ">
-      ಕೆಟಲಾನ್
-     </option>
-<option title="ಎಸ್ಟೋನಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಎಸ್ಟೋನಿಯನ್
-     </option>
-<option title="ಸ್ಪ್ಯಾನಿಷ್" value="kn_ಕನ್ನಡ">
-      ಸ್ಪ್ಯಾನಿಷ್
-     </option>
-<option title="ಬಾಸ್ಕ್" value="kn_ಕನ್ನಡ">
-      ಬಾಸ್ಕ್
-     </option>
-<option title="ಗ್ಯಾಲಿಷಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಗ್ಯಾಲಿಷಿಯನ್
-     </option>
-<option title="ಕ್ರೊಯೇಷಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಕ್ರೊಯೇಷಿಯನ್
-     </option>
-<option title="ಲಟ್ವಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಲಟ್ವಿಯನ್
-     </option>
-<option title="ಲಿಥುವೇನಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಲಿಥುವೇನಿಯನ್
-     </option>
-<option title="ಹಂಗೇರಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಹಂಗೇರಿಯನ್
-     </option>
-<option title="ಮಲಗಾಸಿ" value="kn_ಕನ್ನಡ">
-      ಮಲಗಾಸಿ
-     </option>
-<option title="ನಾರ್ವೇಜಿಯನ್" value="kn_ಕನ್ನಡ">
-      ನಾರ್ವೇಜಿಯನ್
-     </option>
-<option title="ಪೋಲಿಷ್" value="kn_ಕನ್ನಡ">
-      ಪೋಲಿಷ್
-     </option>
-<option title="ಸ್ಲೋವಾಕ್" value="kn_ಕನ್ನಡ">
-      ಸ್ಲೋವಾಕ್
-     </option>
-<option title="ಸ್ಲೊವೇನಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಸ್ಲೊವೇನಿಯನ್
-     </option>
-<option title="ಫಿನ್ನಿಶ್" value="kn_ಕನ್ನಡ">
-      ಫಿನ್ನಿಶ್
-     </option>
-<option title="ಸ್ವೀಡಿಷ್" value="kn_ಕನ್ನಡ">
-      ಸ್ವೀಡಿಷ್
-     </option>
-<option title="ಐಸ್ಲ್ಯಾಂಡಿಕ್" value="kn_ಕನ್ನಡ">
-      ಐಸ್ಲ್ಯಾಂಡಿಕ್
-     </option>
-<option title="ಜೆಕ್" value="kn_ಕನ್ನಡ">
-      ಜೆಕ್
-     </option>
-<option title="ಗ್ರೀಕ್" value="kn_ಕನ್ನಡ">
-      ಗ್ರೀಕ್
-     </option>
-<option title="ಬೆಲರೂಸಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಬೆಲರೂಸಿಯನ್
-     </option>
-<option title="ಮಂಗೋಲ್" value="kn_ಕನ್ನಡ">
-      ಮಂಗೋಲಿಯಾ
-     </option>
-<option title="ತಾಜಿಕ್" value="kn_ಕನ್ನಡ">
-      ತಾಜಿಕ್
-     </option>
-<option title="ಬಲ್ಗೇರಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಬಲ್ಗೇರಿಯನ್
-     </option>
-<option title="ಕಿರ್ಗಿಸ್ತಾನ್" value="kn_ಕನ್ನಡ">
-      ಕಿರ್ಗಿಜ್
-     </option>
-<option title="ಮೆಸಿಡೋನಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಮೆಸಿಡೋನಿಯನ್
-     </option>
-<option title="ರುಸ್ಸೋ" value="kn_ಕನ್ನಡ">
-      ರಷ್ಯನ್
-     </option>
-<option title="ಸರ್ಬಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಸರ್ಬಿಯನ್
-     </option>
-<option title="ಉಕ್ರೇನಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಉಕ್ರೇನಿಯನ್
-     </option>
-<option title="ಕಝಕ್" value="kn_ಕನ್ನಡ">
-      ಕಝಕ್
-     </option>
-<option title="ಅರ್ಮೇನಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಅರ್ಮೇನಿಯನ್:
-     </option>
-<option title="ಇಡಿಚೆ" value="kn_ಕನ್ನಡ">
-      ಯಿಡ್ಡಿಷ್
-     </option>
-<option title="ಹೀಬ್ರೂ" value="kn_ಕನ್ನಡ">
-      ಹೀಬ್ರೂ
-     </option>
-<option title="ಹೀಬ್ರೂ" value="kn_ಕನ್ನಡ">
-      ಹೀಬ್ರೂ
-     </option>
-<option title="ಉರ್ದು" value="kn_ಕನ್ನಡ">
-      ಉರ್ದು
-     </option>
-<option title="ಅರೇಬಿಕ್" value="kn_ಕನ್ನಡ">
-      ಅರೇಬಿಕ್
-     </option>
-<option title="ಸಿಂದಿ" value="kn_ಕನ್ನಡ">
-      ಸಿಂಧಿ
-     </option>
-<option title="ಸೋತರು" value="kn_ಕನ್ನಡ">
-      ಫಾರ್ಸಿ
-     </option>
-<option title="ಪಾಷ್ಟೋ" value="kn_ಕನ್ನಡ">
-      ಪಾಷ್ಟೋ
-     </option>
-<option title="ನೇಪಾಳದವರು" value="kn_ಕನ್ನಡ">
-      ನೇಪಾಳಿ
-     </option>
-<option title="ಮರಾಠಿ" value="kn_ಕನ್ನಡ">
-      ಮರಾಠಿ
-     </option>
-<option title="ಸಂ" value="kn_ಕನ್ನಡ">
-      ಹಿಂದಿ
-     </option>
-<option title="ಬೆಂಗಾಲಿ" value="kn_ಕನ್ನಡ">
-      ಬಾಂಗ್ಲಾ
-     </option>
-<option title="ಪೋರ್ಚುಗೀಸ್" value="kn_ಕನ್ನಡ">
-      ಪಂಜಾಬಿ
-     </option>
-<option title="ಪೋರ್ಚುಗೀಸ್" value="kn_ಕನ್ನಡ">
-      ಗುಜರಾತಿ
-     </option>
-<option title="ತಮಿಳು" value="kn_ಕನ್ನಡ">
-      ತಮಿಳು
-     </option>
-<option title="ಚಳಿಗಾಲ" value="kn_ಕನ್ನಡ">
-      ತೆಲುಗು
-     </option>
-<option title="ಕೆನರ್ಸ್" value="kn_ಕನ್ನಡ">
-      ಕನ್ನಡ
-     </option>
-<option title="ತಂತ್ರ" value="kn_ಕನ್ನಡ">
-      ಮಲಯಾಳಂ
-     </option>
-<option title="ಸಿಂಹಳೀಯರು" value="kn_ಕನ್ನಡ">
-      ಸಿಂಹಳೀಯ
-     </option>
-<option title="ಥಾಯ್" value="kn_ಕನ್ನಡ">
-      ಥಾಯ್
-     </option>
-<option title="ಟಿಬಿ" value="kn_ಕನ್ನಡ">
-      ಅವನು
-     </option>
-<option title="ಮ್ಯಾನ್ಮಾರ್ (ಬರ್ಮೀಸ್)" value="kn_ಕನ್ನಡ">
-      ಮ್ಯಾನ್ಮಾರ್
-     </option>
-<option title="ಜಾರ್ಜಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಜಾರ್ಜಿಯನ್
-     </option>
-<option title="ಅಂಹರಿಕ್" value="kn_ಕನ್ನಡ">
-      ಅಂಹರಿಕ್
-     </option>
-<option title="ಖಮೇರ್" value="kn_ಕನ್ನಡ">
-      ಖಮೇರ್
-     </option>
-<option title="ಚೈನೀಸ್ (ಸಾಂಪ್ರದಾಯಿಕ)" value="kn_ಕನ್ನಡ">
-      ಚೈನೀಸ್ (ಸಾಂಪ್ರದಾಯಿಕ)
-     </option>
-<option title="ಚೈನೀಸ್ (ಸರಳೀಕೃತ)" value="kn_ಕನ್ನಡ">
-      ಚೈನೀಸ್ (ಸರಳೀಕೃತ)
-     </option>
-<option title="ಚೈನೀಸ್ (ಸರಳೀಕೃತ)" value="kn_ಕನ್ನಡ">
-      ಚೈನೀಸ್ (ಸರಳೀಕೃತ)
-     </option>
-<option title="ಜಪಾನೀಸ್" value="kn_ಕನ್ನಡ">
-      ಜಪಾನೀಸ್
-     </option>
-<option title="ಕೊರಿಯನ್" value="kn_ಕನ್ನಡ">
-      ಕೊರಿಯನ್
-     </option>
-</select>
-</div>
+<div class="container-fluid" id="menu"><div><a class="navbar-brand">
+<img class="img-fluid" src="/res/drawable/nodpi/logo.png"/>
+</a></div><div><a class="navbar-brand">
+<img class="img-fluid" src="\res\drawable\nodpi\3-buttons-e.png"/>
+</a></div></div>
+<div class="container" id="select"><div class="row"><div class="col"><select class="form-select" onclick="changeLanguageIndex(this.value)">
+<option>ಮುಖ್ಯ ಪುಟ</option>
+<option title="ʻŌlelo Hawaiʻi" value="haw_'ōlelo hawaiʻi_pihi">
+          'Ōlelo Hawaiʻi
+         </option>
+<option title="Afrikaans" value="af_afrikaans_knoppies">
+          Afrikaans
+         </option>
+<option title="অসমীয়া" value="as_assamese_বুটামসমূহ">
+          Assamese
+         </option>
+<option title="Igbo" value="ig_asụsụ igbo_bọtịnụ">
+          Asụsụ Igbo
+         </option>
+<option title="Aymara" value="ay_aymara_ukatsti ukax mä juk’a pachanakanwa">
+          Aymara
+         </option>
+<option title="Azərbaycan" value="az_azərbaycan dili_düymələri">
+          Azərbaycan dili
+         </option>
+<option title="Melayu" value="ms_bahasa melayu_butang">
+          Bahasa Melayu
+         </option>
+<option title="U b'a don" value="bm_bambara_butɔni minnu bɛ yen">
+          Bambara
+         </option>
+<option title="basa jawa" value="jw_basa jawa_tombol">
+          Basa Jawa
+         </option>
+<option title="basa jawa" value="jv_basa jawa_tombol">
+          Basa Jawa
+         </option>
+<option title="Sundanese" value="su_basa sunda_kancing">
+          Basa Sunda
+         </option>
+<option title="भोजपुरी" value="bho_bhojpuri_बटन के इस्तेमाल कइल जाला">
+          Bhojpuri
+         </option>
+<option title="Cebuano" value="ceb_cebuano_butones">
+          Cebuano
+         </option>
+<option title="Shona" value="sn_chishona_mabhatani">
+          ChiShona
+         </option>
+<option title="Chichewa" value="ny_chichewa_mabatani">
+          Chichewa
+         </option>
+<option title="Corsu" value="co_corsu_i buttoni">
+          Corsu
+         </option>
+<option title="Cymraeg" value="cy_cymraeg_botymau">
+          Cymraeg
+         </option>
+<option title="dansk" value="da_dansk_knapper">
+          Dansk
+         </option>
+<option title="Deutsch" value="de_deutsch_Tasten">
+          Deutsch
+         </option>
+<option title="ދިވެހި..." value="dv_divehi_ބަޓަންތަކެވެ">
+          Divehi
+         </option>
+<option title="डोगरी" value="doi_dogri_बटन दे">
+          Dogri
+         </option>
+<option title="English" value="en_english_buttons">
+          English
+         </option>
+<option title="Esperanto" value="eo_esperanto_butonoj">
+          Esperanto
+         </option>
+<option title="Aŋgba" value="ee_ewe_ƒe abɔtawo">
+          Ewe
+         </option>
+<option title="Yoruba" value="yo_èdè yorùbá_awọn bọtini">
+          Èdè Yorùbá
+         </option>
+<option title="Samoa" value="sm_faʻa-samoa_faamau">
+          Faʻa-Samoa
+         </option>
+<option title="Filipino" value="tl_filipino_mga pindutan">
+          Filipino
+         </option>
+<option title="Filipino" value="fil_filipino_mga pindutan">
+          Filipino
+         </option>
+<option title="Français" value="fr_français_boutons">
+          Français
+         </option>
+<option title="Frysk" value="fy_frysk_knoppen">
+          Frysk
+         </option>
+<option title="Irish Gaelic" value="ga_gaeilge_cnaipí">
+          Gaeilge
+         </option>
+<option title="Obulungi" value="lg_ganda_obutambi obuyitibwa buttons">
+          Ganda
+         </option>
+<option title="guarani" value="gn_guarani_umi botón rehegua">
+          Guarani
+         </option>
+<option title="Gàidhlig na h-Alba" value="gd_gàidhlig_putanan">
+          Gàidhlig
+         </option>
+<option title="Hausa" value="ha_harshen hausa_maɓalli">
+          Harshen Hausa
+         </option>
+<option title="Hmong" value="hmn_hmong_khawm">
+          Hmong
+         </option>
+<option title="Kinyarwanda" value="rw_ikinyarwanda_Utubuto">
+          Ikinyarwanda
+         </option>
+<option title="Uneg" value="ilo_iloko_dagiti buton">
+          Iloko
+         </option>
+<option title="Indonesia" value="id_indonesia_tombol">
+          Indonesia
+         </option>
+<option title="isiXhosa" value="xh_isixhosa_amaqhosha">
+          IsiXhosa
+         </option>
+<option title="Zulu" value="zu_isizulu_izinkinobho">
+          IsiZulu
+         </option>
+<option title="Italiano" value="it_italiano_pulsanti">
+          Italiano
+         </option>
+<option title="kiswahili" value="sw_kiswahili_vifungo">
+          Kiswahili
+         </option>
+<option title="कोंकणी" value="gom_konkani_बटणांचो वापर करतात">
+          Konkani
+         </option>
+<option title="Kreyòl ayisyen" value="ht_kreyòl ayisyen_bouton">
+          Kreyòl Ayisyen
+         </option>
+<option title="Kryo we de na di wɔl" value="kri_krio_bɔtin dɛn">
+          Krio
+         </option>
+<option title="کوردی (سۆرانی)" value="ckb_kurdish (sorani)_دوگمەکان">
+          Kurdish (Sorani)
+         </option>
+<option title="Kurdî (Kurmancî)" value="ku_kurdî (kurmancî)_bişkokên">
+          Kurdî (Kurmancî)
+         </option>
+<option title="Latinus" value="la_latin_bullarum">
+          Latin
+         </option>
+<option title="Lingala" value="ln_lingala_ba boutons na ba boutons">
+          Lingala
+         </option>
+<option title="lëtzebuergesch" value="lb_lëtzebuergesch_Knäppercher">
+          Lëtzebuergesch
+         </option>
+<option title="Maithili" value="mai_maithili_बटन">
+          Maithili
+         </option>
+<option title="Malti" value="mt_malti_buttuni">
+          Malti
+         </option>
+<option title="ꯃꯦꯏꯇꯦꯏꯂꯣꯟ (ꯃꯅꯤꯄꯨꯔꯤ) ꯴." value="mni-Mtei_meiteilon (manipuri)_ꯕꯇꯅꯁꯤꯡ ꯌꯥꯑꯣꯔꯤ꯫">
+          Meiteilon (Manipuri)
+         </option>
+<option title="Mizo" value="lus_mizo_buttons te a awm">
+          Mizo
+         </option>
+<option title="Maori" value="mi_māori_pātene">
+          Māori
+         </option>
+<option title="Nederlands" value="nl_nederlands_knoppen">
+          Nederlands
+         </option>
+<option title="Sesotho sa Leboa" value="nso_northern sotho_dikonopo dikonopo">
+          Northern Sotho
+         </option>
+<option title="ଓଡିଆ (ଓଡିଆ)" value="or_odia (oriya)_ବଟନ୍">
+          Odia (Oriya)
+         </option>
+<option title="Oromo" value="om_oromo_buttooni">
+          Oromo
+         </option>
+<option title="o'zbek" value="uz_o‘zbek_tugmalar">
+          O‘zbek
+         </option>
+<option title="Português" value="pt_português_botões">
+          Português
+         </option>
+<option title="Runasimi" value="qu_quechua_botones nisqawan">
+          Quechua
+         </option>
+<option title="română" value="ro_română_butoane">
+          Română
+         </option>
+<option title="संस्कृत" value="sa_sanskrit_बटन्स् इति">
+          Sanskrit
+         </option>
+<option title="Senyesemane" value="st_sesotho_likonopo">
+          Sesotho
+         </option>
+<option title="shqiptare" value="sq_shqip_butonat">
+          Shqip
+         </option>
+<option title="Somali" value="so_soomaali_badhamada">
+          Soomaali
+         </option>
+<option title="Татар" value="tt_tatar_төймәләр">
+          Tatar
+         </option>
+<option title="ትግሪኛ" value="ti_tigrinya_መጠወቒታት">
+          Tigrinya
+         </option>
+<option title="Tsonga" value="ts_tsonga_swikomba-nkarhi">
+          Tsonga
+         </option>
+<option title="Twi" value="ak_twi_buttons a wɔde hyɛ mu">
+          Twi
+         </option>
+<option title="Türkmenler" value="tk_türkmençe_düwmeleri">
+          Türkmençe
+         </option>
+<option title="Türkçe" value="tr_türkçe_düğmeler">
+          Türkçe
+         </option>
+<option title="ئۇيغۇر" value="ug_uyghur_كۇنۇپكىلار">
+          Uyghur
+         </option>
+<option title="Tiếng Việt" value="vi_việt_nút">
+          Việt
+         </option>
+<option title="bosanski" value="bs_bosanski_dugmad">
+          bosanski
+         </option>
+<option title="català" value="ca_català_botons">
+          català
+         </option>
+<option title="eesti keel" value="et_eesti_nupud">
+          eesti
+         </option>
+<option title="Español" value="es_español_botones">
+          español
+         </option>
+<option title="euskara" value="eu_euskara_botoiak">
+          euskara
+         </option>
+<option title="galego" value="gl_galego_botóns">
+          galego
+         </option>
+<option title="hrvatski" value="hr_hrvatski_gumbi">
+          hrvatski
+         </option>
+<option title="latviski" value="lv_latviešu_pogas">
+          latviešu
+         </option>
+<option title="lietuvių" value="lt_lietuvių_mygtukai">
+          lietuvių
+         </option>
+<option title="magyar" value="hu_magyar_gombokat">
+          magyar
+         </option>
+<option title="Malagasy" value="mg_malagasy_bokotra">
+          malagasy
+         </option>
+<option title="norsk" value="no_norsk_knapper">
+          norsk
+         </option>
+<option title="Polski" value="pl_polski_pikolak">
+          polski
+         </option>
+<option title="slovenský" value="sk_slovenčina_tlačidlá">
+          slovenčina
+         </option>
+<option title="slovenski" value="sl_slovenščina_gumbi">
+          slovenščina
+         </option>
+<option title="suomalainen" value="fi_suomi_painikkeet">
+          suomi
+         </option>
+<option title="svenska" value="sv_svenska_knappar">
+          svenska
+         </option>
+<option title="íslenskur" value="is_íslenska_hnappa">
+          íslenska
+         </option>
+<option title="čeština" value="cs_čeština_tlačítka">
+          čeština
+         </option>
+<option title="ελληνικά" value="el_ελληνικά_κουμπιά">
+          Ελληνικά
+         </option>
+<option title="беларускі" value="be_беларуская_кнопкі">
+          Беларуская
+         </option>
+<option title="Монгол" value="mn_монгол_товчлуурууд">
+          Монгол
+         </option>
+<option title="тоҷикӣ" value="tg_тоҷикӣ_тугмаҳо">
+          Тоҷикӣ
+         </option>
+<option title="български" value="bg_български_бутони">
+          български
+         </option>
+<option title="Кыргызча" value="ky_кыргызча_баскычтар">
+          кыргызча
+         </option>
+<option title="македонски" value="mk_македонски_копчиња">
+          македонски
+         </option>
+<option title="Русский" value="ru_русский_кнопки">
+          русский
+         </option>
+<option title="српски" value="sr_српски_дугмад">
+          српски
+         </option>
+<option title="українська" value="uk_українська_кнопки">
+          українська
+         </option>
+<option title="қазақ" value="kk_қазақ_түймелері">
+          қазақ
+         </option>
+<option title="հայկ" value="hy_հայերեն_կոճակներ">
+          հայերեն
+         </option>
+<option title="יידיש" value="yi_יידיש_קנעפּלעך">
+          יידיש
+         </option>
+<option title="עִברִית" value="iw_עברית_כפתורים">
+          עברית
+         </option>
+<option title="עִברִית" value="he_עברית_כפתורים">
+          עברית
+         </option>
+<option title="اردو" value="ur_اردو_بٹن">
+          اردو
+         </option>
+<option title="عربي" value="ar_العربية_أزرار">
+          العربية
+         </option>
+<option title="سنڌي" value="sd_سنڌي_بٽڻ">
+          سنڌي
+         </option>
+<option title="فارسی" value="fa_فارسی_دکمه ها">
+          فارسی
+         </option>
+<option title="پښتو" value="ps_پښتو_تڼۍ">
+          پښتو
+         </option>
+<option title="नेपाली" value="ne_नेपाली_बटनहरू">
+          नेपाली
+         </option>
+<option title="मराठी" value="mr_मराठी_बटणे">
+          मराठी
+         </option>
+<option title="नहीं" value="hi_हिन्दी_बटन">
+          हिन्दी
+         </option>
+<option title="বাংলা" value="bn_বাংলা_বোতাম">
+          বাংলা
+         </option>
+<option title="ਪੰਜਾਬੀ" value="pa_ਪੰਜਾਬੀ_ਬਟਨ">
+          ਪੰਜਾਬੀ
+         </option>
+<option title="ગુજરાતી" value="gu_ગુજરાતી_બટનો">
+          ગુજરાતી
+         </option>
+<option title="தமிழ்" value="ta_தமிழ்_பொத்தான்கள்">
+          தமிழ்
+         </option>
+<option title="తెలుగు" value="te_తెలుగు_బటన్లు">
+          తెలుగు
+         </option>
+<option title="ಕನ್ನಡ" value="kn_ಕನ್ನಡ_ಗುಂಡಿಗಳು">
+          ಕನ್ನಡ
+         </option>
+<option title="മലയാളം" value="ml_മലയാളം_ബട്ടണുകൾ">
+          മലയാളം
+         </option>
+<option title="සිංහල" value="si_සිංහල_බොත්තම්">
+          සිංහල
+         </option>
+<option title="แบบไทย" value="th_ไทย_ปุ่ม">
+          ไทย
+         </option>
+<option title="TB" value="lo_ລາວ_ປຸ່ມ">
+          ລາວ
+         </option>
+<option title="မြန်မာ (ဗမာ)၊" value="my_မြန်မာ_ခလုတ်များ">
+          မြန်မာ
+         </option>
+<option title="ქართული" value="ka_ქართული_ღილაკები">
+          ქართული
+         </option>
+<option title="አማርኛ" value="am_አማርኛ_አዝራሮች">
+          አማርኛ
+         </option>
+<option title="ខ្មែរ" value="km_ខ្មែរ_ប៊ូតុង">
+          ខ្មែរ
+         </option>
+<option title="中文（繁體）" value="zh-TW_中文 (繁體)_按鈕">
+          中文 (繁體)
+         </option>
+<option title="简体中文" value="zh_中文（简体）_按钮">
+          中文（简体）
+         </option>
+<option title="简体中文" value="zh-CN_中文（简体）_按钮">
+          中文（简体）
+         </option>
+<option title="日本語" value="ja_日本語_ボタン">
+          日本語
+         </option>
+<option title="한국인" value="ko_한국어_버튼">
+          한국어
+         </option>
+</select></div><div class="col"><select class="form-select" onclick="changeLanguageButtonsTools(this.value)">
+<option>3 ಗುಂಡಿಗಳು</option>
+<option title="ʻŌlelo Hawaiʻi" value="haw_'ōlelo hawaiʻi_pihi">
+          'Ōlelo Hawaiʻi
+         </option>
+<option title="Afrikaans" value="af_afrikaans_knoppies">
+          Afrikaans
+         </option>
+<option title="অসমীয়া" value="as_assamese_বুটামসমূহ">
+          Assamese
+         </option>
+<option title="Igbo" value="ig_asụsụ igbo_bọtịnụ">
+          Asụsụ Igbo
+         </option>
+<option title="Aymara" value="ay_aymara_ukatsti ukax mä juk’a pachanakanwa">
+          Aymara
+         </option>
+<option title="Azərbaycan" value="az_azərbaycan dili_düymələri">
+          Azərbaycan dili
+         </option>
+<option title="Melayu" value="ms_bahasa melayu_butang">
+          Bahasa Melayu
+         </option>
+<option title="U b'a don" value="bm_bambara_butɔni minnu bɛ yen">
+          Bambara
+         </option>
+<option title="basa jawa" value="jw_basa jawa_tombol">
+          Basa Jawa
+         </option>
+<option title="basa jawa" value="jv_basa jawa_tombol">
+          Basa Jawa
+         </option>
+<option title="Sundanese" value="su_basa sunda_kancing">
+          Basa Sunda
+         </option>
+<option title="भोजपुरी" value="bho_bhojpuri_बटन के इस्तेमाल कइल जाला">
+          Bhojpuri
+         </option>
+<option title="Cebuano" value="ceb_cebuano_butones">
+          Cebuano
+         </option>
+<option title="Shona" value="sn_chishona_mabhatani">
+          ChiShona
+         </option>
+<option title="Chichewa" value="ny_chichewa_mabatani">
+          Chichewa
+         </option>
+<option title="Corsu" value="co_corsu_i buttoni">
+          Corsu
+         </option>
+<option title="Cymraeg" value="cy_cymraeg_botymau">
+          Cymraeg
+         </option>
+<option title="dansk" value="da_dansk_knapper">
+          Dansk
+         </option>
+<option title="Deutsch" value="de_deutsch_Tasten">
+          Deutsch
+         </option>
+<option title="ދިވެހި..." value="dv_divehi_ބަޓަންތަކެވެ">
+          Divehi
+         </option>
+<option title="डोगरी" value="doi_dogri_बटन दे">
+          Dogri
+         </option>
+<option title="English" value="en_english_buttons">
+          English
+         </option>
+<option title="Esperanto" value="eo_esperanto_butonoj">
+          Esperanto
+         </option>
+<option title="Aŋgba" value="ee_ewe_ƒe abɔtawo">
+          Ewe
+         </option>
+<option title="Yoruba" value="yo_èdè yorùbá_awọn bọtini">
+          Èdè Yorùbá
+         </option>
+<option title="Samoa" value="sm_faʻa-samoa_faamau">
+          Faʻa-Samoa
+         </option>
+<option title="Filipino" value="tl_filipino_mga pindutan">
+          Filipino
+         </option>
+<option title="Filipino" value="fil_filipino_mga pindutan">
+          Filipino
+         </option>
+<option title="Français" value="fr_français_boutons">
+          Français
+         </option>
+<option title="Frysk" value="fy_frysk_knoppen">
+          Frysk
+         </option>
+<option title="Irish Gaelic" value="ga_gaeilge_cnaipí">
+          Gaeilge
+         </option>
+<option title="Obulungi" value="lg_ganda_obutambi obuyitibwa buttons">
+          Ganda
+         </option>
+<option title="guarani" value="gn_guarani_umi botón rehegua">
+          Guarani
+         </option>
+<option title="Gàidhlig na h-Alba" value="gd_gàidhlig_putanan">
+          Gàidhlig
+         </option>
+<option title="Hausa" value="ha_harshen hausa_maɓalli">
+          Harshen Hausa
+         </option>
+<option title="Hmong" value="hmn_hmong_khawm">
+          Hmong
+         </option>
+<option title="Kinyarwanda" value="rw_ikinyarwanda_Utubuto">
+          Ikinyarwanda
+         </option>
+<option title="Uneg" value="ilo_iloko_dagiti buton">
+          Iloko
+         </option>
+<option title="Indonesia" value="id_indonesia_tombol">
+          Indonesia
+         </option>
+<option title="isiXhosa" value="xh_isixhosa_amaqhosha">
+          IsiXhosa
+         </option>
+<option title="Zulu" value="zu_isizulu_izinkinobho">
+          IsiZulu
+         </option>
+<option title="Italiano" value="it_italiano_pulsanti">
+          Italiano
+         </option>
+<option title="kiswahili" value="sw_kiswahili_vifungo">
+          Kiswahili
+         </option>
+<option title="कोंकणी" value="gom_konkani_बटणांचो वापर करतात">
+          Konkani
+         </option>
+<option title="Kreyòl ayisyen" value="ht_kreyòl ayisyen_bouton">
+          Kreyòl Ayisyen
+         </option>
+<option title="Kryo we de na di wɔl" value="kri_krio_bɔtin dɛn">
+          Krio
+         </option>
+<option title="کوردی (سۆرانی)" value="ckb_kurdish (sorani)_دوگمەکان">
+          Kurdish (Sorani)
+         </option>
+<option title="Kurdî (Kurmancî)" value="ku_kurdî (kurmancî)_bişkokên">
+          Kurdî (Kurmancî)
+         </option>
+<option title="Latinus" value="la_latin_bullarum">
+          Latin
+         </option>
+<option title="Lingala" value="ln_lingala_ba boutons na ba boutons">
+          Lingala
+         </option>
+<option title="lëtzebuergesch" value="lb_lëtzebuergesch_Knäppercher">
+          Lëtzebuergesch
+         </option>
+<option title="Maithili" value="mai_maithili_बटन">
+          Maithili
+         </option>
+<option title="Malti" value="mt_malti_buttuni">
+          Malti
+         </option>
+<option title="ꯃꯦꯏꯇꯦꯏꯂꯣꯟ (ꯃꯅꯤꯄꯨꯔꯤ) ꯴." value="mni-Mtei_meiteilon (manipuri)_ꯕꯇꯅꯁꯤꯡ ꯌꯥꯑꯣꯔꯤ꯫">
+          Meiteilon (Manipuri)
+         </option>
+<option title="Mizo" value="lus_mizo_buttons te a awm">
+          Mizo
+         </option>
+<option title="Maori" value="mi_māori_pātene">
+          Māori
+         </option>
+<option title="Nederlands" value="nl_nederlands_knoppen">
+          Nederlands
+         </option>
+<option title="Sesotho sa Leboa" value="nso_northern sotho_dikonopo dikonopo">
+          Northern Sotho
+         </option>
+<option title="ଓଡିଆ (ଓଡିଆ)" value="or_odia (oriya)_ବଟନ୍">
+          Odia (Oriya)
+         </option>
+<option title="Oromo" value="om_oromo_buttooni">
+          Oromo
+         </option>
+<option title="o'zbek" value="uz_o‘zbek_tugmalar">
+          O‘zbek
+         </option>
+<option title="Português" value="pt_português_botões">
+          Português
+         </option>
+<option title="Runasimi" value="qu_quechua_botones nisqawan">
+          Quechua
+         </option>
+<option title="română" value="ro_română_butoane">
+          Română
+         </option>
+<option title="संस्कृत" value="sa_sanskrit_बटन्स् इति">
+          Sanskrit
+         </option>
+<option title="Senyesemane" value="st_sesotho_likonopo">
+          Sesotho
+         </option>
+<option title="shqiptare" value="sq_shqip_butonat">
+          Shqip
+         </option>
+<option title="Somali" value="so_soomaali_badhamada">
+          Soomaali
+         </option>
+<option title="Татар" value="tt_tatar_төймәләр">
+          Tatar
+         </option>
+<option title="ትግሪኛ" value="ti_tigrinya_መጠወቒታት">
+          Tigrinya
+         </option>
+<option title="Tsonga" value="ts_tsonga_swikomba-nkarhi">
+          Tsonga
+         </option>
+<option title="Twi" value="ak_twi_buttons a wɔde hyɛ mu">
+          Twi
+         </option>
+<option title="Türkmenler" value="tk_türkmençe_düwmeleri">
+          Türkmençe
+         </option>
+<option title="Türkçe" value="tr_türkçe_düğmeler">
+          Türkçe
+         </option>
+<option title="ئۇيغۇر" value="ug_uyghur_كۇنۇپكىلار">
+          Uyghur
+         </option>
+<option title="Tiếng Việt" value="vi_việt_nút">
+          Việt
+         </option>
+<option title="bosanski" value="bs_bosanski_dugmad">
+          bosanski
+         </option>
+<option title="català" value="ca_català_botons">
+          català
+         </option>
+<option title="eesti keel" value="et_eesti_nupud">
+          eesti
+         </option>
+<option title="Español" value="es_español_botones">
+          español
+         </option>
+<option title="euskara" value="eu_euskara_botoiak">
+          euskara
+         </option>
+<option title="galego" value="gl_galego_botóns">
+          galego
+         </option>
+<option title="hrvatski" value="hr_hrvatski_gumbi">
+          hrvatski
+         </option>
+<option title="latviski" value="lv_latviešu_pogas">
+          latviešu
+         </option>
+<option title="lietuvių" value="lt_lietuvių_mygtukai">
+          lietuvių
+         </option>
+<option title="magyar" value="hu_magyar_gombokat">
+          magyar
+         </option>
+<option title="Malagasy" value="mg_malagasy_bokotra">
+          malagasy
+         </option>
+<option title="norsk" value="no_norsk_knapper">
+          norsk
+         </option>
+<option title="Polski" value="pl_polski_pikolak">
+          polski
+         </option>
+<option title="slovenský" value="sk_slovenčina_tlačidlá">
+          slovenčina
+         </option>
+<option title="slovenski" value="sl_slovenščina_gumbi">
+          slovenščina
+         </option>
+<option title="suomalainen" value="fi_suomi_painikkeet">
+          suomi
+         </option>
+<option title="svenska" value="sv_svenska_knappar">
+          svenska
+         </option>
+<option title="íslenskur" value="is_íslenska_hnappa">
+          íslenska
+         </option>
+<option title="čeština" value="cs_čeština_tlačítka">
+          čeština
+         </option>
+<option title="ελληνικά" value="el_ελληνικά_κουμπιά">
+          Ελληνικά
+         </option>
+<option title="беларускі" value="be_беларуская_кнопкі">
+          Беларуская
+         </option>
+<option title="Монгол" value="mn_монгол_товчлуурууд">
+          Монгол
+         </option>
+<option title="тоҷикӣ" value="tg_тоҷикӣ_тугмаҳо">
+          Тоҷикӣ
+         </option>
+<option title="български" value="bg_български_бутони">
+          български
+         </option>
+<option title="Кыргызча" value="ky_кыргызча_баскычтар">
+          кыргызча
+         </option>
+<option title="македонски" value="mk_македонски_копчиња">
+          македонски
+         </option>
+<option title="Русский" value="ru_русский_кнопки">
+          русский
+         </option>
+<option title="српски" value="sr_српски_дугмад">
+          српски
+         </option>
+<option title="українська" value="uk_українська_кнопки">
+          українська
+         </option>
+<option title="қазақ" value="kk_қазақ_түймелері">
+          қазақ
+         </option>
+<option title="հայկ" value="hy_հայերեն_կոճակներ">
+          հայերեն
+         </option>
+<option title="יידיש" value="yi_יידיש_קנעפּלעך">
+          יידיש
+         </option>
+<option title="עִברִית" value="iw_עברית_כפתורים">
+          עברית
+         </option>
+<option title="עִברִית" value="he_עברית_כפתורים">
+          עברית
+         </option>
+<option title="اردو" value="ur_اردو_بٹن">
+          اردو
+         </option>
+<option title="عربي" value="ar_العربية_أزرار">
+          العربية
+         </option>
+<option title="سنڌي" value="sd_سنڌي_بٽڻ">
+          سنڌي
+         </option>
+<option title="فارسی" value="fa_فارسی_دکمه ها">
+          فارسی
+         </option>
+<option title="پښتو" value="ps_پښتو_تڼۍ">
+          پښتو
+         </option>
+<option title="नेपाली" value="ne_नेपाली_बटनहरू">
+          नेपाली
+         </option>
+<option title="मराठी" value="mr_मराठी_बटणे">
+          मराठी
+         </option>
+<option title="नहीं" value="hi_हिन्दी_बटन">
+          हिन्दी
+         </option>
+<option title="বাংলা" value="bn_বাংলা_বোতাম">
+          বাংলা
+         </option>
+<option title="ਪੰਜਾਬੀ" value="pa_ਪੰਜਾਬੀ_ਬਟਨ">
+          ਪੰਜਾਬੀ
+         </option>
+<option title="ગુજરાતી" value="gu_ગુજરાતી_બટનો">
+          ગુજરાતી
+         </option>
+<option title="தமிழ்" value="ta_தமிழ்_பொத்தான்கள்">
+          தமிழ்
+         </option>
+<option title="తెలుగు" value="te_తెలుగు_బటన్లు">
+          తెలుగు
+         </option>
+<option title="ಕನ್ನಡ" value="kn_ಕನ್ನಡ_ಗುಂಡಿಗಳು">
+          ಕನ್ನಡ
+         </option>
+<option title="മലയാളം" value="ml_മലയാളം_ബട്ടണുകൾ">
+          മലയാളം
+         </option>
+<option title="සිංහල" value="si_සිංහල_බොත්තම්">
+          සිංහල
+         </option>
+<option title="แบบไทย" value="th_ไทย_ปุ่ม">
+          ไทย
+         </option>
+<option title="TB" value="lo_ລາວ_ປຸ່ມ">
+          ລາວ
+         </option>
+<option title="မြန်မာ (ဗမာ)၊" value="my_မြန်မာ_ခလုတ်များ">
+          မြန်မာ
+         </option>
+<option title="ქართული" value="ka_ქართული_ღილაკები">
+          ქართული
+         </option>
+<option title="አማርኛ" value="am_አማርኛ_አዝራሮች">
+          አማርኛ
+         </option>
+<option title="ខ្មែរ" value="km_ខ្មែរ_ប៊ូតុង">
+          ខ្មែរ
+         </option>
+<option title="中文（繁體）" value="zh-TW_中文 (繁體)_按鈕">
+          中文 (繁體)
+         </option>
+<option title="简体中文" value="zh_中文（简体）_按钮">
+          中文（简体）
+         </option>
+<option title="简体中文" value="zh-CN_中文（简体）_按钮">
+          中文（简体）
+         </option>
+<option title="日本語" value="ja_日本語_ボタン">
+          日本語
+         </option>
+<option title="한국인" value="ko_한국어_버튼">
+          한국어
+         </option>
+</select></div></div></div>
 </nav>
 <div class="container mt-4" id="container">
 <h1 class="display-4">
@@ -448,5 +861,5 @@
 </script>
 <script src="/res/raw/dev_files/js/begin/links.js">
 </script>
-
-</head></html>
+</head>
+</html>

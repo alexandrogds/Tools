@@ -11,7 +11,8 @@ from dotenv import load_dotenv
 
 def main():
     load_dotenv()
-    file_paths = ["index.html", 'buttons/index.html']
+    file_paths = [r"C:\Users\user\Nova pasta (2)\Tools\res\layout\buttons\index.html", 
+                  r'C:\Users\user\Nova pasta (2)\Tools\res\layout\index.html']
     project = os.getenv("GOOGLE_CLOUD_PROJECT_ID")
     languages = get_supported_languages(project, 'en')
    # languages = get_supported_languages(project, 'en')
@@ -36,10 +37,11 @@ def main():
     options = []
     for i in range(len(languages)):
         options += [{'text': texts[i], 
-                        'title': translate_text('pt', languages[i].display_name), 
-                        'value': languages[i].language_code + '_' + texts[i].lower()}]
+                        'title': translate_text(languages[i].language_code, languages[i].display_name), 
+                        'value': languages[i].language_code + '_' + texts[i].lower() \
+                            + '_' + translate_text(languages[i].language_code, 'buttons')}]
     options_sorted = sorted(options, key=lambda x: x['text'])
-        
+
     for file_path in file_paths:
         """
         Tem que adicionar as últimas edições

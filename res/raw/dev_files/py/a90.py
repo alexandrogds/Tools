@@ -1,84 +1,56 @@
 import os
-import re
 from bs4 import BeautifulSoup
 
-# Função para substituir o conteúdo dos arquivos
-def replace_content(file_path, replacements):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        content = file.read()
+# Caminho para o arquivo HTML com o seletor
+select_file_paths = [r'C:\Users\user\Nova pasta (2)\Tools\res\raw\dev_files\html\select_index.html',
+r'C:\Users\user\Nova pasta (2)\Tools\res\raw\dev_files\html\select_buttons.html']
+
+# Função para carregar o seletor do arquivo HTML
+def load_select():
+    with open(select_file_path, 'r', encoding='utf-8') as file:
+        return file.read()
+
+# Função para adicionar ou substituir o seletor no HTML
+def add_select_to_html(html_content, select_html):
+    soup = BeautifulSoup(html_content, 'html.parser')
+    select_element = soup.find(id='select')
+    if select_element:
+        # Substituir o conteúdo do seletor existente
+        select_element.append(BeautifulSoup(select_html, 'html.parser'))
+        return str(soup)
+    return html_content
+
+# Caminho da pasta onde estão os arquivos HTML
+folder_path = r'C:\Users\user\Nova pasta (2)\Tools\res\raw\!'
+
+# Função para atualizar arquivos HTML na pasta
+def update_html_files(folder_path):
+    # Carregar o seletor
+    select_html = load_select()
     
-    for old, new in replacements.items():
-        content = content.replace(old, new)
+    # Usar uma fila para uma abordagem iterativa
+    directories = [folder_path]
     
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write(content)
-
-# Função para remover linhas específicas
-def remove_lines(file_path, lines_to_remove):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
-
-    with open(file_path, 'w', encoding='utf-8') as file:
-        skip = False
-        for i, line in enumerate(lines):
-            if skip:
-                skip = False
-                continue
-            if any(line.strip().startswith(line_to_remove) for line_to_remove in lines_to_remove):
-                # Verifica se a próxima linha é a linha de fechamento
-                if i + 1 < len(lines) and lines[i + 1].strip() == '</script>':
-                    skip = True
-                    continue
-            file.write(line)
-
-# Função para adicionar elementos ao HTML usando BeautifulSoup
-def add_html_element(file_path, id_name, new_element):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        soup = BeautifulSoup(file, 'html.parser')
-    
-    element = soup.find(id=id_name)
-    if element:
-        element.append(BeautifulSoup(new_element, 'html.parser'))
-    
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write(str(soup))
-
-# Caminho da pasta
-base_path = r'C:\Users\user\Nova pasta (2)\Tools\res\raw\'
-
-# Replacements a serem feitos
-replacements = {
-    '/styles/lib.css': '/res/raw/dev_files/css/lib.css',
-    '/scripts/lib.js': '/res/raw/dev_files/js/lib.js',
-    '/scripts/url.js': '/res/raw/dev_files/js/url.js',
-    '/scripts/menu.js': '/res/raw/dev_files/js/menu.js',
-    '/scripts/begin/links.js': '/res/raw/dev_files/js/begin/links.js'
-}
-
-# Linhas a serem removidas
-lines_to_remove = [
-    '<script src="/scripts/begin/logo.js">',
-    '</script>'
-]
-
-# HTML elements a serem adicionados
-index_html_element = '<a class="navbar-brand" href="http://localhost" title="Go to home page."><img src="/res/drawable/nodpi/logo.png" alt="Website logo." class="img-fluid"></a>'
-other_html_element = '<a class="navbar-brand" href="http://localhost/" title="Go to home page."><img src="/res/drawable/nodpi/3-buttons-e.png" alt="Website logo." class="img-fluid"></a>'
-
-# Caminho da pasta
-for root, dirs, files in os.walk(base_path):
-    for file in files:
-        file_path = os.path.join(root, file)
-        if file.endswith('.html'):
-            if 'index.html' in file_path:
-                add_html_element(file_path, 'menu', index_html_element)
-            else:
-                add_html_element(file_path, 'menu', other_html_element)
+    while directories:
+        current_dir = directories.pop()
         
-        # Substitui o conteúdo dos arquivos
-        replace_content(file_path, replacements)
-        
-        # Remove linhas específicas
-        remove_lines(file_path, lines_to_remove)
+        for root, dirs, files in os.walk(current_dir):
+            for file in files:
+                if file.endswith('.html'):
+                    file_path = os.path.join(root, file)
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        html_content = f.read()
+                    
+                    # Adicionar ou substituir o seletor no conteúdo HTML
+                    updated_html_content = add_select_to_html(html_content, select_html)
+                    
+                    # Salvar o conteúdo atualizado de volta ao arquivo
+                    with open(file_path, 'w', encoding='utf-8') as f:
+                        f.write(updated_html_content)
+                    print(f"Arquivo processado: {file_path}")
+                    
+            # Adicionar subdiretórios à fila
+            directories.extend(os.path.join(root, d) for d in dirs)
 
-print("Alterações concluídas!")
+update_html_files(folder_path)
+print("Atualização concluída.")

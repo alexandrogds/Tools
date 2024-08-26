@@ -9,9 +9,9 @@ function changeLanguage(lang) {
 	}
     console.log(lang)
     const a90 = {}
-    a90.c = lang.replace(/_/, '/')
-    a90.a = a90.c.replace(/_/, ' ')
-    destiny += "/" + a90.a;
+    a90.c = lang.replace(/_/g, '/')
+    // a90.a = a90.c.replace(/_/, ' ')
+    destiny += "/" + a90.c;
     console.log(destiny)
     window.location.href = destiny;
 }

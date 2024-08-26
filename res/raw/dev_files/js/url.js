@@ -12,15 +12,18 @@ let base = window.location.protocol + "//" + domain
 if (window.location.port) {
     base += ':' + window.location.port;
 }
-
-if (segments.length == 1) {
-    aux = base
-} else if (!segments[1]) {
-    aux = base + '/' + segments[1]
-} else {
-    aux = base + '/' + segments[1] + '/' + segments[2]
-}
+let aux;
+// if (segments.length == 1) {
+//     aux = base
+// } else if (!segments[1]) {
+//     console.log(!segments[1], 'cond')
+//     aux = base + '/' + segments[1]
+//     console.log(aux ,'aux')
+// } else {
+//     aux = base + '/' + segments[0] + '/' + segments[1]
+//     console.log(aux, 'aux')
+// }
 
 folderPath = null
 domain = null
-base = null
+// base = null
