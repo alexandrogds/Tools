@@ -1,5 +1,4 @@
 (()=>{
-    fun func
     let navbarNav = document.createElement('ul');
     navbarNav.className = 'navbar-nav ms-auto';
 
