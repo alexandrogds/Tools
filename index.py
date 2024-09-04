@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, Response
 from flask import send_from_directory
 from flask import render_template
 from flask import request, jsonify
@@ -7,6 +7,14 @@ from pathlib import Path
 
 app = Flask(__name__, template_folder='res', static_folder='res')
 
+@app.route('/produtos')
+def produtos():
+    url = request.args.get('url')
+    resp = requests.get(url)
+    headers = resp.headers
+
+    # Reenvia a resposta original do servidor ao cliente
+    return Response(resp.content, headers=dict(headers))
 
 def get_db_connection():
     db_path = os.path.join(os.path.dirname(__file__), 'res', 'raw', 'database.db')
