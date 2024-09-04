@@ -10,11 +10,19 @@ app = Flask(__name__, template_folder='res', static_folder='res')
 @app.route('/produtos')
 def produtos():
     url = request.args.get('url')
-    resp = requests.get(url)
-    headers = resp.headers
+    if not url:
+        return Response("URL não fornecida", status=400)
 
-    # Reenvia a resposta original do servidor ao cliente
-    return Response(resp.content, headers=dict(headers))
+    try:
+        resp = requests.get(url)
+        if resp.status_code == 200:
+            headers = dict(resp.headers)
+            return Response(resp.content, headers=headers)
+        else:
+            return Response(f"Erro ao acessar {url}: {resp.status_code}", status=resp.status_code)
+    except requests.exceptions.RequestException as e:
+        return Response(f"Erro na solicitação: {str(e)}", status=500)
+
 
 def get_db_connection():
     db_path = os.path.join(os.path.dirname(__file__), 'res', 'raw', 'database.db')
